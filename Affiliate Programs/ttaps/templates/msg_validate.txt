@@ -1,0 +1,9 @@
+Dear [name],
+ 
+To activate your account for [title_affiliates], please click on
+the following link:
+ 
+[script_root]validate.php?affil=[nickname]
+ 
+If you have received this email in error, do nothing.
+You have not been added to any database.
