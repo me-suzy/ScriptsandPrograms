@@ -1,0 +1,7 @@
+CREDITS
+
+- Adh3 for his tagboard -=- http://log.ardianto.com
+- Nenad Motika for his randomimage function -=- http://www.bezveze.com/skripte/rid/
+- Brett Taylor for his shoutbox -=- http://www.addict.net.nz/~glutnix
+- ExpressionEngine themes -=- http://pmachine.com/expressionengine/
+- phpBB for the page generation time function -=- www.phpbb.com
