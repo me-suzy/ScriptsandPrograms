@@ -1,0 +1,9 @@
+body {margin: 15px 5% 15px 5%; font-family: Verdana, Geneva, Helvetica, Sans-Serif; font-size: 0.8em;}
+#head, #foot {text-align: center;}
+#headline {font-weight: bold; font-size: 2em;}
+.nav {background-color: #f9f9f9; margin-top: 10px; padding: 2px 0px 5px 0px; border: 1px #C0C0C0; border-style: solid none solid none;}
+#body {text-align: left; line-height: 1.3em; }
+.totop {text-align: right; font-weight: bold;}
+h1 {font-weight: bold; font-size: 1.5em; margin-bottom: 5px;}
+h2 {font-weight: normal; font-size: 1.2em; text-decoration: overline underline; margin-bottom: 5px;}
+pre {font-size: 1.2em;}
