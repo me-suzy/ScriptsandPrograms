@@ -1,0 +1,27 @@
+table {
+	border: solid #000000 2px;
+}
+
+/* the month and year header */
+caption {
+	font-size: 14pt;
+}
+
+/* top row cells which hold day names */
+th {
+	border: solid #000000 1px;
+}
+
+/* day cells */
+td {
+	border: solid #000000 1px;
+	height: 75px;
+	width: 75px;
+	text-align: left;
+	vertical-align: top;
+}
+
+/* day cells with events */
+td.event {
+	color: #ff0000;
+}
