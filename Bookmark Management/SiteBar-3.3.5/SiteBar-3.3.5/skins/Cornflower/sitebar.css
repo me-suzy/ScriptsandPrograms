@@ -1,0 +1,144 @@
+@import url("../sitebar.css");
+@import url("common.css");
+
+body
+{
+    margin: 0px 2px;
+}
+
+#logo
+{
+    width: 179px;
+}
+
+#userCtxMenu
+{
+    border: 1px groove #807ad6;
+}
+
+#toolbar
+{
+    border: 1px groove #807ad6;
+}
+
+
+#toolbar img
+{
+    border: 1px solid #dddfff;
+}
+
+#toolbar img.pressed
+{
+    border: 1px inset black;
+}
+
+#stat
+{
+    width: 182px;
+}
+
+div.menu
+{
+    border: 2px outset #807ad6;
+    background: #dddfff;
+}
+
+div.menu .off
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div.menu .on
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background: navy;
+}
+
+div.menu .disabled
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: gray;
+}
+
+div.menu .separator
+{
+    margin-top: 3px;
+    border-top: gray solid 1px;
+    border-bottom: silver solid 1px;
+}
+
+div.tree
+{
+    color: #444;
+}
+
+div.root
+{
+    left: 0;
+}
+
+
+div.tree div.link
+{
+    height: 18px;
+}
+
+div.tree div.node img
+{
+    vertical-align: text-bottom;
+    border: 0;
+    height: 18px;
+}
+
+div.tree div.node img.favicon
+{
+    height: 16px;
+    vertical-align: text-bottom;
+    border: 0;
+}
+
+
+div.tree a:hover
+{
+    color: black;
+    background: #dddfff;
+}
+
+div.tree a:hover .selected
+{
+    color: yellow;
+    background: #aaafff;
+}
+
+/*** Command Window ***/
+
+
+#warnHead
+{
+    background: blue;
+}
+
+
+/*** Integrator window ***/
+
+#launcher h2
+{
+    font-size: larger;
+    color: #807ad6;
+    margin-bottom: 1px;
+    margin-top: 2px;
+}
+
+#launcher table th
+{
+    border: none;
+}
+
+span.compatibleYes
+{
+    color: white;
+}
