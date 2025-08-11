@@ -1,0 +1,22 @@
+<module>
+	<admin>
+		<tables>			
+			<table name="users">site_users</table>
+			<table name="events">site_events</table>
+			<table name="events_users">site_events_users</table>
+		</tables>
+	</admin>
+
+	<site>
+		<templates path="./templates/">
+			<template name="events">events.htm</template>
+			<template name="users">users.htm</template>
+		</templates>
+
+		<tables>			
+			<table name="users">site_users</table>
+			<table name="events">site_events</table>
+			<table name="events_users">site_events_users</table>
+		</tables>
+	</site>
+</module>
