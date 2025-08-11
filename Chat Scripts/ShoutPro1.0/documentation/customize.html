@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<!-- Begin Scrollbar Styles -->
+<style>  
+<!-- BODY{ scrollbar-face-color:#666666; scrollbar-arrow-color:#444444; scrollbar-track-color:#333333; scrollbar-shadow-color:'#333333'; scrollbar-highlight-color:''; scrollbar-3dlight-color:'#333333'; scrollbar-darkshadow-Color:'#333333'; } -->   
+</style>    
+<!-- End Scrollbar Styles -->
+
+<!-- Begin Link Styles -->
+<style type="text/css">
+ a:link{color:#555555;text-decoration:none;font-weight: bold;} a:visited{color:#555555;text-decoration:none;font-weight: bold;} a:active{color:#555555;text-decoration:none;font-weight: bold;} a:hover{color:#999999;text-decoration:underline;font-weight: bold;}
+ td{font-size:10pt}
+</style>
+<!-- End Link Styles -->
+
+<title>ShoutPro - Customizing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF">
+<div align="center"><a href="index.html"><img src="shoutpro.jpg" border="0"></a></div>
+<font face="Tahoma">
+<div style="font-size:20pt"><font face="Tahoma">ShoutPro 1.0 - Customizing</font></div>
+<div style="font-size:10pt">
+<p> <font face="Tahoma"><b>How to Do Some Simple Tasks with ShoutPro:</b> 
+    </font>
+  <ul>
+    <li><strong>Ban a user from the Shoutbox: </strong>To ban a user from the 
+      shoutbox, first find his or her IP with the instructions below. Then add 
+      the IP to the file lists\bannedips.php. Each IP should be on a new line, 
+      starting on the second line.</li>
+    <li> 
+      <div style="font-size:10pt"><font face="Tahoma"><strong>View the IP Address 
+        of a Poster:</strong> In the shouts.php file, each shout is on a new line. 
+        The various elements of a shout are stored on each line. Poster's name, 
+        message, date, time, and IP are each separated by |^|. </font></div>
+    </li>
+    <li><font face="Tahoma"><b>Clear the Shoutbox:</b> In your web browser, open 
+      the file "admin.php" in your ShoutPro folder. Enter the password 
+      you typed into "config.php" and hit submit. A message should appear saying 
+      the shoutbox has been cleared.</font></li>
+    <li><font face="Tahoma"><b>Add More Smilies:</b> Begin by uploading the smilie 
+      image file into the "smilies" folder. Then open up "smilies.php" in the 
+      "lists" folder in a text-editing program. You can add or remove smilies 
+      here. Make sure you follow this format: "SMILIECODE|^|IMAGEFILE|^|". Each 
+      unit like that should be on a separate line.</font></li>
+    <li><font face="Tahoma"><strong>Add/Edit Restricted Names: </strong>Open the 
+      file &quot;lists/names.php&quot; in a text-editing program. Each restricted 
+      name and password should be on its own line, starting one Line 4. Do not 
+      edit the first three or last two lines of names.php or anyone will be able 
+      to view the restricted names and their corresponding passwords over the 
+      web. All lines other than those should be in the &quot;NAME|^|PASSWORD|^|EMAIL|^|&quot; 
+      format.</font></li>
+    <li><font face="Tahoma"><b>Add/Edit ShoutCode and Profanity Filter:</b> Open 
+      the file "lists/shoutcode.php" or "lists/profanities.php" in a text-editing 
+      program. These files are in the same format as the smiles.php file. In shoutcode.php, 
+      the first item is the ShoutCode tag and the second is the corresponding 
+      HTML tag. In profanities.php, the first item is the profanity and the second 
+      item is the filtered word.</font></li>
+  </ul>
+</div>
+</font>
+</body>
+</html>
