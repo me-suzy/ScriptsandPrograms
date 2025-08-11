@@ -1,0 +1,99 @@
+body, p, td		{ font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:12px; color:#333333; }
+
+
+.tmain {
+	border-width: thin;
+	border-style: solid;
+	border-color: #511C02;
+}
+
+
+table.global	{  border-width: 1px;   border-style: solid;   border-color: #aaaaaa; }
+
+.header a{ color: #FFFFFF; font-size: 12px; font-weight: bold; line-height: 15px; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+.header { color: #FFFFFF; font-size: 12px; font-weight: bold; line-height: 15px; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+
+
+
+
+.columntext { color: #000000; font-size: 11px; line-height: 15px; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+//h3{background-color:#669900; border:solid 1 #336699; text-align:center; font-family: Arial;}
+
+.a{background-color:#C6D7EC;color:#000000}
+
+.b{background-color:#B1B1D8;color:#000000}
+
+.c{font-size:12px;font-weight:bold;color:#ffffff;background-color:#9999CC}
+
+.f{font-weight:bold;color:#ffffff;font-size:12px;padding:2px}
+
+.s{font-size:10px}
+
+.z{background-color:#B1B1D8}
+
+//.q{background-color:#C6D7EC;}
+
+
+.buttonclass {font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: xx-small;
+    font-weight: bold;        
+    color: #001F66;
+    background-color: #9999CC;    
+    background-repeat: repeat-x;
+    background-position: left center; 
+    border: 1px solid #405380;
+    padding: 2px 11px;
+    margin: 0px;
+    t1ext-align: center; }
+
+
+#menu1 a {
+ color: #309;
+ font-size: 13px;
+ font-family: Arial,Helvetica,sans-serif;
+ text-decoration: none;
+ border: 1px solid #336699;
+ display: block;
+ width: 130px;
+ padding: 3px 5px;
+  
+ text-align:center;
+ font-weight: bold;
+ background: #9999CC;
+}
+#menu1 strong {
+ font-weight: bold;
+ background: #FFC;
+}
+
+#menu1 a:hover {
+ color: #309;
+ background: #C6D7EC;
+}
+
+
+.hidden {
+ display: none;
+}
+
+td{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:11px}
+A
+{
+	text-decoration: none;
+	font-weight=bold;
+	font-face=Arial;
+	font-size : 9pt;
+	font-size : 9pt;
+	font-color : #ffffff;
+	color:white;	
+	tabindex=-1;
+	}
+A:hover
+{
+	text-decoration: underline;
+}
+
+
