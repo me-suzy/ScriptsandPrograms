@@ -1,0 +1,112 @@
+@import url("../sitebar.css");
+@import url("common.css");
+
+#logo
+{
+    border: 1px solid #002d96;
+    height: 20px;
+    width: 185px;
+    padding: 0;
+}
+
+#userCtxMenu
+{
+    border: 1px groove #807ad6;
+}
+
+#toolbar
+{
+    border: 1px solid #002d96;
+}
+
+#toolbar img
+{
+    border: 1px solid #b2ccf7;
+}
+
+div.menu
+{
+    border: 2px outset #807ad6;
+    background: #f6f6f6;
+}
+
+div.menu .off
+{
+    border: 1px solid #f6f6f6;
+}
+
+div.menu .on
+{
+    border: 1px solid #000080;
+    background: #ffeec2;
+}
+
+div.menu .disabled
+{
+    color: #8d8d8d;
+}
+
+div.tree a:hover
+{
+    color: black;
+    background: #ece9d8;
+}
+
+div.tree a:hover .selected
+{
+    color: white;
+    background: #316ac5;
+}
+
+#stat
+{
+    width: 183px;
+}
+
+/*** Command Window ***/
+
+#warnHead
+{
+    background: #033893;
+}
+
+body.cmdWin select.fldList option.fldList
+{
+    color: white;
+    background: #295bb1;
+}
+
+body.cmdWin select.fldList option.fldList1
+{
+    background: #699bf1;
+}
+
+body.cmdWin select.fldList option.fldList2,
+body.cmdWin select.fldList option.fldList3,
+body.cmdWin select.fldList option.fldList4,
+body.cmdWin select.fldList option.fldList5,
+body.cmdWin select.fldList option.fldList6,
+body.cmdWin select.fldList option.fldList7,
+body.cmdWin select.fldList option.fldList8,
+body.cmdWin select.fldList option.fldList9,
+body.cmdWin select.fldList option.fldList10
+{
+    background: #79abf1;
+}
+
+/*** Integrator window ***/
+
+#launcher
+{
+    border: 1px groove #807ad6;
+}
+
+#launcher h2
+{
+    color: #295bb1;
+}
+
+#launcher table th
+{
+    border: 1px solid #002d96;
+}
