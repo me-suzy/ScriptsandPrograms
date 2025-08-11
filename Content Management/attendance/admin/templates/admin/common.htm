@@ -1,0 +1,55 @@
+<!--S:ProgramGroup-->
+		<table border="0" cellspacing="2">
+			{DATA}
+		</table>
+<!--E:ProgramGroup-->
+
+<!--S:ProgramElement-->
+			<tr>
+				<td><img src="images/layout_link.gif"></td>
+				<td><a class="link_menu" href="index.php?sub=programinfo&id={PROGRAM_ID}">{PROGRAM_LINK}</a></td>
+			</tr>
+<!--E:ProgramElement-->
+
+<!--S:Program-->
+	<div style="text-align:left">
+		<font size="4"><b>{PROGRAM_TITLE}</b></font><br>
+	</div>
+
+	<table>
+		<tr>
+			<td style="text-align:justify">
+				<br>{PROGRAM_BODY}
+			</td>
+		</tr>
+	</table>
+<!--E:Program-->
+
+<!--S:Page-->
+	<table width="100%" align="center">
+		<tr>
+			<td colspan="2" class="FormBorderTitle"><h3>{PAGE_HEADER}</td>
+		<tr>
+			<td class="page_content">
+				<table cellspacing="0" width="100%" cellpadding="0">
+					<tr>
+						<td class="page_content">
+							{PAGE_BODY}
+						</td>
+				</table>
+			</td>
+		</tr>
+		{EXTRA}
+	</table>
+<!--E:Page-->
+
+<!--S:License-->
+		<tr>
+			<td align="center"><b>
+				<a href="index.php?sub=register">I ACCEPT</a>
+				<img src="images/dot.gif" width="50" height="1">
+				<a href="index.php">I DONT ACCEPT</a>
+			</td>
+			<td></td>
+		<tr>
+<!--E:License--> 
