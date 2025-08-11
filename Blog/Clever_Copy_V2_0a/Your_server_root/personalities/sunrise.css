@@ -1,0 +1,88 @@
+BODY
+{
+scrollbar-face-color:#FFFF00;
+scrollbar-arrow-color:#000000;
+scrollbar-track-color:#FFFF80;
+scrollbar-shadow-color:#DBDBDB;
+scrollbar-highlight-color:#DBDBDB;
+scrollbar-3dlight-color:#000000;
+scrollbar-darkshadow-Color:#000000;
+}
+
+        BODY, P, TD
+                 {
+                 font-family: verdana;
+                 font-size: 8pt;
+                 color: #FFFF00; text-transform: none; cursor: none
+                 }
+
+        A:link, A:visited
+                {
+                color: #FF6609;
+                text-decoration: none; text-transform: none; cursor: none
+                }
+
+        A:hover {
+                color: #F04F00;
+                text-decoration: bold; text-transform: none; cursor: none; font-weight: bold}
+                a:special { color:#FFFFFF; cursor:none;
+                }
+
+        .spacer {
+                 border:1px #F04F00 solid;
+                 font-size:8pt;
+                 background-color:#F4F2F2;
+                 }
+
+        td.border {
+                  border:1px #FFFF80 solid;
+                  font-size:8pt;
+                  padding:1px;
+                  }
+
+        select {
+                background-color: #FFFF80;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 10px;
+                color: #545454;
+               }
+
+       textarea {
+                 background-color:#FFFF80;
+                 font-family: Verdana, Arial, Helvetica, sans-serif;
+                 font-size: 10px;
+                 color: #545454;
+                 }
+
+       input {
+             background-color: #FFFF80;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+             font-size: 10px;
+             color: #545454;
+             }
+
+       .radio {
+              background :#FFFF80;
+              color: #000000;
+              }
+
+       .texinput {
+                 font-size: 10px;
+                 background-color: #FFFF80;
+                 border: 1px solid #666666;
+                 }
+
+       .text {
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+             font-size: 10px;
+             color: #383636;
+             width: 100px;
+             margin-right: 6px;
+             }
+
+       .buttons {
+                font-size: 10px;
+                background-color: #EAE8E8;
+                color: #545454;
+                margin-right: 6px;
+                }
