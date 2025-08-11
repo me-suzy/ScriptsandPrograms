@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<badword_config>
+		<replacement>*beep*</replacement>
+		<!-- These are example bad words,customize as your suit -->
+		<badwords>
+			<word>shit</word>
+			<word>piss</word>
+			<word>fuck</word>
+			<word>cock</word>
+			<word>damn</word>
+			<word>bitch</word>
+			<word>faggot</word>
+			<word>whore</word>
+		</badwords>
+</badword_config>
