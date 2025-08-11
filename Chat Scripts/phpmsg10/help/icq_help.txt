@@ -1,0 +1,153 @@
+/***********************************************************************
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                          PHP MESSENGER 1.0                           *
+*                                                                      *
+*               Messaging tool for PHP developers!                     *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                PHP MESSENGER supports receiving/sending of the       *
+*                                                                      *
+*                                "ICQ",                                *
+*                      "AOL Instatnt Messenger",                       *
+*                     "Windows Instant Messenger",                     *
+*                                                                      *
+*                    messages and can send SMS via ICQ !!!             *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*               PHP MESSENGER is a shareware product, and it           *
+*               must be registered after 30 days usage!                *
+*                                                                      *
+*                                                                      *
+* 	       	Register PHP MESSENGER today !                         *
+* 	       	http://www.php-messenger.com/register.php              *
+*                                                                      *
+*                                                                      *
+* 	       	Get free life-time support:                            *
+* 	       	http://www.php-messenger.com/support.php               *
+*                                                                      *
+*                                                                      *
+* 	       	Get  free upgrade for all minor                        *
+* 	       	versions of PHP MESSENGER!                             *
+* 	       	http://www.php-messenger.com/upgrade.php               *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*           Requirements:                                              *
+*                                                                      *
+*           1) PHP must be compiled with                               *
+*              '--enable-sockets' option                               *
+*                                                                      *
+*           2) "Windows Instant Messenger" requires                    *
+*              '--with-openssl' and '--with-iconv' options             *
+*                                                                      *
+*           3) Sending SMS in international languages requires         *
+*              '--with-iconv' too.                                     *
+*                                                                      *
+*              You can download "PHP conv" lib                         *
+*              http://www.php-messenger.com/files/php_conv.zip         *
+*              for iconv change.                                       *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*           Copyright(c) 2004 http://www.php-messenger.com             *
+*                                                                      *
+***********************************************************************/
+
+
+
+requires "php_messenger.php" - connecting of PHP Messenger
+
+
+$pm=new PM_ICQ() - Create ICQ object
+
+
+$pm->Login($UIN,$password) - Connect to ICQ server
+
+	$UIN      - UIN
+	$password - password
+	
+	If login is completed, then function returns TRUE, otherwise it returns FALSE
+	
+
+
+$pm->Send_Message($UIN,$message_text) - Send message
+
+	$UIN          - UIN of a recipient
+	$message_text - message text
+	
+
+
+$pm->Send_Message_Confirm($UIN,$message_text) - Send message with confirm receipt
+
+	Function returns TRUE/FALSE
+Works slowly in comparison with Send_Message
+
+
+
+$incoming_message=$pm->Read_Message($wait_time) - Read incoming message
+	
+	$wait_time - waiting time in seconds, you can use fractional numbers
+                     If $wait_time==-1 - function waits for unlimited time 
+	             
+        Function returns array:                     
+
+		$incoming_message['UIN'] - UIN of sender
+		$incoming_message['message_text'] - message text
+		$incoming_message['online'] - online/offline message (TRUE/FALSE)
+
+		offline messages have the following fields:
+		
+		$incoming_message['year'] - year of message
+		$incoming_message['month'] - month of message
+		$incoming_message['day'] - day of message
+		$incoming_message['hour'] - hour of message
+		$incoming_message['minutes'] - minute of message
+	
+	If a message is not received, function returns FALSE
+		
+		
+$pm->Send_SMS($phone,$message_text) - Send SMS message
+
+	$phone - phone number (sample +79289452700)
+	$message_text - message text UTF-8
+		
+	If a message was sent, then function returns TRUE, otherwise it returns FALSE
+		
+		
+		
+$user_info=$pm->Get_User_Info($UIN) - Get info about a user
+		
+        $UIN - UIN of user
+
+        if info was received, then function returns array:
+	
+	$user_info['nickname']   - nick name
+	$user_info['first name'] - first name
+	$user_info['last name']  - last name
+	$user_info['email']      - E-mail
+		
+		
+		
+$users=$pm->Find_By_Email($email) - Find users by E-mail
+
+
+        if info was received, then function returns array:
+
+	$users[$i]['UIN']        - UIN
+	$users[$i]['nickname']   - nick name
+	$users[$i]['first name'] - first name
+	$users[$i]['last name']  - last name
+	$users[$i]['email']      - E-mail
+	$users[$i]['auth']       - whether authorization is required
+	$users[$i]['status']     - status of user
+	
+	
+$pm->Off_Line() - disconnecting with ICQ server	
+
+		
