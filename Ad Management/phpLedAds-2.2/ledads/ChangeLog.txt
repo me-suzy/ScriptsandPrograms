@@ -1,0 +1,28 @@
+phpLedAds 2.x ChangeLog -- Jon Coulter (support@ledscripts.com)
+
+2.2 - 2/26/2003, 12/30/2003
+  - Fixed getcwd() mistake (use dirname(__FILE__) instead)
+  - Fixed implode() error (related to above)
+  - Fixed pass-by-reference error on some php's
+  - Added past 30-days graph
+  - Seperated the config from the common data
+    You still edit config.inc.php, though
+  - Added feature to check for updates
+  - Upgraded to JpGraph 1.11 and fixed code to conform to the new API
+  - Removed menu when the window open to show the graphs
+  - Added Popup notice when rebuilding graphs
+  - Added (by very popular request) a display_unique option
+    This allows you to call $pla_class->adcode() multiple times within
+    the same document and it will attempt to display unique ads
+  - Used $_SERVER['PHP_AUTH_*'] variables instead of relying on the globals
+    This means that php 4.1 or newer is needed, too
+  - Nothing should rely on global variables anymore (if it does, contact me and let me know)
+  - Added rich_click.php to track the clicks of rich-media ads,
+    See readme for usage
+  - A few other cosmetic changes
+	
+2.1 
+  - Just some fixes, not released.
+
+2.0
+  - Initial Release
