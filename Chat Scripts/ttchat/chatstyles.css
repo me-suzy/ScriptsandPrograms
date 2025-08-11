@@ -1,0 +1,40 @@
+body {
+	margin : 10px;
+	font : 10pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background : White;
+}
+
+.chatmsgsarea {
+	background-color: White;
+	color : Black;
+}
+
+.chatformarea {
+	background : #99CCFF;
+}
+
+.chatusersarea {
+	background-color: #336699;
+}
+
+.chatuser {
+	background-color: #DDEEFF;
+	color: black;
+	font : 10pt/24px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	width: 96%;
+	height: 24px;
+	border: 1px solid #99CCFF;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.itsme {
+	background-color: #000080;
+	color: #FFCC00;
+	font : bold 10pt/24px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	width: 96%;
+	height: 24px;
+	border: 1px solid #0099FF;
+	padding-left: 2%;
+	padding-right: 2%;
+}
