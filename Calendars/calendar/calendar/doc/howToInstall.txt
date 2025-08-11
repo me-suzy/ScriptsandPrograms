@@ -1,0 +1,8 @@
+How to install:
+
+1. Create a new DB called 'calendar' (or whatever you specified in /inc/globals.php l.7 "mysql_select_db("calendar",$db)";
+2. Run the SQL script /sql/calendar.sql
+3. Edit /inc/globals.php "$db = mysql_connect("localhost", "username", "password");" to reflect your database configuration
+4. Change the superuser password in /inc/globals.php
+
+That's it!
