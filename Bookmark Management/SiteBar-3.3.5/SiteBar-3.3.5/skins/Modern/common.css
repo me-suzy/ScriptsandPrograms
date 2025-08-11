@@ -1,0 +1,37 @@
+.cmnBaseFont
+{
+    font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+
+.cmnPageBackground
+{
+    background: white;
+}
+
+.cmnTitle
+{
+    color: white;
+    background: #295bb1;
+}
+
+.cmnTitleColorInverse
+{
+    color: #295bb1;
+}
+
+.cmnSubTitle
+{
+    color: #295bb1;
+    background: #b2ccf7;
+}
+
+.cmnSubTitleColorInverse
+{
+    color: #b2ccf7;
+}
+
+table th
+{
+    background: #b2ccf7;
+}
