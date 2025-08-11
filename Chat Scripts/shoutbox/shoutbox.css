@@ -1,0 +1,27 @@
+A, A:active, A:visited {
+  color: black;
+}
+A:hover {
+  color: red;
+}
+.cssShoutBox {
+ 	border: 2px inset #EEEEEE;
+}
+.cssShoutForm {
+  font-family: Arial, Helvetica;
+  font-size: 11px;
+ 	background-color: #E0F0FF;
+ 	border: 2px inset #EEEEEE;
+}
+.cssShoutButton {
+  font-family: Arial, Helvetica;
+  font-size: 11px;
+}
+.cssShoutText {
+  font-family: Arial, Helvetica;
+  font-size: 11px;
+}
+.cssSmall {
+  font-family: Arial, Helvetica;
+  font-size: 9px;
+}
