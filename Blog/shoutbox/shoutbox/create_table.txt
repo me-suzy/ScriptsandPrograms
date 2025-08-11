@@ -1,0 +1,11 @@
+RUN THE SQL QUERY BELOW USING phpMyAdmin OR OTHER SQL GUI YOU'RE USING!!!
+
+CREATE TABLE shoutbox
+(
+            id INT(10) not null AUTO_INCREMENT,
+            name VARCHAR(20),
+            ip VARCHAR(15),
+            message TEXT,
+            date CHAR(20),
+            PRIMARY KEY(id)
+);
