@@ -1,0 +1,78 @@
+BODY.phpshout_body {
+	background-color:#FFFFFF; /* Background colour of frame */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+TABLE.phpshout_table {
+	background-color:#FFFFFF; /* Background colour of table */
+	font-family: Arial, Helvetica, sans-serif;
+	color:#000000; /* Font colour in table */
+	width: 90%; /* Width of table inside iframe. Will expand when iframe width is changed*/
+	font-size:12px;
+}
+
+TABLE.phpshout_adminview {
+	background-color:#FFFFFF; /* Background colour of table */
+	font-family: Arial, Helvetica, sans-serif;
+	color:#000000; /* Font colour in table */
+	width: 90%; /* Width of table inside iframe. Will expand when iframe width is changed*/
+	border-collapse:collapse;
+	border: 1px solid #D5D5D5;
+	font-size:12px;
+}
+
+TD.phpshout_posts {
+	padding:5px;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#D5D5D5;
+}
+
+TD.phpshout_editting {
+	padding:5px;
+	border-right-width:1px;
+	border-right-style:solid;
+	border-right-color:#D5D5D5;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#D5D5D5;
+}
+
+TD.phpshout_form {
+	padding:3px;
+}
+
+TH.phpshout_th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+INPUT.textfields {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 130px; /* Expand the text fields accordly with the width of your shoutbox */
+}
+
+INPUT.buttons {
+	background-color: #CCCCCC;
+	color: #000000;
+	border: 1px ridge #CCCCCC;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+P.error {
+	color: #FF0033;
+	font-weight: bold;
+}
+
+A:LINK.phpshout_link { text-decoration:none; color:#006699; }
+A:VISITED.phpshout_link { text-decoration:none; color:#006699; }
+A:HOVER.phpshout_link { text-decoration:underline; color:#006699; }
+
+A:LINK img.smilies { border: 0px solid #000000; }
+A:VISITED img.smilies { border: 0px solid #000000; }
+A:HOVER img.smilies { border: 0px solid #000000; }
