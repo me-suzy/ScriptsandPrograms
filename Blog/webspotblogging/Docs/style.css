@@ -1,0 +1,40 @@
+.post_content{
+color: #000000;
+background: #EDEDED;
+font-family: Tahoma, Verdana, Arial, Helvetica, Sans-Serif;
+font-size: 13px;
+vertical-align: center;
+}
+.content{
+color: #000000;
+background: #DCDCDC;
+font-family: Tahoma, Verdana, Arial, Helvetica, Sans-Serif;
+font-size: 13px;
+vertical-align: center;
+}
+.header{
+color: #FFFFFF;
+background: #013c74 url("images/header.gif");
+font-family: Tahoma, Verdana, Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+vertical-align: center;
+border-bottom:#000000 1px solid;
+}
+.subheader{
+color: #FFFFFF;
+background: #FFCC66;
+font-family: Tahoma, Verdana, Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+vertical-align: center;
+border-bottom:#000000 1px solid;
+}
+.tblborder{
+border:#000000 1px solid;
+background: #EFEFEF;
+}
+a:visited{
+color:blue;
+}
+body{
+background-color : #EEEEEE;
+}
