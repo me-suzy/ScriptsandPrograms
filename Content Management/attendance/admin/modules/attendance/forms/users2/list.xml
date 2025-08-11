@@ -1,0 +1,72 @@
+<form>
+	
+	<title>Pickup Users</title>
+	<width>580</width>
+	<border>true</border>
+
+	<formtag>true</formtag>
+	<method>post</method>
+	<action>index.php?mod=attendance&sub=users2&event_id={EVENT_ID}&action=assign&returnurl={PRIVATE.FORM_PREVIOUS_PAGE_ENC}</action>
+
+	<fields>
+		<_count header="No" suffix="." width="25" align="center" />
+		<user_id field="user_id" value="user_id" align="center" width="20" type="multiple" />
+		<user_name align="left" header="Name"/>
+	</fields>
+
+	<vars>
+		<event_id import="$_GET[event_id]" type="eval" />
+	</vars>
+	<header>
+		<titles>true</titles>
+
+		<buttons>
+
+			<add button="select">
+				<location>javascript:document.forms[0].submit();</location>
+			</add>
+
+
+			<return onclick="" button="return" >
+				<location>{PRIVATE.FORM_PREVIOUS_PAGE}</location>
+			</return>
+
+		</buttons>
+	</header>
+
+	<buttons>
+
+		<details onclick="" button="details" >
+			<location>index.php?mod=myprofile&sub=workers&action=userdetails&user_id={ORIGINAL_USER_ID}&returnurl={CURRENT_PAGE}</location>
+		</details>
+
+	</buttons>
+	<SQL>
+		<vars>
+			<sql_page type="page"/>
+			<sql_items type="form" var="items" />
+			<sql_table import="$this->tables['users']" type="eval"/>
+			<event import="$_GET[event_id]" type="eval" />
+
+			<sql_condition import="WHERE user_level=1" type="var"/>	
+		</vars>
+		<query>SELECT * FROM `{SQL_TABLE}` {SQL_CONDITION} ORDER BY user_name ASC LIMIT {SQL_PAGE},{SQL_ITEMS} </query>
+		<count table="{SQL_TABLE}" condition="{SQL_CONDITION}" />
+	</SQL>
+
+	<sql>
+		<vars>
+			<sql_page type="page"/>
+			<sql_items type="form" var="items" />
+			<sql_table import="$this->tables['users']" type="eval"/>
+			<where import='@implode("\",\"",$this->db->QFetchRowArray("SELECT user_id from {$this->tables[events_users]} WHERE event_id=\"{$_GET[event_id]}\"",DB_RT_SGLINE))' type="eval" />
+			<sql_condition import='WHERE user_id not in ("{WHERE}") and user_level=1' type="var" />
+	
+		</vars>
+		<query>SELECT * FROM {SQL_TABLE} {SQL_CONDITION} ORDER BY user_name asc LIMIT {SQL_PAGE},{SQL_ITEMS} </query>
+		<count table="{SQL_TABLE}" condition="{SQL_CONDITION}"/>
+	</sql>
+
+	<items>50</items>
+
+</form>
