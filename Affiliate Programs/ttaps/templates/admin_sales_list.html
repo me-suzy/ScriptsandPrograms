@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Sales listing</title>
+<link rel="STYLESHEET" type="text/css" href="mainII.css">
+</head>
+
+<body>
+
+<h1>[title_affiliates] Admininstration</h1>
+
+<h2>Sales Listing</h2>
+
+<form method="post" action="admin.php">
+<div align="center"> 
+    <input type="submit" value="CLEAR sales database" class="button">
+<input type="hidden" name="action" value="cleanlogsales">
+<br>
+    (To remove all sales entries to date)</div>
+</form>
+
+<table align="center" border="1" bordercolor="#0099FF" cellpadding="2" cellspacing="0" class="white" style="border-collapse: collapse">
+<tr>
+	<th>Name</th>
+	<th>Date</th>
+	<th>Info.</th>
+</tr>
+[sales_log]
+</table>
+<br>
+<form method="post" action="admin.php">
+<div align="center"> 
+<input type="submit" value="Return to main menu" class="button">
+<input type="hidden" name="action" value="menu">
+</div>
+</form>
+<p align="center">&nbsp;</p>
+</body>
+</html>
