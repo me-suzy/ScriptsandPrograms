@@ -1,0 +1,14 @@
+<span style="background-color: #40FF40">
+<font color = "#000000">
+<br>&lt;?php  <br>
+//ENTER THE SETTINGS FOR THE CONNECTION TO YOUR DATABASE BELOW <br>
+&#36;Host = "<font color = 'red'>localhost</font>"; // The hostname for your server. localhost is default or contact your hosts if you don't know <br>
+&#36;Dbase = "<font color = 'red'>the_name_of_your_database</font>"; // The name of your database on your database server <br>
+&#36;User = "<font color = 'red'>your_database_username</font>";  // The username required to connect to your database <br>
+&#36;Pass = "<font color = 'red'>your_database_password</font>"; // The password required to connect to your database  <br>
+// DO NOT EDIT PAST THIS LINE  <br>
+&#36;db = mysql_connect(&#36;Host, &#36;User, &#36;Pass) or die("&lt;b>&lt;br>&lt;br>Clever Copy fatal error! &lt;br>Unable to connect to the database&lt;br>One or more of the hostname, username, password or database name are probably incorrect in the admin/connect.inc file&lt;b>");<br>
+if(!&#36;db)die("&lt;b>&lt;br>&lt;br>Clever Copy fatal error! &lt;br>No connection to database could be established to database - There is a big problem. Site owner - contact your hosts!&lt;/b>"); <br>
+if(!mysql_select_db(&#36;Dbase,&#36;db))die("&lt;b>&lt;br>&lt;br>Clever Copy fatal error! &lt;br>Cannot find your database on the database server - There is a big problem. Site owner - contact your hosts!&lt;/b>");  <br>
+?&gt;
+</font>
