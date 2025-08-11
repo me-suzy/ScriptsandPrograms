@@ -1,0 +1,59 @@
+ * IMPORANT NOTE *
+
+The CaLogic folder structure and placement of some of the CaLogic
+files has changed as of CaLogic 1.2.2
+
+When updating from 1.2.1 or earlier to 1.2.2 or higher, please
+move the file "dbloader.php" from your CaLogic include folder to your
+CaLogic admin folder before running the update.
+
+
+CaLogic Update Instructions
+===========================
+
+Please read all documentation in the docs folder.
+
+For first time installations, please read the installing.txt file.
+
+For quick first time installation instructions read quick-install.txt
+
+ALWAYS START THE SETUP OR UPDATE IN A FRESH BROWSER!
+WHICH MEANS YOU SHOULD CLOSE ALL BROWSERS, OPEN A NEW ONE,
+THEN NAVIGATE TO THE SETUP OR UPDATE FILE.
+
+MAKE A BACKUP OF YOUR CURRENT CALOGIC DIRECTORY AND
+YOUR CALOGIC DATABASE JUST IN CASE!
+
+The CaLogic update program will update any previous version of CaLogic.
+
+
+Update procedure
+================
+
+1. Remove all contents from your current CaLogic folder EXCEPT THE ADMIN FOLDER!
+   NOTE: Be careful not to delete any of your own files (images for example), that
+   you may have added to the CaLogic folder.
+
+2. Upload all contents from the new CaLogic folder to your CaLogic folder.
+
+Enter the URL to update.php in your browser.
+
+For example:
+    http://www.yourweb.com/calogic/setup/update.php
+
+First the database will be updated if needed, then the configuration form
+will appear. Check / set the options for your needs, then click submit at the
+bottom of the form.
+
+
+    REMOVE THE CALOGIC SETUP FOLDER FROM YOUR WEB!!!
+
+
+To reconfigure CaLogic later, do not use the update.php file. Use the
+"CaLogic Configure" link under the Admin heading of the functions menu.
+
+
+That's it.
+
+Read all the files in the docs folder.
+
