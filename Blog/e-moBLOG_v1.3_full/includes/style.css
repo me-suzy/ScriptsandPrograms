@@ -1,0 +1,188 @@
+@charset "iso-8859-1";
+/***************************************************************************
+ *   style.css
+ *
+ *   copyright © 2004 Axel Achten / e-motionalis.net
+ *   contact: thefiddler@e-motionalis.net
+ *   this file is a part of the " e-moBLOG " weblog engine
+ *
+ *   This program is a free software. You can modify it as you wish, though
+ *   we would just appreciate if you could keep the copyright notice on the
+ *   pages (including the engine version and link)  even if you should feel
+ *   free to add your own copyright if you modified and enhanced the code.
+ *
+ *   Please note though that, this software being copyrighted means that the
+ *   whole code (or part of it) is.  You should thus not sell any version of
+ *   this program, neither any modified version of it using part of the fol-
+ *   lowing code. Moreover, please do not use it for commercial purposes.
+ *
+ ***************************************************************************/
+
+BODY { 
+	margin: 0px;
+	text-decoration: none;
+	font-family: arial, verdana, sans-serif;
+	font-size: 10px;
+	color: #346889;
+	text-align: justify;
+	background-color: #CEE1EA;
+	}
+
+TD {
+	text-decoration : none;
+	font-family: arial, verdana, sans-serif;
+	font-size: 10px;
+	color: #346889;
+	background-color: #FFFFFF;
+	text-align: justify;
+	border-style: none;
+	}
+	
+IMG {
+	border-style: none;
+	border-width: 0px;
+	}
+
+
+/* custom classes definitions *********************************** */
+
+.menu {
+	text-decoration : none;
+	font-family: arial, verdana, sans-serif;
+	font-size: 10px;
+	color: #9D0C0C;
+	text-align: right;
+	}
+
+.title {
+	text-decoration : none;
+	font-family: arial, verdana, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	}
+	
+.blogtitle {
+	text-decoration : none;
+	font-family: arial, verdana, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+	}
+
+.commtitle {
+	text-decoration : none;
+	font-family: arial, verdana, sans-serif;
+	font-size: 11px;
+	color: #9D0C0C;
+	font-weight: bold;
+	}
+
+.blogheader {
+	color: #FFFFFF;
+	background-color: #346889;
+	text-align: left;
+	}
+
+.error {
+	font-weight: bold;
+	color: #990000;
+	font-size: 11px;
+	}
+
+.status {
+	font-family: arial, verdana, sans-serif;
+	color: #346889;
+	font-size: 11px;
+	font-weight: bold;
+	}
+
+.copyright {
+	color: #B5CACF;
+	text-align: center;
+	font-size: 9px;
+	font-family: verdana, arial, sans-serif;
+	}
+	
+.visitors {
+	color: #346889;
+	text-align: center;
+	font-size: 9px;
+	font-family: verdana, arial, sans-serif;
+	}
+
+.config {
+	text-decoration: none;
+	font-family: arial, verdana, sans-serif;
+	font-size: 11px;
+	color: #346889;
+	font-weight: bold;
+	}
+
+.ralign { text-align: right; }
+.lalign { text-align: left;	}
+.calign { text-align: center; }
+
+
+/* 2nd part of custom classes definitions *********************
+   this part is intentionally kept formatted this way for easy reading */
+
+A:link { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 10px; color: #346889; }
+A:hover { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 10px; color: #346889; }
+A:visited { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 10px; color: #346889; }
+A:visited:hover { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 10px; color: #346889; }
+
+A:link.menu { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 10px; color: #346889; }
+A:hover.menu { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 10px; color: #346889; }
+A:visited.menu { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 10px; color: #346889; }
+A:visited:hover.menu { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 10px; color: #346889; }
+
+A:link.blogtitle { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 11px; color: #FFFFFF; }
+A:hover.blogtitle { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 11px; color: #FFFFFF; }
+A:visited.blogtitle { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 11px; color: #FFFFFF; }
+A:visited:hover.blogtitle { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 11px; color: #FFFFFF; }
+
+A:link.admintitle { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 10px; color: #FFFFFF; }
+A:hover.admintitle { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 10px; color: #FFFFFF; }
+A:visited.admintitle { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 10px; color: #FFFFFF; }
+A:visited:hover.admintitle { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 10px; color: #FFFFFF; }
+
+A:link.adminquestion { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 10px; color: #FFFFFF; }
+A:hover.adminquestion { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 10px; color: #FFFFFF; }
+A:visited.adminquestion { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 10px; color: #FFFFFF; }
+A:visited:hover.adminquestion { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 10px; color: #FFFFFF; }
+
+A:link.commtitle { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 11px; color: #9D0C0C; }
+A:hover.commtitle { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 11px; color: #9D0C0C; }
+A:visited.commtitle { text-decoration : underline; font-family: arial, verdana, sans-serif; font-size: 11px; color: #9D0C0C; }
+A:visited:hover.commtitle { text-decoration : none; font-family: arial, verdana, sans-serif; font-size: 11px; color: #9D0C0C; }
+
+A:link.copyright { text-decoration : underline; font-family: verdana, arial, sans-serif; font-size: 9px; color: #B5CACF; }
+A:hover.copyright { text-decoration : none; font-family: verdana, arial, sans-serif; font-size: 9px; color: #B5CACF; }
+A:visited.copyright { text-decoration : underline; font-family: verdana, arial, sans-serif; font-size: 9px; color: #B5CACF; }
+A:visited:hover.copyright { text-decoration : none; font-family: verdana, arial, sans-serif; font-size: 9px; color: #B5CACF; }
+
+.boxes {
+	font-family: arial, verdana, sans-serif;
+	font-size: 7pt;
+	color: #000000;
+	background-color: #FFFFFF;
+	border-top: 1px;
+	border-left: 1px;
+	border-right: 1px;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #346889;
+	}
+
+.buttons {
+	font-family: arial, verdana, sans-serif;
+	font-size: 7pt;
+	color: #346889;
+	width: 80px;
+	background-color: #FFFFFF;
+	border-top: 1px solid #346889;
+	border-left: 1px solid #346889;
+	border-right: 1px solid #346889;
+	border-bottom: 1px solid #346889;
+	}
