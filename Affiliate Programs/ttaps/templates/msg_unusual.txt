@@ -1,0 +1,32 @@
+Dear Sir or Madam,
+
+
+If you want:
+
+An ebook on personal development;
+An ebook on ecommerce web design;
+Free Perl cgi-scripts;
+Internet marketing advice;
+
+Go here: [script_root]affil.php?affil=[nickname]
+
+
+================================================
+
+The sender of this email should be known to you.
+
+The original author hopes to direct enough 
+visitors to the web site above to earn free 
+software. 
+
+Please forward this email to people known to you 
+too.
+
+If the sender is not known to you at all, please 
+forward this email to:
+mailto:[spam_notify_email]
+with the subject: SPAM REPORT.
+
+=================================================
+
+Thank you.
