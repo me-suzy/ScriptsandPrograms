@@ -1,0 +1,25 @@
+/* 
+PHP AGTC-Click Counter v1.0a
+Copyright 2005 AGTC
+CSS Document 
+*/
+body {
+font-family: Arial, Helvetica, sans-serif;
+color:#FFCC00;
+}
+.small { font-family:Arial, Helvetica, sans-serif;
+font-size:small;
+color:#FFCC00;
+}
+.smallred { font-family:Arial, Helvetica, sans-serif;
+font-size:small;
+color:#FF0000;
+}
+A:hover { font-family:Arial, Helvetica, sans-serif;
+font-size:small;
+color:#00CCFF;
+}
+.smallwhite { font-family:Arial, Helvetica, sans-serif;
+font-size:small;
+color:#CCCCCC;
+}
