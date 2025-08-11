@@ -1,0 +1,115 @@
+/***********************************************************************
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                          PHP MESSENGER 1.0                           *
+*                                                                      *
+*               Messaging tool for PHP developers!                     *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                PHP MESSENGER supports receiving/sending of the       *
+*                                                                      *
+*                                "ICQ",                                *
+*                      "AOL Instatnt Messenger",                       *
+*                     "Windows Instant Messenger",                     *
+*                                                                      *
+*                    messages and can send SMS via ICQ !!!             *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*               PHP MESSENGER is a shareware product, and it           *
+*               must be registered after 30 days usage!                *
+*                                                                      *
+*                                                                      *
+* 	       	Register PHP MESSENGER today !                         *
+* 	       	http://www.php-messenger.com/register.php              *
+*                                                                      *
+*                                                                      *
+* 	       	Get free life-time support:                            *
+* 	       	http://www.php-messenger.com/support.php               *
+*                                                                      *
+*                                                                      *
+* 	       	Get free upgrade for all minor                         *
+* 	       	versions of PHP MESSENGER!                             *
+* 	       	http://www.php-messenger.com/upgrade.php               *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*           Requirements:                                              *
+*                                                                      *
+*           1) PHP must be compiled with                               *
+*              '--enable- sockets' option                              *
+*                                                                      *
+*           2) "Windows Instant Messenger" requires                    *
+*              '--with-openssl' and '--with-iconv' options             *
+*                                                                      *
+*           3) Sending SMS in international languages require          *
+*              '--with-iconv' too.                                     *
+*                                                                      *
+*              You can download "PHP conv" lib                         *
+*              http://www.php-messenger.com/files/php_conv.zip         *
+*              for iconv change.                                       * 
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*           Copyright(c) 2004 http://www.php-messenger.com             *
+*                                                                      *
+***********************************************************************/
+
+
+
+requires "php_messenger.php" - connecting to PHP Messenger
+
+
+$pm=new PM_MSN() - Create MSN object
+
+
+$pm->Login($email,$password) - Connect to server
+
+	$email    - email
+	$password - password
+	
+	If login is completed, then function returns TRUE, otherwise it returns FALSE
+	
+
+
+$pm->Send_Message($email,$message_text) - Send message
+
+	$email        - email of recipient
+	$message_text - Message text
+	
+	Use User_Off_Line function if you don't continue dialog with recipient
+	
+
+$pm->User_Off_Line($email) - Close switchboard session with user,
+
+	$pm->users - list of connected users  	
+        
+        $pm->users[$email]['nick'] - nick name 
+        $pm->users[$email]['type'] - 'in'/'out'
+           'out' - user is connected after sending him/her a message
+           'in'  - user connected to server himself/herself
+
+$pm->Send_Message_Confirm($email,$message_text) - is similar to Send_Message
+
+	
+$incoming_message=$pm->Read_Message($wait_time) - Read incoming message
+	
+	$wait_time - waiting time in seconds, you can use fractional numbers
+                     If $wait_time==-1 - function waits for unlimited time
+
+	             
+        Function returns array:                     
+
+		$incoming_message['UIN'] - email of sender
+		$incoming_message['message_text'] - message text
+
+	If a message is not received, function returns FALSE
+		
+		
+$pm->Off_Line() - disconnection with ICQ server
+
+		
