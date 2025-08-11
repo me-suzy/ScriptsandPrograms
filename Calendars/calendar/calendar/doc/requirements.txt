@@ -1,0 +1,2 @@
+Well, these bunch of scripts were written for a MySQL DB.
+If you got the DB and PHP running, you are basically set!
