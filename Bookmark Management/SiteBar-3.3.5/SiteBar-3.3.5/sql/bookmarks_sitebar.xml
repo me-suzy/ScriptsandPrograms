@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xbel PUBLIC
+    "+//IDN sitebar.org//DTD XML Bookmark Exchange Language for SiteBar 1.0//EN//XML"
+    "http://sitebar.org/xml/xbel-sitebar-1.0.dtd">
+<xbel version="1.0">
+  <title>SiteBar Project</title>
+  <info>
+    <metadata owner="https://secure.teamforge.net/sitebar.org/my"/>
+  </info>
+  <folder id="n1" custom_order="n16915~11:n16916~12:n16914~10:n16917~13:n16918~14:n16919~15:l117735~1:l117736~2" order="1" sort_mode="custom" added="2005-01-12T20:40:59+0100" visited="2005-09-23T21:29:29+0200" modified="2005-04-06T12:36:19+0200">
+    <title>SiteBar Project</title>
+    <desc>SiteBar Project related bookmarks.</desc>
+    <bookmark href="http://sitebar.org" modified="2005-03-26T09:10:59+0100" visited="2005-09-23T15:17:35+0200" id="l117735" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:44+0200" hits="489" is_dead="0" favicon="http://my.sitebar.org/skins/Modern/root_transparent.png" validate="1" order="1">
+      <title>Homepage</title>
+    </bookmark>
+    <bookmark href="http://sitebar.org/translations.php" modified="2005-04-06T12:36:19+0200" visited="2005-09-23T21:29:29+0200" id="l117736" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:44+0200" hits="354" is_dead="0" favicon="http://my.sitebar.org/skins/Modern/root_transparent.png" validate="1" order="2">
+      <title>Translations</title>
+    </bookmark>
+    <folder id="n16914" id_parent="n1" custom_order="l117737~1:l117738~2" order="10" sort_mode="custom" added="2005-01-12T20:40:59+0100" visited="2005-09-24T10:03:08+0200" modified="2005-05-08T16:48:17+0200">
+      <title>Forums, Bugs &amp; RFE</title>
+      <bookmark href="http://sourceforge.net/forum/forum.php?forum_id=261003" modified="1999-11-30T00:00:00+0100" visited="2005-09-21T19:07:38+0200" id="l117737" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:46+0200" hits="516" is_dead="0" favicon="http://sourceforge.net/images/favicon.ico" validate="1" order="1">
+        <title>Help</title>
+      </bookmark>
+      <bookmark href="http://sourceforge.net/forum/forum.php?forum_id=261002" modified="1999-11-30T00:00:00+0100" visited="2005-09-20T10:56:25+0200" id="l117738" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:46+0200" hits="251" is_dead="0" favicon="http://sourceforge.net/images/favicon.ico" validate="1" order="2">
+        <title>Open Discussion</title>
+      </bookmark>
+      <bookmark href="http://sitebar.org/bugs.php" modified="2005-05-08T16:48:17+0200" visited="2005-09-24T10:03:08+0200" id="l117749" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:44+0200" hits="149" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Bugs &amp; Feature Requests</title>
+      </bookmark>
+      <bookmark href="http://sourceforge.net/forum/forum.php?forum_id=354789" modified="1999-11-30T00:00:00+0100" visited="2005-09-20T11:34:24+0200" id="l118889" private="0" target="" added="2005-05-08T16:45:16+0200" tested="2005-09-24T20:26:47+0200" hits="67" is_dead="0" favicon="http://sourceforge.net/images/favicon.ico" validate="1" order="1000">
+        <title>Features and Direction</title>
+        <desc>Discussion forum, real requests should go to Bugzilla.</desc>
+      </bookmark>
+    </folder>
+    <folder id="n16915" id_parent="n1" custom_order="l117739~1:l117740~10:l117741~11:l117742~12" order="11" sort_mode="custom" added="2005-01-12T20:40:59+0100" visited="2005-09-23T21:29:15+0200" modified="2005-04-07T22:44:03+0200">
+      <title>Development Team</title>
+      <bookmark href="http://brablc.com/" modified="1999-11-30T00:00:00+0100" visited="2005-09-20T12:29:40+0200" id="l117739" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:45+0200" hits="75" is_dead="0" favicon="http://brablc.com/favicon.ico" validate="1" order="1">
+        <title>Ondrej Brablc</title>
+      </bookmark>
+      <bookmark href="http://sitebar.org/team.php" modified="2005-04-07T22:44:03+0200" visited="2005-09-23T21:29:15+0200" id="l117740" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:45+0200" hits="154" is_dead="0" favicon="http://my.sitebar.org/skins/Modern/root_transparent.png" validate="1" order="10">
+        <title>SiteBar Team</title>
+      </bookmark>
+      <bookmark href="http://www.mindslip.com/" modified="1999-11-30T00:00:00+0100" visited="2005-09-20T17:41:17+0200" id="l117741" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:47+0200" hits="55" is_dead="0" favicon="http://www.mindslip.com/favicon.ico" validate="1" order="11">
+        <title>David Szego</title>
+      </bookmark>
+      <bookmark href="http://gunnarwrobel.de/" modified="1999-11-30T00:00:00+0100" visited="2005-09-20T11:34:24+0200" id="l117742" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:48+0200" hits="51" is_dead="0" favicon="" validate="1" order="12">
+        <title>Gunnar Wrobel</title>
+      </bookmark>
+    </folder>
+    <folder id="n16916" id_parent="n1" custom_order="l117743~1:l117744~2:l117745~3:l117746~4" order="12" sort_mode="custom" added="2005-01-12T20:40:59+0100" visited="2005-09-24T17:57:20+0200" modified="2005-03-25T23:48:09+0100">
+      <title>Documentation</title>
+      <bookmark href="readme.txt" modified="2005-03-25T23:48:09+0100" visited="2005-09-22T21:00:52+0200" id="l117743" private="0" target="" added="2005-01-12T20:40:59+0100" tested="1999-11-30T00:00:00+0100" hits="417" is_dead="0" favicon="" validate="1" order="1">
+        <title>Read Me</title>
+      </bookmark>
+      <bookmark href="doc/install.txt" modified="2005-01-12T21:00:23+0100" visited="2005-09-24T17:57:20+0200" id="l117744" private="0" target="" added="2005-01-12T20:40:59+0100" tested="1999-11-30T00:00:00+0100" hits="611" is_dead="0" favicon="" validate="1" order="2">
+        <title>Installation &amp; Upgrade Guide</title>
+      </bookmark>
+      <bookmark href="doc/history.txt" modified="2005-01-12T20:57:12+0100" visited="2005-09-24T10:24:59+0200" id="l117745" private="0" target="" added="2005-01-12T20:40:59+0100" tested="1999-11-30T00:00:00+0100" hits="190" is_dead="0" favicon="" validate="1" order="3">
+        <title>History Log</title>
+      </bookmark>
+      <bookmark href="doc/licence.txt" modified="2005-01-12T21:00:46+0100" visited="2005-09-22T21:23:00+0200" id="l117746" private="0" target="" added="2005-01-12T20:40:59+0100" tested="1999-11-30T00:00:00+0100" hits="133" is_dead="0" favicon="" validate="1" order="4">
+        <title>GNU General Public License</title>
+      </bookmark>
+    </folder>
+    <folder id="n16917" id_parent="n1" custom_order="l117747~10:l117748~11:l117749~13:l117750~21:l117751~22" order="13" sort_mode="custom" added="2005-01-12T20:40:59+0100" visited="2005-09-23T21:31:43+0200" modified="2005-05-08T16:49:51+0200">
+      <title>Project Details</title>
+      <bookmark href="http://sourceforge.net/projects/sitebar" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T21:31:43+0200" id="l117747" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:49+0200" hits="196" is_dead="0" favicon="http://sourceforge.net/images/favicon.ico" validate="1" order="10">
+        <title>Project Page</title>
+      </bookmark>
+      <bookmark href="http://sourceforge.net/project/showfiles.php?group_id=76467" modified="1999-11-30T00:00:00+0100" visited="2005-09-22T18:36:21+0200" id="l117748" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:49+0200" hits="182" is_dead="0" favicon="http://sourceforge.net/images/favicon.ico" validate="1" order="11">
+        <title>Downloads</title>
+      </bookmark>
+      <bookmark href="http://sourceforge.net/project/stats/?group_id=76467" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T21:29:14+0200" id="l117750" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:49+0200" hits="114" is_dead="0" favicon="http://sourceforge.net/images/favicon.ico" validate="1" order="21">
+        <title>Project Statistics</title>
+      </bookmark>
+      <bookmark href="http://teamforge.net/viewcvs/viewcvs.cgi/trunk/?root=SiteBar" modified="2005-05-08T16:49:51+0200" visited="2005-09-20T17:41:49+0200" id="l117751" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:49+0200" hits="87" is_dead="0" favicon="http://teamforge.net/favicon.ico" validate="1" order="22">
+        <title>Subversion via ViewCVS</title>
+      </bookmark>
+    </folder>
+    <folder id="n16918" id_parent="n1" custom_order="" order="14" sort_mode="user" added="2005-01-12T20:40:59+0100" visited="2005-09-23T23:56:31+0200" modified="2005-04-03T23:45:26+0200">
+      <title>Promotion</title>
+      <bookmark href="http://freshmeat.net/projects/sitebar/" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T21:36:15+0200" id="l117753" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:53+0200" hits="138" is_dead="0" favicon="http://freshmeat.net/favicon.ico" validate="1" order="1000">
+        <title>freshmeat.net</title>
+      </bookmark>
+      <bookmark href="http://www.hotscripts.com/Detailed/26925.html" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T21:29:32+0200" id="l117752" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:51+0200" hits="151" is_dead="0" favicon="http://www.hotscripts.com/favicon.ico" validate="1" order="1000">
+        <title>HotScripts.com</title>
+      </bookmark>
+      <bookmark href="http://www.needscripts.com/Resource/13537.html" modified="2005-04-03T23:45:26+0200" visited="2005-09-23T21:29:28+0200" id="l117755" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:51+0200" hits="113" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Need Scripts</title>
+      </bookmark>
+      <bookmark href="http://www.webscriptsdirectory.com/PHP/Bookmarks/SiteBar-L791/" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T23:56:31+0200" id="l117754" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:26:50+0200" hits="131" is_dead="0" favicon="http://www.webscriptsdirectory.com/favicon.ico" validate="1" order="1000">
+        <title>Web Scripts Directory</title>
+      </bookmark>
+    </folder>
+    <folder id="n16919" id_parent="n1" custom_order="" order="15" sort_mode="added" added="2004-10-21T23:07:21+0200" visited="2005-09-24T20:27:46+0200" modified="2005-09-24T20:28:45+0200">
+      <title>References</title>
+      <bookmark href="http://blog.foosel.net/serendipity/archives/57-Lets-manage-those-bookmarks!.html" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T23:12:53+0200" id="l250348" private="0" target="" added="2005-08-04T09:53:11+0200" tested="2005-09-24T20:26:52+0200" hits="55" is_dead="0" favicon="http://blog.foosel.net/favicon.ico" validate="1" order="1000">
+        <title>Let's manage those bookmarks! - blog.foosel.net</title>
+      </bookmark>
+      <bookmark href="http://jimmetzger.net/sediments/?p=177" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T21:29:30+0200" id="l202654" private="0" target="" added="2005-07-08T16:13:10+0200" tested="2005-09-24T20:26:56+0200" hits="74" is_dead="0" favicon="http://jimmetzger.net/favicon.ico" validate="1" order="1000">
+        <title>my sediments exactly &gt;&gt; SiteBar vs Furl vs The Rest</title>
+      </bookmark>
+      <bookmark href="http://blog.aboutcw.com/archives/sitebar-uh-yes-please" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T21:28:29+0200" id="l202653" private="0" target="" added="2005-07-08T16:08:22+0200" tested="2005-09-24T20:27:02+0200" hits="60" is_dead="0" favicon="" validate="1" order="1000">
+        <title>blog.aboutcw.com &gt;&gt; Sitebar? uh yes please</title>
+      </bookmark>
+      <bookmark href="http://astrotips.com/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=105&amp;newlang=&amp;topic=6&amp;catid=8" modified="1999-11-30T00:00:00+0100" visited="2005-09-16T10:48:27+0200" id="l201220" private="0" target="" added="2005-07-08T09:43:52+0200" tested="2005-09-24T20:27:02+0200" hits="7" is_dead="0" favicon="http://astrotips.com/favicon.ico" validate="1" order="1000">
+        <title>NEW in AstroTips: Sitebar</title>
+      </bookmark>
+      <bookmark href="http://www.framasoft.net/article2938.html" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T22:09:39+0200" id="l188682" private="0" target="" added="2005-06-21T23:06:35+0200" tested="2005-09-24T20:26:54+0200" hits="77" is_dead="0" favicon="http://www.framasoft.net/NAVPICS/favicon.ico" validate="1" order="1000">
+        <title>SiteBar - Gestion de Liens - Logiciels Libres - Framasoft</title>
+      </bookmark>
+      <bookmark href="http://www.c3m.org/index.php/?2005/05/30/4-sitebar-rocks" modified="1999-11-30T00:00:00+0100" visited="2005-09-22T19:34:39+0200" id="l186191" private="0" target="" added="2005-06-21T11:55:27+0200" tested="2005-09-24T20:26:55+0200" hits="81" is_dead="0" favicon="http://62.39.33.224/favicon.ico" validate="1" order="1000">
+        <title>SiteBar Rocks! - Hal's Web Site</title>
+      </bookmark>
+      <bookmark href="http://www.pcmag.com/article2/0,1759,1825111,00.asp" modified="1999-11-30T00:00:00+0100" visited="2005-09-24T04:41:39+0200" id="l180435" private="0" target="" added="2005-06-14T10:25:55+0200" tested="2005-09-24T20:26:57+0200" hits="104" is_dead="0" favicon="http://www.pcmag.com/favicon.ico" validate="1" order="1000">
+        <title>Solution from PC Magazine: Access Your Bookmarks from Anywhere</title>
+      </bookmark>
+      <bookmark href="http://ooine.com/index.php?title=sitebar_bookmark_server&amp;more=1&amp;c=1&amp;tb=1&amp;pb=1" modified="1999-11-30T00:00:00+0100" visited="2005-09-20T10:56:53+0200" id="l180434" private="0" target="" added="2005-06-14T10:24:28+0200" tested="2005-09-24T20:26:59+0200" hits="11" is_dead="0" favicon="http://ooine.com/favicon.ico" validate="1" order="1000">
+        <title>Ooine.com - SiteBar Bookmark Server</title>
+      </bookmark>
+      <bookmark href="http://chrison.net/CommentView,guid,5cfc8667-9190-4a3a-a1c8-92ec6477e3f6.aspx" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T21:29:32+0200" id="l180432" private="0" target="" added="2005-06-14T10:20:21+0200" tested="2005-09-24T20:26:59+0200" hits="79" is_dead="0" favicon="" validate="1" order="1000">
+        <title>this.Pose() as Expert</title>
+      </bookmark>
+      <bookmark href="http://weblogs.hianoto.net/?p=67" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T23:56:30+0200" id="l176469" private="0" target="" added="2005-06-09T17:39:26+0200" tested="2005-09-24T20:27:01+0200" hits="76" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Hian’s Weblogs � Blog Archive � SiteBar</title>
+      </bookmark>
+      <bookmark href="http://www.computerra.ru/gid/rtfm/internet/38864/" modified="2005-05-17T01:40:50+0200" visited="2005-09-23T21:39:04+0200" id="l129790" private="0" target="" added="2005-05-17T01:40:01+0200" tested="2005-09-24T20:27:02+0200" hits="85" is_dead="0" favicon="http://www.computerra.ru/images/n/kt_new.ico" validate="1" order="1000">
+        <title>Как хранить интернет-закладки в сети?</title>
+      </bookmark>
+      <bookmark href="http://blog.jochen-lillich.de/index.php?/archives/27-Bookmarks-im-Web.html" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T23:56:34+0200" id="l117767" private="0" target="" added="2005-04-27T13:01:51+0200" tested="2005-09-24T20:27:04+0200" hits="92" is_dead="0" favicon="http://blog.jochen-lillich.de/favicon.ico" validate="1" order="1000">
+        <title>Bookmarks im Web - Home of Geewiz</title>
+      </bookmark>
+      <bookmark href="http://blog.eichenberg-online.de/archives/34-Sitebar-entdeckt.html" modified="1999-11-30T00:00:00+0100" visited="2005-09-24T10:48:41+0200" id="l117768" private="0" target="" added="2005-04-27T12:58:27+0200" tested="2005-09-24T20:27:03+0200" hits="100" is_dead="0" favicon="http://blog.eichenberg-online.de/favicon.ico" validate="1" order="1000">
+        <title>Sitebar entdeckt - :: CrUisErs BLOG ::</title>
+      </bookmark>
+      <bookmark href="http://www.baileybug.com/blog/?p=36" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T21:29:11+0200" id="l117766" private="0" target="" added="2005-04-27T12:50:12+0200" tested="2005-09-24T20:27:04+0200" hits="90" is_dead="0" favicon="http://www.baileybug.com/blog/wp-content/themes/green-marinee/favicon.ico" validate="1" order="1000">
+        <title>baileybug.com - now running: sitebar</title>
+      </bookmark>
+      <bookmark href="http://joncellini.com/blog/archives/2005/01/30/sitebar/" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T21:29:29+0200" id="l117758" private="0" target="" added="2005-02-21T20:51:22+0100" tested="2005-09-24T20:27:06+0200" hits="125" is_dead="0" favicon="" validate="1" order="1000">
+        <title>JonCellini.com » SiteBar</title>
+      </bookmark>
+      <bookmark href="http://www.tomcarroll.org/index.php?p=30" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T21:27:57+0200" id="l117760" private="0" target="" added="2005-01-12T21:48:42+0100" tested="2005-09-24T20:27:06+0200" hits="109" is_dead="0" favicon="http://www.tomcarroll.org/favicon.ico" validate="1" order="1000">
+        <title>tomcarroll.org</title>
+      </bookmark>
+      <bookmark href="http://www.andylanger.de/index.php?p=7" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T19:44:54+0200" id="l117757" private="0" target="" added="2005-01-12T21:45:43+0100" tested="2005-09-24T20:27:05+0200" hits="100" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Maintain Aircraft Control &gt;&gt; Link Community</title>
+      </bookmark>
+      <bookmark href="http://www.lobrecht.com/displayarticle422.html" modified="2005-09-24T20:28:45+0200" visited="2005-09-24T20:27:46+0200" id="l117761" private="0" target="" added="2005-01-12T21:35:39+0100" tested="2005-09-24T20:27:10+0200" hits="105" is_dead="0" favicon="http://www.lobrecht.com/favicon.ico" validate="1" order="1000">
+        <title>The Lobrecht Family Website</title>
+      </bookmark>
+      <bookmark href="http://kniebes.net/2004/06/21/sitebar" modified="1999-11-30T00:00:00+0100" visited="2005-09-21T00:14:36+0200" id="l117762" private="0" target="" added="2005-01-12T21:19:09+0100" tested="2005-09-24T20:27:06+0200" hits="73" is_dead="0" favicon="http://deep-resonance.org/favicon.ico" validate="1" order="1000">
+        <title>Kniebes.net</title>
+      </bookmark>
+      <bookmark href="http://www.mis98.com/joediev/archives/2003_12.html#000157" modified="1999-11-30T00:00:00+0100" visited="2005-09-22T08:37:23+0200" id="l117765" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:27:15+0200" hits="106" is_dead="0" favicon="http://joediev.mis98.com/favicon.ico" validate="1" order="1000">
+        <title>Joedie Villanueva's Blog</title>
+      </bookmark>
+      <bookmark href="http://www.netalive.org/topics/17074" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T22:09:38+0200" id="l117763" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:27:07+0200" hits="103" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Netalive.org</title>
+      </bookmark>
+      <bookmark href="http://www.yhbt.com/article.php?story=20030928163414229" modified="1999-11-30T00:00:00+0100" visited="2005-09-23T21:27:59+0200" id="l117764" private="0" target="" added="2005-01-12T20:40:59+0100" tested="2005-09-24T20:27:11+0200" hits="105" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Philip Lowman's Blog</title>
+      </bookmark>
+      <bookmark href="http://pidea.co.uk/news.php?extend.9" modified="2005-01-12T21:24:37+0100" visited="2005-09-23T21:29:13+0200" id="l117759" private="0" target="" added="2004-11-29T23:32:06+0100" tested="2005-09-24T20:27:11+0200" hits="108" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Pidea New Media</title>
+      </bookmark>
+      <bookmark href="http://www.abbruchco.de/mainzelM/blog/index.rb?date=20040928#p01" modified="1999-11-30T00:00:00+0100" visited="2005-09-24T16:54:41+0200" id="l117756" private="0" target="" added="2004-10-21T23:07:21+0200" tested="2005-09-24T20:27:11+0200" hits="159" is_dead="0" favicon="" validate="1" order="1000">
+        <title>mainzelM blog(2004-09-28)</title>
+      </bookmark>
+    </folder>
+  </folder>
+</xbel>
