@@ -1,0 +1,4 @@
+CREATE TABLE homepage (id tinyint(3) unsigned NOT NULL auto_increment,nom varchar(255) NOT NULL,mise_en_page_id tinyint(3) unsigned DEFAULT '0' NOT NULL,rubriques_id varchar(255) NOT NULL,PRIMARY KEY (id),UNIQUE nom (nom))
+CREATE TABLE liens (id tinyint(3) unsigned NOT NULL auto_increment,actif char(1),titre varchar(255) NOT NULL,rubrique_id tinyint(3) unsigned DEFAULT '0' NOT NULL,url varchar(255) NOT NULL,PRIMARY KEY (id),KEY titre (titre))
+CREATE TABLE mise_en_page (id tinyint(3) unsigned NOT NULL auto_increment,fond varchar(6) NOT NULL,couleur_titre varchar(6) NOT NULL,taille_titre char(1) NOT NULL,couleur_lien varchar(6) NOT NULL,taille_lien char(1) NOT NULL,police varchar(255) NOT NULL,titre varchar(255),target char(1) DEFAULT '1' NOT NULL,PRIMARY KEY (id))
+CREATE TABLE rubriques (id tinyint(3) unsigned NOT NULL auto_increment,actif char(1),titre varchar(255) NOT NULL,position char(2),PRIMARY KEY (id),KEY titre (titre))
