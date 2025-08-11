@@ -1,0 +1,101 @@
+ABCdatos BotLink|http://www.abcdatos.com/botlink/|BotLink
+Alkaline|http://www.vestris.com/alkaline|AlkalineBOT
+AskJeeves|http://www.ask.com|Jeeves
+Atomz.com Search Robot|http://www.atomz.com/|Atomz
+Baiduspider|http://www.baidu.com/search/spider.htm|Baiduspider
+CMC/0.01|http://www2.next.ne.jp/music/|CMC/0.01
+Checkbot|http://degraaff.org/checkbot/|Checkbot
+ChristCrawler.com|http://www.christcrawler.com/index.cfm|christcrawler
+CoolBot|http://www.suchmaschine21.de|CoolBot
+Cusco|http://www.cusco.pt/|cusco
+CyberSpyder Link Test|http://www.cyberspyder.com/cslnkts1.html|cyberspyder
+Desert Realm Spider|http://spider.desertrealm.com|desertrealm
+Digger|http://www.diggit.com/|digger
+Digimarc Marcspider/CGI|http://www.digimarc.com/|Digimarc CGIReader
+Direct Hit Grabber|http://www.directhit.com|grabber
+DragonBot|http://www.paczone.com/|DragonBot
+FAST-WebCrawler|http://www.alltheweb.com/help/webmaster/crawler|FAST-WebCrawler
+FastCrawler|http://www.1klik.dk/omos/|fastcrawler
+Felix IDE|http://www.pentone.com|FELIX IDE
+FetchRover|http://www.engsoftware.com/spiders/|ESIRover
+Fluid Dynamics Search Engine robot|http://www.xav.com/scripts/search/|FDSE
+Girafabot|http://www.girafa.com|girafabot
+Golem|http://www.quibble.com/golem/|golem
+Googlebot|http://www.googlebot.com/bot.html|googlebot
+Griffon|http://www.ocn.ne.jp/search/|griffon
+Gulper Bot|http://yuntis.ecsl.cs.sunysb.edu/help/robot/|gulper
+Grub Client|http://grub.org|grub-client
+HamBot|http://www.hamrad.com/|hambot
+Hämähäkki|http://www.fi/www/spider.html|Hämähäkki
+I, Robot|http://irobot.mame.dk/about.phtml|irobot
+Informant|http://informant.dartmouth.edu/about.html|Informant
+Inspector Web|http://www.greenpac.com/inspector/ourrobot.html|inspectorwww
+Internet Cruiser Robot|http://www.krstarica.com/eng/url/|Internet Cruiser Robot
+Internet Shinchakubin|http://naragw.sharp.co.jp/myweb/home/|sharp-info-agent
+Iron33|http://verno.ueda.info.waseda.ac.jp/iron33/history.html|Iron33
+JCrawler|http://www.nihongo.org/jcrawler/|jcrawler
+JoBo Java Web Robot|http://www.matuschek.net/software/jobo/|jobo
+KIT-Fireball|http://www.fireball.de/|KIT-Fireball
+KO_Yappo_Robot|http://yappo.com/|ko_yappo_robot
+LabelGrabber|http://www.w3.org/PICS/refcode/LabelGrabber/index.htm|label-grabber
+LinkWalker|http://www.seventwentyfour.com/tech.html|linkwalker
+Lycos|http://www.lycos.com|lycos
+MSNBot|http://search.msn.com/msnbot.htm|msnbot
+MerzScope|http://www.merzcom.com|MerzScope
+MindCrawler|http://www.mindpass.com/_technology_faq.htm|MindCrawler
+Muscat Ferret|http://www.aprsmartlogik.com/|MuscatFerret
+Nederland.zoek|http://www.nederland.net/|Nederland.zoekNorthern Light Gulliver||gulliver
+ObjectsSearch|http://www.ObjectsSearch.com/|ObjectsSearch
+Orb Search|http://orbsearch.home.ml.org|Orbsearch/1.0
+ParaSite|http://www.ianett.com//|ParaSite
+PerlCrawler 1.0|http://www.xav.com/scripts/xavatoria/index.html|perlcrawler
+PiltdownMan||piltdownman
+Portal Juice Spider|http://www.portaljuice.com/pjspider.html|pjspider
+PortalB Spider|http://www.portalb.com/|PortalBSpider
+RoboCrawl Spider|http://www.canadiancontent.net/corp/spider.html|RoboCrawl
+Robozilla|http://www.dmoz.org/newsletter/2000Aug/robo.html|Robozilla/1.0
+RuLeS|http://www.rules.be|RuLeS
+Scooter|http://addurl.altavista.com/|Scooter
+SearchProcess|http://www.intelligence-process.com|searchprocess
+Senrigan|http://www.info.waseda.ac.jp/search-e.html|Senrigan
+Sift|http://www.worthy.com/|sift
+Simmany Robot Ver1.0|http://simmany.hnc.net/irman1.html|SimBot
+Site Valet|http://valet.webthing.com/|Site Valet
+Skymob.com|http://www.skymob.com/about.html|skymob
+Sleek|http://search-info.com/|sleek
+Snooper|http://darsun.sit.qc.ca|snooper
+Solbot|http://kvasir.sol.no/|solbot
+Speedy Spider|http://www.entireweb.com/|speedy
+SpiderBot|http://pisuerga.inf.ubu.es/lsi/Docencia/TFC/ITIG/icruzadn/details.htm|SpiderBot/1.0
+Spiderline Crawler|http://www.spiderline.com/|spiderline
+TechBOT|http://www.echaid.net/TechBOT/|TechBOT
+Templeton|http://www.bmtmicro.com/catalog/tton/|templeton
+Tutorial Crawler|http://www.tutorgig.com/crawler|tutorgig
+URL Check|http://www.cutternet.com/products/urlck.html|urlck
+UdmSearch|http://mysearch.udm.net/|UdmSearch
+VWbot|http://vancouver-webpages.com/VWbot/aboutK.shtml|VWbot_K
+Verticrawl|http://www.verticrawl.com/|verticrawl
+Walhello appie|http://www.walhello.com/aboutgl.html|appie
+WallPaper (alias crawlpaper)|http://sourceforge.net/projects/crawlpaper/|crawlpaper
+WebBandit Web Spider|http://pw2.netcom.com/~wooger/|WebBandit/1.0
+WebReaper|http://www.webreaper.net/|webreaper
+WebSpider|http://www.csi.uottawa.ca/|webspiderWebVac
+WebStolperer|http://www.suchfibel.de/maschinisten/text/werkzeuge.htm (in German)|WOLP
+WebWalker||WebWalker
+Webinator|http://www.thunderstone.com/texis/site/pages/webinator.html|T-H-U-N-D-E-R-S-T-O-N-Eweblayers
+WISEnutBot|http://www.WISEnutbot.com|ZyBorg
+XGET|http://www2.117.ne.jp/~moremore/x68000/soft/xget_en.html|XGET
+Yahoo! Slurp|http://help.yahoo.com/help/us/ysearch/slurp/index.html|slurp
+cIeNcIaFiCcIoN.nEt|http://www.cienciaficcion.net/|cIeNcIaFiCcIoN
+fido|http://www.planetsearch.com|fido
+gammaSpider, FocusedCrawler|http://www.gammasite.com|gammaSpider
+havIndex|http://www.hav.com/|havIndex
+legs|http://www.MagPortal.com/|legs
+mnoGoSearch search engine software|http://www.mnogosearch.org/features.html|udmsearch
+newscan-online|http://www.newscan-online.de/|newscan-online
+pegasus|http://pegasus.opensource.or.id|pegasus
+psbot|http://www.picsearch.com/bot.html|psbot
+spider_monkey|http://www.mobrien.com/add_site.html|mouse.house
+w@pSpider by wap4.com|http://wap4.com/portfolio.htm|wapspider
+webs|http://webdew.rnet.or.jp/service/shank/NAVI/SEARCH/info2.html|webs
+whatUseek Winona|http://www.whatUseek.com/|winona
