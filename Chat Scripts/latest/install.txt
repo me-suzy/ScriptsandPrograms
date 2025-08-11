@@ -1,0 +1,17 @@
+Thank you for installing, If you like this tagboard
+Please donate and/or join the Forums:
+
+http://www.knoxious.co.uk/phpBB2/
+www.Knoxious.co.uk
+
+To install:
+
+1. Edit all the configuration variables in the index.php file
+   with your prefered Text Editor.
+2. Upload to your server.
+3. CHMOD tag.db and ban.db (Your $txt_filename and $banfile) to 0777.
+4. Finish, add an iFrame in a page that links to the
+   index.php file.
+
+Need support? Visit the Forums: 
+http://www.knoxious.co.uk/phpBB2/
