@@ -1,0 +1,162 @@
+/**
+ * Default Form styles
+ * Feel free to override all these styles in your own skins
+ */
+
+
+/* Shared */
+
+form {
+	margin: 0;
+	padding: 0;
+} /* thanks #mozilla */
+form.inline {
+	margin: 0px;
+	padding:0px;
+	display: inline;
+}
+
+fieldset.input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+input[type=checkbox]
+{
+	margin:1px;
+}
+
+.notes,
+.dimmed {
+	font-size: 84%;
+	color: #999;
+	font-weight:normal;
+}
+fieldset div.notes {
+	margin: 0 0 1ex 3ex;
+}
+
+
+span.field_error {
+	color: #f00;
+}
+
+input.field_error,
+select.field_error,
+textarea.field_error {
+	background:#fbf2ee;
+	border: 1px solid #d99;
+}
+span.checkbox_error {
+	background:#fbf2ee;
+	border: 1px solid #d99;
+}
+span.checkbox_error input.checkbox {
+	background:#fbf2ee;
+}
+
+
+input.field_required,
+select.field_required,
+textarea.field_required {
+	background:#f4ffe8;
+}
+span.checkbox_required {
+	background:#f4ffe8; /* does this make sense? - same question applies for span.checkbox_error  */
+	border: 1px solid #f4ffe8; /* very light */
+}
+span.checkbox_required input.checkbox {
+	background:#f4ffe8; /* very light */
+}
+
+
+input.large,
+textarea.large {
+	width: 97%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+label.radiooption {
+	margin-right: 1em;
+}
+
+/* Enhanced form */
+.eform label {
+	font-weight:bold;
+}
+
+
+/* 24/75% forms - Fast Forms */
+.fform fieldset {
+	border: 1px solid #ddd;
+	margin: 0 0 1ex 0;
+	background-color: #fff;
+	padding: .5ex 1ex;
+}
+.fform fieldset fieldset {
+	border: none;
+	margin: 1ex;
+	padding: 0;
+	/* border: 1px solid #00f; */
+}
+.fform div.label {
+	float: left;
+	width: 24%;
+	text-align: right;
+	font-weight:bold;
+	margin: 0;
+	padding-top: .5ex;
+	/* border: 1px solid #f00; */
+}
+.fform div.input {
+	margin: 0 0 0 25%;
+	/* border: 1px solid #f00; */
+}
+.fform fieldset.input{
+	margin: 0;
+	/* border: 1px solid #0f0; */
+}
+
+.fform div.info {
+	margin: 0 0 0 25%;
+	padding-top: .5ex;
+	/* border: 1px solid #f00; */
+}
+
+/* 18/80% forms: comments and profile */
+form.bComment fieldset
+{	/* one form line */
+	border: none;
+	margin: 2ex 0ex;
+	padding: 0ex;
+	/* border: 1px solid #00f; */
+}
+form.bComment fieldset label {
+	font-weight: bold;
+}
+form.bComment fieldset div.label
+{ /* label of form line */
+	float: left;
+	width: 18%;
+	text-align: right;
+	padding-top: .5ex;
+	font-weight: bold;
+	/* border: 1px solid #f00; */
+}
+form.bComment fieldset div.input
+{ /* input zone of form line */
+	margin: 0 0 0 20%;
+	/* border: 1px solid #f00; */
+}
+form.bComment fieldset.input{
+	margin: 0;
+	/* border: 1px solid #0f0; */
+}
+form.bComment fieldset div.info
+{ /* info zone of form line */
+	margin: 0 0 0 20%;
+	padding-top: .5ex;
+	/* border: 1px solid #f00;*/
+}
