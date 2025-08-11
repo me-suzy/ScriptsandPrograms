@@ -1,0 +1,900 @@
+Changes and further developments to CaLogic
+===========================================
+
+Please read all documentation in the docs folder.
+
+
+Version 1.2.2
+=================
+Started: 20 July 2004, Finished: 13 Nov 2004
+
+ * IMPORANT NOTE *
+
+The CaLogic folder structure and placement of some of the CaLogic
+files has changed as of CaLogic 1.2.2
+
+When updating from 1.2.1 or earlier to 1.2.2 or higher, please
+move the file "dbloader.php" from your CaLogic include folder to your
+CaLogic admin folder before running the update.
+
+Always read the updating.txt file when updating.
+
+
+Changes:
+
+The mini cal plugin has been updated. Anyone using this feature should
+see the mcpi-demo.php file for the changes. There is a new "block" that
+has to be added to your html documents that include the mini cal plugin.
+
+There is a new field in the _setup table called calogic_uid.
+This filed is generated one time upon installation or during
+an update if it has not yet been generated. It contains a
+unique value called a GUID. This value can and must be used
+for automating Admin functions. The calogic_uid is very important.
+You should take great care not to expose the calogic_uid. Do not
+use it in links. It is meant only to be used in php programs.
+
+CaLogic now has an Automation API.
+
+Functions that are automated:
+    Creating and deleting a user
+    Creating and deleting a calendar
+    Automatically logging a user on
+    Emulating a user
+
+Emulating a user is already built in:
+Admins can now "Emulate" or logon as other users without needing a password. To do this,
+logon as admin, go to the user settings, select the user you want to emulate, then click
+"Emulate User". Doing this will log the admin user off and log you on as the selected
+user. This function is intended to help you support your users.
+
+For instructions on how to automate CaLogic using the Automation API, read
+the automating_calogic.txt file in the docs folder.
+
+The CaLogic session handling has been somewhat modified.
+CaLogic now sets a cookie that stores the session ID. This
+takes care of a few problems that I have experienced over the
+years. For example, the PHP setting use_trans_sid is now
+irrelevant. Also, because of the cookie, the PHP Session ID
+no longer has to be transmitted with links when use_trans_sid
+is turned off. The bad part about this is, the user must
+accept a cookie or the session will not be propagated from
+page to page. CaLogic includes a P3P header stipulating
+that no Personal Information is stored, and that the cookie
+is only for session state.
+
+CaLogic no longer requires the PHP setting of register_globals to be on.
+
+Language tables have been updated a little.
+Also, Language Table entries now get added dynamically,
+so if you have done some adding your self, there should
+be no conflicts with the uid field. Meaning any future
+changes I make will not (should not) conflict with changes
+you may have made, or may make.
+
+Each user can now set thier own time zone offset in the user settings area.
+And there is a new "time zone lock" feature, when activated, it ensures that
+the time zone offset you enter does not get changed when logging on. This is
+to correct the problems that some have reported, when being on hosted
+systems that do not have the correct time zone set. (and thier provider was
+unwilling to do anything about it).
+
+Added the per calendar option to allow the showing of events in
+"Out of Month cell blocks" in the month view and mini cal.
+Those are the cell blocks in the month and mini calendar, that
+belong to the previous and next month. In the standard setup,
+they are white in color, and usualy only display the day number.
+Well, if you enable this option, these cells will also display
+any events for those days. To turn this on, a user must turn on
+the option "Display Out of Month Day Numbers".
+This was a user requested modification.
+
+*Finally* added all of the "per calendar" configuration options that
+were only available in the Admin config area, to the Calendar Config
+area. This means, that if the site admin allows it, a calendar owner now
+has more calendar configuration options. For example, the header
+and footer banner settings can now be set on a per calendar basis.
+Basically all the options in the admin config area, that are under the
+headings of: "Site Look and Feel" and "Calendar Look and Feel" can
+now also be set on a per calendar basis. And if you look close enuf
+at previous versions, it is even stated there next to the heading in
+the admin config area, that "these are the default values, and that they
+can be changed in the calendar config area" by the calendar owners. But
+that wasn't true up til now. Also, I've added options to those areas in the
+admin config, that gives you, the admin, the option of turning these
+options on or off for the calendar owners. Also, because these
+are new options that the users have never had, they are turned off
+by default. So if you want to allow your calendar owners to be able to
+change any of the settings for thier own calendars, you will have to enable
+the options that allow them to make the changes.
+Note that admin users will always be able see the per calendar
+settings in the calendar config area. I also know, that perhaps
+a lot of normal users may be overwhelmed by the many new configuration
+options. so, you as site admin may choose to just keep the settings
+turned off.
+
+The Standard Default Calendar Option has been moved from the Calendar Config
+Area to the CaLogic Admin Config Area. This is where it belongs anyway.
+
+The Email format for reminders can now be set individually for users, contacts,
+and event subscribers. There are 3 types of email format: plain text, HTML and
+SMS. SMS is a short plain text format that will not excede 150 characters. It is
+used for sending mail to PDAs or cell phones (handy) or other devices that may
+have a charcter limit. The Email Format Setting field in the CaLogic Config Area
+was used to set all current users, contacts and subscribers. Now, it's only use
+is for the site owner notification mails that get sent out. All other System mail
+settings are still used, like the "User Name in Email" setting for example.
+In order for anonymous subscribers to be able to make use of the SMS option
+a site admin must enable the new "Allow Anonymous Subscriber SMS" option in
+the CaLogic config area. Thanks to Gerry for helping me figure out how to get
+this option rolling.
+This was (partially) a user requested modification.
+
+The Calendar Title and user name has been removed from the upper part of the header.
+This is because it is now an option to have the title shown.
+
+Admins can now see/configure/delete calendars of other users. However
+the user events on a private calendar will not be seen by the editing admin.
+This was a user requested modification.
+
+Added the admin option to turn off the functions menu for non admin users.
+
+Added the admin option for the text used to name the functions menu.
+This was a user requested modification.
+
+Rearranged the Admin Config Area a little, so that the "site" options are
+separated from the "per calendar default" options.
+
+Added font and color configuration options for the popups. User customisation
+of these options can also be turned on or off.
+
+The Week, Month and Year view "Pull down" menus as well as the calendar pull
+down menu have all been replaced with a new menu. This new "Horizontal Bar Menu"
+is designed to save space and look nice. The colors and fonts of this menu are configurable
+in the CaLogic Admin Config Area, and if allowed, in the individual calendar configurations.
+The Side Bar "Sliding Functions Menu" can now either be placed in the new
+Horizontal Menu Bar, or be left on the side or both.
+This was (partly) a user requested modification.
+
+The Popup and Menu color configurations for the individual calendars has made up
+a new area in the CaLendar Config Area.
+
+Added options to control the displaying of the mini calendar in each view.
+The options are: Left, Right, Both or none. If left or right is selected then
+the current month will be displayed. If both is chosen then the previous and
+next months will be displayed. Guess what happens if you chose none? ;-)
+These options are also user customisable in the View Areas of the Calendar Config Area.
+This was a user requested modification.
+
+A calendar owner can now specify, if conflicting events can be saved or not.
+This was a user requested modification.
+
+The contacts list is now sorted by last name, first name. The list of
+reminder contacts is also now sorted in the event view.
+
+The word "<script" will now be replaced with "< \ script"
+in all areas that allow for user input. This is to stop hacking.
+Because CaLogic allows for HTML in the description, it was possible to enter
+a bogus description that could cause anything from endless popups to relocating.
+I did this because a Guestbook of mine was hacked in this manner. I tested to
+see if I could do the same thing with CaLogic and I could. So I modified it to the
+extent I think will effectively prevent such misuse.
+
+There is now a "Check for Updates" link on the CaLogic Config form" Click it to check
+if there are updates available. The check will open in its own window.
+
+Fixed a bug in the week view that caused a clicked event to show the wrong date.
+Thanks to Kate for the report *and* the fix!
+
+Fixed a probelm that, when the week view is defined as the starting view,
+it was not showing the correct dates, and the Week Pull Down dates
+were all wrong upon startup. Thanks to all who reported this bug.
+
+Fixed a bug that appeared only when the Default Calendar Option was turned
+on, and then the Public View Option was turned on. Thanks to Mitch for his
+help in getting this error fixed.
+
+fixed a security leak that allowed any user (even the guest user) to delete
+any event on any calendar. I also found this same kind of "bug" in other
+areas and killed it as well.
+
+Fixed some bugs I found on the contacts form. Also, selecting Association mode no
+longer clears the selected contacts/groups.
+
+Fixed a bug that caused some repeating events to be shown on the wrong day
+
+
+Version 1.2.1
+=================
+29 May 2004
+
+The changes made in this version are mostly user requests.
+Some long awaited, some new.
+
+As I stated in the previous version, I will be releasing
+CaLogic after each few changes instead of trying to do alot
+of changes in each release.
+
+As usual, make sure you backup your CaLogic database and
+folder structure before updating.
+
+Changes:
+
+Fixed a few minor bugs.
+
+Calendar pulldown menu is now sorted alphabetically.
+
+Changed the demo mode to not allow for changing of the
+Calendar name, title or type.
+
+Added the per calendar option to have event conflict checking
+be restricted to events that are in the same categorie.
+
+Reminder info now does not show when reminders are turned off.
+
+Added the per calendar option to allow for displaying of the
+calendar title in the view header.
+
+Added the per calendar option that allows you to control exactly
+which Event Information gets displayed. Calendar owners and admins
+will always be able to see all event info on thier own calendars.
+
+The Guest user (available only when "Public View" is on) can now post
+events to open calendars. If you do not like this setting, then you
+have to change your open calendars to public ones.
+
+IMPORTANT: Don't forget. Befor updating or installing for the first
+time, it is important that you close all of your open browsers, then
+open a new browser and navigate to one of the files: update.php
+(for updating) or setup.php (for first time installing).
+
+
+
+
+
+Version 1.2.0
+=================
+12 April 2004
+
+NOTE!!!
+This is quite an extensive update. I highly urge you to make a backup
+of your CaLogic Database and program files before updating. If something
+goes wrong with the update, you will need to restore the database and
+program files.
+
+YOU HAVE BEEN WARNED!
+
+As usual, I have tested CaLogic to the best of my ability. But because this
+is such an enormous update, I expect there will be some bugs....
+Now it's up to you to find and report them.
+
+Fixed problems with the mini calendar plug in. I had made so many changes to
+other parts of CaLogic, I forgot to update the mini cal. It is working now.
+Please read the mcpi-demo.php file. This file is an example of how to
+integrate a mini calendar into any php page. There are also new
+variables that must be set in the file.
+
+Fixed a bug that caused problems with events when more than 9 contacts
+or groups were in the database.
+
+fixed a bug that allowed events to be submitted, even when the check
+conditions had not been met.
+
+fixed a bug with the Event Collision Check. Thanks to Justice for submitting
+this bug report.
+
+fixed a bug in the user editor.
+
+fixed the problem with week numbers not being consistant. also fixed the
+week select box itself, it wasn't working properly.
+
+fixed the language selection problem for public view. Now a "Guest" viewer
+can select any language, and it won't conflict with other "Guest" users.
+
+fixed a problem with the back ground color not be displayed.
+
+the font and font color can now be set for each calendar individually. If it is
+not set, then the global font and color will be used.
+
+Added the Swedish language, many thanks to Christian Sahlé for the translation.
+
+For security purposes, now only the event creator and admins can see the
+email address of subscribers.
+
+Optimized the Email Syntax checker.
+
+Extended the demo mode to allow view of all options.
+
+Added "multiple groups per contact". Now, a contact can belong to more than
+one group. Also, contacts ang groups can now be shared with other users.
+
+Added a "Forgot my Password" button to the logon screen. To request a new
+password, a user must enter thier e-mail address. If the address is found
+in the user table, an e-mail will be sent to them with a confirmation link.
+Once the user clicks on the confirmation link, a new random password will
+be generated and sent to them via e-mail. To prevent cracking, no error
+message gets displayed if the requested e-mail does not exist in the user
+table. As a matter of fact, it will look like request was succsessful.
+
+Added "Remember my user name and password" check box to the logon screen.
+Now it is possible to have your user name and pasword stored in a cookie
+for one year.
+
+User registration is also now an option. Admins can opt to not allow
+for user registration.
+
+Admins may now manually create users. Manually created users do not
+have to confirm thier registration.
+
+Added Extended Event Fields. This was a very difficult thing to do, and
+it's one of the reasons this release took so long. And it was worth it!
+
+Extended Event Fields are a way to allow you to define fields that can
+be filled out when creating/editing an event. They are dynamic fields.
+There is no limit to the number of fields you can define. There is also
+no limit to the number of fields an event can have. You can define the
+fields either when creating/editing an event, or in the Extended Event
+Field Manager. You can define three types of fields. Input (a single line),
+Textarea (multiple line), and Select fields. In select fields, you also
+must supply the options. Fields can be defined as "required", meaning it
+must be filled, or it can be standard, meaning it will automatically be
+displayed but don't have to be filled in. Also, input fields
+can be set for validation. Meaning that if it is filled, it must meet
+certain requirements. there are 3 types of validation available;
+Date, Number and Text. Also, Input fields have a max length option.
+Any non required fields can be removed from an event. Also, non
+required fields are automatically removed if empty.
+As Admin, you can opt to allow users to create / add extended
+fields in the CaLogic Config area.
+
+Added Event Reminder Subscriptions. This feature allows anyone to
+subscribe for an event reminder. It is also used for adding Registered
+users to the reminder list. For this to work, reminders must be
+turned on by an admin. And the event creator must then allow for
+event reminder subscriptions by activating the check box when creating
+or editing the event. If a person subscribes themself for a reminder,
+they must confirm the subscription thru an automated email, much like
+that when registering (double opt in). If a series event is subscribed for,
+then an "unsubscribe" link is included in the reminder mail.
+
+Event reminders are also now flexible. Meaning each contact can have
+a different reminder interval set. This is also true for Event Reminder
+Subscribers.
+
+Using the Event Subscriptions function, it is now quite easy to create
+multiple reminders for the same event. Just keep creating reminder
+subscriptions for yourself.
+
+Added User Password History. Now, an admin can define the amount of time
+a password is valid, after that, a user must change their password before
+logging on. There are no grace logons allowed. An admin can also define the
+min length of passwords, as well as the use interval. Admins can now set
+other users passwords. Or designate that the user must change their password
+upon next login.
+
+Added the ability to make "Exceptions" to series events.
+Exceptions will allow you to exclude individual occurances of series events.
+Each exception can be "re-instated".
+
+Added a "history log". Now, (almost) all actions are recorded in the history log
+table. The history log can only be viewed by admins. In a later version,
+calendar owners will also be able to view the log, if the admin allows it.
+
+A user can now copy or move events between it's calendars or to other
+open/public calendars. An admin can copy/move an event to any calendar.
+Event collisions are not checked during a copy/move, but the collision
+will naturally display in a view. Copying an event creates a new event
+on the calendar to which it is copied. The copied to event is not in any
+way connected to the copied from event. Event reminders as well as Extended
+Fields will be copied if restrictions permit. For example, if you
+create an extended field for use only by you, on your own calendars, and then
+copy an event that uses this extent to a calendar not owned by you, then the
+extent won't (obviously can't) be copied. Also, Exceptions are not copied or moved.
+
+The "Event Status Column" can now be turned on or off on a per calendar
+basis.
+
+Added a "Database Maintenance" section for admins. it is now possible
+to backup and restore your CaLogic database right from within CaLogic.
+
+Enhanced the Event Description Popup. Also, when holding the mouse over a day
+on the mini cal which has an event will display a popup with the event information.
+
+
+
+Whew! Time for a vacation!
+
+
+
+Version 1.1.9
+=================
+31 July 2003
+
+Updated the "reminders.txt" file. This is the documentation on how to setup
+reminders, as well as other files in the docs folder.
+
+Added the French language to the database. Merci to Antoine Hurtado for
+translating. But remember, there is still a lot of hard coded english in
+the program. I hope to get it all in the language tables soon.
+
+Fixed an error in the reminders script, that caused the wrong contact name to
+appear in the email, if more than one user/contact was on the reminders list.
+
+Event collisons are now reported when adding an event. If an event collison
+is detected, you will be given a list of events that collide with the new event.
+You will then be given the choice of saving the event as is, editing the event or
+deleting it.
+Because CaLogic has the option of creating an event series that never ends, event
+collisons will only be detected as far into the future as you set the "Reminder
+Days in Advance" setting for. So, if you set reminders to be checked up to lets
+say 365 days into the future, then event collison checks will only reach 365 days
+from the first day of the new event. The Collision check also only allows a max
+of 400 days.
+
+Collision Checking can be turned on or off on a per calendar basis. Do this on
+the Calendar Config page. Also, you can choose to include "All Day Events" in
+the collision checking or not.
+
+Enhanced the Event status column. The Event Status Columnm, is the small space
+on the left of every event. In earlier versions, only an "R" would be shown
+for events with Reminders. Now, 3 more Status marks get shown. An "A" for all day
+events, an "S" for series or repeating events, and a "C" for events that collide
+with other events.
+
+Finally added the long awaited "Standard Font Option". It is now possible to change
+the font to be used in displaying the different calendar views. It can only be changed
+in the Admin Configuration area.
+
+
+Version 1.1.8
+=================
+26 July 2003
+
+Another patch.
+
+
+I (or rather CaLogic users) have run into an interesting problem. It seems
+that if you Have Apache 2.x and PHP 4.2.2 installed, then mixed HTML
+and PHP on one line doesn't always work. If you have this combination,
+or if you are experiencing things like; clicking on the new event
+button just brings you back to the calendar view, or the setup isn't
+completing, then you have this problem. Well, it has been fixed with
+this version. At least all the problems that have been reported to me
+have been fixed :-)
+
+
+
+Version 1.1.7
+=================
+24 July 2003
+
+
+Another patch.
+
+Fixed a wierd bug that caused the blank page to appear after submitting
+the Database settings form. I thought it was fixed in 1.1.6, but it was
+obviously not. Thanks to Eric for letting me use his server to get this
+bug killed.
+
+
+
+Version 1.1.6
+=================
+23 July 2003
+
+This is basicly a patch, but I always release all files.
+
+Added the footer link and "alt" text for header and footer links.
+I really did this time, scouts honor!
+
+Fixed the problem with the setup / update that caused a blank
+page to show after the datadase setup. It seems a few of the
+files did not have the proper line endings.
+Thanks to Support Site User Iom for finding this error.
+
+
+
+
+Version 1.1.5
+=================
+18 July 2003
+
+I have made some significant code changes in this version. almost every file
+has been modified. Most of the changes, have to do with the handling of
+the different magic_quotes settings. So if you notice any stray backslash
+characters (\) please let me know.
+
+I have also implemented a PHP function, that I hope will take care of any
+problems regarding REGISTER_GLOBALS. If it works, it should no longer
+matter if the setting is turned off or on.
+
+Fixed an error in the reminder script that caused the reminder mail
+to be corrupted.
+
+Fixed a few problems with the setup / update routines.
+
+Added a routine that checks email addys for invalid characters.
+
+Added a German Language file. However, it is somewhat incomplete. Also, there is
+still lots of hard coded english. There is also a problem with selecting
+a language other than the default.
+
+Updated the documentation, so please....
+read all the files in the docs folder.
+
+
+
+Version 1.1.4
+=================
+14 July 2003
+
+This is just a small fix, but an important one.
+
+Fixed errors in the setup / update routines.
+
+
+
+Version 1.1.3
+=================
+22 February 2003
+
+Fixed all bugs reported to me.
+
+Sorry, I had forgotten to finish the footer link function in the previous
+version. But hey! Now you can also add the "alternate text" for the
+header and footer images! Thats the text that shows up when you place
+the mouse over an image, and in case the image don't show up for some
+reason, then the "alternate text" is displayed in its place.
+
+Added a new option to the calendar config page. Now you can choose how
+you want the weeks to be numbered. Either the ISO way, which states:
+Weeks range from 01 to 53, where week 1 is the first week that has at
+least 4 days in the current year, and with Monday as the first day of the week
+Or the other way which states: The first week in January with a Monday is week 1.
+Although the ISO method states, that you must also have your weeks starting
+on Monday, CaLogic does not enforce this rule. Meaning you could set to use
+the ISO method, and still have your weeks start with sunday. But then the
+week numbers probably won't match any paper calendars you have.
+
+Finally added the long missed and awaited "Forgot Password" routine. It is
+of course only available from the logon screen. The procedure will mail
+the user a new password that must be confirmed. Only after the confirmation
+will the original password be changed.
+
+
+
+Version 1.1.2
+=================
+20 February 2003
+
+Fixed all bugs reported to me.
+
+The header and footer links are now working.
+
+Greatly enhanced the setup and update routines. The
+setup will no longer run if CaLogic is already installed.
+To re-run the setup, you must remove or rename the settings.php
+file and the dbloader.php file.
+The update routine will now update your installation of
+CaLogic no matter what version you are updating from. Also,
+running the update repeatedly will have no inadvertent
+effects.
+
+Have added the reminder configuration variables to the
+setup table. So now, there is REALLY no more need to
+edit or set anything in any text files. You will however
+need to set the variables on the configuration form to
+the same values you had set in the remcfg.php file.
+
+Modified the send reminder script to also support SMTP.
+
+Corrected some errors in the Standard Default Calendar option.
+
+It no longer matters how PHP's magic_quotes variables are set,
+either on or off will work.
+
+Added more information to the readme file.
+
+
+
+Version 1.1.1
+=================
+14 February 2003
+
+This is mostly a fix up version. But it does have some
+additions as well.
+
+Added an additionl field to the events form called
+"Sub Title". The text descriptor for this field is freely
+definable from the CaLogic Configuration form.
+For example, you could define it as "Location:" if you wanted.
+The field and it's descriptor only get displayed in views and
+mails, if something is entered in the field when adding/editing
+the event.
+
+Clicking on an event in the month or week view with the CTRL key
+held down, will open the event in a popup view window.
+
+Fixed some code that could have caused major data integrity
+problems.
+
+I had to make some changes / additions to make usage of the
+Standard Default Calendar option more reliable.
+
+Made some methodic changes as to how the management of
+users / calendars is handled.
+
+All documents are now located in the docs folder. Most of
+the documents have been updated, you should read them all.
+
+Fixed a few errors that I found along the way.
+
+
+
+Version 1.1.0
+=================
+09 February 2003
+
+
+CaLogic is no longer an Alpha Version. After a year
+of Alpha releases, I think we can consider it a well
+tested (and used) application.
+
+So, what's new in this version? Actually quite a bit.
+
+All the bugs found and reported have been fixed.
+
+The setup and update routines have been fine tuned.
+
+The email sending systm has beed redone, and SMTP
+mail is now supported.
+
+Admin email is finished. This option will allow the admin
+to receive an email under certain circumstances. For
+example when a user registers, or when a new event is
+created.
+
+Categories can now be defined as "Global", meaning that
+all users can use them. But only the creator of the
+category can delete or change it.
+
+An example of the category is also now displayed when
+adding / editing an event.
+
+Event creator name display can now be turned off.
+
+There is a new option called "Standard Default Calendar".
+When turned on, all new users are assigned the calendar
+you select. This feature should be used if you only want
+to have one calendar shared by all users. Therefore, the
+calendar you select as the standard default must be of
+open or public type.
+To activate this feature, go to the Calendar
+Configuration screen and turn on the option.
+This option also sets various other options.
+User customisation is turned off.
+The Calendar Quick Navigation is turned off.
+These options could still be turned back on. But it
+isn't advised. If you turn the "Standard Default Calendar"
+option off again, then you must turn the other options back
+on yourself if you wish.
+
+The View Navigation pull down menus can now be turned off or on.
+This is a prelude to the ability to turn each view off and on,
+which is not yet finishd.
+
+Fixed a problem with the functions menu that caused it to
+do the jitter bug.
+
+Well, that's about it for this version. See you in the next one!
+
+
+
+Version 1.0.5a.P1
+=================
+24 January 2003
+
+
+This is a Bug fix release. To implement the fix, just upload
+all files to your CaLogic folder, overwritting the files
+already there.
+
+Fixed the bug that displayed the wrong day names of repeating
+events when using Sunday as the first day of the week setting
+
+
+
+Version 1.0.5a
+==============
+18 January 2003
+
+First of all, my apologies that this version took so long to get out.
+Second, if you had requested a feature that is not yet in this
+version, sorry again. I will get to it as soon as I can.
+
+What's new? Probably not as much as you had hoped, but still...
+
+The Install process is now fully automated. No more editing of
+any text files EXCEPT for the reminders config file (remcfg.php).
+The three variables in this file must still be set by hand.
+The main reason for this is, there is a lot to read in that file.
+It is more of a tutorial that a config file. So if you want reminders
+on a unix/linux system, read that file, as well as readme_reminders.txt.
+
+The Admin user is now automatically created durring the setup process unless
+you are updating, in which case it is assumed that admin has already been created.
+
+Overlapping events are highlighted with box frames in the day and week views.
+
+The "Functions" pull down is now a "floating" menu. It is visible in the
+upper left corner. Just place your mouse over it, and it will slide open.
+
+Administrators have access to the Site Configuration link located on the
+functions menu.
+
+Lots of new Site configuration settings.
+
+The Calendar configuration can be disabled for normal users.
+
+Users can now choose from a list of calendars in the header of each view.
+
+PHP Error reporting is now controlled in the script, so no more stupid
+warnings and or notices.
+
+Events can now be "Shared" on public and open calendars. I.e. if you or
+anyone creates an event on an open or public calendar, all other users
+will also be able to see the event. But only the creator of the event or
+administrators can edit or delete the event. In addition, user names are
+displayed above the events created by other users.
+
+The "Public view calendar" is finished. If you choose to use this feature,
+a special user and calendar will be created (User "Guest" calendar "Public").
+Then, any time someone surfs to the calendar, the "Guest" user will automatically
+be logged on and the  "Public view calendar" will be displayed.
+This "Guest" user cannot add/change/delete events, or change the look of the
+calendar, unless demo mode is on.
+
+
+Thats about it for this version.
+
+Read the "readme.txt" for instructions on installing / updating.
+
+
+
+Version 1.0.4a.P2
+==============
+9.07.2002
+
+All files of previous version patches are also
+included in this patch
+
+Fixed an error with the minical and year views.
+If a category was defined without a background
+color, the day with event cell would show up
+totally black. Such a day will now default to
+the standard color of days with events.
+
+
+
+Version 1.0.4a.P1
+==============
+06.07.2002
+
+This is a patch to version 1.0.4a
+
+Fixed an error in the reminders script that was reporting
+only the start date of a repeating event in Reminder Mails.
+
+Fixed a problem with the 12 Hour option. It just wasn't
+working properly.
+
+Backgroung colors of days with events in the mini calendar
+and the year view, will now show the color of the category
+of the first event of that day. If no category is specifyed, then
+the default color will be used.
+
+A new option in the config.php will allow you to turn off the
+"Event Scroll Box". The variable name is $withesb, if set
+to false, then the scroll box will not be used.
+
+Antoher new option in the config.php will tell CaLogic
+wether or not to use names in the To and From fields of
+E-Mails. Some E-Mail programs do not work properly if anything
+other than an e-mail address is in the To and From
+fields. If you find your emails not working properly,
+try setting this to false. The variable name is $uniem.
+
+Yet another option in the config.php $showomd, will allow you to
+turn on or off the display of "out of month" days in the month and
+mini cal view.
+
+Fixed a java script error in the color picker.
+
+In the event form is now an example box of colors picked.
+
+bcmath functions were replaced with regular math functions,
+because a lot of people did not have bcmath options available.
+
+fixed an error that when the year view was selected as the
+start view, the current month would be the first month shown,
+instead of january.
+
+
+
+Version 1.0.4a
+==============
+19.06.2002
+
+The reminders function is now finished. To set up reminders,
+set variables and read the information in the
+/include/remcfg.php file, and in the readme_reminders.txt file.
+
+Corrected errors in the Language table, and recoded the method
+of replacing the variable language entries.
+
+Corrected bugs that have been reported.
+
+Removed back quotes from sql statements.
+
+Reorganized the directrory structure a little.
+
+Changed the "Requirements" section of the readme.txt
+
+AS of version 1.0.4a, I will be distributing CaLogic as a
+zip file only. (Win Zip version 6.2 (32 bit).
+
+
+
+Version 1.0.3a
+==============
+07.06.2002
+
+Fixed some bugs that showed up when using categories. This bug
+would not show up on the demo site.
+
+
+
+Version 1.0.2a
+==============
+02.06.2002
+
+
+User Names that contain anything other than letters and numbers
+are no longer accepted.
+
+Fixed a few problems with the storage of certain information
+in the database that was causing problems.
+
+Added extended query error reporting, now line numbers and file names
+are reported as well if the error occurs durring a database query.
+
+
+
+Version 1.0.1a
+==============
+01.06.2002
+
+
+A major bug was reported to me and fixed. This bug made
+every user an admin.... sorry about that.
+
+Events can now be edited.
+
+The day view now shows events.
+
+The Time Zone Offset can now be set for your contacts. This
+allows for reminders to be sent to your contacts at the right time.
+
+Events are now shown expanding over the full durration of the event
+in the Week and Day views. If there are two events occuring durring
+the same time frame, this expansion cannot take place, and the events
+are shown in the hour which they start.
+
+
+
+Version 1.0.0a
+==============
+31.05.2002
+
+
+This is the very first release. Nothing to report yet.
