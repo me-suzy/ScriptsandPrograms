@@ -1,0 +1,72 @@
+Hi,
+
+CaLogic has grown into a huge application. It has evolved form the first version mainly through user requests.
+So I thought it was about time to make a full feature list.
+
+
+CaLogic is a multi user, multi calendar per user web event calendar application.
+It is programmed with php and javascript (IE 5.5 and above). It uses MySQL to store its data.
+
+
+Features Version 1.2.2:
+
+[u]General[/u]
+- CaLogic is free, and it always will be
+- Free support. I support my program with pride
+- Extremly fast and simple install and update
+- The update script will update from ANY previous version
+- NO editing of ANY script files
+- Can be installed on any web server that supports php and MySQL
+- Password protected logon
+- Password recovery
+- Admin definable minimum password length, time to expire and number of logon attempts before lockout
+- Multi Language
+- Multiple calendars per user, each with an individual design
+- Standard default calendar option
+- Year, Month, Week and day views
+- Per calendar definable standard view
+- Printer friendly view
+- Extremly flexible per calendar color and font configuration
+- Self contained database backup and restore
+- Uses SMTP or sendmail
+- 24 or 12 hour format display
+- weeks can start on Monday or Sunday (per calendar)
+- Flexible week number calculation
+- Open, Public and Private calendar types
+- Optional Guest view of Public and Open calendars (no logon required for "Guest" user)
+- Optional user registration
+- Time zone consideration
+- User name and Password cookie option for easy logon
+- Contact database
+- Contact groups
+- Contact sharing
+- Admin user management
+- Header and footer logo support
+- Views can be turned on or off by admin
+- Easy calendar switching
+- Optional demo mode
+- Optional admin email notification of significant actions
+- History log
+- Uses PHP Sessions
+- Global or individual Calendar configuration
+- Automation API
+- Admin user emulation
+
+[u]Events[/u]
+- Repeating events of any kind
+- Repeating event exceptions
+- Event text supports HTML
+- Event reminders per email
+- Event reminder email subscriptions
+- Multiple reminders per event
+- Admin or user definable per calendar Event information fields (Extended fields)
+- Global Extended fields
+- Freely definable event categories
+- Categorie sharing
+- Optional per calendar event conflict checking
+- Conflict checking can be limited to events with-in the same category
+- Move or copy events between calendars
+- Very nice popup information of events
+- Per calendar configurable event information display
+- Optional compact event display
+
