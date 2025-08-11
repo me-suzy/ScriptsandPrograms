@@ -1,0 +1,157 @@
+/***********************************************************************
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                          PHP MESSENGER 1.0                           *
+*                                                                      *
+*               PHP áèáëèîòåêà äëÿ îáìåíà ñîîáùåíèÿìè !                *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                PHP MESSENGER ïîääåðæèâàåò ïðèåì/îòïðàâêó             *
+*                              ñîîáùåíèé                               *
+*                                "ICQ",                                *
+*                      "AOL Instatnt Messenger",                       *
+*                     "Windows Instant Messenger",                     *
+*                                                                      *
+*                à òàê æå ìîæåò îòñûëàòü SMS èñïîëüçóþ ICQ !!!         *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*               PHP MESSENGER ïðîäóêò shareware, è äîëæåí áûòü         *
+*               çàðåãèñòðèðîâàí ïîñëå 30 äíåâíîãî èñïîëüçîâàíèÿ!       *
+*                                                                      *
+*                                                                      *
+* 	       	Çàðåãèñòðèðóéòå PHP MESSENGER ñåãîäíÿ !                *
+* 	       	http://www.php-messenger.com/ru/register.php           *
+*                                                                      *
+*                                                                      *
+* 	       	Òåõïîääåðæêà äëÿ çàðåãåñòðèðîâàííûõ ïîëüçîâàòåëåé:     *
+* 	       	http://www.php-messenger.com/ru/support.php            *
+*                                                                      *
+*                                                                      *
+* 	       	Áåñïëàòíûé àïãðåéä äî âñåõ âåðñèé 1.xx                 *
+* 	       	http://www.php-messenger.com/ru/upgrade.php            *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*               Òðåáîâàíèÿ:                                            *
+*                                                                      *
+*               1) '--enable-sockets'                                  *
+*                                                                      *
+*               2) Äëÿ "Windows Instant Messenger"                     *
+*                  '--with-openssl' è '--with-iconv'                   *
+*                                                                      *
+*               3) Îòñûëêà SMS íà ðóññêîì ÿçûêå, òàêæå, òðåáóåò        *
+*                  '--with-iconv'.                                     *
+*                                                                      *
+*                  Ìîæíî ñêà÷àòü "PHP conv"                            *
+*                  http://www.php-messenger.com/files/php_conv.zip     *
+*                  äëÿ çàìåíû iconv.                                   *
+*                                                                      *
+*                                                                      *
+*                                                                      *
+*           Copyright(c) 2004 http://www.php-messenger.com             *
+*                                                                      *
+***********************************************************************/
+
+
+
+require "php_messenger.php" - ïîäêëþ÷åíèå PHP Messenger
+
+
+$pm=new PM_ICQ() - Ñîçäàíèå ICQ îáúåêòà
+
+
+$pm->Login($UIN,$password) - Âûïîëíèòü ïîäêëþ÷åíèå ê ICQ ñåðâåðó
+
+	$UIN      - íîìåð ICQ
+	$password - ïàðîëü
+	
+	Â ñëó÷àå óñïåøíîãî ïîäêëþ÷åíèÿ ôóíêöèÿ âîçâðàùàåò TRUE â ïðîòèâíîì ñëó÷àå FALSE
+	
+
+
+$pm->Send_Message($UIN,$message_text) - Îòñûëêà ñîîáùåíèÿ
+
+	$UIN          - UIN ïîëó÷àòåëÿ
+	$message_text - Òåêñò ñîîáùåíèÿ
+	
+
+
+$pm->Send_Message_Confirm($UIN,$message_text) - òî æå, ÷òî è Send_Message
+
+	Â ñëó÷àå óñïåøíîé îòïðàâêè ñîîáùåíèÿ âîçâðàùàåò TRUE â ïðîòèâíîì ñëó÷àå FALSE,
+	ðàáîòàåò ìåäëåííåé ÷åì Send_Message
+
+
+
+$incoming_message=$pm->Read_Message($wait_time) - ÷òåíèå âõîäÿùåãî ñîîáùåíèÿ	
+	
+	$wait_time - âðåìÿ îæèäàíèÿ ñîîáùåíèÿ â ñåêóíäàõ, ìîæíî èñïîëüçîâàòü äðîáíûå ÷èñëà (1.5=ïîëòîðû ñåêóíäû)
+	             åñëè $wait_time==-1, òî ôóíöèÿ áóäåò æäàòü íåîãðàíè÷åíî äîëãî.
+	             
+	Åñëè ñîîáùåíèå ïîëó÷åíî, òî ôóíêöèÿ ôîçâðàùàåò àññîöèàòèâíûé ìàññèâ ñëåäóþùåé ñòðóêòóðû:
+
+		$incoming_message['UIN'] - UIN îïðàâèòåëÿ
+		$incoming_message['message_text'] - òåêñò ñîîáùåíèÿ
+		$incoming_message['online'] - îíëàéí/îôôëàéí ñîîáùåíèå (TRUE/FALSE)
+
+		ñëåäóþùèå ïîëÿ äëÿ îôôëàéíîâûõ ñîîáùåíèé:
+		
+		$incoming_message['year'] - ãîä îòñûëêè ñîîáùåíèÿ
+		$incoming_message['month'] - ìåñÿö îòñûëêè ñîîáùåíèÿ
+		$incoming_message['day'] - äåíü îòñûëêè ñîîáùåíèÿ
+		$incoming_message['hour'] - ÷àñ îòñûëêè ñîîáùåíèÿ
+		$incoming_message['minutes'] - ìèíóòà îòñûëêè ñîîáùåíèÿ
+	
+	Åñëè ñîîáùåíèå íå ïîëó÷åíî, òî ôóíööèÿ âîçâðàùàåò FALSE	
+		
+		
+$pm->Send_SMS($phone,$message_text) - îòñûëêà SMS ñîîáùåíèÿ
+
+	$phone - íîìåð òåëåôîíà (ïðèìåð +79289452700)
+	$message_text - òåêñò ñîîáùåíèÿ â êîäèðîâêå UTF-8
+                        äëÿ êîíâåðòàöèè òåêñòà èñïîëüçóéòå iconv
+                        íàïðèìåð iconv("CP1251","UTF-8","Ïðèâåò!\r\n ß - php messenger!"),
+                        åñëè îïöèÿ '--with-iconv' íå ïîäêëþ÷åíà èñïîëüçóéòå
+			áèáëèîòåêó http://www.php-messenger.com/files/php_conv.zip,
+			çàìåíÿþùóþ iconv.		
+		
+		
+	Â ñëó÷àå óñïåøíîé îòïðàâêè SMS ñîîáùåíèÿ âîçâðàùàåò TRUE â ïðîòèâíîì ñëó÷àå FALSE,
+		
+		
+		
+$user_info=$pm->Get_User_Info($UIN) - ïîëó÷àåò èíôîðìàöèþ ïî íîìåðó ICQ
+		
+        $UIN - UIN ïîëüçîâàòåëÿ
+
+	Åñëè äàííûå ïîëó÷åíû, òî ôóíêöèÿ ôîçâðàùàåò àññîöèàòèâíûé ìàññèâ ñëåäóþùåé ñòðóêòóðû:
+	
+	$user_info['nickname']   - íèê
+	$user_info['first name'] - èìÿ
+	$user_info['last name']  - ôàìèëèÿ
+	$user_info['email']      - E-mail
+		
+		
+		
+$users=$pm->Find_By_Email($email) - ïîèñê ICQ íîìåðîâ ïî åìåéëó
+
+
+	Åñëè äàííûå ïîëó÷åíû, òî ôóíêöèÿ ôîçâðàùàåò ìàññèâ àññîöèàòèâíûõ ìàññèâîâ ñëåäóþùåé ñòðóêòóðû:
+
+	$users[$i]['UIN']        - UIN
+	$users[$i]['nickname']   - íèê
+	$users[$i]['first name'] - èìÿ
+	$users[$i]['last name']  - ôàìèëèÿ
+	$users[$i]['email']      - E-mail
+	$users[$i]['auth']       - òðåáóåò-ëè ïîëüçîâàòåëü àâòîðèçàöèè ïðè äîáàâëåíèè åãî â êîíòàêò-ëèñò
+	$users[$i]['status']     - ñòàòóñ ïîëüçîâàòåëÿ
+	
+	
+$pm->Off_Line() - îòêëþ÷åíèå îò ñåðâåðà ICQ	
+
+		
