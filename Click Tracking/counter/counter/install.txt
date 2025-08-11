@@ -1,0 +1,24 @@
+-=Install for Click Counter Deluxe=-
+
+1. Create a mysql database.
+2. Run db.sql with phpMyAdmin in the database you made.
+3. Open up counter.php in a program like Notepad, edit all the variables, in the options section at the top.
+4. Upload counter.php to your website.
+
+-=To Create a Link for the Counter to Count=-
+1. Make a normal link, but make it point to counter.php?xrl=WEBSITE
+Example: <a href="http://mywebsite.com/counter.php?Xrl=http://noveis.net">Noveis.net</a>
+The program will handle everything else.
+
+-=Admin Panel=-
+1. To login to your admin panel goto counter.php?admin=PASSWORD, replace PASSWORD with the password you put for $adminpass
+in counter.php.
+
+In the admin panel you can view the IP address of people that have click the link by clicking "View IPs".
+The amount of downloads will be in the column "Clicks".
+To delete a link from the database click "delete". It doesn't ask if you're sure you want to delete it, it just does.
+To reset a link, just delete it, and the next time someone clicks the link, it will be reset.
+
+
+Click Counter Deluxe is Copyright 2005 Marcus Schwab
+http://noveis.net
