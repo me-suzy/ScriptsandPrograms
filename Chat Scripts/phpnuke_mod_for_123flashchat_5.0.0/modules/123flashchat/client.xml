@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FCClient>
+	<!--123 Flash Chat Client Confiugation - Version 5.0
+	Note:
+	In Windows, you may open client.xml in notepad to edit client.xml.
+	If you now open it with IE browser, you may check source code by right-click to edit it directly.
+	In Unix, you may use "vi" to edit client.xml.
+
+	After modifying this configuration file, please open it in a browser to test if it can display correctly.
+	If syntax error pop up, please configure it again before launching the chat room.-->
+
+	<!-- host & port
+	Very important!!!!
+        Please leave the host value to "*" if the chat server and the web server
+        (which hosts 123flashchat.swf file) are located on the same server,
+        Or if the swf file is on another web server,
+        you should set the host value according to the chat server domain name or ip address.
+        As to the port value, it must be the same with the one in fcserver.xml.
+        For details, please refer to: http://www.123flashchat.com/howto_configure_connection.html
+	-->
+	<Connection>
+		<primaryServer host="*" port="51127"/>
+		<secondaryServer host="*" port="51128" enable="false" />
+	</Connection>
+
+	<!-- homeUrl
+	Set your homepage address.
+	Then the left-top logo will direct visitors to your homepage in a new browser window .
+	If left blank, the link on logo will be disabled.-->
+	<homeUrl value="http://www.123flashchat.com" />
+
+	<!-- helpUrl
+	The URL of the help file of your flash client.
+	When clicking the right-top "help" button, this help page will pop up in a new browser window.-->
+	<helpUrl value="help/index.html" />
+
+	<!-- registerUrl
+	Specify null for this parameter unless you're authorizing users by external database.
+	In your fcserver.xml, if the value of integrated-other-database is not "None",
+	then you must have integrated your own user database.
+	In this case, please enter register URL in your system here.-->
+	<registerUrl value="" />
+
+
+	<!-- copyright
+	Set your company copyright information, which will display in about window,
+        Note: It can't be changed until you purchase the chat server license. -->
+	<copyright value="Copyright 2001-2005 TopCMM Computing Inc.  All Rights Reserved." />
+
+	<!-- loadRootPath
+	Defines the directory where you've located the Language and skin folders. Usually you just leave it blank.
+	But if you put them on another server, please set it to http://url/
+	eg: http://www.123flashchat.com/chat/
+	Don't forget the "/" at the end. -->
+	<loadRootPath value="" />
+
+	<!-- language
+	Choose interface language from our collection. In current version, we provide following languages:
+	1) en - English (default)
+	2) zh-CN - Simplified Chinese
+	3) zh-TW - Traditional Chinese
+	4) nl - Dutch
+	5) fr - French
+	6) ja - Japanese
+	7) es - Spanish
+	8) de - German
+	9) it - Italian
+	10)hu - Hungarian
+	11)ru - Russian
+	12)hr - Croatian
+	13)tr - Turkey
+	14)ar - Arabic
+	15)pt - PORTUGUES
+	16)ko - Korean
+	17)serbian - Serbian
+	18)pl - Polish
+	19)no - Norwegian
+	20)farsi - Farsi
+	21)el - Greek
+	22)iceland - Iceland
+	23)cs - Czech
+	24)da - Danish
+	25)fi - Finnish
+	26)sv - Swedish
+	Note: the language files are located under folder: <loadRootPath>/lang/
+	You can also translate it into your own language and save it as language_***.xml. Put it into the same folder and edit client.xml, then you get a local version of 123flashchat.
+
+	language value can either be defined to "*" or a definite language name.
+	If "*", it will automatically detect the language of every user's Operating System and assign a corresponding language to user from the existing language collection.
+	If a definite language name, it will only directly load the specified language instead of detecting user's OS language.
+	-->
+	<language value="*" />
+
+	<!-- skin
+	We offer following skins:
+	1) standard - Aqua blue skin. scalable vector skin.
+	2) beige - Aqua beige skin. scalable vector skin.
+	3) angel - Black metallic bitmap skin. kinda cool.
+	4) hawaii - Aqua black skin. scalable vector skin.
+	5) classic - Blue bitmap skin.
+	6) green - Green skin. scalable vector skin.
+	7) red - Red& black skin. scalable vector skin.
+	8) orange - Orange skin. scalable vector skin.
+	9) clean - Aqua blue & gray skin. scalable vector skin.
+	You can design a new skin based on our skins.
+	Here're some tutorials might be helpful to designers:
+	a) HowTo customize skin? http://www.123flashchat.com/howtoskin.html
+	b) HowTo change skin color? http://www.123flashchat.com/colormap.html
+	c) HowTo change background? http://www.123flashchat.com/howto_change_bkground.html
+	-->
+	<skin value="standard" />
+
+	<!-- profileUrl
+	Normally you just leave it as default "false" to disable this function.
+	But if you've already integrated your own database with the chat system,
+        and you want the user profile to be linked, you can set profile URL here.
+	Then by activating a user from user list, a small menu will popup,
+	clicking the "profile" from the menu, you'll be directed to his or her profile page in a new browser window.
+	eg: http://yourwebsite/profile.php?user=%USER%
+	Note: you can add more than one item in profileUrl tag, for instance, one for profile, one for photo link.
+	by the way, it's %USER%, not %username%.
+	-->
+	<profileUrl enable="false">
+		<item name="Profile" url="http://yourwebsite/profile.php?user=%USER%" />
+	</profileUrl>
+
+	<!-- enableRoomSounds
+	Default sound setting in chat room.
+	enable it by "true", disable it by "false".
+	Default value is "true".
+	-->
+	<enableRoomSounds value="true" />
+
+	<!-- enableMonitorSounds
+	Defaul sound setting in monitor panel for administrator.
+	Disable it by "false", but we strongly recommend you leave it as "true",
+	so that admin can monitor a chat room with sound alerts.
+	Default value is "true".
+	-->
+	<enableMonitorSounds value="true" />
+
+	<!-- enterRoomSound
+	Choose whether or not to play a sound alert when anyone enters the room you're in.
+	Default value is "true",  which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+	<enterRoomSound value="true" />
+
+	<!-- messageSound
+	Choose whether or not to play a sound alert when receiving a message.
+	Default value is "true",  which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+	<messageSound value="true" />
+
+	<!-- typingSound
+	Choose whether or not to play sound when typing messages.
+	Default value is "false", which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+	<typingSound value="false" />
+
+	<!-- sendingSound
+	Choose whether or not to play a sound alert when sending a message.
+	Default value is "true" , which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+	<sendingSound value="true" />
+
+	<!-- quitRoomSound
+	Choose whether or not to play a sound alert when someone quits a room.
+	Default value is "true", which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+	<quitRoomSound value="true" />
+
+        <!-- singleLineMode
+	To switch between single-line or multi-line mode here.
+	If "true", you can set the message next to the username like : "Mr.A says: aaaa." , this saves chat space.
+	If "false",the message will display in another line below the username.
+	Default value is "false", which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+	<singleLineMode value="false" />
+
+	<!-- parseURL
+	To define if the URL in messages clickable.
+	If "true", then the valid URL, a string with "http://" or "www.*****"(which is 9 characters at least)will become blue , underlined and linked to the specified URL.
+	Default value is "true",  which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+	<parseURL value="true" />
+
+	<!-- autoSaveUsername
+        Set to save chatter's username in cache automatically by "true".
+	Default value is "true", which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+	<autoSaveUsername value="true" />
+
+	<!-- autoSavePassword
+        Set to save member's password in cache automatically by "true".
+	Default value is "false", which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+	<autoSavePassword value="false" />
+
+	<!-- autoSaveAvatarFonts
+        Set to save chatter's avatar, font style and color in their cache automatically by "true".
+	Default value is "true", which is also default value for all of your members.
+	Your members can set their preferences in option panel.
+	-->
+	<autoSaveAvatarFonts value="true" />
+
+	<!-- autoSaveBKGround
+        Set to save chat space background in users' cache automatically by "true".
+	Default value is "true", which is also default value for all of your members.
+	-->
+	<autoSaveBKGround value="true" />
+
+	<!-- visibleGuestCheckbox
+	Set if the combination of "guest" and the checkbox before "guest" is visible to all users.
+	Default value is "true".
+	-->
+	<visibleGuestCheckbox value="true" />
+
+	<!-- visiblePasswordInput
+	Set if the password input field is visible to all users.
+	Default value is "true".
+	-->
+	<visiblePasswordInput value="true" />
+
+	<!-- visibleLogoutButton
+	Set if the logout button is visible to all users.
+	Default value is "true".
+	-->
+	<visibleLogoutButton value="true" />
+
+	<!-- defaultSelectGuest
+	Select if the guest is checked as default and password input area is removed.
+	Default value is "false".
+	-->
+	<defaultSelectGuest value="false" />
+
+	<!-- enablePrivateChat
+	Enable or disable private chat mode for ordinary users here,
+	remember: administrator can always activate private chat with normal users, not controlled by this value.
+	Default value is "true".
+	-->
+	<enablePrivateChat value="true" />
+
+	<!-- acceptPrivateMessage
+	user can accept private message or not, default value is "true".
+	-->
+	<acceptPrivateMessage value="true" />
+
+	<!-- lockAdminIcon
+	Set if the administrator has a unique reserved icon (a small person with coffee) before their messages.
+	it's not refering to the icon before admin in user list.
+	Default value is "true".
+	-->
+	<lockAdminIcon value="true" />
+
+	<!-- messageSpacing
+	You can set the spacing between two messages here.
+	Default value is "0", unit: pixel.
+	-->
+	<messageSpacing value="0" />
+
+	<!-- maxScollHeight
+	Max height of the text field in chat window.
+	Default value is "2000", unit: pixel.
+	-->
+	<maxScollHeight value="2000" />
+
+	<!-- messageHistorySize
+	To allocate space to record chat history. Please set default space size here for all your members.
+	unit: kb, 	default value is "100".	-->
+	<messageHistorySize value="100" />
+
+	<!-- showGuestMemberonlyRoom
+	To define if the member-only room is viewable to guests in room list. Default value is "true".
+	-->
+	<showGuestMemberonlyRoom value="true" />
+
+	<!-- visibleWelcomeMessage
+	To define whether or not to display admin auto-welcome message when anyone enters the chatroom. Default value is "true".
+	-->
+	<visibleWelcomeMessage value="true" />
+
+	<!-- visibleExitMessage
+	To define whether or not to display admin auto message when anyone leaves the chatroom. Default value is "true".
+	-->
+	<visibleExitMessage value="true" />
+
+	<!-- visibleRoomList
+	To display room list or hide it. Default value is "true".
+	-->
+	<visibleRoomList value="true" />
+
+	<!-- siteKey
+        The code to validate your website. You can modify this value to anything you want,
+        but keep in mind it must be identical with the site-key value in fcserver.xml,
+        otherwise the server will cut your connection.
+        -->
+	<siteKey value="XH00-YPWS-TI3E-KQLW" />
+
+	<!-- advertisingBanner
+	You can insert one or more rotate ad banners in your chat client.
+	by default it's diabled by "false".
+        you can set enable="true" to activate the feature.
+        the "src=" is the relative or absolute path of the banner.
+        detailed instruction on ad banner, please refer to:
+	http://www.123flashchat.com/howto_advertising_banner.html
+       	-->
+	<advertisingBanner enable="false" height="60" width="468">
+		<banner src="ad/banner1.jpg" href="http://www.123flashchat.com" duration="8"/>
+		<banner src="ad/banner2.jpg" href="http://www.123flashchat.com/host.html" duration="5"/>
+		<banner src="ad/banner3.swf" href="http://www.123flashchat.com/howto_advertising_banner.html" duration="5"/>
+                <banner src="ad/banner4.swf" href="http://www.123livehelp.com" duration="8"/>
+	</advertisingBanner>
+
+	<!-- visibleChangeRoomComboBox
+	Indicates whether the pull-down room menu in a chat room is visible or not. Default value is "true".
+	-->
+	<visibleChangeRoomComboBox value="true" />
+
+	<!-- visibleExitRoomButton
+	Add or remove an exit room button at the right top. Default value is "true".
+	-->
+	<visibleExitRoomButton value="true" />
+
+	<!-- adminAutoGreet
+	The greetings (robot)admin gives to visitors automatically, display one by one.
+	You can add as many lines as you want to make it look like real person, or disable this feature by setting it "false".
+	by default it's "false".
+	-->
+	<adminAutoGreet enable="false">
+		<item value="Hello %YOURNAME%, I'm %MYNAME% from support team, how may I help you?" />
+		<item value="Hi %YOURNAME%, what do you need?" />
+		<item value="Welcome to join us,  %YOURNAME% !" />
+	</adminAutoGreet>
+
+	<!-- visibleHelpButton
+	Add or remove the Help button from the top menu.
+        Default value is "true".
+	-->
+	<visibleHelpButton value="true" />
+
+	<!-- visibleOptionButton
+	Add or remove the Option button from the top menu.
+        Default value is "true".
+	-->
+	<visibleOptionButton value="true" />
+
+	<!-- visibleAvatarButton
+	Add or remove the Smiley button from the middle menu above the input area.
+        Default value is "true".
+	-->
+	<visibleAvatarButton value="true" />
+
+	<!-- visibleBButton
+	Add or remove the B button from the middle menu above the input area to enable or disable the bold font feature.
+        Default value is "true".
+	-->
+        <visibleBButton value="true" />
+
+	<!-- visibleIButton
+	Add or remove the I button from the middle menu above the input area to enable or disable the italic font feature.
+        Default value is "true".
+	-->
+        <visibleIButton value="true" />
+
+	<!-- visibleUButton
+	Add or remove the U button from the middle menu above the input area to enable or disable the underline font feature.
+        Default value is "true".
+	-->
+        <visibleUButton value="true" />
+
+	<!-- visibleColorButton
+	Add or remove the Color picker button from the middle menu above the input area to enable or disable the font color feature.
+        Default value is "true".
+	-->
+	<visibleColorButton value="true" />
+
+	<!-- visibleSelectSmileyButton
+	Add or remove the smiley button from the middle menu above the input area to enable or disable the emotion feature.
+        Default value is "true".
+	-->
+	<visibleSelectSmileyButton value="true" />
+
+	<!-- visibleSelectBgButton
+	Add or remove the BG button from the middle menu above the input area to enable or disable the change chat background feature.
+        Default value is "true".
+	-->
+	<visibleSelectBgButton value="true" />
+
+	<!-- idleDisconnectTime
+	When a user is "idle" in chat room for a predefined time,
+	his connection will be automatically cut and he will be kicked out of the room.
+        This time period can be defined here by admin, by default it's "0", means to disable this feature,
+        and the users won't be kicked no matter how long he stays without saying or doing anything.
+        measurement units: minute.
+        -->
+	<idleDisconnectTime value="0" />
+
+	<!-- visibleTimeStamp
+	Display the timestamp in all users' chat windows. By default is set to "false"
+        Users can enable or disable this feature by themselves in the option panel.
+        -->
+	<visibleTimeStamp value="false" />
+
+	<group value="default" />
+</FCClient>
