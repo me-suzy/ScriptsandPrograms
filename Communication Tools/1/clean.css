@@ -1,0 +1,102 @@
+/* Custom link color and effects */
+A:link {
+	COLOR: #3A65A0; TEXT-DECORATION: none; font-weight: bold;
+}
+A:visited {
+	COLOR: #3A65A0; TEXT-DECORATION: none; font-weight: bold;
+}
+A:active {
+	COLOR: #3A65A0; TEXT-DECORATION: none; font-weight: bold;
+}
+A:hover {
+	COLOR: #FF7800; TEXT-DECORATION: underline; font-weight: bold;
+}
+
+/* Every other comment switches from light to dark background, modify if needed */
+div.container
+{
+width: 500px;
+}
+div.light table
+{
+background-color: #FFFFFF;
+border-style: solid;
+border-width: 1px 0px 1px 0px;
+border-color: #EFF0E2;
+width: 500px;
+}
+
+div.dark table
+{
+background-color: #FBFBF1;
+border-style: solid;
+border-width: 1px 0px 1px 0px;
+border-color: #EFF0E2;
+width: 500px;
+}
+
+
+/* Style for author header for font style and padding */
+th.author
+{
+padding-top: 12px;
+padding-left: 10px;
+text-align: left;
+font-family: arial;
+color: #4B4B4B;
+font-weight: bold;
+font-size: 15px;
+}
+
+/* Style for date header for font style and padding */
+th.date
+{
+padding-left: 10px;
+font-family: verdana;
+text-align: left;
+color: #4B4B4B;
+font-weight: normal;
+font-size: 12px;
+}
+
+/* Style for comments font style and padding */
+td.comment
+{
+padding: 10px;
+font-family: "trebuchet ms";
+font-size: 14px;
+}
+
+/* Style for paragraph header (comment count and leave a comment text) */
+p.header
+{
+font-size: 18px;
+font-weight: bold;
+font-family: arial;
+color: #3E72B9;
+}
+
+p.desc
+{
+font-size: 11px;
+font-family: verdana;
+color: #4B4B4B;
+}
+
+#response input, textarea
+{
+font-family: verdana;
+font-size: 12px;
+border-style: solid;
+border-width: 1px;
+border-color: #9BABBB;
+background-color: #FBFDFF;
+}
+
+p.poweredby
+{
+font-size: 10px;
+font-family: verdana;
+text-align: right;
+color: #4B4B4B;
+}
