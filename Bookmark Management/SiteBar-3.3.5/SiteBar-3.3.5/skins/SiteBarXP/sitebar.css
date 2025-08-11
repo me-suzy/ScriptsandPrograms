@@ -1,0 +1,514 @@
+@import url("../sitebar.css");
+@import url("common.css");
+
+body
+{
+    margin: 0px 0px;
+    padding: 0px;
+}
+
+#logo
+{
+    width: 188px;
+}
+
+#toolTip
+{
+    display: none;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: InfoBackground;
+    color: InfoText;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    padding: 1px;
+    padding-left: 3px;
+}
+
+#userCtxMenu
+{
+    margin-top: 10px;
+    border: 1px solid #6681D9;
+    width: 165px;
+    z-index: 0;
+    margin-left: 8px;
+    background: #EDF2FC;
+}
+
+#linkCtxMenu, #nodeCtxMenu
+{
+    display: none;
+    width: 125px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#toolbar
+{
+    width: 188px;
+    height: 54px;
+    background-image: url(toolbarbg.png);
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+    border: 0px;
+}
+
+#toolbar input
+{
+    vertical-align: center;
+    margin-bottom: 0px;
+    border: expression('1px solid #7f9db9');
+    height: expression('16px');
+    min-height: 20px;
+    font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    padding-left: 2px;
+    -moz-padding-top: 1px;
+}
+
+#toolbar div
+{
+    margin-top: 0px;
+}
+
+#toolbar img
+{
+    border: 0px;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+#toolbar img.raised
+{
+    border: 0px;
+    /* filter:alpha(opacity=25);
+    -moz-opacity:.25;opacity:.25; */
+    background: url(button_bg.png) no-repeat center center;
+    padding: 3px;
+}
+
+#toolbar img.pressed
+{
+    border: 0px;
+    background: url(button_bg_down.png) no-repeat center center;
+    padding: 3px;
+}
+
+#toolbar #tlbSearch
+{
+    margin: 0px;
+    float: none;
+    text-align: left;
+    width: 100%;
+    padding-top: 2px;
+}
+
+#toolbar #tlbOther
+{
+    text-align: none;
+    margin-top: 4px;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: left;
+}
+
+#toolbar #fldSearch
+{
+    font-size: 8pt;
+    background: Window;
+    width: 106px;
+    margin-top: 1px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+#tail
+{
+    border: 0px;
+    width: 162px;
+    margin-left: 10px;
+}
+
+#tail div.sponsor img
+{
+    width: 88px;
+    height: 31px;
+}
+
+div.menu
+{
+    cursor: default;
+    overflow: hidden;
+    border: 1px solid GrayText;
+    background: #FFFFFF;
+    padding: 0px;
+}
+
+div.menu .off
+{
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+}
+
+div.menu .on
+{
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+    color: #FFFFFF;
+    background: #6487DC;
+}
+
+div.menu .disabled
+{
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+    color: GrayText ;
+    width: 100%;
+}
+
+div.menu .separator
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: 1px solid GrayText;
+    border-top: 0px;
+}
+
+div.menu .off .menuLink
+{
+    text-decoration: none;
+    cursor: default;
+}
+
+div.menu .on .menuLink
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: default;
+}
+
+div.tree
+{
+    padding-left: 4px;
+    font-size: 8pt;
+}
+
+div.root
+{
+    left: 0;
+    margin-bottom: 2px;
+}
+
+div.tree img
+{
+    height: 16px;
+    margin: 0;
+}
+
+div.tree div.link
+{
+    height: 18px;
+    margin: 0;
+}
+
+div.root div.node img.root
+{
+    height: 18px;
+    vertical-align: text-bottom;
+    border: 0;
+    margin-right: 2px;
+}
+
+div.tree div.node img
+{
+    height: 18px;
+    margin-right: 3px;
+
+}
+
+div.tree div.node img.favicon
+{
+    height: 16px;
+    width: 16px;
+    vertical-align: text-bottom;
+    border: 0;
+    margin-right: 4px;
+}
+
+div.tree a
+{
+    text-decoration: none;
+    color: #333;
+}
+
+div.tree a:hover
+{
+    text-decoration: underline;
+    color: #6487DC;
+}
+
+div.tree a:hover .selected
+{
+    color: #FF0000;
+}
+
+div.tree a.highlight
+{
+    color: #339900;
+}
+
+div.tree a.highlight:hover
+{
+    color: #339900;
+}
+
+/*** Command Window ***/
+
+#commandHead
+{
+    background: url(head.png) repeat-x;
+    color: #000000;
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    padding-top: 4px;
+    padding-left: 6px;
+    padding-right: 80px;
+    text-align: left;
+    font-weight: bold;
+    height: 60px;
+}
+
+#errorHead
+{
+    background: url(head_error.png) repeat-x;
+    color: #000000;
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    padding-top: 4px;
+    padding-left: 6px;
+    padding-right: 80px;
+    text-align: left;
+    font-weight: bold;
+    height: 60px;
+}
+
+#warnHead
+{
+    background: url(head_warn.png) repeat-x;
+    color: #000000;
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    padding-top: 4px;
+    padding-left: 6px;
+    padding-right: 80px;
+    text-align: left;
+    font-weight: bold;
+    height: 60px;
+}
+
+#commandBody, #errorBody, #warnBody
+{
+    margin-left: 8px;
+    width: 174px;
+}
+
+body.cmdWin .label
+{
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 1px;
+}
+
+body.cmdWin .data select
+{
+    width: 171px;
+    font-size: 8pt;
+    margin-bottom: 2px;
+}
+
+body.cmdWin .data select.fixed
+{
+    max-height: 18px;
+}
+
+body.cmdWin .data input
+{
+    width: expression('162px');
+    min-width: 171px;
+    font-size: 8pt;
+    padding-left: 2px;
+    margin-bottom: 2px;
+}
+
+body.cmdWin .check
+{
+    margin-top: 2px;
+
+}
+
+body.cmdWin .check label
+{
+    vertical-align: text-bottom;
+
+}
+
+body.cmdWin .check input
+{
+    margin-left: expression('-3px');
+    margin-left: 1px;
+    vertical-align: expression('-2px');
+    vertical-align: -4px;
+}
+
+body.cmdWin .data textarea
+{
+    width: expression('162px');
+    min-width: 171px;
+    font-size: 8pt;
+    padding-left: 2px;
+}
+
+body.cmdWin input.button
+{
+    font-size: 8pt;
+    margin-top: 5px;
+}
+
+body.cmdWin input.customButton
+{
+    font-size: 8pt;
+    margin-top: 5px;
+    width: 171px;
+}
+
+body.cmdWin input.order
+{
+    margin-right: 5px;
+}
+
+body.cmdWin table
+{
+    margin-top: 5px;
+    width: 171px;
+    font-size: 8pt;
+}
+
+body.cmdWin table th
+{
+    background: #FFFFFF;
+    color: #000000;
+    font-size: 8pt;
+    padding: 2px;
+}
+
+body.cmdWin table .right
+{
+    text-align: center;
+}
+
+body.cmdWin div.legend
+{
+    text-align: center;
+    color: gray;
+    margin-top: 5px;
+    width: 171px;
+}
+
+#foot
+{
+    text-align: right;
+    width: 178px;
+}
+
+body.cmdWin
+{
+    background: ButtonFace;
+}
+
+/*** Integrator window ***/
+
+
+/*** Ostalo ***/
+
+#stat
+{
+    font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    border: 1px dotted gray;
+    font-size: 7pt;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    width: 168px;
+}
+
+div.poweredBy a
+{
+    font-weight: normal;
+    font-style: normal;
+    font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+    color: #46609B;
+    text-decoration: none;
+}
+
+div.poweredBy a:hover
+{
+    font-size: 7pt;
+    color: #6487DC;
+    text-decoration: underline;
+}
+
+#tail div.poweredBy
+{
+    font-weight: normal;
+    font-style: normal;
+    font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+}
+
+#tail div.designedBy
+{
+    font-weight: normal;
+    font-style: normal;
+    font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+}
+
+div.designedBy a
+{
+    font-weight: normal;
+    font-style: normal;
+    font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+    color: #46609B;
+    text-decoration: none;
+}
+
+div.designedBy a:hover
+{
+    font-size: 7pt;
+    color: #6487DC;
+    text-decoration: underline;
+}
+
