@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>StarClix 1.0 Readme</title>
+<style type="text/css">
+<!--
+A:link, A:active, A:visited, A:hover {
+	color: #0000FF;
+}
+A:link, A:active, A:visited {
+	text-decoration: none;
+}
+A:hover {
+	text-decoration: underline;
+}
+BODY {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Courier New;
+}
+.code {
+	background-color: #D5D3D3;
+	padding: 2px;
+}
+.fixit {
+	background-color: #000000;
+	color: #FFFFFF;
+	margin-top: 2px;
+	padding: 2px;
+}
+.spacer {
+	margin-top: 2px;
+}
+hr {
+  color: #0000FF;
+  height: 1px;
+}
+ul {
+  list-style-type: square;
+}
+-->
+</style>
+</head>
+<body>
+<a name="top">
+
+<p align="center"><u>StarClix 1.0 Readme</u></p>
+<font size="2">
+
+<!-- Table of Contents -->
+
+<p><b>Table of Contents</b></p>
+
+<ul>
+  <li><a href="#about">About StarClix 1.0</a>
+  <li><a href="#contents">Contents of the zip file</a>
+  <li><a href="#install">Installation Instructions</a>
+  <li><a href="#main">Viewing Data Files</a>
+  <li><a href="#login">Changing Your Login Info</a>
+  <li><a href="#manage">Managing Data Files</a>
+  <li><a href="#opt">Setting Options</a>
+  <li><a href="#track">Tracking Clicks</a>
+  <li><a href="#credits">Credits</a>
+</ul>
+
+<!-- About StarClix 1.0 -->
+
+<a name="about"></a>
+<hr>
+<p><b>About StarClix 1.0</b></p>
+
+<p>StarClix 1.0 is a simple PHP script written by <a href="http://gurukitty.com/star/" target="_blank">Tara</a>, with a flat files database as a backend. It is an elaborate clicks tracker, extending the ordinary features of a clicks tracker to a whole new level.</p>
+
+<p>Star Clix 1.0's features include the following:</p>
+
+<ul>
+  <li>Clean and simple admin interface
+  <li>Multiple data files to track different parts of your site
+  <li>Edit username and password in the admin panel
+  <li>Add and delete data files in the admin panel
+  <li>Delete links or edit number of visits in the admin panel
+  <li>Add a new link, specifying
+  <li>Setting a default data file
+  <li>Option to show a link's full URL or to not show the part identical to $SITE_URL in the admin panel
+</ul>
+
+<p><a href="#top">Back to top</a></p>
+
+<!-- Contents of the zip file -->
+
+<a name="contents"></a>
+<hr>
+<p><b>Contents of the zip file</b></p>
+
+<p>Total files and folders: 5</p>
+
+<ul>
+  <li>clix.php - clicks tracking file
+  <li>clix_admin.php - admin file
+  <li>clix_common.inc.php - variables, queries, and functions
+  <li>clix_readme.html - documentation
+  <li>clix_style.css - admin stylesheet
+</ul>
+
+<p><a href="#top">Back to top</a></p>
+
+<!-- Installation Instructions -->
+
+<a name="install"></a>
+<hr>
+<p><b>Installation Instructions</b></p>
+
+<p>A good suggestion: Read through all of the information in this file before beginning to install. That way you'll have a bit of a feel for the script before you begin to use it.</p>
+
+<p>1. Open up the file "clix_common.inc.php" in a text editor. Edit the variables at the top of the file ($ABS_PATH, $DAT_FILE, $DAT_EXT, $CFG_FILE, and $SITE_URL).</p>
+
+<p>2. Upload all the files from the zip file into the same folder.</p>
+
+<p>3. Access the uploaded "clix_admin.php" in your web browser. It will prompt you to set the initial configuration. Follow its instructions and press "Submit". It will then create the configuration file with this data and a blank data file for tracking links.</p>
+
+<p>4. You may now login to your control panel by following the link given to you in the success message or by accessing the uploaded "clix_admin.php" again.</p>
+
+<p><a href="#top">Back to top</a></p>
+
+<!-- Viewing Data Files -->
+
+<a name="main"></a>
+<hr>
+<p><b>Viewing Data Files</b></p>
+
+<p>When you login to StarClix 1.0, you are automatically shown the data in the default data file. From here, you may add a link to the data file, delete links from the data file, or edit the number of visits to a link.</p>
+
+<p><i>To add a new link</i> to the data file, simply click on the "Add New Link" button on the display of the links in the data file page. This will bring up a page asking for the URL of the data file and the number of initial visits (for if you are importing from another clicks tracking script). If the URL of the link you are adding follows the pattern $SITE_URL/something (you specified $SITE_URL in clix_common.inc.php), then you only need to put somethign as the link's URL. The script will automatically add the rest of the URL for you. Click on the "Submit" button and your link has been added!</p>
+
+<p><i>To delete link(s)</i> from the data file, simply select the checkbox next to that link's URL on the display of the links in the data file page. There are two buttons above the table ("Clear All" and "Select All"). These buttons allow for mass selection or de-selection of the checkboxes. Before pressing the "Submit" button you may also edit the number of visits that link(s) have.</p>
+
+<p><i>To edit the number of visits</i> to a link, simply change the number in the text box to the number you would like it to be. You may edit as many link's number of visits and/or delete as many links as you would like in one action. When you have selected/edited everything that you would like to edit/delete, then click on the "Submit" button and the script will perform the requested actions.</p>
+
+<p><a href="#top">Back to top</a></p>
+
+<!-- Changing Your Login Info -->
+
+<a name="login"></a>
+<hr>
+<p><b>Changing Your Login Info</b></p>
+
+<p>To edit your login info, click on the link entitled "Edit Login Info" in the admin panel menu. From here you can edit the username and/or password that you use to login to StarClix. Please note that after changing this data you will have to re-login with your new username and password.</p>
+
+<p>If you would not like to change your username, then simply leave it as it is in its textbox. Otherwise, change the corresponding textbox to what you would like your new username to be.</p>
+
+<p>In order to use this form, you must edit your password. You need to enter your old password for verification and what you would like your new password to be.</p>
+
+<p>Finally, click on the "Submit" button. If something is not right with your changes, the script will output error messages. Otherwise, the new data will be saved to the configuration file and you will be told that you need to login again.</p>
+
+<p><a href="#top">Back to top</a></p>
+
+<!-- Managing Data Files -->
+
+<a name="manage"></a>
+<hr>
+<p><b>Managing Data Files</b></p>
+
+<p>To get to the page to manage your data files, click on the link entitled "Manage Data Files" in the admin panel menu. From there, you may create a new data file, change the default data file, delete data files, and view the links in the data files.</p>
+
+<p>To create a new data file, simply click on the link entitled "New Data File" on the main "Manage Data Files" page and a new data file is automatically created. It will start off blank - it has no links in it.</p>
+
+<p>To delete data files, simply select the checkbox next to any data file's filename that you would like to delete, on the main "Manage Data Files" page. There are two buttons above the table ("Clear All" and "Select All"). These buttons allow for mass selection or de-selection of the checkboxes. You may select as many data files to be deleted as you would like. When you have selected the checkboxes corresponding to all of the data files you would like to delete, then click on the "Submit" button. The script will automatically delete the selected data files from your server.</p>
+
+<p>Please note that the action of deleting data files is not reversible and any data in the files at the time of deletion will be deleted. For this reason, it is recommended that if you would like to keep the data, that you download the data file to your computer before deleting the data file.</p>
+
+<p>To view the links in a specific data file, simply click on that data file's filename on the main "Manage Data Files" page. This will bring up a page identical to the main page, however it will display the data for the data file you selected.</p>
+
+<p><a href="#top">Back to top</a></p>
+
+<!-- Setting Options -->
+
+<a name="opt"></a>
+<hr>
+<p><b>Setting Options</b></p>
+
+<p>To edit the options, click on the link entitled "Set Options" on the main "Manage Data Files" page. From this page you may edit the default data file and whether full or short URLs are shown in the admin panel.</p>
+
+<p>On the page that comes up, there will be a textbox that has the current default data file's ID number in it. Simply change this number if you would like to.</p>
+
+<p>You may also change whether full URLs are shown or not in the admin panel. Setting this to "No" will temporarily delete the part of the link's URL that matches $SITE_URL (a variable that you specified in clix_common.inc.php) when showing links' URLs in the admin panel. Setting this to "Yes" will show the link's URL without any modifications, in the admin panel. Once you have set both or either of these 2 options, click on the "Submit" button. The script will edit the configuration file to reflect the new default data file and the new setting for full URLs.</p>
+
+<p><a href="#top">Back to top</a></p>
+
+<!-- Tracking Clicks -->
+
+<a name="track"></a>
+<hr>
+<p><b>Tracking Clicks</b></p>
+
+<p>Note: If the link you would like to track visits to follows the pattern $SITE_URL/something, then you only need to put something as the URL when linking to the tracking file (if there is no http: in the URL to track, the script will automatically redirect the visitor to $SITE_URL/THE_URL).</p>
+
+<ul>
+  <li>If you are using only one data file, then to track visits to a link, use this URL: clix.php?THE_URL
+  <li>If you are using multiple data files, then to track visits to a link, use this URL: clix.php?id=ID&url=THE_URL, where ID is the ID number of the data file and THE_URL is the URL or relative path to the file.
+</ul>
+
+<p><a href="#top">Back to top</a></p>
+
+<!-- Credits -->
+
+<a name="credits"></a>
+<hr>
+<p><b>Credits</b></p>
+
+<ul>
+  <li>Script created by <a href="http://gurukitty.com/star/" target="_blank">Tara</a>.
+  <li>Thank you to my beta tester <a href="http://www.acidgloss.net" target="_blank">Krissy</a> for all of her help finding the many slight bugs in the original beta version.
+  <li>Thank you to the creators of <a href="http://www.crimsoneditor.com" target="_blank">Crimson Editor</a> for creating the awesome program I used to code StarClix.
+  <li>Thank you to the documentation at <a href="http://www.php.net" target="_blank">http://www.php.net</a> for help with some of the coding.
+  <li>Thank you to <a href="http://www.php-princess.net" target="_blank">PHP-Princess.net</a> for tips on reading data from a file.
+</ul>
+
+<p><a href="#top">Back to top</a></p>
+
+<hr>
+
+<p align="center">&copy; Copyright 2004 <a href="http://gurukitty.com/star/" target="_blank">Tara C.</a></p>
+
+</body>
+</html>
