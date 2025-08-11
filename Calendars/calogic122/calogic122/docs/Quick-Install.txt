@@ -1,0 +1,91 @@
+CaLogic Quick Installation instructions
+===============================================
+
+CaLogic will install or update in a matter of seconds.
+
+It is the easiest PHP program to install or
+update that I have ever seen. I am very proud of this.
+
+CaLogic will update itself from any previous version.
+
+Since you are reading this, you must have already
+unpacked the zip file. Just make sure that you
+unpacked it preserving the folder structure.
+
+IMPORTANT!!
+
+AFTER AN INSTALLATION OR UPDATE, REMOVE THE CALOGIC SETUP
+FOLDER FROM YOUR WEB.
+
+For updating read the "updating.txt" file.
+
+
+Quick Install Instructions:
+==========================
+
+* NOTE *
+If you intend to use reminders, you must read the reminders.txt file
+located in the CaLogic docs folder.
+
+
+1. upload the folder structure to your web.
+
+2. Make the CaLogic folder "admin" writable (CHMOD 777).
+
+    * NOTE *
+    After the installation, read only rights are recommended for the entire
+    CaLogic folder structure!
+
+
+3. open a browser and navigate to the setup.php file
+i.e. http://www.yourweb.com/calogic/setup/setup.php
+
+4. Enter your MySQL server, database name, user name and password.
+
+* NOTE *
+Only answer YES to the create database question if you
+are the MySQL Server admin.
+
+click Submit
+
+Select the CaLogic options. As a minimum you should fill
+in your name and email address. All the other default options
+are okay for a quick install.
+
+Click the Submit button located at the bottom of the form.
+
+
+Thats it! You will be presented with a link to start CaLogic.
+
+I reccomend  to make the entire CaLogic folder read only.
+
+IMPORTANT!!
+
+REMOVE THE SETUP FOLDER FROM YOUR WEB!
+
+
+* NOTE *
+
+   The admin user is automatically created by the setup. User: admin, password: admin
+
+   The first time any user logs on, he/she will have to create a calendar, unless
+   the "Standard Default Calendar" option is turned on.
+
+   The Admin user must also create a calendar upon first logon.
+
+   Go to "User Settings" from the functions menu to change the password and to fill out
+   the rest of your user information.
+
+   DO NOT re-run the setup.php program unless you are having problems.
+
+   To reconfigure the options, use the "CaLogic Config" link from the
+   Admin Section of the functions menu.
+   You must be logged on as admin to access this area.
+
+    If you plan on using reminders, then you should read the reminders.txt file
+    for information on setting up reminders.
+
+
+Read all the files in the docs folder.
+
+
