@@ -1,0 +1,281 @@
+@import url("../sitebar.css");
+@import url("common.css");
+
+body
+{
+    margin: 0px 1px;
+}
+
+#logo
+{
+    width: 179px;
+    margin-left:3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#userCtxMenu
+{
+    border: 1px solid #84aa00;
+    color: #333;
+}
+
+#linkCtxMenu, #nodeCtxMenu
+{
+    background: #9cba00;
+    border: 0;
+    color: white;
+}
+
+#toolbar
+{
+    border: 1px solid #002d96;
+}
+
+#toolbar img
+{
+    border: 1px solid white;
+}
+
+#tail
+{
+    border: 1px solid #84aa00;
+    background: #fffff5;
+}
+
+#tail a
+{
+    color: #000000;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+#tail a:hover
+{
+    text-decoration:none;
+}
+
+#tail div.designedBy
+{
+    font-size: 0.80em;
+}
+
+#stat
+{
+    width: 184px;
+}
+
+div.menu
+{
+    cursor: default;
+    overflow: hidden;
+
+    background: #fffff5;
+    padding: 3px;
+    color: #000000;
+}
+
+#userCtxMenu .off
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #fffff5;
+}
+
+#linkCtxMenu .off
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #9cba00;
+}
+
+#nodeCtxMenu .off
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #9cba00;
+}
+
+div.menu .on
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #000000;
+    background: #ffff9c;
+    border: 1px inset #84aa00;
+}
+
+div.menu .disabled
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #84aa00;
+}
+
+div.menu .separator
+{
+    margin-top: 3px;
+    border-top: 1px solid #649a00;
+    border-bottom: 1px solid #acea44;
+}
+
+div.tree
+{
+    color: #000000;
+}
+
+div.root
+{
+    left: 0;
+}
+
+div.tree div.node img
+{
+    height: 16px;
+    vertical-align: text-bottom;
+    padding-top: 3px;
+    margin-right: 2px;
+}
+
+div.tree div.link img
+{
+    height: 16px;
+    vertical-align: text-bottom;
+    padding-top: 3px;
+}
+
+div.tree div.link
+{
+    height: 17px;
+}
+
+div.tree div.link img.favicon
+{
+    height: 16px;
+    width: 16px;
+    vertical-align: text-bottom;
+    border: 0;
+    margin-right: 1px;
+}
+
+div.tree a
+{
+    text-decoration: none;
+    color: #000000;
+    padding-left:2px;
+    padding-right:10px;
+    padding-top: 2px;
+}
+
+div.tree a.private img
+{
+    padding-right:3px;
+}
+
+div.tree a.highlight
+{
+    background-color: #c0d2ec;
+}
+
+/*** Command Window ***/
+
+#commandHead
+{
+    color: #ffffff;
+    font-size: 13px;
+}
+
+#errorHead
+{
+    font-size: 13px;
+}
+
+#warnHead
+{
+    background: #84aa00;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+body.cmdWin table th
+{
+    color: #333;
+}
+
+/*** Launcher window ***/
+
+#tip
+{
+    height: 7em;
+}
+
+#launcher
+{
+    border: 1px solid #84aa00;
+    padding: 2px;
+    background: #fffff5;
+}
+
+#launcher h2
+{
+    margin-bottom: 5px;
+    color: #333;
+    border: 1px solid #84aa00;
+    background: #fffff5;
+}
+
+#launcher p
+{
+    margin-top: 1px;
+    margin-bottom: 0;
+    font-size: x-small;
+}
+
+#launcher table
+{
+    text-align: left;
+    background: #fffff5;
+}
+
+#launcher table th
+{
+    background: #84aa00;
+    color: white;
+}
+
+#launcher table td
+{
+    background: #fffff5;
+}
+
+#launcher a
+{
+    color: #000000;
+    font-weight: bold;
+}
+
+#launcher a:hover
+{
+    text-decoration:none;
+}
+
+#trailer a
+{
+    color: #000000;
+    font-weight: bold;
+}
+
+#trailer a:hover
+{
+    text-decoration:none;
+}
+
+span.compatibleNo
+{
+    color: #bbbbbb;
+}
+
+span.compatibleYes
+{
+    color: #000000;
+}
