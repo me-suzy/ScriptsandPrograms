@@ -1,0 +1,50 @@
+Installation as a Invision Board Mod
+ To install X7 Chat you must have PHP Version 4+ and MySql Version 3+.
+ After making sure that you have the correct versions of PHP and MySql
+ please follow the following steps.
+ 
+ 1) Open the file config.php in a text editor.  Scroll down past the
+    copyright.  There you will see 10 variables that need edited.  The
+    variables are in the form $VARIABLENAME[SUBNAME] = "VALUE";  You
+    will need to replace the current value of a variable with the 
+    correct value for your server.  I recommend setting the 
+    $SERVER['PATH'] variable to "/" unless you experience problems.
+    You MUST set the $SERVER['AUTH'] variable to "invision".
+    
+ 2) Upload all of the included files, except the Docs directory to
+    the server.  Upload all files in binary mode (usually default).
+    After you upload all files CHMOD 777 the directory Logs.
+	
+    WARNING: The X7 Chat directory MUST be directly inside the Invision one.
+    
+ 3) After uploading all the files to the server go to
+    http://yoursite.com/invisiondir/x7chatdirectory/install.php.  
+    After going to the install.php page you will be guided through
+    setup.  The admin account you create in install must have the SAME username
+    and password (for verification) as your admin account for invision.
+    
+ 4) After finishing the online setup delete the file install.php.  If
+    you do not it will be possible for anyone to create an administrator
+    account on your chat server.
+
+ 5) The following modifications need to be made to your Invision files.
+    Open up the invision file /Skin/s*/skin_global.php
+    Find:
+      &nbsp; &nbsp;&nbsp;<img src="{$ibforums->vars['img_url']}/atb_calendar.gif" border="0" alt="" />&nbsp;<a href='{$ibforums->base_url}act=calendar'>{$ibforums->lang['tb_calendar']}</a>
+
+    Add Below:
+      &nbsp; &nbsp;&nbsp;<img src="{$ibforums->vars['img_url']}/atb_chat.gif" border="0" alt="" />&nbsp;<a href='/Chat' target="_blank">Chat</a>
+ 
+    In the code you just added find: /Chat and replace it with whatever the name of your X7 Chat directory is.
+    * is the number of the theme you are using
+
+ 6) All finished :)  Have fun chatting, you need help with the install check out
+    the online forum at our website, http://forum.x7chat.com/.
+
+ 7) NOTES AND TIPS ON RUNNING X7 CHAT AS An Invision Board MOD:
+      A) The User Manager in the X7 Chat admin panel will not work, use the one
+	 included with Invision.
+		 
+	  B) I STRONGLY recommend disabling registration on X7 Chat since all registration MUST
+	     take place through the Invision registration form or else X7 Chat will not
+	     work correctly.
