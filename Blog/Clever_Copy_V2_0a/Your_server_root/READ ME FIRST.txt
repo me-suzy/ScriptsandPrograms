@@ -1,0 +1,89 @@
+Installing Clever Copy is straightforward and is performed by the inbuilt installer.
+--------------------------------------
+
+First, upload all the files and folders to your webserver root. Make sure that you retain the
+directory structure as shown below. You may install Clever Copy in any directory of your
+server. 
+
+
+Server root ----     <-------- This is the top level (e.g. http://www.yoursite.com)
+                |
+                .htaccess
+                about.php
+                acronymblock.php
+                acronyms.php
+                activateppc.php
+                addtoweblinks.php
+                adminblock.php
+                |
+                + other files
+                |
+                weblinksblock.php
+                welcome.php
+                whoonlineblock.php
+                |
+                |_ admin
+                |       |_ items
+                |       |_ languages
+                |
+		|_ banners
+                |_ downloads
+                |_ gallery
+                |        |_ photos
+                |                |_ buttons
+                |                |_ thumb
+                |_ images
+                |        |_ admin
+                |
+                |_ install
+                |        |_ languages
+                |
+                |_ languages
+                |_ news
+                |_ newsletter
+                |_ personalities
+                |_ poll
+                |_ randompics
+                |_ randomquotes
+                |_ stats
+                |_ tag
+                     |_ smilies
+
+
+
+---------------------------------------
+
+You then need to change the permissions (Chmod) of the following directories:
+
+admin - change to 777 (write all, read all, execute all)
+admin/items - change to 777 (write all, read all, execute all)
+gallery - change to 777 (write all, read all, execute all)
+gallery/photos - change to 777 (write all, read all, execute all)
+gallery/photos/thumb - change to 777 (write all, read all, execute all)
+news - change to 777 (write all, read all, execute all)
+stats - change to 777 (write all, read all, execute all)
+
+For instructions on how to chmod, run the installer (see below)
+---------------------------------------
+
+
+
+Once you have uploaded all the files and folders and changed the permissions, browse to
+http://www.yoursite.com/install or http://www.yoursite.com.
+
+The installer will run and prompt you for the necessay information. If you don't know how to
+chmod directories, the installer will provide a link to a help file.
+If you receive any error messages during the install process, deal with them in top down order
+i.e. resolve the problem that appears at the top of the list before moving on to resolve the
+next problem. Most problems are associated with each other and curing the first problem found
+usually resolves the problems that follow.
+
+Once your install has been successfull, you will be prompted to go to your site main page and you will
+then need to login. Once logged in with the info you provided during the install, you will be able to 
+access your admin panel.
+
+
+Should the installer fail for some reason, you can get help from the Clever Copy support
+forums at http://clevercopy.bestdirectbuy.com/forum
+
+Magus Perde 05-02-2005
