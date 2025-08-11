@@ -1,0 +1,61 @@
+-----------
+CHANGE LOG
+-----------
+
+version 1.3.2
+Release Date:
+*****************************
+
+- New log system, using .php file to save log data.
+
+
+
+version 1.3.1
+Release Date: Feb 15, 2005
+*****************************
+
+- Added support for register_globals Off.
+- Added some messages (updated the Language files)
+- Changed Logs system. (please empty your .log file from now)
+- Added new installation wizard script.
+- Changed some codes inside editconf.php for updating configuration.
+
+version 1.2.1
+Release Date: Jan 31, 2005
+*****************************
+
+- Fixed link for editing shout if there is/are html tags inside comments.
+- Fixed bug, if shouts total > $commentshown, shouts before $commentshown disappeared, sorry, forgot the important 1 line :p
+- Fixed problem when deleting a shout other than page 1, then back to page 1.
+- Added auto-logout time when idle.
+- Added allowed html tags option inside admin control panel.
+- Added option to choose between web/email is required or not. (thanks to Ryan)
+- Added 'about' page :)
+- Moved the time info from <a> to <td>
+- Change all time value into minute.
+- Change all input name at shout form, from "tag*" to "g*"
+- Clean up the code inside shoutbox.php for more customizeable.
+- Temporary using base64_encode() to save p4ssw0rd in .log file
+
+
+
+version 1.1.1
+Release Date: Jan 22, 2005
+*****************************
+
+- Fixed the total shouts problem. Removed empty value from arrays when count shouts inside countShouts() and countLogs() functions
+- Undate the reply date when update a shout for first time but the reply message field is empty.
+- Remove _ character from skins option and change first character for each word in Uppercase.
+- As default, 'smiley' directory moved to inside 'images' directory.
+
+
+
+version 1.1
+Release Date: Jan 20, 2005
+*****************************
+
+- New antiflood system does not use cookie. This will make the antiflood system does not depend on client time which can be wrong.
+- Fixed a problem when edit a shout in other than page=1, when save it the page backs to page=1.
+- Adding emoticons when edit a shout from Control Panel
+- Adding functions to count page generation time (borrowed from phpBB2 :)
+- and other little fixing.
