@@ -1,0 +1,600 @@
+SiteBar 3 History
+=================
+
+[!] Important
+[+] New
+[-] Fixed error
+[*] Changes
+
+[Bxx] - refers to https://secure.teamforge.net/bugzilla/show_bug.cgi?id=xx
+
+--------------------------------------------------------------------------------
+Release 3.3.5 Bugfixes + Improved Plugins API Support          September 24 2005
+--------------------------------------------------------------------------------
+
+[+] [B43] Base URL is now configurable in "SiteBar Settings".
+[-] [B46] Backend search fails if words contain non ISO-8895-1 characters.
+[+] Support for synchronization plugins added.
+[+] [B34] XBELSync plugin for Bookmark Synchronizer extension can be downloaded
+    separately.
+[-] [B41] Import fails when using trash and the loaded links already exist as
+    deleted.
+[-] Nonprivileged users can now remove members from their group and add new
+    members using members email (user id in SiteBar).
+[-] MySQL error messages reported correctly when no connection can be created.
+[-] PHP fgets function did not work properly and sometimes (when loading big
+    files) breaks line. It has been replaced with low level fread.
+[-] Exported files are now produced with LF line ends.
+[-] If trash usage is disabled, the content is only purged if the user has
+    "Purge" right on the folder.
+[*] "Folder Properties" and "Delete Folder" command have limited functionality
+    when the parent folder does not allow "Update" and "Delete" right.
+[-] Fixed warning on import bookmark screen.
+[-] Add error handling for missing authentication plugin.
+[+] Added possibility to "Exclude Root Folder" from bookmark export.
+    Can be used in conjunction with Bookmarks Synchronizer extension, to sync
+    Bookmark Toolbar Folder (requested by Kai Speckmann).
+[!] Changed authentication API, LDAP plugin must be reinstalled. IMAP plugin
+    is already adapted.
+[-] When using authentication plugin no tree has been created for user.
+[-] Possible to delete account when using authentication plugin.
+[+] Added experimental writer "mobile" for pocket devices with incomplete
+    DOM2 implementation (not tested on mobile device). Use with URL similar to:
+    http://localhost/sitebar/index.php?w=mobile
+[-] Detect disabled cookies and inform user to enable them.
+[-] Improved error message when moving folder to the same folder where it is.
+[-] Fixed errors in "Add Link" built in command (used with writers).
+[-] Fixed downgrade from 3.3.3 to lower version.
+[-] Fixed URL forwarding after logging (used for translations).
+[+] Possibility to translate plugins added.
+
+Thanks to Lorin Gaertner for bug reports regarding XBEL format issues:
+
+[-] Fixed missing import of desc attribute in XBEL import.
+[-] Fixed import autodetection for files shorter then 100 lines.
+[-] Fixed PHP Warning on import of XBEL files not comming from SiteBar.
+
+Thanks to Steve Crooks for deep feature testing and reporting:
+
+[-] Fix folder browsing functions for system with PHP as CGI.
+[-] Front-end filtering ignores description in case SiteBar tooltips are used.
+[-] Back-end search ignores comments (descriptions) completely.
+
+--------------------------------------------------------------------------------
+Release 3.3.3 Binary Favicons Support + Fixits                       June 4 2005
+--------------------------------------------------------------------------------
+
+[+] Add support for binary favicons in format: "data:image/x-icon;base64,".
+    Change logic for emptying full favicon cache so that used binary favicons
+    get deleted as last - with import of Firefox bookmarks you get may
+    of them, so increase your limit if needed.
+    Run "/sanity.php?do_icons" to convert favicons imported earlier.
+[-] Fixed problem when reading translator exported zip files in some programs
+    like 7zip. Reported and solution suggested by Christoph Huber.
+[-] When cached visible and ACL folders list was empty it could have lead to
+    SiteBar inaccessibility showing error message
+    "Error: Node number has ACL record but does not exist!".
+[-] Deleting a folder with nid X and ACL record could lead to error
+    "Error: Node number X has ACL record but does not exist!".
+[-] Installer/uninstaller for MS IE sidebar did not work.
+    Reported by Lionel Martelly and solution suggested by Vlad Kout
+    The same problem was present for Mozilla search box item.
+[-] Fixed error (undefined functions) when deleting inactive users.
+[-] Fixed 451 error with qmail servers when sending email with bare LFs.
+[-] [B30] Import from Opera failed when description contained line breaks.
+[-] A workaround for Firefox bug in handling href attribute of XSL added
+    (https://bugzilla.mozilla.org/show_bug.cgi?id=286132)
+[+] Improved autodetection for supported import formats.
+[!] Hit counter usage no more default when exporting links.
+[-] Fixed display when using "Waiting for Visit" mode for multiple users seeing
+    the same bookmarks.
+
+--------------------------------------------------------------------------------
+Release 3.3.2 Minor Fixes                                            May 21 2005
+--------------------------------------------------------------------------------
+
+[-] After deleting and purging tree with "Extern Commander" switched on, the
+    next executed command from user menu will fail because of missing folder.
+[-] [B28] Fixed scrolling for Opera 8.0.
+
+--------------------------------------------------------------------------------
+Release 3.3.1 User Management Fixes and Enhancements                 May 19 2005
+--------------------------------------------------------------------------------
+
+[!] "Allow Add Self" for group now means, that anyone can join the group,
+    previously it has been combined with "Auto Join".
+[+] Possibility to display most active and inactive users including link count.
+    Inactive users can be deleted.
+[+] [913008] Regexp user and group selector - for installations with many
+    groups and users allows selection based on the regexp filter.
+[-] When approving multiple users, the subject was not correctly changed to the
+    user's language.
+[-] When approval of user accounts was required and verification of email not
+    then the account creation has failed in the middle thus not creating a
+    root folder for the user.
+[-] When verification of email was requested but user has entered formally wrong
+    email address then after resubmitting the page he received an Access Denied
+    page or duplicate user name.
+[-] Improved baseurl composition for PHP CGI installations.
+[-] [B27] Wrong email comparison leads to problems on case sensitive MySQL
+    installations.
+[-] [B22] Cannot load OPML exported from Bloglines.com.
+[-] [B21] When upgrading from pre 3.3 version, the SiteBar Settings switch
+    requesting users to be approved will remove rights from administrator.
+[-] [B20] Pasting links from menu showed with "Show Menu Icon" did not worked.
+    Dragging a node is no more possible when "Show Menu Icon" is selected.
+[+] [B19] Keep the window position when loading links for a closed node,
+    tested for IE and Firefox (Opera 8.0 failed).
+[-] [B18] "Show Logo" SiteBar setting was ignored.
+[-] When no conversion engine is installed it is still possible to perform
+    conversion from and to iso-8859-1.
+[*] It is now not possible to delete a folder in case when there is no delete
+    right for the parent folder.
+[*] "Import Bookmarks" can be now executed by anonymous users.
+
+--------------------------------------------------------------------------------
+Release 3.3 Writers Release                                        April 15 2005
+--------------------------------------------------------------------------------
+
+Functional Changes (order of implementation - latest first)
+
+[+] Administrator can rename file inc/message.inc.php.template to
+    inc/message.inc.php. The message will be displayed at the top of the SiteBar
+    tree.
+[+] New user switch can restrict loading of private links only when SiteBar
+    is used over secure HTTPS connection.
+[+] [974492] Redesigned and enriched integrator page. The page is by default
+    on a central URL what allows it to be improved without need of making
+    new release.
+[+] [973530] "Search" button now invokes a backend search, which searches in
+    all user bookmarks including hidden ones. When no hits are found the query
+    is redirected to user definable web search engine (by default Google).
+    Admin can disallow users to use custom search engine and force them to use
+    values set on "SiteBar Settings". User can disable usage of the Web Search.
+[+] New command "Show Link News" - displays information about links for the
+    whole SiteBar or selected folder (most popular, recently visited, added and
+    modified). Requires XSLT support on the browser side.
+[+] [847830] Procedure for handling forgotten passwords.
+[-] [1081372] Personal Mode: Delete trees does not work, create tree not
+    available.
+[+] [933135] Confirmation of email before use + new account approval.
+[+] [804413] Disabling user account (solved using the account approval).
+[+] [804379] Allow users to create their own groups.
+[*] "Keep In Cache" removed because it was not reliable - it did not work
+    correctly after reload. "Load Open Folders Only" and backend search should
+    be used in case of performance problems instead.
+[+] [940815] Admin can define maximum allowed session time.
+[+] User can disable using of trash - commands "Undelete" and "Purge Folder" are
+    not be available in this mode.
+[+] [814365] Use user setting "Use SiteBar Tooltips" to show tooltips in any
+    browser independent of the browser's functionality.
+[+] Admin can specify default domain for login. When domain is specified, then
+    users can login without domain. If login without domain fails it will be
+    tried with the specified domain (feature implemented by Bondviewer).
+[+] Support for "Live Bookmarks" in Mozilla Firefox added, a directory structure
+    can be exported from SiteBar and imported into bookmarks. The links will be
+    loaded on demand and always fresh.
+[+] New user switch "Default URL" has been added and is applied for "Add Link".
+[+] [954137] Add target property to links to allow links be opened in frames.
+[+] [941575] New command "Browse Folder" allows to browse folder in main window
+    seeing all link details. It is implemented using XSL Transformation of XBEL
+    output (which is currently not supported by the famous Opera).
+[+] [983357] New command "Show All Links" allows all links in the folder and
+    subfolders be displayed at once (implemented using [941575]).
+[*] [975659] Language autodetection can be disabled from "Default User Settings"
+    command in "SiteBar Settings" along with a full set of parameters, that will
+    be applied to anonymous and new users.
+[+] Anonymous user now can see command "Session Settings" which allows him
+    to set language or sorting criteria without logging to SiteBar.
+[+] [804382] More import/export possibilities
+    "Export Bookmarks" reworked and enhanced with feed possibility. SiteBar can
+    now produce feeds in many formats and with many options. Following formats
+    were added: Atom, RDF, RSS, OPML, XBEL. Command "Export Bookmarks" was added
+    to "Maintain Trees" and allows export of all accessible trees. New command
+    "Export Bookmarks Settings" allows to specify some details about feeds.
+    "Import Bookmarks" reworked, import from following formats added Atom, RSS,
+    OPML, RDF, XBEL. XBEL is now the default export/import format for SiteBar.
+[-] Removed global switch that allowed usage as backend engine, this
+    switch has been moved to "Export Bookmarks Settings".
+[*] "Highlight" button was replaced with "Filter". Filter was made default
+    button for search field. Filter still does highlighting, however, it will
+    hide all folders and links that do not match the filter. When "Filter"
+    button is released (clicked for second time), the filter will be removed
+    but highlighting will stay until reload or next search.
+[+] [895867] Possibility to add links with %SEARCH% keyword that will be
+    replaced with the content of the SiteBar's search field. See URL above
+    for an example of such URL. Works only with hit counting enabled.
+[+] [886349] Ability to handle large link databases by loading content of
+    opened folders only. Can be switched on in "User Settings" using switch
+    "Load Open Folders Only".
+[+] New "Olive" skin from Gunnar Wrobel and "SiteBarXP" from Igor Kraljic.
+[+] Added possibility for context menu plugins.
+[-] Export in MS IE format (Netscape bookmark format without SiteBar attributes)
+    always contained all SiteBar attributes.
+[-] [997886] Unable to delete top level links when deleting trees disabled.
+[*] Creation of new trees was previously allowed only to users with verified
+    email.
+[*] "Show Sponsor" removed. SiteBar will no more display SF.net logo by default.
+    This setting has damaged the project statistic on the SF.net. To provide
+    place for other sponsors a file inc/sponsor.inc.php.template has been
+    included. Adminstrator can rename this file to inc/sponsor.inc.php and to
+    change its content.
+
+Technical Changes
+
+
+[-] Fixed baseurl composition for IIS servers.
+[-] Fixed display of favicons in Command Window.
+[-] Incorrect codepages were used what caused ICONV to fail on some platforms
+    and to produce bookmarks with empty names.
+[-] [1166018] target=_blanks gets lost after command execution
+[+] Changes in the translator to allow marking paragraphs as changed in
+    the source language and other small changes (Olaf Noehring).
+[+] [814343] Admin can see all links, requires change of code in
+    inc/tree.inc.php - set SB_ALL_LINKS_FOR_ID to the ID of the user
+    who should see everything.
+[!] Plugins directory structure has changed - one plugin is in one directory,
+    although this is slower it is more organized. Mailgate and LDAP plugins
+    must be reinstalled from http://tinyurl.com/5j4ys .
+[-] Links with mailto: protocol no more have target attribute.
+[-] All mysql_ calls now use the connection parameter to avoid clashes
+    with other databases.
+[!] [990059] Skin framework changed, it is necessary to create new file
+    hook.inc.php instead of hook.php. See "Modern" skin for example. This
+    change allows changes be done to all skins via its virtual base class
+    (for example another sponsor or logo). There is less work a designer
+    should do - he needs to put into the CSS files only changes. Additionally
+    the designer can provide his own XSLs to produce different results for
+    XSL pages.
+[-] [991905] When importing bookmark with name duplicate to a deleted link
+    no message should be displayed.
+[-] [1017382] Help should be available during setup.
+[-] Fixed problem with natural join in MySQL 4.1.5 (thanks to Sascha Wall),
+    see http://bugs.mysql.com/bug.php?id=6136 .
+[*] All function and global variables prefixed with SB_ to avoid name
+    clashes during integration and to solve problem of missing namespaces
+    in PHP4 and PHP5. Error handling ignores E_STRICT to allow run under PHP5.
+[*] [1028410] Database down message does not reveal sensitive information.
+[*] mode=compact replaced with new writer "SiteBar Tree Embedded". More
+    information on integrator page.
+[-] Fixed installer for MS IE. Now does not need administrator rights.
+[-] "Show All Icons" showing broken icons icons older then 30 days.
+[-] No conversion is done when target charset is UTF-8.
+[-] [983417] Wrong value for registry entry.
+[*] TIMESTAMP columns changed to DATETIME. MySQL is trying to get more clever
+    here then programmer like me by silently changing the first column of this
+    domain. This would wrongly mark link as changed when only hits was updated.
+[-] [993495] Absolute URL incorrectly composed for HTTPS servers.
+[-] Removed unnecessary reads of sitebar_acl for each existing root.
+[*] Table sitebar_favicon changed to sitebar_cache. Table was generalized to
+    serve other purposes. Database class has new functions for operating with
+    cache.
+[+] List of nodes with ACL is now cached per user in database to speed up
+    loading of SiteBar. The cache is emptied on any operation on ACL.
+
+--------------------------------------------------------------------------------
+Release 3.3 Release Candidate 1 [3.3rc1]                        February 27 2005
+--------------------------------------------------------------------------------
+
+[!] See history of 3.3 release.
+
+--------------------------------------------------------------------------------
+Release 3.2.6 Critical patch                                       August 3 2004
+--------------------------------------------------------------------------------
+
+[-] [997871] Users with UID > 255 will always be logged as user with UID == 255.
+
+--------------------------------------------------------------------------------
+Release 3.2.5 Bookmark Validation and Minor Enhancements            June 20 2004
+--------------------------------------------------------------------------------
+
+Functional Changes
+
+[-] [955555] "Sort Mode" of folder should automatically change to "Custom Order"
+    when custom order is saved to database.
+[+] [804389] Bookmark validation available from "Folder Properties".
+[+] [955846] Admin can disallow users to delete their own trees.
+[+] [813960] Display of statistics information about page construction. Can be
+    disabled using new global switch. Statistics is not displayed for anonymous
+    users if "Sign Up" is not allowed.
+[+] [964304] Support for alternative authentication plugins added. Plugin for
+    LDAP authentication available separately.
+[-] "Export Bookmarks" and folder list in "Add Link" ignored hidden folders.
+[-] Moving folder to its subfolder caused the whole folder inaccessible.
+
+Technical Changes
+
+[+] If link URL has form https://host/path then favicon will be searched only
+    on URL http://host/favicon.ico.
+[+] Allow GIFs and JPEGs as favicons.
+[+] Allow icons without content lenght specification.
+[+] Skin authors can now colorize folder levels in "Add Link" bookmarklet.
+[-] Wrong constant name SHOW_PHP_ERROR in inc/errorhandler.inc.php.
+[-] Output for WebLinks is now in UTF-8. Works correctly since Firefox 0.8.
+[-] Link information retrieval from "Properties" overwrote even filled fields.
+[-] First editable field was not selected.
+
+--------------------------------------------------------------------------------
+Release 3.2 Plugins/Ordering and More Features                       May 16 2004
+--------------------------------------------------------------------------------
+
+Functional Changes
+
+[+] Plugin support added. First example plugin "Mail Gate" available separately.
+[+] [840294] Favicon double caching added: on server and in browser. Together
+    with [755293] debute of Gunnar Wrobel - new SiteBar Team core member.
+[+] [755293] Parse actual page for information.
+[+] [804410] The order of root folders can be customized on user level.
+[+] [804394] Folder hiding implemented to reduce page size.
+[+] [804417] Mix mode for folders and links (what comes first links or folders).
+[+] [816032] Custom order of links and folders, overrides user's default
+    settings for any folder.
+[+] New Firefox extension added. It is called SiteBar and can be installed from
+    the index.php page. Thanks to Bas Burger for the original code. This solves
+    [804409] Open all links of any selected folder in new tabs.
+[+] Link hit counter. Number of clicks on link and last visit for each user
+    can be tracked (uses global switch).
+[+] Possibility to sort links: by alphabet, most recent add/change, most often
+    clicked, wating for visit. This sorting applies to links in folders without
+    specified ordering. Additional information is shown for some kind of sorting
+    (e.g. how many days the link was not visited or number of hits).
+[+] Possibility to display only part of SiteBar using sitebar.php?root=ID url.
+[+] Output of sitebar.php can be cached in browser with user defined expiration,
+    expanded/collapsed folders might not be properly restored.
+[+] Bookmarks are exported with some extra information in Netscape format,
+    because IE has problems with additional attributes, it is possible to export
+    bookmarks ready for IE import.
+[+] Possible to import bookmarks with same name into the same folder using
+    automated renaming.
+[+] Error handling improved - PHP errors are caught to avoid blank page problem.
+[+] New "Mozilla Modern" skin from Jason Sawtelle.
+[*] Personal settings in "User Settings" moved to "Personal Data" as subcommand.
+[+] Admins can define the name of the sender of all SiteBar e-mails.
+[!] Vertical size of SiteBar command window increased.
+[-] Missing autorization on forward command. After "Delete Account" any user can
+    see list of users (incomplete e-mail addresses).
+[-] Admin can maintain own account using "Modify User".
+
+Technical Changes
+
+[-] Exported bookmarks could not be imported to Mozilla.
+[-] Folders and links of deleted root folder were visible.
+[-] Installer/uninstaller for MS IE corrupted.
+
+--------------------------------------------------------------------------------
+Release 3.2 Release Candidate 3 [3.2rc3]                              May 9 2004
+Release 3.2 Release Candidate 2 [3.2rc2]                           April 27 2004
+Release 3.2 Release Candidate 1 [3.2rc1]                            April 7 2004
+--------------------------------------------------------------------------------
+
+[!] See history of 3.2 release.
+
+--------------------------------------------------------------------------------
+Release 3.1.2 Minor Improvements                                   March 14 2004
+--------------------------------------------------------------------------------
+
+Functional Changes
+
+[+] Allow users to change their email. Verification is required after change.
+[+] Added global switch allowing switching off usage of charset conversion
+    engine. This can serve as workaround for non working Add Page bookmarklet.
+    The real solution is to install iconv, libincon or recode PHP extension.
+[+] Maintain Groups and Users sub commands now return to the parent command
+    screen after execution.
+[!] Members sorted by email rather then by id. In Member Groups and Moderators
+    real user name is now shown.
+[-] Fixed minor problems with skins.
+[-] Fixed error with exporting/importing bookmarks - missing codepage selection.
+    It was not possible to import exported bookmarks to Mozilla and would
+    cause problems when importing to IE, because it does not support UTF-8.
+[-] Saving user settings in personal mode caused public trees to be hidden.
+
+--------------------------------------------------------------------------------
+Release 3.1.1 Bug Fixes                                             March 6 2004
+--------------------------------------------------------------------------------
+
+Functional Changes
+
+[+] [804412] Allow user to cancel his account.
+[+] [804378] Allow Admin/Moderator to send mail to users/members.
+[+] Added generation of customized plugins for MyIE2 from index.php.
+[+] Mechanism for database downgrade to previous versions.
+[*] Only admins can see full e-mails of users, moderators see only short
+    version to protect user privacy.
+[*] Mails from SiteBar send on behalf of the sender with SiteBar: prefix in
+    subject.
+
+Technical Changes
+
+[-] [903737] Critical: SiteBar fails with show ACL and no membership.
+[+] [804358] Charset problem with bookmarklet and installer solved.
+[-] Serious: Not possible to change members of some group if some member of the
+    group does not want to be given membership.
+[*] Now using full opening tags.
+[!] When no codepage conversion engine found UTF-8 <-> ISO-8859-1 assumed
+    for non unicode characters.
+[-] Charset properly recognized when adding page or link from MS IE.
+[-] Fixed error when importing bookmarks with wrong character set.
+[*] Default tree sorting for not own trees is now tree name.
+[-] Mails are sent always in the language of the recipient.
+[-] Fixed error with missing argument in call to executePaste().
+[-] Fixed error when importing bookmarks with wrong user defined character set.
+[-] Fixed error with jumping icon of the first tree root (thanks to Vlad Kout).
+
+--------------------------------------------------------------------------------
+Release 3.1 Internationalization                                February 22 2004
+--------------------------------------------------------------------------------
+
+Functional Changes
+
+[+] [804377] Internationalization support added.
+    See http://brablc.com/sitebar/translator.php for list of translations.
+[!] Default "Modern" skin redesigned to make better use of space and to use more
+    neutral colors and more recent icons. The old "Modern" skin is now called
+    "Cornflower" for those who still might want to use it.
+[+] The code was analyzed with a profiled and optimized for speed.
+[+] New global SiteBar settings: "Show Logo" and "Show Sponsor" to free screen
+    space and to prevent timeout in Mozilla 1.x sitebar.
+[+] New user setting: "Show Trees with ID" allows to show own trees and
+    additionally to select other published root folders.
+[+] New user setting: "Hide Folders with ID" allows to hide any node.
+[+] New user setting: "Default Search In" allows to search by default in
+    specified folder/link properties.
+[+] Compact mode for embedding in other pages as IFRAME. Fill src attribute
+    in the following format "/sitebar/sitebar.php?mode=compact".
+[+] Added backend support for PHP Layers Menu, see "doc/engine.txt". Can be
+    disabled using new global switch "Allow Noninteractive Mode".
+[+] Added possibility to upload binary file to the description. Admin can allow
+    this using "Description Import/Export" setting.
+[+] [755300] Added option to copy/move content only.
+[+] "Add Link" bookmarklet now allows creating new subfolder and marking the
+    selected folder as default.
+[*] Old skins changed to use same look & feel (animated push release buttons)
+    and to save some space.
+[*] Expand all nodes by clicking "Collapse All" twice instead of Ctrl-click.
+[*] URL length now not limited to 255 characters.
+[*] Description length now "unlimited". Admin can specify maximum length of
+    description using new global switch "Link Description Length".
+[-] External favicons always shown with 16x16 dimension.
+[-] Fixed javascript error when search string matched folder name.
+[-] Fixed handling of combined searching and highlighting.
+[-] Fixed searching with "Show Menu Icon" checked.
+[-] Fixed logic of highlight button, third click does highlighting again.
+[-] Fixed error with impossibility of updating private link.
+
+Technical Changes
+
+[*] Database class has been devided to abstract class and MySQL specific
+    subclass. This should allow someone to write subclass for another DBMS.
+[-] [852353] Added support for IIS.
+[-] [873384] Only owner is able to add links/folders to subtrees.
+[-] [889525] Call to undefined function: ismytree()
+[-] Fixed handling of duplicates related to deleted objects. When a duplicate
+    link is found and it clashes with already deleted and not purged object,
+    the deleted link is purged and operation repeated. Any existing deleted
+    node is renamed by prefixing it with "_".
+
+Related Issues
+
+[+] On page http://myie2.web.pt/ you can find a plugin from Rui Umbelino
+    for SiteBar to integrate nicely to the MyIE2 browser. It seems like the
+    best integration with a browser thanks to the auto hiding, however, there
+    are some reports that users are not able to login from sidebar.
+
+--------------------------------------------------------------------------------
+Release 3.0.2 More Bugfixes                                     November 27 2003
+--------------------------------------------------------------------------------
+
+Functional Changes
+
+[+] Added support for Mozilla Firebird's extension WebLinks see "doc/engine.txt"
+[+] Added user setting "Show Menu Icon". It is intended for users with single
+    mouse button and Ctrl-click handled by the browser only (Mac users).
+
+Technical Changes
+
+[-] Refactored ACL to work in all necessary places (export, add link).
+[-] [840300] Bookmarklet reconciliation from login error.
+[-] [839592] Malfunction of Mozilla's Password Manager.
+[-] [843187] Character set should be set using HTTP and not HTML
+[-] Active area for click and right click for folders is now only the visible
+    part (previously the area was screen wide).
+[-] Added z-index CSS attribute to fix Mac's Safari display bug.
+[-] Fix error in config.php (accessed misssing first character of a string).
+
+--------------------------------------------------------------------------------
+Release 3.0.1 Bug Fixes                                          November 3 2003
+--------------------------------------------------------------------------------
+
+Functional Changes
+
+[+] When creating user or using "Modify User" (formely "Set Password") command
+    from user maintenance, administrator can mark account as demo account. Demo
+    account cannot change password end request email verification. Additionally
+    administrator can mark any account as having verified email.
+[*] "Log In" command allowed to be executed even if user is already logged in
+    to allow automatic login for demo accounts.
+
+Technical Changes
+
+[-] [831872] False potential auto join indication during sign up.
+[-] [833270] Deprecated function mysql_create_db.
+[-] [833306] Cannot include files without . in include_path.
+[-] [833848] Logically corrupted database not reported properly.
+[-] [833849] Missing style on repeated form after error.
+[-] [833850] Incorrect import bookmarks file detection.
+
+--------------------------------------------------------------------------------
+Release 3.0 Basic Release                                        October 27 2003
+--------------------------------------------------------------------------------
+
+Functional Changes
+
+[!] Promo text removed from the index page.
+[+] Security mechanism fully implemented, this allows private links in published
+    folders, inherited and restricted rights. Access specification can now be
+    on any folder instead of on root folder only.
+[+] Improved login mechanism with session logging. Allows specification of the
+    session expiration. Improved authentication mechanism.
+[+] New install/upgrade procedure - no need for other tools during install.
+[+] Drag&drop for Mozilla and Internet Explorer.
+[+] Codepage conversion on bookmark import/export.
+[+] New "System" skin from Alexis Isaac http://www.alexisisaac.net/ .
+[+] New search possibilities. With prefix url:, desc:, name: or all: it is now
+    possible to specify what should be searched. Default is name:.
+[+] Ctrl-click on "Collapse All" icon will expand all folders.
+[+] New global switches:
+    "Personal Mode" - mode for sites without member groups with simplified
+        folder publishing. Some functions are not available in this mode.
+    "Users Can Create Trees" - allows users to create another trees.
+    "Allow Anonymous Contact" - allows anonymous users to send message to admin.
+[+] New user switches:
+    "Allow Given Membership" - allows moderators to add users with switch set
+        to ON to their group.
+    "Allow Info Mail" - just for admin's information if you want get some
+        maintenance information from him (in case of server downtime, ...).
+    "Decorate ACL Folders" - shows folders with security specification
+        underlined or another way emphasized according to used skin.
+[+] New link command: "Email Link" - uses internal mailer in case of verified
+    email address, otherwise external mail program is used.
+[+] E-mail can be verified any time (instead of on sign-up only).
+[+] Authenticated users can send message to the administrator.
+[+] Authenticated users can send message to the moderator of a closed group -
+    if he allows his closed group to be listed.
+[*] User switch "Auto Reload" renamed to "Extern Commander".
+[*] User switch "Auto Close" renamed to "Skip Execution Messages".
+[-] Folder state (opened/closed) is handled on server side instead on client.
+[-] Deleted root folders are now shown in grey-scale and their context menu
+    allows only "Purge" or "Undelete".
+[+] User switch for default "Paste Mode".
+[*] In the commander window the first active field is automatically focused.
+[+] File features.txt transformed to online help.
+[+] Private links are shown with lock icon.
+[-] Label of the SiteBar icon shown on the MS IE toolbar fixed to "SiteBar".
+[-] Fixed error when sending link as email.
+[-] Fixed ACL error related to multiple groups and reduction of rights.
+[-] Fixed errors related to purging of deleted folders (especially roots).
+[-] Fixed error related to changing membership and group members.
+
+Technical Changes
+
+[*] Database structure changed.
+[*] Target attribute set on every link with exception of bookmarklets.
+[+] New global switch "Use Compresssion". Uses PHP's output buffering through
+    gzip for the sitebar.php main page. Size reduction with factor 8 to 10.
+[+] Checkboxes now have labels associated.
+[-] Performance issue solved - only necessary links are loaded from db.
+[-] Improved way of reloading SiteBar - images stay in cache.
+[-] Target attribute was forgotten when pop-up instance of SiteBar was used.
+
+--------------------------------------------------------------------------------
+Release 3.0 Release Candidate 1 [3.0rc1]                       September 26 2003
+--------------------------------------------------------------------------------
+
+[!] See history of 3.0 release.
+
+--------------------------------------------------------------------------------
+Release 3.0 Preview Release 1 [3.0pre1]                           August 26 2003
+--------------------------------------------------------------------------------
+
+[!] First public release.
