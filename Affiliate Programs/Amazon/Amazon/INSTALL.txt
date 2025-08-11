@@ -1,0 +1,36 @@
+/* ########################################################################
+
+Copyright (C) 2003 FORTUNE DESIGN
+Amazon feed Version 1.0
+sales@fortunedesign.co.uk
+http://www.fortunedesign.co.uk
+
+######################################################################## */
+
+================================================
+
+	This contribution is for any PHP 
+	
+================================================
+
+	We do not except responsibility for any part of the script nor damage that may have been caused when loading this script.
+	We strongly advise to make backup copies of all files before installing this script.
+	
+================================================
+
+	INSTALL
+
+1.	Make sure you have a Associate Id from Amazon.com if you dont you will need one.
+	>> http://www.amazon.com/webservices
+	
+=====================
+
+2.	Upload all the files to the required directories
+
+=====================
+
+3.	Run the script amazon.php
+
+=====================
+
+4.	All done... Easy
