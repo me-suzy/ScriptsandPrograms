@@ -1,0 +1,52 @@
+---------------------------------------------
+	   Jodchat Installation Instructions
+---------------------------------------------
+
+Thankyou for choosing Jodchat.
+
+To run jodchat, just upload these following files:
+ * jodchat.php
+ * jodchat_conf.php
+ * chat_template.htm
+ * chat_messages.txt
+
+If your a unix or a posix based system e.g. linux, you'll need to make sure "chat_messages.txt"'s permissions is set to read and write e.g. 0666.
+ 
+Now goto your jodchat program e.g :
+
+http://www.your-site/exampledirectory/jodchat.php
+
+And it should run!! - simple as that.
+
+By default you'll get a white screen. However, you can change the look of your chatroom by editing the "chat_template.htm" file. If you look at the code you'll see the string "$chat$" - where ever the "$chat$" is, will be where your chatroom will appear. So its import to make sure "$chat$" is included in this file.
+
+If you want access to the moderator functions you'll need to edit your "jodchat_conf.php" file. First of all you'll need change the password to something only you'll know e.g.:
+
+$moderator_password = "mysecretpassword";
+
+And Secondly you'll need to enable the functions you want to use e.g.:
+
+$moderator_bomb = true;
+$moderator_kick = true;
+
+To use these moderator functions in the chatroom type the following in the chatroom send box:
+
+#kick moderator_password username
+(this will kick user "username" off your chat room)
+
+And...
+
+#bomb moderator_password username
+(this will crash user "username"'s  browser - completely harmless but should get the message across!!)
+
+And finally you can change at what rate your browser checks for new messages, by changing modifying the "$check_rate" variable e.g.
+
+$check_rate = 2;
+(this will make your browser check for new massages every 2 seconds)
+
+$check_rate = 5;
+(this will make your browser check for new massages every 5 seconds)
+
+Have fun!!
+
+Jody
