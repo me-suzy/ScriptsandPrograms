@@ -1,0 +1,65 @@
+<form>
+	<title>Event Details</title>
+	<action>index.php</action>
+	<name>edit</name>
+	<method>get</method>
+	<width>580</width>
+	<formtag>true</formtag>
+	<border>true</border>
+	
+	<buttons>		
+		<set>
+			<header>true</header>
+		</set>
+
+		<return onclick="" button="return" >
+			<location>{PRIVATE.FORM_PREVIOUS_PAGE}</location>
+		</return>
+
+		<save onclick="" button="edit">
+			<location>index.php?mod=attendance&sub=events&action=edit&event_id={EVENT_ID}&returnurl={CURRENT_PAGE}</location>
+		</save>
+
+	</buttons>
+
+	<redirect>index.php?mod=attendance&sub=events&action=details&event_id={EVENT_ID}</redirect>
+
+	<fields>
+
+		<event_id type="hidden" default="$_GET['event_id']" action="eval" />
+
+		<event_title type="text"> 
+			<title>Title</title>
+		</event_title>
+
+		<event_date type="text" action="date" params="F d, y g:i a">
+			<title>Date</title>
+		</event_date>
+
+		<event_public type="relation"> 
+			<title>Public</title>
+			<options>
+				<option name="0">private</option>
+				<option name="1">public</option>
+			</options>
+		</event_public>
+
+		<mod type="hidden" default="$_GET[mod]" action="eval" />
+		<sub type="hidden" default="$_GET[sub]" action="eval" />
+		<action type="hidden" default="$_GET[action]" action="eval" />
+
+		<section type="droplist" onchange="document.forms[0].submit();" default="$_GET[section]" action="eval" width="300">
+			<title>View Section</title>
+			<options>
+				<option name="0">Event Details</option>
+				<option name="1">Users</option>
+			</options>
+			<description>Select the section you want to apear bellow.</description>
+		</section>
+
+		<event_description type="text" valign="top" font="normal"> 
+			<title>Description</title>
+		</event_description>
+
+	</fields>
+</form>
