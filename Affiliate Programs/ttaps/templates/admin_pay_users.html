@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Affiliates to be paid</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="STYLESHEET" type="text/css" href="mainII.css">
+</head>
+
+<body>
+
+<h1>[title_affiliates] Admininstration</h1>
+<h2>Affiliates that have passed the payment threshold.</h2>
+
+<table border="1" bordercolor="#0099FF" cellspacing="0" align="center" cellpadding="2" class="white" style="border-collapse: collapse">
+<tr>
+	<th>Name</th>
+	<th>Address</th>
+	<th>City or County </th>
+	<th>Zip or Post Code</th>
+	<th>Country</th>
+	<th>Amount to pay</th>
+</tr>
+[affiliates_to_pay]
+</table><br>
+
+<div align="center">
+<form method="post" action="admin.php">
+    <input type="submit" value="Return to main menu" class="button">
+    <input type="hidden" name="action" value="menu">
+</form>
+</div>
+
+</body>
+</html>
