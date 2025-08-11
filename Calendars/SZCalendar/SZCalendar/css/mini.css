@@ -1,0 +1,60 @@
+table {
+  border-top: 1px solid black; 
+  border-left: 1px solid black;
+}
+
+td {
+  border-bottom: 1px solid black; 
+  border-right: 1px solid black;
+	vertical-align : top;
+	text-align : left;
+	text-justify : inter-ideograph;
+	font : 12px Trebuchet MS, Arial, Helvetica, Verdana;
+	line-height : 15px;
+}
+
+td.everyDAY {
+	text-align : left;
+	color : #2C2018;
+  background: #FFFFFF;
+}
+
+td.clean {
+  border : none;
+}
+
+td.TOPday {
+	text-align : center;
+	color : Black;
+}
+
+.today {
+  font-weight: bold;
+	color : black;
+}
+
+td.prevDAY {
+  background: #BBBBBB;
+	color : #FFFFFF;
+}
+
+td.redDAY {
+  background: #ff7777;
+}
+
+td.holiDAY {
+  background: #ff7777;
+}
+
+td.center {
+	text-align : center;
+	color : Black;
+}
+
+td.right {
+	text-align : right;
+}
+
+td.left {
+	text-align : left;
+}
