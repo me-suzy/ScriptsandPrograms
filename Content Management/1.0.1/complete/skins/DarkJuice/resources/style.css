@@ -1,0 +1,68 @@
+A:link, A:visited, A:active, A:hover{
+	color: #FF6600;
+}
+body{
+	margin: 0px;
+	background: #000000;
+}
+body, div, td{
+	font-family: "Calisto MT", arial, verdana, times;
+	font-size: small;
+	color: #FFFFFF;
+}
+.container{
+	background: #333333;
+}
+.footer{
+	text-align: center;
+	padding: 5px 5px 0px 5px;
+	margin: 0px 0px 5px 0px;
+	border-top: #FFCC00 3px solid;
+}
+h1, form{
+	margin: 0px;
+}
+h1 A:link, h1 A:visited, h1 A:active, h1 A:hover{
+	color: #FF9900;
+	text-decoration: none;
+}
+h2{
+	border-bottom: #AAAAAA 1px solid;
+	margin-bottom: 5px;
+}
+h3, h4{
+	margin-bottom: 5px;
+}
+.main{
+	padding: 5px;
+}
+.menu{
+	padding: 5px;
+	margin-bottom: 5px;
+	border-bottom: #FFCC00 3px solid;
+	background: #000000;
+}
+.nopage, .nopage:link, .nopage:visited{
+	color: #CC0000;
+}
+.outlink{
+	background: url(external.png) center right no-repeat;
+    padding-right: 13px;
+}
+.submenu{
+	padding: 3px 5px 3px 5px;
+}
+.submenu A:link, .submenu A:visited, .submenu A:active{
+	display: inline;
+	color: #CCCCCC;
+	text-decoration: none;
+	border: #CCCCCC 1px solid;
+	padding: 3px 3px 3px 3px;
+	background: #000000;
+}
+.submenu A:hover{
+	color: #000000;
+	text-decoration: none;
+	background: #666666;
+	background-repeat: repeat-x;
+}
