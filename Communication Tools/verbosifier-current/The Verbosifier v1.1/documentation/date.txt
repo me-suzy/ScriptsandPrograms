@@ -1,0 +1,50 @@
+=============================================
+    Table of date codes for formatting the
+    date for display by The Verbosifier.
+    http://www.desiquintans.com/verbosifier
+=============================================
+
+Use these codes to format the date as you like. If you want to use a plain
+word (like 'of' or 'the') you must escape each letter of the word with a
+backslash ('\o\f' and '\t\h\e').
+For example, to get "Saturday, the 22nd of October, 2005" you would enter
+        l, \t\h\e jS \o\f F, Y
+
+YEAR:
+    Y: 2005
+    y: 05
+MONTH:
+    n: 4 (as one or two digits)
+    m: 04 (as two digits)
+    F: April
+    M: Apr
+DAY OF THE YEAR:
+    z: 0-365
+DAY OF THE MONTH:
+    S: st/nd/rd/th (two-digit ordinal suffix [e.g. 1st of...])
+    j: 9 (one or two digits)
+    d: 09 (two digits)
+    t: 28-31 (number of days in given month)
+DAY OF THE WEEK:
+    l (small L): Monday
+    D: Mon
+    w: 0-6 (0 is Sunday)
+HOUR:
+    g: 7 (12-hour format with one or two digits)
+    G: 19 (24-hour format with two digits)
+    h: 07 (12-hour format with one or two digits)
+    H: 19 (24-hour format with two digits)
+MISC TIME:
+    i: 45 (minutes)
+    a: am/pm
+    A: AM/PM
+    s: 12 (seconds)
+    U: 1129596111 (seconds since the 1st of January, 1970.)
+
+It's always better to show the year as four digits and the month as three letters
+because it reduces confusion: lots of people have trouble with an ambiguous date
+like 06-10-05 because it can be construed as:
+    - 6th of October, 2005 (DMY, mainly British)
+    - October the 10th, 2005 (MDY, mainly American)
+    - 2006, October the 5th (YMD, Zulu (international date/time))
+    - 2006, 10th of May (YDM, a rare variation of Zulu)
