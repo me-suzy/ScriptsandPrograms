@@ -1,0 +1,76 @@
+       Software License Agreement for Fast Click SQL
+
+IMPORTANT READ CAREFULLY:
+This Limited Use Software License Agreement (the "Agreement")
+is a legal agreement between you ("Licensee"), the end-user,
+and FtrainSoft, Inc ("FtrainSoft") for the use of the
+Fast Click SQL software product ("Software or Software Product").
+By using this software or storing this program on a computer
+hard drive (or other media), you are agreeing to be bound by
+the terms of this Agreement. If you do not agree to the terms
+of this Agreement, and you have registered this software,
+promptly return the software and the accompanying items
+(including any written materials), along with your receipt for
+a full refund; or delete the software from all storage media.
+
+Copyright laws and international copyright treaties, as well
+as other intellectual property laws and treaties protect the
+Software. The Software product is licensed, not sold.
+
+GRANT OF LICENSE
+This Agreement grants you the following rights:
+
+USE AND COPY
+One registered copy of the Software Product may either be
+used by a single person who uses the software personally on
+one or more computers, or installed on a single workstation
+used non-simultaneously by multiple people, but not both (or
+as outlined by multiuser licensing restrictions). You may
+make other copies of the Software Product for backup and
+archival purposes only.
+
+RESTRICTIONS
+You must maintain all copyright notices on all copies of the
+Software Product.
+
+You may not reverse engineer, decompile, or disassemble or
+otherwise reduce this software to a human perceivable form.
+You may not modify, rent or resell for profit this software,
+or create derivative works based upon this software.
+You may not publicize or distribute any registration code
+algorithms, information, or registration codes used by this
+software without permission of FtrainSoft, Inc.
+You may not use any registration codes for the Software that
+have not been purchased from FtrainSoft or an authorized
+representative of FtrainSoft.
+
+You may not rent or lease the Software Product without the
+express written consent of FtrainSoft, Inc.
+
+------------------------------------------
+NO WARRANTY
+ANY USE OF THE SOFTWARE PRODUCT IS AT YOUR OWN RISK. TO THE
+MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHOR
+DISCLAIMS ALL WARRANTIES AND CONDITIONS, EITHER EXPRESS OR
+IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NONINFRINGEMENT.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT
+SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, INCIDENTAL,
+INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING,
+WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS,
+BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY
+OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY
+TO USE THE SOFTWARE PRODUCT, EVEN IF THE AUTHOR HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BECAUSE SOME
+JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF
+LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE
+LIMITATION MAY NOT APPLY TO YOU.
+
+COPYRIGHT:
+Fast Click SQL is Copyright FtrainSoft, Inc.
+You must treat the Software like any other copyrighted material.
+
+Copyright (c) 2005 Dmitry Ignatyev
+All Rights Reserved
