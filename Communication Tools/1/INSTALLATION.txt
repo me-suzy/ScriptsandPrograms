@@ -1,0 +1,25 @@
+For installation, extract ZIP into a folder and include comment.php into the file you want comments to be written to. Make sure in the .mdb that you describe the page identifier so that the script knows which comments belong to which pages. Currently there is no administrative login so make changes to the Admin/Banned table as needed. For visual changes modify the clean.css file.
+
+For updates on this script visit: http://programming-designs.com
+
+Please disregard the below information as this script is still a WIP. The password to the comment.mdb is currently set to 'test' with the username as 'Admin'.
+---------------------------------------------------------------------------
+
+//Programming Designs phpComment v0.300
+
+Thank you for downloading our script. Please read the requirements and make sure your server meets them before attempting to install.
+
+Requirements:
+- PHP must be enabled
+- ODBC connections must be supported
+- Server Side Includes (SSI) must be enabled
+
+
+Please read the following steps to begin installation of this script.
+
+SECURING YOUR DATABASE WITH PASSWORD PROTECTION:
+1) Open Microsoft Access and click File >> Open and find the provided database 'comment.mdb' and open it exclusively.
+2) Go to Tools >> Security >> Set Database Password and define your password. This will be the password you need to provide in the comment.php script we will be modifying.
+3) After choosing clicking OK then exit out of the database, we are done securing the database, =)
+
+NOTE: The above steps is to protect your database from being viewed by visitors who would be able to view IP Addresses of people who leave a comment.
