@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>DownloadPro 1.x README</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.style2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.style3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.style4 {font-size: 12px; font-family: Arial, Helvetica, sans-serif;}
+-->
+</style></head>
+<body>
+<p><strong><span class="style2">DownloadPro V1.x Readme:</span></strong></p>
+<p class="style3">Thanks for downloading DownloadPro. This file attempts to outline how the script works, how to install it, and how to use it. </p>
+<p class="style3">Please read the enclosed license before using this script.</p>
+<p class="style3"><u>Prerequisites;</u></p>
+<p class="style4">This script requires a base of a PHP enabled webserver, and a MySQL database.</p>
+<p class="style4"><span class="style3"><u>Overview:</u></span></p>
+<p class="style4">What does downloadpro do? Well, if you don't want visitors to see the full url of your downloads, so that people can only download your files from your site, you can hide them. Instead, you link to download.php?file=x, where x is the id of the file you want them to be served, and they will download the same files, however the address remains masked. All they see is download.php, which acts as a barrier between your files, and your visitors, and prevents what is known as 'leeching'.</p>
+<p class="style4">Using download pro also allows you to display and monitor the downloads of your files. There are 2 modes - The first displays a count figure in the location of your choice, such as as '245 Downloads So Far!' notice in your download area, which dynamically updates everytime someone downloads the file. The second mode is included in the admin control panel, and shows the visitors IP address, the visitors chosen file, and the date and time which they requested the chosen file. </p>
+<p class="style4">All files are assigned an id number when added in the control panel, which is used for tracking, hit displays, and for downloading. </p>
+<p class="style4">The script is fast, easy to use, and transparent. See it in use at <a href="Http://www.explodingpanda.com/scripts.php" target="_blank">Http://www.explodingpanda.com/scripts.php</a> on the individual script pages. </p>
+<p class="style4"><span class="style3"><u>Installation:</u></span></p>
+<p class="style4"><strong>The Files:</strong></p>
+<p class="style4"><strong>Main Script Files: </strong><em><br>
+  Download.php - </em>The basic engine that processes download requests, and counter display requests.<br>
+  <em>db.php - </em>Contains all configuration, from user/pass, to db details.<br>
+<em>downloadpro.php - </em>The admin backend to add, delete and modify fields, and to view stats.<br>
+<em>modify.php - </em>This is the engine that parses all new file, edit file, and delete file requests from the admin backend.<br>
+<em>displaystat.php - </em>This file parses and formats full download stats into managable pages.<br>
+<em><em>install.php - </em></em>The database installation script. Run to install, then delete.<em><br>
+<em><em>restrict.php - </em></em></em>This file regulates access to the admin pages. <em><br>
+<em><br>
+</em></em><strong>Other Files:</strong><em><em><br>
+style.css - </em></em>The style sheet - defines how outputted elements look, for example link colour. <em><br>
+linkdemo.php - </em>Shows how to set up links and count displays. May be deleted, included for demo purposes.</p>
+<p class="style4"><strong>Installation and Configuration:</strong></p>
+<p class="style4">Installation is simple. First, open db.php in a text editor such as 'notepad', and ensure all fields are correctly configured as below:</p>
+<p class="style4"><em><strong>$dbhost = &quot;localhost&quot;; - </strong></em><strong>The hostname of your database, usually is just localhost.<br>
+    <em>$dbuser = &quot;you&quot;; </em>- The username for your database.<br>
+<em>$dbpass = &quot;anything&quot;;</em> - The password to access your database.<br>
+<em>$increment = &quot;50&quot;;</em> - Defines how many items are shown on each statistics page. <br> 
+<em>$scriptuser = &quot;admin&quot;;</em> - The username allowed to access the admin CP. <br> 
+<em>$scriptpass = &quot;pass&quot;;</em> - The password required to access the admin CP. <br>
+<em>$db=&quot;yourdb&quot;</em> - yourdb must be replaced with your database name. </strong></p>
+<p class="style4">Once you have checked this, save db.php, and upload all the files that came with your download into a directory of your choice (/downloadpro is a good idea). Then run install.php in a web browser (For example Http://www.yoursite.tld/downloadpro/install.php). This will create the necessary fields inside of your database. Once install.php has been successfully run, you <strong>must</strong> delete it for security reasons. The script is now ready for use.</p>
+<p class="style4"><strong>Accessing the admin control panel:</strong></p>
+<p class="style4">The admin control panel is the file called downloadpro.php, access it for example using http://www.yoursite.tld/dlpdirector/downloadpro.php. You will then need to login with the admin username and password which you specified in db.php when you configured it.</p>
+<p class="style4"><strong>Adding your first files:</strong></p>
+<p class="style4">Simply press 'insert new', and enter the the full url for the file, ie Http://www.yoursite.tld/myfiles/anything.zip, and if required, pre set the amount of times the script has been downloaded (defaults to zero). Hit submit, and you will return the the main page, and the new file will be displayed in the files table. </p>
+<p class="style4"><img src="example.gif" width="486" height="240"><br>
+  <strong>Above: The Admin Control Panel </strong></p>
+<p class="style4">As shown in this example, you can view all existing files, their hit counts, and their unique ID codes in the admin control panel. This id is used when displaying the hit count, and when linking to the file. You can also delete and modify the files, which is very straightforward, so does not warrant a mention here. </p>
+<p class="style4"><strong>Linking to your files:</strong></p>
+<p class="style4">An example linking page exists at linkdemo.php - open it in a text editor to see how it's done.</p>
+<p class="style4">Download.php accepts 2 modes. One causes it to serve the file of the specified ID, the other causes it to print the download count of the file of the specified ID. If we wanted to make users <strong>download</strong> http://www.yoursite.com/blah.zip, rather than revealing our address, we do the following:</p>
+<p class="style4"><em>&lt;a href=&quot;http://www.yoursite.com/dlp/download.php?file=0&quot;&gt;Download my file now!&lt;/a&gt;</em></p>
+<p class="style4">This wil cause the file at the full address in the Control Panel to be served to the user, transparently. File=0 is simply substituted by whatever your file's id is.</p>
+<p class="style4">The second mode is to <strong>display the hit count.</strong> Say we want to show our users how many times our great file has been downloaded. For the above example, you simply enter the following:</p>
+<p class="style4"><em>&lt;?php include(&quot;http://<em>www.yoursite.com/dlp/download.php</em>?showme=0&quot;);?&gt;</em></p>
+<p class="style4">This causes '0' to be displayed, as the file has currently been downloaded 0 times. The displayed figure increments everytime the file is downloaded.</p>
+<p class="style4"><strong>Statistics:</strong></p>
+<p class="style4">Just a quick note on statistics. Everytime a file is requested via download.php, the script first logs the users details into the 'dlstats' database. It then determines the full address of the file it needs to serve, serves it to the user, and increments the count figure for the specified file by one, in the dlcount database.</p>
+<p class="style4">Whar does this mean? Basically the script counts, logs and serves the download in one transparent operation :). </p>
+<p class="style4"><strong>Did I miss something? Need more help? Please let me know over in the <a href="http://www.explodingpanda.com/board/" target="_blank">forums! </a></strong></p>
+<p class="style4">&nbsp;</p>
+</body>
+</html>
