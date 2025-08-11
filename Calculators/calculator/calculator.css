@@ -1,0 +1,83 @@
+<!--This stylesheet has been coposed by Paul Goddard for the use on godfatheruk.Com the use of this stylesheet is under copyright terms and may not be used without the permission of the above stated author.-->
+
+{  }
+a:link
+{
+	text-decoration: none;
+	color: #000000;font-size:10pt 
+}
+a:visited
+{
+	text-decoration: none;
+	color: #000000;font-size:10pt 
+} 
+a:active 
+{
+	text-decoration: none;
+	color: #000000;font-size:10pt
+}
+a:hover {
+	text-decoration: underline;
+	color: #000000;font-size:10pt
+} 
+body
+{
+	font-size: 10pt; font-family: Verdana; vertical-align: baseline;
+	background-color: #FFFFFF;
+	color: #000000;
+	SCROLLBAR-BASE-COLOR: #FFFFFF;
+	SCROLLBAR-ARROW-COLOR: #000000;
+}
+table
+{
+	font-size: 10pt; font-family: Verdana; vertical-align: baseline;
+	table-border-color-light: #000000;
+	table-border-color-dark: #000000; 
+}
+cell
+{
+	font-size: 10pt; font-family: Verdana; vertical-align: baseline;
+	cell-border-color-light: #000000;
+	cell-border-color-dark: #000000; 
+}
+h1, h2, h3, h4, h5, h6
+{
+	font-family: Verdana, Helvetica; color:#000000
+}
+h1
+{
+	font-size:18pt; font-weight:bold
+}
+h2
+{
+	font-size:16pt; font-weight:bold
+}
+h3
+{
+	font-size:14pt; font-weight:bold 
+}
+h4
+{
+	font-size:12pt; font-weight:bold
+}
+h5
+{
+	font-size:10pt; font-weight:bold
+}
+h6
+{
+	font-size:8pt; font-weight:bold
+}
+SELECT       	
+{
+	font-family:Verdana;font-size:10pt;background:#FFFFFF;color:#000000;
+}
+INPUT
+{
+    font-family:Verdana;font-size:10pt;background:#FFFFFF;color:#000000;
+}
+TEXTAREA     	
+{
+	font-family:Verdana;font-size:10pt;background:#FFFFFF;color:#000000;
+}
+hr				{color: #000000; background-color: #FFFFFF; height: 1px; width: 50%;}
