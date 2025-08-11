@@ -1,0 +1,64 @@
+<form>
+	<title>{PRIVATE.FORM_ACTION_TITLE} Event</title>
+	<action>index.php?mod=attendance&sub=events&action=store</action>
+	<name>edit</name>
+	<width>580</width>
+	<encoding>multipart/form-data</encoding>
+
+	<formtag>true</formtag>
+	<border>true</border>
+	
+	<buttons>		
+		<set>
+			<footer>true</footer>
+			<header>true</header>
+		</set>
+
+
+		<return onclick="" button="return" >
+			<location>{PRIVATE.FORM_PREVIOUS_PAGE}</location>
+		</return>
+
+		<save onclick="" button="saveall">
+			<location>javascript:document.forms[0].submit();</location>
+		</save>
+
+	</buttons>
+
+	<redirect>index.php?mod=attendance&sub=events&action=details&event_id={EVENT_ID}</redirect>
+
+	<fields>
+		<event_id type="hidden" hidden="true"/>
+
+		<event_title type="textbox" size="30" required="true" validate="A:2:100"> 
+			<title>Title</title>
+		</event_title>
+
+		<event_date type="date" now="true">
+			<title>Date</title>
+			<fields>
+				<month format="int" default="now" />
+				<day format="int" default="now" />
+				<year from="2004" to="2010" default="now"/>
+
+				<hour separator=":" default="now" />
+				<minute default="now" />
+
+			</fields>
+		</event_date>
+
+		<event_public type="droplist"> 
+			<title>Public</title>
+			<description>Select public if you want the event to apear on the public page or private if you want to be accesible only from the admin panel.</description>
+			<options>
+				<option name="0">private</option>
+				<option name="1">public</option>
+			</options>
+		</event_public>
+
+		<event_description type="textarea" size="60:8"> 
+			<title>Description</title>
+		</event_description>
+
+  	</fields>
+</form>
