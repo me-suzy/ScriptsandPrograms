@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Affiliate: [nickname]</title>
+<link rel="STYLESHEET" type="text/css" href="mainII.css">
+</head>
+
+<body>
+
+<h1>[title_affiliates] Administration</h1>
+<h2>Affiliate data display</h2>
+
+<table align="center" border="0" cellpadding="0" width="100%">
+<tr align="center" valign="top">
+	<td>
+	
+<table align="center" class="white">
+<tr><th>[nickname] account</th></tr>
+<tr><td style="padding: 5px">
+<b>Name:</b> [name] - <a href="mailto:[email]">[email]</a><br><br>
+<b>Address:</b><br>
+[address]<br>
+[zipcode] [city]<br>
+[country]<br><br>
+<b>Tel:</b> [tel]
+<b>Affiliate Site URL:</b> <a href="[siteurl]" target="_blank">[siteurl]</a><br>
+<b>ID:</b> [nickname] / <b>Password:</b> [password]<br>
+<b>[money_unit] earned:</b> [amount_earned]<br>
+<b>Paid so far:</b> [money_unit] [payments]
+</td></tr></table><br>
+	
+<form method="post" action="admin.php">
+<div align="center"> 
+<input type="submit" value="Return to main menu" class="button">
+<input type="hidden" name="action" value="menu">
+</div>
+</form>
+
+	</td>
+	<td width="200">
+	
+<div align="center">
+<form action="admin.php" method="post">
+<input type="hidden" name="action" value="pay">
+<input type="hidden" name="affil" value="[nickname]">
+<input type="Submit" value="Process payment" class="button">
+</form>
+By clicking here you DEBIT the amount earned by the affiliate.<br><br>
+You have to <B>send the amount</B> debited <B>MANUALLY</B> to the affiliate at the address printed at the left.<br><br>
+<I><B class="red">THIS ACTION CANNOT BE REVERSED.</B></I>
+</div>
+	
+	</td>
+</tr>
+</table>
+
+</body>
+</html>
