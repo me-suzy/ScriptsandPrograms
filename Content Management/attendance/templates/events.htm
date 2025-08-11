@@ -1,0 +1,32 @@
+<!--S:ListGroup-->
+	<table>
+		{DATA}
+	</table>
+<!--E:ListGroup-->
+
+<!--S:ListElement-->
+		<tr {ALTERNATE}>
+			<td valign="top"><nobr><a href="index.php?sub=show&id={EVENT_ID}">{EVENT_TITLE}</a></nobr></td>
+			<td valign="top"><nobr>{EVENT_DATE}</nobr></td>
+			<td valign="top">{EVENT_DESCRIPTION}</td>
+		</tr>
+<!--E:ListElement-->
+
+<!--S:ListEmpty-->
+		<tr>
+			<td>NO PUBLIC EVENTS</td>
+		</tr>
+<!--E:ListEmpty-->
+
+<!--S:Alternate0-->bgcolor="#bbbbbb"<!--E:Alternate0-->
+
+<!--S:Alternate1-->bgcolor="white"<!--E:Alternate1-->
+
+<!--S:Details-->
+<strong>Title:</strong> &nbsp;{EVENT_TITLE} 
+<br><strong>Date:</strong> &nbsp;{EVENT_DATE}
+<br><strong>Description:</strong> &nbsp;{EVENT_DESCRIPTION}
+
+<br><br><a href="index.php?sub=users&id={EVENT_ID}">Show Attendees</a>
+
+<!--E:Details-->
