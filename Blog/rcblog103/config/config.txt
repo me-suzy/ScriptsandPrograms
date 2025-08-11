@@ -1,0 +1,11 @@
+sitetitle	RCBlog
+blogtitle	RCBlog
+footer	&copy; Noah Medling
+recentposts	3
+dateformat	%Y-%m-%d @ %H:%M:%S
+menuformat	%Y-%m-%d
+offset	0
+color	bbccdd	42464a	42464a	848c93	bbccdd	848c93	a1a8ae	bec2c6	a1a8ae	edf2f7	848c93	edf2f7	edf2f7	ffffff	000000	000000	ffffff	000000	000000	42464a	42464a	a6998c	a6998c
+showmenu	yes
+description	A free blog script
+keywords	blog, rcblog, rcb, rc, rabidcow, free
