@@ -1,0 +1,52 @@
+<?php
+session_start();
+?>
+<link rel="stylesheet" href="style.css" type="text/css">
+<center><table border='0' width=100%><tr><td valign='top' width=30%>
+<?PHP
+include "connect.php";
+$threadid=$_GET['threadID'];
+$getthread="SELECT author from bl_blog where entryid='$threadid'";
+$getthread2=mysql_query($getthread) or die("Could not get thread");
+$getthread3=mysql_fetch_array($getthread2);
+$blogadmin=$_SESSION['blogadmin'];
+$getadmin="SELECT * from bl_admin where username='$blogadmin'";
+$getadmin2=mysql_query($getadmin) or die("Cannot get admin");
+$getadmin3=mysql_fetch_array($getadmin2);
+if($getadmin3['status']==3 || $getthread3[author]==$getadmin3[adminid] )
+{
+   include "left.php";
+   print "</td>";
+   print "<td valign='top' width=70%>";
+   print "<table class='maintable'><tr class='headline'><td><center>Main Admin</center></td></tr>";
+   print "<tr class='mainrow'><td>";
+   $ID=$_GET['ID'];
+   if(isset($_POST['submit']))
+   {
+      $getcomments="SELECT * from bl_comments where commentid='$ID'";
+      $getcomments2=mysql_query($getcomments) or die("Could not get comments");
+      $getcomments3=mysql_fetch_array($getcomments2);
+      $delcomments="DELETE from bl_comments where commentid='$ID'";
+      mysql_query($delcomments) or die("Could not delete comments");
+      $delentry="update bl_blog set numcomments=numcomments-1 where entryid='$getcomments3[eparent]'";
+      mysql_query($delentry) or die("Could not update count");
+      print "Comment Deleted";
+
+   }
+   else
+   {
+      print "Are you sure you want to delete this comment?";
+      print "<form action='deletecomment.php?ID=$ID&threadID=$threadid' method='post'>";
+      print "<input type='submit' name='submit' value='Delete'></form>";
+
+   }
+   print "</td></tr></table>";
+}
+else
+{
+  print "Not logged in.";
+  print "</td></tr></table>";
+ 
+
+}
+?>
