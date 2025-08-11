@@ -1,0 +1,289 @@
+/*
+Copyright (C) 2005 Noah Medling
+
+This program is licensed under the GNU General Public License, version 2,
+as published by the Free Software Foundation, June 1991. For details, see
+LICENSE.txt
+*/
+
+body{
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+code{
+	font-family: "Lucida Console", "Courier New", Courier, mono;
+}
+#root{
+}
+#header{
+	margin: 0;
+	padding: 1em;
+}
+	#header h1{
+		margin: 0;
+		padding: 0;
+		font-size: 200%;
+		font-weight: normal;
+		font-variant: small-caps;
+	}
+	#header p{
+		margin: 0;
+		padding: 0;
+		font-variant: small-caps;
+	}
+#infobar{
+	border-top: 1px solid #000;
+	padding: 0 1em;
+	margin: 0 0 1em 0;
+}
+	#infobar p{
+		margin: 0.25em 0 0 0;
+		padding: 0;
+	}
+
+#navigation{
+	float: left;
+	margin: 1em 0 1em 1em;
+	padding: 0;
+	width: 8em;
+	display: inline;
+}
+	#navigation ul.level1{
+		list-style-type: none;
+		padding: 0;
+		margin: 0 0 1em 0;
+	}
+	#navigation ul.level1 li a{
+		text-decoration: none;
+		color: #000;
+		display: block;
+		font-variant: small-caps;
+	}
+	#navigation ul.level1 li a.selected{
+		border-left: 1px solid #000;
+		padding: 0 0 0 0.25em;
+		border-bottom: 1px solid #bcd; 
+	}
+	#navigation ul.level2{
+		padding: 0 0 0 1.1em;
+		margin: 0;
+		list-style-type: none;
+	}
+	#navigation ul.level2 li{
+		background: #eff;
+		border-left: 1px solid #000;
+		border-bottom: none;
+	}
+	#navigation ul.level2 li.current{
+		list-style-type: disc;
+		list-style-position: outside;
+		background: #dee;
+	}
+	#navigation ul.level2 a{
+		border-right: 1px solid #bcd;
+		border-bottom: 1px solid #bcd;
+		border-left: 0;
+		padding: 0 0 0 0.25em;
+	}
+	#navigation ul.level2 li.current a{
+		border-bottom: 1px solid #bcd;
+		border-left: 0;
+	}
+		
+#content{
+	margin: 0 1em 1em 10em;
+	padding: 0 0 0 0;
+}
+	#content h1{
+		font-size: 150%;
+		font-weight: normal;
+		font-variant: small-caps;
+		border-bottom: 1px solid #bcd;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+	}
+	#content p{
+		margin: 0.5em 0 1em 0;
+	}
+	#content form{
+		margin: 0;
+		padding: 0;
+	}
+
+
+#footer{
+	clear: both;
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+	border-top: 1px solid #000;
+}
+	#footer p{
+		margin: 0;
+		padding: 0;
+	}
+	
+table.admintable{
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 0 1em 0;
+}
+table.admintable col.evencol{
+	background-color: #eff;
+}
+table.admintable tr.evenrow, table.admintable tr.evenrowtop, table.admintable tr.evenrowmiddle, table.admintable tr.evenrowbottom{
+	background-color:#dee;
+}
+table.admintable tr.current{
+	background-color: #bfc;
+}
+table.admintable tbody td, table.admintable tbody th{
+	font-weight: normal;
+	text-align: left;
+}
+table.admintable tbody tr.evenrow td, table.admintable tbody tr.evenrow th,
+table.admintable tbody tr.evenrowbottom td, table.admintable tbody tr.evenrowbottom th,
+table.admintable tbody tr.oddrow td, table.admintable tbody tr.oddrow th,
+table.admintable tbody tr.oddrowbottom td, table.admintable tbody tr.oddrowbottom th{
+	border-bottom: 1px solid #bcd;
+}
+table.admintable tbody tr.blankrow td, table.admintable tbody tr.blankrow th{
+	border-bottom: 1px solid #000;
+	background: #fff;
+	padding: 1.165em 0.25em 0.125em 0.25em;
+	font-weight: normal;
+	text-align: left;
+	font-variant: small-caps;
+}
+table.admintable tr.evenrow td.nocol,
+table.admintable tr.evenrowtop td.nocol,
+table.admintable tr.evenrowmiddle td.nocol,
+table.admintable tr.evenrowbottom td.nocol{
+	background-color: #dee;
+}
+table.admintable tr.oddrow td.nocol,
+table.admintable tr.oddrowtop td.nocol,
+table.admintable tr.oddrowmiddle td.nocol,
+table.admintable tr.oddrowbottom td.nocol{
+	background-color: #fff;
+}
+table.admintable thead td, table.admintable thead th{
+	background: #fff;
+	font-weight: normal;
+	text-align: left;
+	font-variant: small-caps;
+	border-bottom: 1px solid #000;
+}
+table.admintable th{
+	border-right: 1px solid #000;
+	background: #fff;
+	font-variant: small-caps;
+}
+table.admintable th, table.admintable td{
+	padding: 0.125em 0.25em;
+}
+table.admintable form{
+	margin: 0;
+	padding: 0;
+}
+fieldset{
+	border: 1px solid #bcd;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+}
+legend{
+	color: #000;
+	font-variant: small-caps;
+}
+
+table.layouttable{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table.layouttable td{
+	vertical-align: top;
+	padding: 0 0.25em 0.5em 0.25em;
+}
+
+table.graphtable{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #000;
+	background:#def;
+}
+table.graphtable td{
+	padding: 0;
+	text-align: center;
+}
+table.graphtable tr.caption td{
+	padding: 0.25em;
+	background: #bcd;
+	border-top: 1px solid #000;
+	text-align: center;
+	vertical-align: middle;
+}
+table.graphtable td.bar{
+	padding: 0 1px;
+	vertical-align: bottom;
+}
+table.graphbar{
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+	width: 100%;
+	margin:0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	vertical-align: bottom;
+}
+table.graphbar td.top{
+	padding: 0.125em;
+	vertical-align: bottom;
+}
+table.graphbar td.middle{
+	background: #bcd;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+table.graphbar td.bottom{
+	background: #9ab;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+a:link{
+	color: #00f;
+}
+a:visited{
+	color: #00f;
+}
+a:active{
+	color: #00f;
+}
+p.message{
+	border: 1px solid #bcd;
+	padding: 0.25em;
+	background: #eff;
+}
+p.error{
+	border: 1px solid #f98;
+	padding: 0.25em;
+	background: #fed;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+	font-variant: small-caps;
+}
+hr{
+	height: 1px;
+	padding:0;
+	color: #000;
+	background: #000;
+	padding: 0;
+	border: 0;
+}
