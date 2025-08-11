@@ -1,0 +1,229 @@
+/****************************************************
+ * RCBlog - css/base.css                            *
+ * ------------------------------------------------ *
+ * Created by Noah Medling <noah.medling@gmail.com> *
+ ****************************************************/
+
+body{
+ background-color: #d9c3b5;
+ color: #000000;
+
+ text-align: center;
+ margin: 0;
+ padding: 30px;
+ font-family: arial, helvetica, sans-serif;
+ font-size: 16px;
+ line-height: 1em;
+}
+
+#frame{
+ border-color: #000000;
+
+ margin: 0 auto;
+ width: 600px;
+ border-width: 4px 1px 4px 1px;
+ border-style: solid;
+ border-spacing: 0;
+ font-size: 12px;
+ empty-cells: show;
+}
+
+#header{
+ border-color: #000000;
+ background-color: #918781;
+ color: #ffffff;
+
+ border-width: 0 0 1px 0;
+ border-style: solid;
+ padding: 4px 9px;
+ vertical-align: bottom;
+ text-align: left;
+ font-size: 16px;
+}
+
+#content{
+ border-color: #000000;
+ background-color: #c2beba;
+
+ width: 448px;
+ border-width: 0;
+ border-style: solid;
+ padding: 4px 4px 0 4px;
+ vertical-align: top;
+ text-align: left;
+}
+
+#nav{
+ border-color: #000000;
+ background-color: #aca49e;
+
+ width: 150px;
+ border-width: 0 0 0 1px;
+ border-style: solid;
+ padding: 4px 4px 0 4px;
+ vertical-align: top;
+ text-align: center;
+}
+
+#footer{
+ border-color: #000000;
+ background-color: #c2beba;
+ color: #000;
+
+ border-width: 1px 0 0 0;
+ border-style: solid;
+ padding: 4px 9px;
+ vertical-align: top;
+ text-align: left;
+}
+
+div.post{
+ border-color: #000000;
+ background-color: #ece0d8;
+ color: #000000;
+
+ border-width: 1px;
+ border-style: solid;
+ margin: 0 0 4px 0;
+ padding: 0;
+ text-align: left;
+}
+
+div.post div.title{
+ border-color: #000000;
+ background-color: #918781;
+ color: #ffffff;
+
+ border-width: 0 0 1px 0;
+ border-style: solid;
+ margin: 0;
+ padding: 4px 4px 3px 4px;
+ font-size: 16px;
+ font-weight: bold;
+}
+
+div.post div.navtitle{
+ border-color: #000000;
+ background-color: #918781;
+ color: #ffffff;
+
+ border-width: 0 0 1px 0;
+ border-style: solid;
+ margin: 0;
+ padding: 4px 4px 3px 4px;
+ font-weight: bold;
+}
+
+div.post div.date{
+ margin: 0 0 4px 0;
+ padding: 4px 4px 0 4px;
+ font-size: 10px;
+}
+
+div.post div.text{
+ margin: 0;
+ padding: 4px;
+}
+
+div.post div.comment{
+ border-color: #000000;
+
+ margin: 0;
+ padding: 4px;
+ border-width: 1px 0 0 0;
+ border-style: solid;
+}
+
+span.mono{
+	font-family: monospace;
+}
+
+div.code{
+ border-color: #918781;
+ margin: 2px 0;
+ white-space: pre;
+ font-family: monospace;
+ border-width: 1px;
+ border-style: solid;
+ padding: 2px 4px;
+ overflow: auto;
+}
+
+div.quote{
+ border-color: #918781;
+ margin: 2px 0;
+ border-width: 1px;
+ border-style: solid;
+ padding: 2px 4px;
+}
+
+table.filetable{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+table.filetable td.filename{
+	width: 50%;
+}
+
+table.filetable td.filesize{
+	width: 20%;
+}
+
+table.filetable td.fileaction{
+	text-align: right;
+	width: 30%;
+}
+
+
+
+a:link{
+ color: #484340;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+a:visited{
+ color: #484340;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+a:hover{
+ color: #918781;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+a:active{
+ color: #918781;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+#content a:link    { text-decoration: underline; }
+#content a:visited { text-decoration: underline; }
+#content a:hover   { text-decoration: underline; }
+#content a:active  { text-decoration: underline; }
+
+img{
+ border: 0;
+}
+
+img.left{
+ float: left;
+ margin-right: 4px;
+}
+
+img.right{
+ float: right;
+ margin-left: 4px;
+}
+
+hr{
+ border: 0;
+ background-color: #918781;
+ color: #918781;
+ height: 1px;
+}
