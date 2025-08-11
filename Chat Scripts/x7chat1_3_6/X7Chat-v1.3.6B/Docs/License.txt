@@ -1,0 +1,27 @@
+  X7 Chat
+  Copyright (c) 2004, by The X7 Group
+   
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+ 
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA. 
+
+  Under no circumstance, unless givin written permission by the X7 Group,
+  are you permitted to remove the copyright from any of the X7 Chat 
+  files.  Doing so will terminate your right to use X7 Chat as free 
+  software and may result in a fine.
+  
+  You are granted to permission to change the file logo.png to
+  a file of your choice.  Under no circumstances are you allowed to 
+  remove or edit the file copyright.png or remove/edit the file 
+  left.top.php unless written permission from the X7 Group is obtained.
+  For more information contact support@x7chat.com.
