@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<smiletag_config>
+	<!-- Set to 'false' to lock the board, nobody can post in locked mode -->
+	<enable_board>true</enable_board>
+	
+	<!-- The message file name -->
+	<message_file>messages.xml</message_file>
+	
+	<!-- The storage type to be used by this board, currently 'file' is the only one supported -->
+	<storage_type>file</storage_type>
+	
+	<!-- Sets the time zone, only uses GMT -->
+	<time_zone>GMT+7</time_zone>
+	
+	<!-- The date and format for each message timestamp -->
+	<date_format>M-d-Y</date_format>
+	<time_format>H:i:s</time_format>
+	
+	<!-- Set to 'false' if you want to disable smiley -->
+	<enable_smiley>true</enable_smiley>
+	
+	<!-- Set to 'false' if you want to disable formatting tag for bold [b],italic [i] and underline [u] -->
+	<enable_formatting>true</enable_formatting>
+	
+	<!-- The configuration file for smiley pattern code and replacement image -->
+	<smiley_config_file>smiley-config.xml</smiley_config_file>
+	
+	<!-- Maximum number of message displayed in the board -->
+	<max_message_number>20</max_message_number>
+	
+	<!-- Maximum character length for each post -->
+	<max_message_length>200</max_message_length>
+	
+	<!-- Your message will be rotated each time the number of message in file reached this limit -->
+	<!-- This is to prevent a large growing file in your server 								 -->
+	<max_message_rotation>20</max_message_rotation>
+	
+	<!-- Maximum character allowed for nickname -->
+	<max_nickname>20</max_nickname>
+	
+	<!-- Maximum character allowed for URL -->
+	<max_url>100</max_url>
+
+	<!-- This will convert all url in message into link -->
+	<parse_url_inside_message>true</parse_url_inside_message>
+	
+	<!-- The text which will be used for every link found in the message -->
+	<!-- Be careful not to use 'less than' and 'and' character, but if you really want it, make sure it enclosed with CDATA tag  --> 
+	<url_text>[link]</url_text>
+	
+	<!-- Number of seconds to wait before a user can post another message -->
+	<!-- Sets to 0 to disable flood protection 							  -->
+	<flood_interval>0</flood_interval>
+	
+	<!-- Set to false to disable all banning (ip address/nick based) -->
+	<enable_ban>true</enable_ban>
+	
+	<!-- This will automatically ban user IP address,if he keeps flooding your board -->
+	<auto_ban>false</auto_ban>
+	
+	<!-- The number of flood attempt that will cause a user automatically banned -->
+	<!-- This option only applied if auto_ban set to true						 -->
+	<auto_ban_trigger>5</auto_ban_trigger>
+	
+	<!-- The ban list file name -->
+	<ban_file>ban-list.xml</ban_file>
+	
+	<!-- Set to 'false' if you want disable badword filtering -->
+	<enable_badword_filter>true</enable_badword_filter>
+	
+	<!-- The badword list file name -->
+	<badword_file>badword.xml</badword_file>
+	
+	<!-- This is a general purpose option, that let you display a different text for each message 				 -->
+	<!-- You can use it to create different background color, image, custom tag, etc. It's up to your creativity -->
+	<!-- text_first and text_second will be displayed sequently													 -->
+	<!-- If you use 'less than' and 'and' character make sure it enclosed with CDATA tag							         --> 
+	<enable_custom_text>true</enable_custom_text>
+	<text_first>avatar2.gif</text_first>
+	<text_second>avatar.gif</text_second>
+	
+</smiletag_config>
