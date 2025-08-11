@@ -1,0 +1,12 @@
+User-agent: Mediapartners-Google*
+Disallow:
+User-agent: *
+Disallow: sendfriend.php
+Disallow: sendtofriend.php
+Disallow: /admin/
+Disallow: /images/
+Disallow: /install/
+Disallow: /languages/
+Disallow: /newsletter/
+Disallow: /stats/
+Disallow: /tag/
