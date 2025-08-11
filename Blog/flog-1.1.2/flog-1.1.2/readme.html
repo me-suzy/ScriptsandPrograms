@@ -1,0 +1,148 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>FLog 1.1.2 - Readme</title>
+<style type="text/css">
+body{ text-align: center; margin: 2em; padding: 0; font: normal 16px/18px Georgia, "Times New Roman", Times, serif; }
+h1{ font-weight: normal; font-variant: small-caps; margin-top: 1em;}
+h2,h3,h4,h5,h6{ font-weight: normal; font-variant: small-caps; }
+hr{ border: 0; background: #000; color: #000; height: 1px; }
+p{ margin-left: 1.5em; margin-right: 1.5em; }
+ul p, ol p{ margin-left: 0; }
+</style>
+</head>
+<body>
+<div style="width: 37em; margin: 0 auto; text-align: left;">
+<h1>FLog 1.1.2  ReadMe</h1>
+
+<hr />
+
+<h2>Table of Contents</h2>
+
+<ul>
+<li><a href="#overview">Overview</a>
+<ul><li><a href="#about">About FLog</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#license">Legal Stuff</a></li></ul></li>
+<li><a href="#start">Getting Started</a>
+<ul><li><a href="#require">Requirements</a></li>
+<li><a href="#install">Installation</a></li>
+<li><a href="#rcblog">Upgrading from RCBlog</a></li></ul></li>
+<li><a href="#other">Other Stuff</a>
+<ul><li><a href="#contact">Contact the Author</a></li>
+<li><a href="#links">Useful Links</a></li>
+<li><a href="#credits">Credits</a></li></ul></li>
+</ul>
+
+<hr/>
+
+<h2><a name="overview">Overview</a></h2>
+
+<h3><a name="about">About</a></h3>
+
+<p>Some time in 2004, I decided I wanted comments in RCBlog. Now, a year (give or take a few months) and more than 10,000 lines of code later, FLog is born.</p>
+
+<p>Its the same as its always been, just a simple weblog. Itll never compete with most of the database-based scripts, like WordPress, for speed and stability, but itll run where they wont (even my universitys servers, which back in 2003 didnt support databases or even simple things like sessions or file locking), its cleaner, and its almost as powerful.</p>
+
+<h3><a name="features">Features</a></h3>
+
+<p>FLog has too many features to list. Here are a few of the bigger ones:</p>
+
+<ul>
+
+<li><p>Easy to install</p>
+
+<p>FLog can be installed and ready to go in under five minutes, and without opening a text editor.</p></li>
+<li><p>No database required</p>
+
+<p>You dont need MySQL or any other external database server to run FLog. Just PHP and write access.</p></li>
+<li><p>Comments</p>
+
+<p>FLog has full support for comments, complete with simple spam protection and moderation.</p></li>
+<li><p>Plugins</p>
+
+<p>Would you like to add something to FLog? Just write a plugin.</p></li>
+<li><p>Themes</p>
+
+<p>Powerful theme API gives you absolute control over the appearance of your blog.</p></li>
+<li><p>Multiple users</p></li>
+<li><p>Links</p>
+
+<p>FLog can keep track of and organizes your links.</p></li>
+<li><p>Categories</p>
+
+<p>An easy way to organize posts and links</p></li>
+</ul>
+
+<h3><a name="license">Legal Stuff</a></h3>
+
+<p>FLog is licensed under version 2 of the GNU General Public License, which means you can use, modify, and redistribute FLog so long as you give credit where credit is due and make sure to include a copy of the license and source code. See <code>license.txt</code> for more details.</p>
+
+<hr/>
+
+<h2><a name="start">Getting Started</a></h2>
+
+<h3><a name="require">Requirements</a></h3>
+<ul>
+<li><p>PHP version 4.3.0</p></li>
+<li><p>Write Access</p></li>
+</ul>
+
+<h3><a name="install">Installation</a></h3>
+
+<ol>
+<li><p>Upload everything.</p>
+
+<p>If you would prefer your data not to be accessible to the general public, you might want to move the <code>data</code> directory out of the server root.</p></li>
+<li><p>Change permissions.</p>
+
+<p>The <code>data</code> and <code>files</code> directories need to have their permissions set to <code>777</code> (read/write/execute for everybody). You can do this to FLogs base directory (the one that contains <code>index.php</code> and <code>admin.php</code>) as well to avoid writing a file by hand in the installer, but make sure to change it back (to <code>755</code>, most likely) afterwards.</p></li>
+
+<li><p>Install.</p>
+
+<p>Point your browser to <code>install.php</code> (if your site is at <code>http://www.example.com/</code>, you would enter <code>http://www.example.com/install.php</code>) and follow the instructions it gives you.</p>
+
+<p>If the installer is able to, it will create <code>config.php</code>, which tells FLog where to look for data and include directories. If it cannot create this file, you will be prompted to create it yourself.</p>
+
+<p>Make sure to delete <code>install.php</code> when youre done, otherwise somebody could use it to delete all of your data.</p></li>
+</ol>
+
+<h3><a name="rcblog">Upgrading from RCBlog</a></h3>
+
+<p>The process of upgrading from RCBlog to FLog is relatively painless, and in fact, you dont technically have to do any extra work at all. All you have to do is move your RCBlog installation somewhere that doesnt conflict with FLogs filenames, then specify the location of RCBlogs <code>data</code> directory during the FLog installation procedure.</p>
+
+<p>Also, you should note that FLog uses a different URL structure than RCBlog, so some of your internal links might break.</p>
+
+<hr/>
+
+<h2><a name="other">Other Stuff</a></h2>
+
+<h3><a name="contact">Contact the Author</a></h3>
+
+<p>FLog was written by Noah Medling. He can be reached via e-mail at <a href="mailto:noah.medling@gmail.com">noah.medling@gmail.com</a> or <a href="mailto:noah@noahmedling.com">noah@noahmedling.com</a>.</p>
+
+<h3><a name="links">Useful Links</a></h3>
+
+<ul>
+<li><p><a href="http://www.fluffington.com/">Fluffington.com</a>, the home of FLog and some of the authors other projects</p></li>
+<li><p><a href="http://www.noahmedling.com/">NoahMedling.com</a>, the authors personal site</p></li>
+<li><p><a href="http://www.sourceforge.net/projects/fblog">SF.net/projects/fblog</a>, FLogs SourceForge project page</p></li>
+</ul>
+
+<h3><a name="credits">Credits</a></h2>
+
+<p>Author: Noah Medling</p>
+<p>Translations:
+<a href="http://www.musicalboxquebec.com/">Pierre Plamondon</a>,
+<a href="http://blog.j4p4n.de/">J4P4N</a>,
+<a href="http://www.ranger81.de/">Tobias Link</a>,
+<a href="http://atg.frac.dk/">Goatie</a>,
+<a href="http://www.xom.webd.pl/">Xom</a>
+</p>
+
+<hr />
+
+<p>© 2005 Noah Medling</p>
+</div>
+</body>
+</html>
