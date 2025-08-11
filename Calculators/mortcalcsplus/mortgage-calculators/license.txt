@@ -1,0 +1,31 @@
+This license is an agreement between you and ARSIDIAN for the use of Mortgage Calculators Plus software.
+By downloading Mortgage Calculators Plus software, you agree to be bound by the terms and conditions of
+this license. ARSIDIAN reserves the right to alter this agreement at any time, for any reason,
+without notice.
+
+Restrictions
+
+Unless you have been granted prior, written consent from ARSIDIAN, you may not:
+- Remove or modify the "Powered by Mortgage Calculators Plus" link.
+
+Indemnity
+
+You agree to indemnify and hold harmless ARSIDIAN for any third-party claims, actions or suits, as
+well as any related expenses, liabilities, damages, settlements or fees arising from your use or
+misuse of the software, or a violation of any terms of this license.
+
+Disclaimer Of Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT
+NOT LIMITED TO, WARRANTIES OF QUALITY, PERFORMANCE, NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS
+FOR A PARTICULAR PURPOSE. FURTHER, ARSIDIAN DOES NOT WARRANT THAT THE SOFTWARE OR ANY RELATED
+SERVICE WILL ALWAYS BE AVAILABLE.
+
+Limitations Of Liability
+
+YOU ASSUME ALL RISK ASSOCIATED WITH THE INSTALLATION AND USE OF THE SOFTWARE. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS OF ARSIDIAN SOFTWARE BE LIABLE FOR CLAIMS, DAMAGES OR OTHER LIABILITY
+ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE. LICENSE HOLDERS ARE SOLELY RESPONSIBLE
+FOR DETERMINING THE APPROPRIATENESS OF USE AND ASSUME ALL RISKS ASSOCIATED WITH ITS USE, INCLUDING
+BUT NOT LIMITED TO THE RISKS OF PROGRAM ERRORS, DAMAGE TO EQUIPMENT, LOSS OF DATA OR SOFTWARE
+PROGRAMS, OR UNAVAILABILITY OR INTERRUPTION OF OPERATIONS.
