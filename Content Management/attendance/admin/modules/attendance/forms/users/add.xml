@@ -1,0 +1,74 @@
+<form>
+	<title>{PRIVATE.FORM_ACTION_TITLE} User</title>
+	<action>index.php?mod=myprofile&sub=workers&action=store</action>
+	<name>edit</name>
+	<width>580</width>
+	<encoding>multipart/form-data</encoding>
+
+	<formtag>true</formtag>
+	<border>true</border>
+	
+	<buttons>		
+		<set>
+			<footer>true</footer>
+			<header>true</header>
+		</set>
+
+
+		<return onclick="" button="return" >
+			<location>{PRIVATE.FORM_PREVIOUS_PAGE}</location>
+		</return>
+
+		<save onclick="" button="saveall">
+			<location>javascript:document.forms[0].submit();</location>
+		</save>
+
+	</buttons>
+
+	<redirect>index.php?mod=myprofile&sub=workers&action=details&user_id={USER_ID}</redirect>
+
+	<fields>
+		<user_id type="hidden" hidden="true"/>
+		<user_date type="hidden" default="time()" action="eval"/>
+		<user_level type="hidden" forcevalue="1" action="eval"/>
+
+		<user_name type="textbox" size="30" required="true" validate="A:2:100"> 
+			<title>Name</title>
+		</user_name>
+
+		<user_email type="textbox" size="30" unique="true" required="true" validate="E:2:100"> 
+			<title>Email </title>
+		</user_email>
+
+		<subtitle type="subtitle" title="Contact Info" />
+
+		<user_address type="textbox" size="40"> 
+			<title>Address</title>
+		</user_address>
+
+		<user_city type="textbox" size="20"> 
+			<title>City</title>
+		</user_city>
+
+		<user_state type="USstates" empty="true"> 
+			<title>State</title>
+		</user_state>
+
+		<user_zip type="textbox" size="15"> 
+			<title>Zip Code</title>
+		</user_zip>
+
+		<user_country type="countries" empty="true"> 
+			<title>Country</title>
+		</user_country>
+
+		<user_phone type="textbox" size="20"> 
+			<title>Phone</title>
+		</user_phone>
+
+		<user_description type="textarea" size="60:5"> 
+			<title>Other</title>
+		</user_description>
+
+  	</fields>
+</form>
