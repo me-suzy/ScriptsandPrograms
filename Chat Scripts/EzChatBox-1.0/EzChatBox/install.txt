@@ -1,0 +1,193 @@
+####################
+#     --------     #
+#     Overview     #
+#     --------     #
+####################
+
+An easy to configure PHP chatbox solution for websites that require an 
+easy to use, secure chat facility.
+
+Developer:  Terminal_fire 
+email:      terminal_fire@gangreen.co.uk
+
+####################
+#     -------      #
+#     Welcome      #
+#     -------      #
+####################
+
+This file will tell you the installation proceedure for EzChatBox.
+
+Included in the Zip archive should be:
+
+Images
+  Ban_IP_Button.jpg	-- Button used for banning people
+  logo-big.gif		-- logo on Admin page
+  logo.gif		-- logo at top of EzChatBox
+  spacer.gif		-- blank spacer image
+  smilies		-- Smilie directory
+     amazed.gif
+     biggrin.gif
+     cheesy.gif
+     confused.gif
+     cool.gif
+     crying.gif
+     embarerest.gif
+     evil.gif
+     huh.gif
+     laugh.gif
+     mad.gif
+     notrust.gif
+     nuts.gif
+     oh.gif
+     push.gif
+     rolleyes.gif
+     sad-2.gif
+     sad.gif
+     sick.gif
+     smile-2.gif
+     smile.gif
+     suspicious.gif
+     wacko.gif
+     weird.gif
+     wink.gif
+     worried.gif
+admin.php		-- Admin control area
+banned.ban		-- Raw banned IPs
+changelog.txt		-- Changelog and todo file
+config.php		-- Config File
+dsp_ban.php		-- The text shown to banned people
+dsp_chat_content.php	-- Chat Contents
+dsp_smiley.php		-- Pop-up smiley window
+ez.css			-- Style Sheet for look
+index.php		-- Main file
+install.txt		-- This file
+iplist.html		-- List of messages posted (includes posters IP)
+qry_ban.php		-- Processes the banned IPs
+qry_chat.php		-- Displays the input form
+qry_message.php		-- Processes the message
+
+If anything is missing then you should download another copy from
+http://ezchatbox.sourceforge.net
+
+
+####################
+#      -----       #
+#      Setup       #
+#      -----       #
+####################
+
+To install simply extract the zip file into the root of your website.
+
+The zip should extract all the files to EzChatBox directory.
+
+change chmod of files:
+666
+dsp_chat_content.php
+iplist.html
+banned.ban
+
+644
+everything else.
+
+
+Where you want the chat box to appear simply add the following lines 
+of code to the page 
+
+<?php
+include("EzChatBox/config.php");
+include("EzChatBox/index.php");
+?>
+
+Then configure the config file.
+
+
+####################
+#   -----------    #
+#   Configuring    #
+#   -----------    #
+####################
+
+#1 Here is a sample of the default config file.
+
+
+1	// EzChatBox location (no trailing slash)
+	$EZChat_location = "EzChatBox";
+	
+2	// Set the page titles
+	$EZChat_title = "EZChatBox v1.0";
+	$EZChat_ban_title = "EZChatBox - Ban List";
+	$EZChat_up_title = "EZChatBox - Processing Message...";
+	
+3	// Chatbox image title
+	$EZChat_image = "logo.gif";
+	$EZChat_inc_tagline = "Yes";
+	$EZChat_tagline = "The easy way to chat";
+	
+4	// If EzChatBox is on a page of it's own this value
+	// must be Yes. If it is included then the value should be No.
+	// This decides whether to add HTML content at the top of
+	// the page.
+	$EZChat_html = "Yes";
+	
+5	// Chatbox refresh page settings
+	$EZChat_refresh = "Yes";
+	$EZChat_time = "30";
+	$EZChat_stringLength = "120";
+	
+6	// Chatbox upload refresh timings
+	$EZChat_uptime = "3";
+
+7	// Time stamp hour correction
+	$EZChat_timeChange = "0";
+	
+8	// Admin email (for banned users to plead case)
+	$EZChat_email = "email@yourserver.com";
+	
+9	//files
+	$EZChat_file_ban = "banned.ban";
+	$EZChat_file_ips = "iplist.html";
+	$EZChat_file_content = "dsp_chat_content.php";
+	$EZChat_ban_relocate = "dsp_ban.php";
+
+#2 I will now explain some of the options
+
+Area 1 is for configuring the location of EzChatBox this should be 
+relative to the file running the application and should not include 
+trailing slashes.
+
+Area 2 is for the page titles. These will appear as the browser title
+$EZChat_title is the main title on the opening page
+$EZChat_ban_title is the title displayed to a user who is banned
+$EZChat_up_title is displayed whilst the message is being saved
+
+Area 3 is where for setting the logo displayed whilst on the main
+page, whether the tagline is displayed inder the logo and the text
+for the tagline.
+
+Area 4 sets whether the html file is set up or whether EzChatBox is 
+included in part of a file. For example;
+if $EZChat_html = Yes then the file will display the html page set up.
+if $EZChat_html = No then EzChatBox will be displayed in a div.
+
+Area 5 sets the page refresh, if yes is turned on then the page will 
+reset every 30 seconds. Change the time to suit your refresh requirements.
+$EZChat_stringLength sets the maximum characters in a message. Default is 
+120.
+
+Area 6 sets the page refresh for the upload page, the default is 3 
+seconds. This sets the time (in seconds) that the page holds on uploading 
+data page.
+
+Area 7 sets the timezone difference of your site to the server clock.
+
+Area 8 is the administration email address, this is shown to banned 
+users if they want to email to plead their case
+
+Area 9 controls the filenames that are accessed for the chat system.
+$EZChat_file_ban is the file that banned users IP's are stored in
+$EZChat_file_ips is where the messages and IP's are stored for users
+$EZChat_file_content is where the users messages are stored. This is 
+what is displayed to the users when they are viewing messages.
+$EZChat_ban_relocate is the file that banned users will see when they 
+try to post a message
