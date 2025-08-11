@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<smiley_config>
+		<smiley>
+				<pattern>:)</pattern>
+				<image>smile.gif</image>
+		</smiley>
+		<smiley>
+			    <pattern>:(</pattern>
+				<image>sad.gif</image>
+		</smiley>
+		<smiley>
+				<pattern>;)</pattern>
+				<image>wink.gif</image>
+		</smiley>
+		<smiley>
+				<pattern>:o</pattern>
+				<image>shock.gif</image>
+		</smiley>
+		<smiley>
+				<pattern>:D</pattern>
+				<image>laugh.gif</image>
+		</smiley>
+		<smiley>
+				<pattern>:p</pattern>
+				<image>tongue.gif</image>
+		</smiley>
+		<smiley>
+				<pattern>:|</pattern>
+				<image>blah.gif</image>
+		</smiley>
+</smiley_config>
