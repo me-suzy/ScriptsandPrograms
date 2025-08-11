@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>The Verbosifier v1.1 Readme</title>
+<meta http-equiv="content-type" content="text/html; charset=us-ascii" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<link rel="stylesheet" type="text/css" href="manual.css" media="screen" />
+</head>
+<body>
+<div id="head"><a name="top"></a>
+	<span id="headline">The Verbosifier v1.1</span>
+	<p class="nav">
+<a href="../readme.htm">Getting Started</a> | <a href="features.htm">New in v1.1</a> | <a href="using.htm">Using The Verbosifier</a> | <a href="configuring.htm">Configuring</a> | <strong>Templating</strong>
+</p>
+</div>
+<div id="body">
+<h1>Templating</h1>
+The Verbosifier uses two templates in a way much like a box. As an analogy, shout.htm is how a book looks, and main.htm is the big packing box where all the books go.
+<p>
+The Verbosifier's templates should preferably be written in XHTML 1.0, but HTML 4.01 will work fine too.
+</p>
+
+        <a name="shout-htm"></a><h2>shout.htm</h2>
+<strong>How each individual shout will look when displayed.</strong><br />
+<em>{NAME}</em>: shouter's name. Will be made into a link to the shouter's website if a valid URL was entered.<br />
+<em>{DATE</em>: the date or time the shout was made. The format can be configured in admin/control.php.<br />
+<em>{SHOUT}</em>: the text of the shout.
+<p class="totop">
+<a href="#top">Back to contents</a>
+</p>
+
+        <a name="main-htm"></a><h2>main.htm</h2>
+<strong>How the entire page will look.</strong><br />
+<em>{SHOUT}</em>: displays all the shouts as formatted in shout.htm.<br />
+<em>{FORM}</em>: displays the form for making a new shout.
+<p class="totop">
+<a href="#top">Back to contents</a>
+</p>
+
+<div id="foot">
+	<p class="nav">
+<a href="../readme.htm">Getting Started</a> | <a href="features.htm">New in v1.1</a> | <a href="using.htm">Using The Verbosifier</a> | <a href="configuring.htm">Configuring</a> | <strong>Templating</strong>
+  </p>
+Published by <a href="http://www.desiquintans.com/verbosifier">The Verbosifier</a>
+</div>
+</body>
+</html>
