@@ -1,0 +1,32 @@
+body {
+	background-color : #FFFFF;
+	padding: 0px 0px 0px 0px;
+	font : 12px Trebuchet MS, Arial, Helvetica, Verdana;
+	color : Black;
+	margin : 0px 0px 0px 0px;
+}
+
+button {
+	background: #993300;
+	border : 1px solid #660000;
+	color : #FF9900;
+	font : 9px Tahoma Arial;
+	vertical-align : middle;
+	font-weight : bold;
+	text-align : center;
+}
+
+A:link, A:visited, A:active {
+  text-decoration: none; 
+	color : #000000;
+}
+
+A.holiDAY:link, A.holiDAY:visited, A.holiDAY:active {
+  text-decoration: none; 
+	color : red;
+}
+
+A:hover { 
+  text-decoration: none; 
+	color : #FF9900;
+}
