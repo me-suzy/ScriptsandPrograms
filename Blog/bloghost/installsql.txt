@@ -1,0 +1,339 @@
+
+CREATE TABLE ad_admin (
+  adminid int(11) NOT NULL auto_increment,
+  adminname varchar(255) NOT NULL default '',
+  adminpass varchar(255) NOT NULL default '',
+  PRIMARY KEY  (adminid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `ad_info`
+-- 
+
+CREATE TABLE ad_info (
+  adid bigint(20) NOT NULL auto_increment,
+  userbelong bigint(20) NOT NULL default '0',
+  url varchar(255) NOT NULL default '',
+  image varchar(255) NOT NULL default '',
+  impressions bigint(20) NOT NULL default '0',
+  clicks bigint(20) NOT NULL default '0',
+  imperday bigint(20) NOT NULL default '0',
+  richmedia mediumtext NOT NULL,
+  imptoday bigint(20) NOT NULL default '0',
+  impsofar bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (adid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `ad_users`
+-- 
+
+CREATE TABLE ad_users (
+  userid bigint(20) NOT NULL auto_increment,
+  username varchar(255) NOT NULL default '',
+  password varchar(255) NOT NULL default '',
+  css mediumtext NOT NULL,
+  PRIMARY KEY  (userid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_admin`
+-- 
+
+CREATE TABLE bl_admin (
+  adminid bigint(20) NOT NULL auto_increment,
+  username varchar(255) NOT NULL default '',
+  password varchar(255) NOT NULL default '',
+  status int(11) NOT NULL default '3',
+  name varchar(255) NOT NULL default '',
+  validated int(11) NOT NULL default '0',
+  keynode varchar(255) NOT NULL default '',
+  email varchar(255) NOT NULL default '',
+  css longtext NOT NULL,
+  PRIMARY KEY  (adminid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_banip`
+-- 
+
+CREATE TABLE bl_banip (
+  banipid bigint(20) NOT NULL auto_increment,
+  banip varchar(255) NOT NULL default '',
+  PRIMARY KEY  (banipid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_blog`
+-- 
+
+CREATE TABLE bl_blog (
+  entryid bigint(20) NOT NULL auto_increment,
+  author bigint(20) NOT NULL default '0',
+  thetime varchar(255) NOT NULL default '',
+  realtime bigint(20) NOT NULL default '0',
+  shortblurb mediumtext NOT NULL,
+  maincontent mediumtext NOT NULL,
+  numcomments bigint(20) NOT NULL default '0',
+  month int(11) NOT NULL default '0',
+  year bigint(20) NOT NULL default '0',
+  allowcomments int(11) NOT NULL default '1',
+  blogtitle varchar(255) NOT NULL default '',
+  catparent bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (entryid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_calender`
+-- 
+
+CREATE TABLE bl_calender (
+  calid bigint(20) NOT NULL auto_increment,
+  dateclass bigint(6) NOT NULL default '0',
+  datecotent mediumtext NOT NULL,
+  viewable int(11) NOT NULL default '0',
+  personid bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (calid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_cats`
+-- 
+
+CREATE TABLE bl_cats (
+  catID bigint(20) NOT NULL auto_increment,
+  catname varchar(255) NOT NULL default '',
+  catbelong bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (catID)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_comments`
+-- 
+
+CREATE TABLE bl_comments (
+  commentid bigint(20) NOT NULL auto_increment,
+  comment mediumtext NOT NULL,
+  IP varchar(255) NOT NULL default '',
+  eparent bigint(20) NOT NULL default '0',
+  name varchar(255) NOT NULL default '',
+  PRIMARY KEY  (commentid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_gbook`
+-- 
+
+CREATE TABLE bl_gbook (
+  ID bigint(20) NOT NULL auto_increment,
+  name varchar(35) NOT NULL default '',
+  homepage varchar(45) NOT NULL default '',
+  mail varchar(35) NOT NULL default '',
+  country varchar(30) NOT NULL default '',
+  comment longtext NOT NULL,
+  realtime varchar(40) NOT NULL default '',
+  aim varchar(20) NOT NULL default '',
+  icq varchar(20) NOT NULL default '',
+  yim varchar(20) NOT NULL default '',
+  msn varchar(20) NOT NULL default '',
+  time bigint(60) NOT NULL default '0',
+  IP varchar(255) NOT NULL default '',
+  identifier bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (ID)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_left`
+-- 
+
+CREATE TABLE bl_left (
+  leftid bigint(20) NOT NULL auto_increment,
+  lefts longtext NOT NULL,
+  idf bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (leftid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_mphotos`
+-- 
+
+CREATE TABLE bl_mphotos (
+  pid bigint(20) NOT NULL auto_increment,
+  fullpath varchar(255) NOT NULL default '',
+  belongid bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (pid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_photos`
+-- 
+
+CREATE TABLE bl_photos (
+  photoid bigint(20) NOT NULL auto_increment,
+  mainpath varchar(255) NOT NULL default '',
+  thumbpath varchar(255) NOT NULL default '',
+  PRIMARY KEY  (photoid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_pollchoices`
+-- 
+
+CREATE TABLE bl_pollchoices (
+  choiceid bigint(20) NOT NULL auto_increment,
+  answer varchar(255) NOT NULL default '',
+  votes bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (choiceid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_pollip`
+-- 
+
+CREATE TABLE bl_pollip (
+  ipid bigint(20) NOT NULL auto_increment,
+  pollip varchar(255) NOT NULL default '',
+  PRIMARY KEY  (ipid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_pollquestion`
+-- 
+
+CREATE TABLE bl_pollquestion (
+  pollid int(11) NOT NULL auto_increment,
+  question tinytext NOT NULL,
+  PRIMARY KEY  (pollid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_profile`
+-- 
+
+CREATE TABLE bl_profile (
+  profileid bigint(20) NOT NULL auto_increment,
+  birthday varchar(255) NOT NULL default '',
+  sex varchar(255) NOT NULL default '',
+  picture varchar(255) NOT NULL default '',
+  state varchar(255) NOT NULL default '',
+  country varchar(255) NOT NULL default '',
+  Interests mediumtext NOT NULL,
+  occupation varchar(255) NOT NULL default '',
+  quote mediumtext NOT NULL,
+  email varchar(255) NOT NULL default '',
+  name varchar(255) NOT NULL default '',
+  belongid bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (profileid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_resume`
+-- 
+
+CREATE TABLE bl_resume (
+  resumeid int(11) NOT NULL auto_increment,
+  yourname varchar(255) NOT NULL default '',
+  address varchar(255) NOT NULL default '',
+  email varchar(255) NOT NULL default '',
+  phone varchar(255) NOT NULL default '',
+  zip varchar(255) NOT NULL default '',
+  mission tinytext NOT NULL,
+  body mediumtext NOT NULL,
+  idresume bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (resumeid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_right`
+-- 
+
+CREATE TABLE bl_right (
+  rightid bigint(20) NOT NULL auto_increment,
+  rights longtext NOT NULL,
+  idf bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (rightid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_userphotos`
+-- 
+
+CREATE TABLE bl_userphotos (
+  userphotoid bigint(20) NOT NULL auto_increment,
+  belongid bigint(20) NOT NULL default '0',
+  path varchar(255) NOT NULL default '',
+  thumbpath varchar(255) NOT NULL default '',
+  PRIMARY KEY  (userphotoid)
+) TYPE=MyISAM;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `bl_vars`
+-- 
+
+CREATE TABLE bl_vars (
+  varid bigint(20) NOT NULL auto_increment,
+  showprofile int(11) NOT NULL default '1',
+  showemail int(11) NOT NULL default '0',
+  showresume int(11) NOT NULL default '1',
+  showpic int(11) NOT NULL default '1',
+  useguestbook int(11) NOT NULL default '1',
+  showcalendar int(11) NOT NULL default '1',
+  usepoll int(11) NOT NULL default '0',
+  title varchar(255) NOT NULL default '',
+  useright int(11) NOT NULL default '0',
+  useleft int(11) NOT NULL default '0',
+  usephoto int(11) NOT NULL default '1',
+  idvars bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (varid)
+) TYPE=MyISAM;
+
+
+CREATE TABLE bl_accouncements (
+  annid bigint(20) NOT NULL auto_increment,
+  anntitle varchar(255) NOT NULL default '',
+  announcement mediumtext NOT NULL,
+  thedate varchar(255) NOT NULL default '',
+  thetime bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (annid)
+)
+        
