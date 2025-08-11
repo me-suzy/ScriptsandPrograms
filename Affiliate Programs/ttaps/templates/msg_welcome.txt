@@ -1,0 +1,48 @@
+Dear [name],
+
+Your affiliate account for [title_affiliates] has been successfully created.
+In order to start referring to our site, you have to use one or more links 
+to our site, [title_affiliates]. This can be done by several methods.
+
+=================================================
+
+Please visit the support pages at:
+
+[main_url]associate.php
+
+You can change your personal data there also.
+
+Your data:
+Affiliate ID: [nickname]
+Password: [pass]
+
+Your basic affiliate link:
+
+[main_url]affil.php?affil=[nickname]
+
+Click on this link to generate your affiliate HTML code:
+
+[main_url]getcode.php?affil=[nickname]
+
+==================================================
+
+You can use any kind of link you want (almost). 
+
+Make sure its syntax is correct.
+
+Check it by setting your browser to 'accept cookies, but notify', and click on 
+the link. You should get a cookie with your ID as a value. Opera, Netscape and
+Explorer allow this, under the 'options' or 'settings' heading.
+
+Don't send email spam or mislead people. 
+
+No UseNet cross-postings. No guestbook or message board spam; put the link in your 
+signature instead.
+
+I hope we can make a lot of money together.  
+
+Thanks for signing up,
+
+[site_title]
+[title_affiliates]
+[main_url]
