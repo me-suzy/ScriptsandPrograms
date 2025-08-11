@@ -1,0 +1,77 @@
+======================
+HOW TO INSTALL
+======================
+
+A. Without installation wizard
+
+#  UPLOAD
+
+1. Upload all files. Use ASCII mode for all files except all image files (.gif|.jpg) inside 'images' directory using BINARY.
+2. Rename config_bak.php file to become config.php
+
+
+#  WARNING!!! WARNING!!! WARNING!!!
+#  CHANGE THE NAME OF THE DIRECTORY CONTAINS .dat and .log file (default is _secret)
+
+3. For security reason, you MUST rename the directory '_secret' to something hard to be guessed.
+   It will be better if you change default.dat and default.log name (inside '_secret' dir) to something hard too.
+   example: directory '_secret' becomes '_you_dont_know'
+            file default.dat becomes what_is.dat
+	    file default.log becomes my_log.log
+
+   And then open config.php and find these codes (they are called variables)
+   $secret_dir = "_secret";
+   $database = "default.dat";
+   $log = "default.log";
+
+   change them with your new name:
+   $secret_dir = "_you_dont_know";
+   $database = "what_is.dat";
+   $log = "my_log.log";
+   (please use your own ideas)
+
+
+#  CHANGE THE 3 FILES's PERMISSION TO WRITEABLE
+
+4. CHMOD 666 config.php
+5. go to your new secret directory and CHMOD 666 what_is.dat (depend on your new data file's name)
+6. and CHMOD 666 my_log.log
+
+
+
+#  SETTING PASSWORD AND SECRET QUESTION/ANSWER
+
+7. open config.php with text file editor and find this code:
+   $admin_password = "gshout";
+   this is your password to login.
+   change to:
+   $admin_password = "YourNewPassWord";
+
+8. change this codes:
+   $secret_question = "Who is the author from this script??";
+   $secret_answer = "donie";
+   
+   to: 
+   $secret_question = "What is that?";
+   $secret_answer = "idontknow";
+
+
+
+#  CHECKING
+
+9. Run install.php script from you browser, use http://your.site.com/path/to/g-shout/install.php
+   If you find red text there, it means you still missing that configuration for checking.
+
+10.Delete install.php before using G-Shout and login to Admin Control Panel.
+   See the example iframe via http://your.site.com/path/to/g-shout/iframe_demo.php
+   and you can login via http://your.site.com/path/to/g-shout/admin.php
+
+
+================================
+UPGRADE FROM PREVIOUS VERSION
+================================
+
+Nothing special here.
+Upload all new files and overwrite the old files on your server.
+Use install.php script to check the important configuration.
+
