@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>RCBlog v1.03 - readme</title>
+<link rel="stylesheet" href="css/base.css" type="text/css"/>
+<style type="text/css">
+body{ background-color:#ddcc88; color:#000000; }
+#frame{ border-color:#4a4637; }
+#header{ border-color:#4a4637; background-color:#938c6e; color:#ffffff; }
+#content{ border-color:#4a4637; background-color:#aea88d; }
+#nav{ border-color:#4a4637; background-color:#c6c2b3; }
+#footer{ border-color:#4a4637; background-color:#aea88d; color:#000000; }
+div.post{ border-color:#4a4637; background-color:#f7f2df; color:#000000; }
+div.post div.title{ border-color:#4a4637; background-color:#938c6e; color:#ffffff; }
+div.post div.navtitle{ border-color:#4a4637; background-color:#938c6e; color:#ffffff; }
+div.post div.comment{ border-color:#4a4637; background-color:#f7f2df; color:#000000; }
+div.post div.code{ border-color:#938c6e; background-color:#f7f2df; color:#000000; }
+div.post div.quote{ border-color:#938c6e; background-color:#f7f2df; color:#000000; }
+hr{ background-color:#938c6e; color:#938c6e; }
+a:link{ color:#4a4637; }
+a:visited{ color:#4a4637; }
+a:hover{ color:#6673a6; }
+a:active{ color:#6673a6; }
+</style>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /><script type="text/javascript" src="scripts/rcb_javascript.js"></script>
+</head>
+<body onload="javascript:rcb_linkout()">
+<table id="frame" cellspacing="0">
+<tr><td id="header"><a id="top"></a>RCBlog - readme</td></tr>
+<tr>
+
+<td id="content" style="width:100%">
+
+<div class="post">
+<div class="title">Table of Contents</div>
+<div class="text">
+	<a href="#about">About RCBlog</a><br />
+	<br />
+	<a href="#legal">Legal Stuff</a><br />
+	<br />
+	<a href="#features">Features</a><br />
+	<br />
+	<a href="#install">Installation</a><br />
+	<br />
+	<a href="#config">Configuration</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#login">Logging In</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#siteconfig">Configuration</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#colors">Colors</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#banners">Banners</a><br />
+	<br />
+	<a href="#posts">Posts</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#blog">Blog Posts</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#static">Static Posts</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#notes">Notes</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#addpost">Adding Posts</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#editpost">Editing Posts</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#deletepost">Deleting Posts</a><br />
+	<br />
+	<a href="#files">Managing Files</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#files_browse">Browsing</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#files_upload">Uploading</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#files_newdir">Creating Directories</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#files_rename">Renaming</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#files_delete">Deleting</a><br />
+	<br />
+	<a href="#markup">Markup</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#mark_style">Text Styling</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#mark_colorsize">Color and Size</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#mark_quotecode">Quotes and Code</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#mark_align">Text Alignment</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#mark_lists">Lists</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#mark_links">Links, Anchors, and E-Mail</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#mark_images">Images</a><br />
+	&nbsp; &nbsp; &nbsp; -<a href="#mark_hr">Horizontal Rules</a><br />
+	<br />
+	<a href="#history">Release History</a><br />
+	<br />
+	<a href="#contact">Contact the Author</a><br />
+	
+</div>
+</div>
+
+<div class="post">
+<div class="title"><a id="about"></a>About RCBlog</div>
+<div class="text">
+	Finally having tired of writing lots of HTML ever time I updated my
+	website, I decide it was time for some automation. I wasn't able to
+	find anything I liked that would run on my university's server (though
+	<a href="http://www.bigevilbrain.com/sphpblog/">Simple PHP Blog</a> has
+	progressed quite nicely since then), so I set out to write my own.
+	<br /><br />
+	After three weeks or so of coding and learning PHP, I had the first
+	version of RCBlog, which was used to manage my website, but wasn't
+	very stable. Now, a couple upgrades and a few hundred bug fixes
+	later, I feel I have something worth distributing to the public. Enjoy.
+	<br /><br /><hr /><br />
+	<a href="#top">top</a>
+</div>
+</div>
+
+<div class="post">
+<div class="title"><a id="legal"></a>Legal Stuff</div>
+<div class="text">
+	RCBlog is released under the RCFS (RC's Free Stuff) license,
+	which means you can whatever you want with the code. I cannot
+	be held responsible for anything it does or doesn't do, and
+	I ask that if you use my code, you give me credit for the work
+	I did (though that isn't necessary).
+	<br /><br /><hr /><br />
+	<a href="#top">top</a>
+</div>
+</div>
+
+<div class="post">
+<div class="title"><a id="features"></a>Features</div>
+<div class="text">
+	RCBlog has the same features as a lot of other packages. Here are a few that aren't
+	very common, and that I am most proud of:
+	<ul>
+		<li><b>requires only PHP</b><br/>
+			All data is stored in flat text files, so no database software
+			is required. All you need is PHP 4.3.2 and appropriate write permissions
+			on your server.</li>
+		<li><b>easy-to-manage static posts</b><br />
+			Aside from the weblog format of the front page, RCBlog allows for static
+			posts that are linked to from the navigation menu. These are for pages
+			that contain information that remains relevant for extended periods of time,
+			like an about page or a list of software releases.</li>
+		<li><b>automatic color scheme generation</b><br />
+			You can give RCBlog a single color (in 24-bit hex format), and it will
+			generate an entire color scheme for you. Of course you can still specify
+			each individual color if you want to, but you don't have to.</li>
+	</ul>
+	<br /><hr /><br />
+	<a href="#top">top</a>
+</div>
+</div>
+
+<div class="post">
+<div class="title"><a id="install"></a>Installation</div>
+<div class="text">
+	Installation of RCBlog is fairly simple. First, you need to extract
+	the contents of the installation archive to the root directory of your
+	webspace. Next, create three directories named &quot;data&quot;,
+	&quot;config&quot;, and &quot;files&quot;, and (if you're on a UNIX system)
+	give them write and execute permissions for everybody (777). That's it.
+	Next, you need to open up a web browser and <a href="#config">configure</a> it.
+	<br /><br /><hr /><br />
+	<a href="#top">top</a>
+</div>
+</div>
+
+<div class="post">
+<div class="title"><a id="config"></a>Configuration</div>
+<div class="text">
+	The first time you navigate to your RCBlog website, there won't be much on it.
+	Before you can add some content, you need to do some configuration. If at any
+	time during this procedure, you get the "Cannot write to file" error, your
+	permissions are not set properly. Head back to the <a href="#install">installation
+	section</a> to fix them.
+	<br /><br /><hr /><br />
+	<b><a id="login"></a>Logging In</b><br /><br />
+	First, you'll need to log in. Follow the Login link from the menu at the right
+	side of the page. The default username and password are both "RCBlog". Once
+	you've logged in, the menu will contain a few more options than it did before.
+	The first you need to visit it Change Login. This will allow you to specify your
+	own username and password so that other people won't be able to mess with your
+	site.
+	<br /><br /><hr /><br />
+	<b><a id="siteconfig"></a>Configuration</b><br /><br />
+	You probably will want to change the title and copyright information. To do this,
+	follow the Configuration link from the menu. This will allow you to customize
+	various parts of the site. On this page, you will find entries for various aspects
+	of RCBlog:
+	<ul>
+		<li><b>Site Title</b><br />
+			The text that appears in the browser's title bar, and is
+			used when bookmarking your site.</li>
+		<li><b>Blog Title</b><br />
+			This is the title that appears at the top of every page
+			within RCBlog. <a href="#markup">Markup</a> is allowed
+			here.</li>
+		<li><b>Description</b><br />
+			A description of your site, used by most search engines
+			to index pages</li>
+		<li><b>Keywords</b><br />
+			Some comma-separated list of keywords describing your site.
+			These are used by most search engines, in addition to the
+			description, to index web pages.</li>
+		<li><b>Footer</b><br />
+			The text that appears at the bottom of every page within
+			RCBlog. <a href="#markup">Markup</a> is allowed here.</li>
+		<li><b># of Recent Posts</b><br />
+			The maximum number of posts to display on the front page</li>
+		<li><b>Date Display Format</b><br />
+			This is the format for displaying the date and time of your
+			<a href="#blog">blog posts</a>. <a href="#markup">Markup</a>
+			is allowed, but not recommended.</li>
+		<li><b>Menu Date Format</b><br />
+			This is the format for displaying dates in the archive at
+			the right side of the page.</li>
+		<li><b>Server Offset</b><br />
+			The number of hours difference between you and your server.</li>
+		<li><b>Display Menu when Not Logged In</b><br />
+			If you don't want a Login button on your front page, you can
+			set this option to no. In order to log in later, you will have
+			to navigate to login.php</li>
+	</ul>
+	<br /><hr /><br />
+	<b><a id="colors"></a>Colors</b><br /><br />
+	If you don't like the default color scheme, you can follow
+	the Set Colors link from the menu to change it. The first area, titled Set
+	Colors Automatically, does exactly what it says. Give it a color for the page
+	background, and it will automatically generate an entire color scheme to match
+	the color you chose. If you would rather specify colors yourself, you can use
+	the second area, titled Set Colors Individually. This will allow you to specify
+	each color used within RCBlog. Note that all colors are in 24-bit (6 digits)
+	hexadecimal format. If you don't know your hex colors very well, there are some
+	decent color pickers <a href="http://www.visibone.com/colorlab/big.html">here</a>
+	and <a href="http://navsurf.com/applets/colorpicker/">here</a>.
+	<br /><br /><hr /><br />
+	<b><a id="banners"></a>Banners</b><br /><br />
+	The area below the menu that reads simply "powered by RCBlog" can be edited to
+	contain more information, such as banners and links to other sites. When you
+	are logged in, simply follow the edit link at the top of the box. Note that
+	code here is straight HTML (<a href="http://www.w3.org/TR/2001/REC-xhtml11-20010531/"
+	rel="external">XHTML 1.1</a>), and not RCBlog's <a href="#markup">markup</a>.
+	If you don't know HTML, then leave this section alone.
+	<br /><br /><hr /><br />
+	Now that you're all set up, you should <a href="#blog">post something</a>.
+	<br /><br /><hr /><br />
+	<a href="#top">top</a>
+</div>
+</div>
+
+<div class="post">
+<div class="title"><a id="posts"></a>Posts</div>
+<div class="text">
+	<b><a id="blog"></a>Blog Posts</b>:<br /><br />
+	Blog posts are the ones that appear on the front page. The most recent post
+	always appears at the top, followed in reverse chronological order by other
+	posts up to a limit specified in the <a href="#config">configuration</a>.
+	Posts too old to be displayed on the front page are accessible via the archives
+	section on the right side of the page.
+	<br /><br /><hr /><br />
+	<b><a id="static"></a>Static Posts</b>:<br /><br />
+	Static posts always appear alone in the content area, and are linked from the
+	navigation area, at the top of the right-hand side of the page. The Manage Static
+	Posts area of the menu allows you to change the order of these links, as well as
+	edit and delete them, and add and remove dividers. You may also add external links
+	to the navigation page using the Add Link pane at the bottom.
+	<br /><br /><hr /><br />
+	<b><a id="notes"></a>Notes</b><br /><br />
+	Below the Logout link in the menu is a link titled "Notes". This is a single post
+	that can only be viewed when logged in. It is for keeping notes and storing
+	information that you don't want visitors to see.
+	<br /><br /><hr /><br />
+	<b><a id="addpost"></a>Adding Posts</b>:<br /><br />
+	To add a post, follow either the Add Blog Post or Add Static Post links from the menu.
+	The page that appears contains space for a title and text. The title is what appears
+	in the post's header when viewed. The text area holds the post's body text.
+	<a href="#markup">Markup</a> may be added in either area, but using it in the title
+	is advised against, due to possible illegibility (especially static posts, whose titles
+	are displayed in the navigation area as well as their headers). The Preview button allows
+	you to view your post before committing the changes. The Edit button submits the post.
+	<br /><br /><hr /><br />
+	<b><a id="editpost"></a>Editing Posts</b>:<br /><br />
+	When logged in, an Edit link is displayed at the top of each post (these links are also
+	accessible from the Manage Static Posts page). Following this link will bring you to a
+	page very similar to the one used to add posts. Press Preview to view changes, and press
+	Edit to commit them.
+	<br /><br /><hr /><br />
+	<b><a id="deletepost"></a>Deleting Posts</b>:<br /><br />
+	Delete links are displayed in the same places as Edit links (at the top of posts, and
+	on the Manage Static Posts page). When deleting a post, you will be asked for a
+	confirmation. Press No to cancel the operation or Yes to remove the post.
+	<br /><br /><hr /><br />
+	<a href="#top">top</a>
+</div>
+</div>
+
+<div class="post">
+<div class="title"><a id="files"></a>Managing Files</div>
+<div class="text">
+	RCBlog includes a built-in file manager that allows you to upload and manage various
+	files without needing an FTP client. The file manager can be accessed by following
+	the link titled "File Manager" from the menu.
+	<br /><br /><hr /><br />
+	<b><a id="files_browse"></a>Browsing</b>:<br /><br />
+	You can browse the files you have uploaded by clicking on them in the list at the
+	top of the file manager. Clicking on a directory brings up a list of that directory's
+	contents, and clicking on a file opens that file.
+	<br /><br /><hr /><br />
+	<b><a id="files_upload"></a>Uploading</b>:<br /><br />
+	To upload a file, either type the name of the file in the box provided, or click
+	Browse and navigate the the file's location. When you are ready, press the Submit
+	button to send the file to the file manager's current directory. Uploads are
+	limited in size by PHP's upload_max_filesize variable (usually 2M; you can run
+	<a href="http://www.php.net/phpinfo" rel="external">phpinfo</a> to determine this
+	value on your server). If all goes well, your file will be added to the current
+	directory.
+	<br /><br /><hr /><br />
+	<b><a id="files_newdir"></a>Creating Directories</b>:<br /><br />
+	To create a new directory, simply enter the name of the directory in the box, and
+	press Submit.
+	<br /><br /><hr /><br />
+	<b><a id="files_rename"></a>Renaming</b>:<br /><br />
+	To rename a file or directory, follow the rename link on the right. In the resulting
+	dialog, enter the new name and press Submit to rename the file or directory.
+	<br /><br /><hr /><br />
+	<b><a id="files_delete"></a>Deleting</b>:<br /><br />
+	To delete a file or directory, follow the delete link at the right-hand side of
+	the file list. This will bring up a dialog asking for your confirmation. Press
+	Yes to delete the file or directory, or press No to cancel the operation. Note
+	that you cannot delete directories unless they are empty.
+	<br /><br /><hr /><br />
+	<a href="#top">top</a>
+</div>
+</div>
+
+<div class="post">
+<div class="title"><a id="markup"></a>Markup</div>
+<div class="text">
+	RCBlog doesn't allow you to use HTML in posts, and instead relies on a
+	set of custom tags. Using these tags, it is impossible to break the layout
+	using malformed HTML. RCBlog fully supports <a href="http://www.phpbb.com/">phpBB</a>
+	2.0's <a href="http://www.phpbb.com/phpBB/faq.php?mode=bbcode">BBCode</a>,
+	in addition to several other tags I created myself.
+	<br /><br /><hr /><br />
+
+	<b><a id="mark_style"></a>Text Styling</b>:<br /><br />
+	Bold: <span class="mono">[b]</span>btext<span class="mono">[/b]</span> --> <b>btext</b><br />
+	Itallic:<span class="mono">[i]</span>itext<span class="mono">[/i]</span> --> <i>itext</i><br />
+	Underline: <span class="mono">[u]</span>utext<span class="mono">[/u]</span> --> <span style="text-decoration:underline">utext</span><br />
+	Monospace: <span class="mono">[mono]</span>mtext<span class="mono">[/mono]</span> --> <span class="mono">mtext</span><br />
+	<br /><hr /><br />
+	<b><a id="mark_colorsize"></a>Color and Size</b>:<br /><br />
+	Color: <span class="mono">[color=#</span><i>hexcolor</i><span class="mono">]</span>ctext<span class="mono">[/color]</span> --> <span style="color:#ff0000">ctext</span><br />
+	Color: <span class="mono">[color=</span><i>colorname</i><span class="mono">]</span>ctext<span class="mono">[/color]</span> --> <span style="color:red">ctext</span><br />
+	Size: <span class="mono">[size=</span><i>pixelsize</i><span class="mono">]</span>stext<span class="mono">[/size]</span> --> <span style="font-size:10px">stext</span><br />
+	<br />
+	<i>hexcolor</i> == 24- or 12-bit (6 or 3 digits) hexadecimal value; format is RRGGBB or RGB<br />
+	<i>colorname</i> == name of a color (i.e., red, blue, etc.)<br />
+	<i>pixelsize</i> == size of text, measured in pixels (default is 16)<br />
+	<br /><hr /><br />
+	<b><a id="mark_quotecode"></a>Quotes and Code</b>:<br /><br />
+	Quote: <span class="mono">[quote=&quot;</span>author<span class="mono">]</span>qtext<span class="mono">[/quote]</span> --> <div class="quote"><span style="font-size:0.9em;font-style:italic">author wrote:<br /><br /></span>qtext</div><br />
+	Quote: <span class="mono">[quote]</span>qtext<span class="mono">[/quote]</span> --> <div class="quote">qtext</div><br />
+	Code: <span class="mono">[code]</span>ctext<span class="mono">[/code]</span> --> <div class="code">ctext</div><br />
+	<hr /><br />
+	<b><a id="mark_align"></a>Text Alignment</b>:<br /><br />
+	Center: <span class="mono">[center]</span>ctext<span class="mono">[/center]</span> --> <div style="text-align:center">ctext</div><br />
+	Right: <span class="mono">[right]</span>rtext<span class="mono">[/right]</span> --> <div style="text-align:right">rtext</div><br />
+	Justify: <span class="mono">[justify]</span>jtext<span class="mono">[/justify]</span> --> <div style="text-align:justify">jtext</div><br />
+	<hr /><br />
+	<b><a id="mark_lists"></a>Lists</b>:<br /><br />
+	Unordered List:<br />
+	<span class="mono">[list]</span><br />
+	<span class="mono">&nbsp;&nbsp;[*]</span>item1<br />
+	<span class="mono">&nbsp;&nbsp;[*]</span>item2<br />
+	<span class="mono">&nbsp;&nbsp;[*]</span>item3<br />
+	<span class="mono">[/list]</span><br/><br />
+	--><ul><li>item1</li><li>item2</li><li>item3</li></ul>
+	Ordered List:<br/>
+	<span class="mono">[list=</span><i>liststyle</i><span class="mono">]</span><br />
+	<span class="mono">&nbsp;&nbsp;[*]</span>item1<br />
+	<span class="mono">&nbsp;&nbsp;[*]</span>item2<br />
+	<span class="mono">&nbsp;&nbsp;[*]</span>item3<br />
+	<span class="mono">[/list]</span><br/><br />
+	--><ol style="list-style-type:decimal"><li>item1</li><li>item2</li><li>item3</li></ol>
+	<i>liststyle</i> == <span class="mono">[ 1 | a | A | i | I ]</span><br />
+	<br /><hr /><br />
+	<b><a id="mark_links"></a>Links, Anchors, and E-Mail</b>:<br /><br />
+	External URL: <span class="mono">[url]</span><i>url</i><span class="mono">[/url]</span> --> <a href="http://www.google.com/" rel="external">http://www.google.com/</a><br />
+	Internal URL: <span class="mono">[urls]</span><i>url</i><span class="mono">[/urls]</span> --> <a href="http://www.google.com/">http://www.google.com/</a><br />
+	External Link: <span class="mono">[url=</span><i>url</i><span class="mono">]</span>ltext<span class="mono">[/url]</span> --> <a href="http://www.google.com/" rel="external">ltext</a><br />
+	Internal Link: <span class="mono">[url=</span><i>url</i><span class="mono">]</span>ltext<span class="mono">[/url]</span> --> <a href="http://www.google.com/">ltext</a><br />
+	Anchor: <span class="mono">[a=</span><i>aname</i><span class="mono">]</span>atext --> <a id="anchor"></a>atext<br />
+	E-Mail: <span class="mono">[email]</span><i>email</i><span class="mono">[/email]</span> --> <a href="mailto:idiot@village.net">idiot@village.net</a><br />
+	<br />
+	<i>url</i> == a Uniform Resource Locator (e.g., http://www.google.com/), or <i>aname</i> preceded by <span class="mono">#</span><br />
+	<i>aname</i> == the name of an anchor; can be linked to later with <span class="mono">#</span><i>aname</i><br />
+	<i>email</i> == an e-mail address<br />
+	<br /><hr /><br />
+	<b><a id="mark_images"></a>Images</b>:<br /><br />
+	Image: <span class="mono">[img]</span><i>url</i><span class="mono">[/img]</span> --> <img src="images/rcblog.gif" alt="images/rcblog.gif" /><br />
+	Image: <span class="mono">[img=</span><i>url</i><span class="mono">]</span><i>alt</i><span class="mono">[/img]</span> --> <img src="images/rcblog.gif" alt="alt" /><br />
+	Left Image: <span class="mono">[imgl]</span><i>url</i><span class="mono">[/imgl]</span>itext<span class="mono">[clear]</span> -->
+	<br /><img class="left" src="images/rcblog.gif" alt="images/rcblog.gif" />itext<div style="clear:both"></div><br />
+	Left Image: <span class="mono">[imgl=</span><i>url</i><span class="mono">]</span><i>alt</i><span class="mono">[/imgl]</span>itext<span class="mono">[clear]</span> -->
+	<br /><img class="left" src="images/rcblog.gif" alt="alt" />itext<div style="clear:both"></div><br />
+	Right Image: <span class="mono">[imgr]</span><i>url</i><span class="mono">[/imgr]</span>itext<span class="mono">[clear]</span> -->
+	<br /><img class="right" src="images/rcblog.gif" alt="images/rcblog.gif" />itext<div style="clear:both"></div><br />
+	Right Image: <span class="mono">[imgr=</span><i>url</i><span class="mono">]</span><i>alt</i><span class="mono">[/imgr]</span>itext<span class="mono">[clear]</span> -->
+	<br /><img class="right" src="images/rcblog.gif" alt="alt" />itext<div style="clear:both"></div><br />
+	<br />
+	<i>url</i> == a Uniform Resource Locator (e.g., images/rcblog.gif)<br />
+	<i>alt</i> == alternate text for an image (default is same as <i>url</i>)<br />
+	<br /><hr /><br />
+	<b><a id="mark_hr"></a>Horizontal Rules</b>:<br /><br />
+	Horizontal Rule: <span class="mono">[hr]</span> --> <hr /><br />
+	<hr /><br />
+	<a href="#top">top</a>
+</div>
+</div>
+
+<div class="post">
+<div class="title"><a id="history"></a>Release History</div>
+<div class="text">
+	<ul>
+		<li><b>1.03</b> - 2005-10-16<br />
+			Changed URL of linkback. This is the final version of RCBlog.
+			</li>
+		<li><b>1.02</b> - 2004-11-09<br />
+			Added external links to the navigation bar.
+			</li>
+		<li><b>1.01</b> - 2004-11-02<br />
+			Added the file manager, and cleaned up a lot of the code.
+			</li>
+		<li><b>1.00</b> - 2004-10-25<br />
+			Second public release of RCBlog, and the first stable one.
+			</li>
+	</ul>
+</div>
+</div>
+
+<div class="post">
+<div class="title"><a id="contact"></a>Contact the Author</div>
+<div class="text">
+	You can reach me by e-mail at
+	<a href="mailto:noah.medling@gmail.com">noah.medling@gmail.com</a>,
+	or you can visit my website at
+	<a href="http://rcsoft.co.nr/">rcsoft.co.nr</a>.
+	<hr />
+	<a href="#top">top</a>
+</div>
+</div>
+
+</td>
+</tr>
+<tr><td id="footer">&copy; Noah Medling</td></tr>
+</table>
+</body>
+</html>
