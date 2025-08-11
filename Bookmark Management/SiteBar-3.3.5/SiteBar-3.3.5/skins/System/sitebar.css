@@ -1,0 +1,177 @@
+@import url("../sitebar.css");
+@import url("common.css");
+
+body
+{
+    margin: 1px 2px;
+}
+
+#logo
+{
+    width: 181px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+}
+
+#userCtxMenu
+{
+    border: 1px groove ButtonHighlight;
+}
+
+#toolbar
+{
+    border: 2px groove ButtonHighlight;
+}
+
+#toolbar img
+{
+    border: 1px solid ButtonFace;
+}
+
+#toolbar #fldSearch
+{
+    background: Window;
+}
+
+#stat
+{
+    width: 179px;
+}
+
+div.menu
+{
+    font : menu;
+    border: 2px outset ButtonHighlight;
+    background: ButtonFace ;
+}
+
+div.menu .off
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div.menu .on
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: HighlightText;
+    background: Highlight;
+}
+
+div.menu .disabled
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: GrayText ;
+}
+
+div.menu .separator
+{
+    margin-top: 3px;
+    border-top: ButtonShadow  solid 1px;
+    border-bottom: ButtonHighlight  solid 1px;
+}
+
+div.tree
+{
+    color: ButtonText ;
+}
+
+div.root
+{
+    left: 0;
+}
+
+div.root img
+{
+    position: relative;
+    left: 0;
+}
+
+div.tree div.node
+{
+    display: block;
+    cursor : default;
+}
+
+div.tree div.link
+{
+    height: 18px;
+}
+
+div.tree div.node img
+{
+    vertical-align: text-bottom;
+    border: 0;
+    height: 18px;
+}
+
+div.tree div.node img.favicon
+{
+    height: 16px;
+    vertical-align: text-bottom;
+    border: 0;
+}
+
+div.tree a
+{
+    text-decoration: none;
+    color: ButtonText ;
+}
+
+div.tree a:hover
+{
+    color: black;
+    background: #dddfff;
+}
+
+div.tree a:hover .selected
+{
+    color: yellow;
+    background: #aaafff;
+}
+
+div.tree a.highlight
+{
+    background-color: InfoBackground ;
+    color : InfoText;
+    border: ButtonShadow  solid 1px;
+}
+/*** Command Window ***/
+
+
+body.cmdWin table th
+{
+    color: ButtonText;
+}
+
+/*** Integrator window ***/
+#launcher
+{
+    border: 1px groove #807ad6;
+}
+
+#launcher h2
+{
+    color: ButtonText;
+}
+
+#launcher table th
+{
+    background: #807ad6;
+    color: #d5d7fd;
+    vertical-align: top;
+    font-size: x-small;
+}
+
+span.compatibleNo
+{
+    color: #dddddd;
+}
+
+span.compatibleYes
+{
+    color: white;
+    font-weight: bold;
+}
