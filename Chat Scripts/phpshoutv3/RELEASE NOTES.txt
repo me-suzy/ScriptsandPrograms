@@ -1,0 +1,22 @@
+Version 3
+
+Removed email field and reset button
+Added IP blocking
+2 toned posts now available
+Admin Section added.
+
+Version 2
+
+Updated CSS file
+Ability to remember users name added
+Pagination added to the archive.
+Flood Control added. Prevent Spammers
+Display date selectable using title tags (<title></title>)
+
+Version 1.1
+
+Updated the CSS file
+Added Date & IP Address to Database.
+Removed slashes from posts.
+
+Version 1.0
