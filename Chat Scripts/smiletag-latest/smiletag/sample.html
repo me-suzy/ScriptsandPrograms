@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- To install smiletag on your page, simply copy 3 html part below into your page -->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Smiletag</title>
+
+<!-- 1.Start copy here -->
+<script type="text/javascript" language="JavaScript" src="smiletag-script.js"></script>
+<!-- 1.End copy here   -->
+
+</head>
+
+<body>
+ <table border="0" cellpadding="0" cellspacing="0">
+     <tr>
+          <td bgcolor="#FFFFFF" valign="top" ><br />
+          
+		  <!-- 2.Start copy here -->
+		  <iframe name="iframetag" marginwidth="0" marginheight="0" src="view.php" width="190" height="300">
+			Your Browser must support IFRAME to view
+			this page correctly
+		  </iframe>
+		  <!-- 2.End copy here   -->
+
+		  </td>
+     </tr>
+     <tr>
+          <td bgcolor="#FFFFFF" height="16">
+            
+			<!-- 3.Start copy here -->
+			<form name="smiletagform" method="post" action="post.php" target="iframetag"><br />
+              Name<br /><input type="text" name="name"/><br />
+              URL or Email<br /><input type="text" name="mail_or_url" value="http://" /><br />
+              Message<br /><textarea name="message_box" rows="3" cols="20"></textarea><br />
+              <input type="hidden" name="message" value="" />
+              <input type="submit" name="submit" value="Tag!" onclick="clearMessage()" /> 
+			  <input type="reset"  name="reset" value="Reset" /><br />
+            </form>
+			<!-- 3.End copy here   -->
+             
+          </td>
+        </tr>
+    </table>
+</body>
+</html>
