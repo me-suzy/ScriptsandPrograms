@@ -1,0 +1,97 @@
+ltw_changelog.txt
+
+$Id: ltw_changelog.txt,v 1.35 2003/10/04 23:43:40 tom Exp $
+
+==========================================================================
+
+Changes in Release 4.1.3
+
+==========================================================================
+
+ltweventmgr.php
+
+----------------------------------------
+
+Fixed missing paren ")" in line 633
+
+
+
+Changes in Release 4.1.2
+
+==========================================================================
+
+ltwdisplaylist.php
+----------------------------------------
+BUG FIX: Corrected array index on lines 445, 447 so Location and Description fields display
+	Old: $evtA[$i]
+	New: $evtA[$e]
+
+	
+ltweventmgr.php
+---------------------------------------
+BUG FIX: in Event2_POTS, added IF statements around converting 
+	$this->event->xxxx_time to $_POST variables. 
+	Without this, you could not add events if "default" times
+	were not configured.
+
+
+
+Multiple Files
+
+---------------------------------------
+
+BUG FIX: Added "global $_POST;" to all functions using the $_POST variable to
+
+	complete backward (4.0.x) PHP compatibility issues
+
+	
+	
+
+==========================================================================
+
+Changes since Release 4.1
+
+==========================================================================
+
+
+
+calendar.php
+
+-------------------------------
+
+BUG FIX: Corrected $_REQUEST['end_date'] calculation to use true 
+
+	last day of month.
+
+
+
+ltwcatmgr.php
+
+-------------------------------
+
+CHANGE : Added Category Id display after name to suupport ?cat_ids=
+
+	on Month and List display.
+
+
+
+ltwdisplaylist.php
+
+-------------------------------
+
+BUG FIX: $e is now used to reference $evtA so it matches the month display
+
+	All incorrect references fixed
+
+
+
+ltwdisplaymonth.php
+
+-------------------------------
+
+BUG FIX: $e is now used to reference $evtA so it matches the month display
+
+	All incorrect references fixed	
+
+
+
