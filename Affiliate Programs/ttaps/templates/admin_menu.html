@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>[title_affiliates] Admininstration Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="STYLESHEET" type="text/css" href="mainII.css">
+</head>
+
+<body>
+
+<h1>[title_affiliates] Administration Menu</h1>
+
+<table align="center" border="0" cellpadding="10" cellspacing="0" width="100%">
+<tr align="center" valign="top">
+	<td>
+	
+<form method="post" action="admin.php">
+        <table border="1" align="center" cellpadding="5" cellspacing="1" bordercolor="#0099ff" style="border-collapse: collapse">
+          <tr> 
+            <td><input name="action" type="radio" style="border-width: 0px" value="logsales" CHECKED></td>
+            <td COLSPAN="2">Show all <b>sales</b> made by affiliates (commissions).</td>
+          </tr>
+          <tr> 
+            <td><input type="radio" name="action" value="logref" style="border-width: 0px"></td>
+            <td COLSPAN="2">Show all affiliates<b> referred </b>by other affiliates.</td>
+          </tr>
+          <tr> 
+            <td><input type="radio" name="action" value="composemail" style="border-width: 0px"></td>
+            <td COLSPAN="2"> <B> Email</B> all affiliates</td>
+          </tr>
+          <tr> 
+            <td><input type="radio" name="action" value="search" style="border-width: 0px"></td>
+            <td COLSPAN="2"><B>Find</B> an affiliate. Enter <B>search term:</B> 
+              <input type="text" name="keyword" size="15"> </td>
+          </tr>
+          <tr> 
+            <td><input type="radio" name="action" value="list" style="border-width: 0px"></td>
+            <td COLSPAN="2">Show affiliates who've <B>earned more than</B> [money_unit] 
+              <input type="text" name="sold_query" size="5" value="[payment_threshold]">
+              . Show 
+              <input type="text" name="maximumpage" size="3" value="100">
+              results per page</td>
+          </tr>
+          <tr> 
+            <td><input type="radio" name="action" value="payall" style="border-width: 0px"></td>
+            <td><B>Debit</B> affiliate's accounts who've reached the<B> payment 
+              threshold</B> and <B>list names </B>and<B> addresses</B> to send 
+              payments to. <br> 
+              <font color="#FFCC00"><b></b></font></td>
+            <td BGCOLOR="#FF0000"><font color="#FFCC00"><b><I>WARNING: This action 
+              cannot be reversed, and payments must be made manually!</I></b></font></td>
+          </tr>
+        </table>
+  <BR>
+  <div align="center">
+          <input type="submit" value=">> Make it so <<" class="button">
+  </div>
+</form>
+	
+	</td>
+	<td width="200">
+	
+<table align="center" border="1" bordercolor="#0099ff" cellpadding="1" cellspacing="0" class="white" style="border-collapse: collapse">
+<tr><th> Payment threshold </th></tr>
+<tr><td align="center" style="padding: 5px"><font color="#FF0000"><b>[money_unit][payment_threshold]</b></font></td></tr>
+</table><br>
+
+<table border="1" bordercolor="#0099ff" cellpadding="1" cellspacing="0" align="center" class="white" style="border-collapse: collapse">
+<tr><th>Total affiliates</th></tr>
+<tr><td align="center">You have <font color="#333399"><b>[totalaffiliates]</b></font> active affiliates with a total earned of:<br><font color="#FF0000"><b>[money_unit] [total_sold]</b></font>.</td>
+</tr>
+</table><br>
+
+<table border="1" bordercolor="#0099ff" cellpadding="1" cellspacing="0" align="center" class="white" style="border-collapse: collapse">
+<tr><th>Affiliates to pay</th></tr>
+<tr><td align="center">You have <font color="#CC0033"><b>[waiting]</b></font> affiliates who have passed the payment threshold</font>.</td>
+</tr>
+</table>
+	
+	</td>
+</tr>
+</table>
+
+</body>
+</html>
