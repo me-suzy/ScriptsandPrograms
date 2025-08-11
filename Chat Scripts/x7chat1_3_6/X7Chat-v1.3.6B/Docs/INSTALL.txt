@@ -1,0 +1,84 @@
+Installation
+ To install X7 Chat you must have PHP Version 4+ and MySql Version 3+.
+ After making sure that you have the correct versions of PHP and MySql
+ please follow the following steps.
+ 
+ 1) Open the file config.php in a text editor.  Scroll down past the
+    copyright.  There you will see 10 variables that need edited.  The
+    variables are in the form $VARIABLENAME[SUBNAME] = "VALUE";  You
+    will need to replace the current value of a variable with the 
+    correct value for your server.  At the end of this file is a long
+    explanation for each of theses variables.
+    
+ 2) After editing the file config.php with the correct variables
+    upload all of the included files except the Docs directory to
+    the server.  MAKE SURE YOU UPLOAD ALL FILES IN BINARY MODE!  If
+    you do not upload all files in binary mode then X7 Chat will not
+    work correctly.  After you upload all files CHMOD 777 the directory 
+    Logs.
+    
+ 3) After uploading all the files to the server go to
+    http://yoursite.com/x7chatdirectory/install.php.  Make sure you
+    replace yoursite.com with the correct domain name and
+    x7chatdirectory with the directory that you uploaded X7 Chat to.
+    After going to the install.php page you will be guided through
+    setup.
+    
+ 4) After finishing the online setup delete the file install.php.  If
+    you do not it will be possible for anyone to create an administrator
+    account on your chat server.
+    
+ 5) Have fun chatting!  Installation is all done!      
+
+ -- Explanation of Variables --
+ 
+Note: All variables ARE case sensitive.
+ 
+$DATABASE['HOST']		:	This is the domain name or IP address of the
+						MySql server.  99.9% of the time this is left
+						as localhost.  Only change it if you know that
+						you are using a remote MySql server.
+						
+$DATABASE['USER']		:	This is the username that you use to connect
+						to the MySql server.  Make sure that the user
+						has permissions to access the database you
+						will be using.
+						
+$DATABASE['PASS']		:	This is the password that you use to connect
+						to the MySql server.  Make sure you are
+						using the correct password, or else X7 Chat
+						will not work (duh!)
+						
+$DATABASE['DATABASE']	:	This is the name of the database that you
+						will be using for X7 Chat.
+						
+$DATABASE['TYPE']		:	You must leave this as MySql.  The only
+						reason that it is even in the config file is
+						that in future versions different types of
+						databases may be supported.  However, as of
+						Jan. 5, 2004 only MySql is supported.
+						
+$SERVER['NAME']			:	This may be equal to whatever you would like
+						it to equal.  It serves no real function in the
+						script except that it is displayed to users when
+						they are chatting.
+						
+$SERVER['TBL_PREFIX']		:	This allows you to run several copys of
+						X7 Chat on one database.  This variable is
+						used as a prefix for the table names.  This one
+						may be left as default if you are only running
+						one copy of X7 Chat.
+						
+$SERVER['PATH']			:	Set this to "/" unless you are having problems with your cookies
+						
+$SERVER['LANGUAGE']		:	This is the language your chat is run in.  As
+						of release only "english" is supported.  Hopefully
+						some people will be kind enough to translate it
+						for us.
+						
+$SERVER['AUTH']			:	This is the Authentication file that is used when
+						a user logs in.  It controls encrypting of passwords
+						and getting the password from the database.  You may
+						choose between plain (plain text) and md5 (encrypted).
+						If you are upgrading from 1.2.0 you MUST choose plain.
+ 
