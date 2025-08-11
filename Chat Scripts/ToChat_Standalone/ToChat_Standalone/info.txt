@@ -1,0 +1,9 @@
+Get to work as php standalone and with Postnuke, md-pro, envolution by Artist 
+
+download at www.dwebmaster.com or www.to.ma 
+
+For Help use only our Forums 
+
+http://www.to.ma/forums/
+
+If you want to make changes, irc server etc edit config.cfg
