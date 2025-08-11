@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xbel PUBLIC
+    "+//IDN sitebar.org//DTD XML Bookmark Exchange Language for SiteBar 1.0//EN//XML"
+    "http://sitebar.org/xml/xbel-sitebar-1.0.dtd">
+<xbel version="1.0">
+  <title>Web Search</title>
+  <info>
+    <metadata owner="https://secure.teamforge.net/sitebar.org/beta"/>
+  </info>
+  <folder id="n325" id_parent="n5" custom_order="" order="1" sort_mode="user" added="1999-11-30T00:00:00+0100" visited="2005-09-24T20:20:02+0200" modified="2005-09-24T20:21:18+0200">
+    <title>Web Search</title>
+    <desc>Type a search term in the toolbar and click on one one of the links to search this term using that search engine. Using the SiteBar Sidebar Extension for Mozilla Firefox you can middle click on the folder to search all engines each in its own tab.</desc>
+    <bookmark href="http://search.dmoz.org/cgi-bin/search?search=%SEARCH%" modified="2005-02-08T21:51:06+0100" visited="2005-09-19T12:59:21+0200" id="l2171" private="0" target="" added="2004-07-13T23:27:50+0200" tested="2005-09-24T20:12:24+0200" hits="62" is_dead="0" favicon="" validate="1" order="1000">
+      <title>dmoz: Open Directory Project</title>
+    </bookmark>
+    <bookmark href="http://www.acronymfinder.com/af-query.asp?String=exact&amp;Acronym=%SEARCH%&amp;Find=Find" modified="2004-07-13T23:39:44+0200" visited="2005-09-21T14:33:51+0200" id="l2170" private="0" target="" added="2004-07-13T23:39:44+0200" tested="2005-09-24T20:12:26+0200" hits="41" is_dead="0" favicon="http://www.acronymfinder.com/favicon.ico" validate="1" order="1000">
+      <title>Acronym Finder</title>
+    </bookmark>
+    <bookmark href="http://www.google.com/custom?q=%SEARCH%&amp;sa=Search&amp;client=pub-4542587708868832&amp;forid=1&amp;ie=UTF-8&amp;oe=UTF-8&amp;cof=GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;&amp;hl=en" modified="2005-02-08T21:58:52+0100" visited="2005-05-20T10:29:21+0200" id="l23544" private="0" target="" added="2004-07-14T09:48:55+0200" tested="2005-09-24T20:12:23+0200" hits="37" is_dead="0" favicon="http://www.google.com/favicon.ico" validate="1" order="1000">
+      <title>Google</title>
+    </bookmark>
+    <bookmark href="http://www.dictionary.com/cgi-bin/dict.pl?term=%SEARCH%" modified="2005-02-08T21:51:20+0100" visited="2005-07-31T08:45:22+0200" id="l28319" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:25+0200" hits="17" is_dead="0" favicon="http://dictionary.reference.com/favicon.ico" validate="1" order="1000">
+      <title>Dictionary.com</title>
+    </bookmark>
+    <bookmark href="http://search.yahoo.com/bin/search?d=y&amp;g=0&amp;s=a&amp;w=s&amp;n=50&amp;p=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-04-07T03:27:55+0200" id="l28291" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:26+0200" hits="17" is_dead="0" favicon="http://search.yahoo.com/favicon.ico" validate="1" order="1000">
+      <title>Yahoo!</title>
+    </bookmark>
+    <bookmark href="http://en.wikipedia.org/wiki/Special:Search?search=%SEARCH%&amp;go=Go" modified="2005-09-24T20:21:18+0200" visited="2005-09-24T20:20:02+0200" id="l28292" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:25+0200" hits="16" is_dead="0" favicon="http://en.wikipedia.org/favicon.ico" validate="1" order="1000">
+      <title>Wikipedia, the free encyklopedia</title>
+    </bookmark>
+    <bookmark href="http://www.thesaurus.com/cgi-bin/search?config=roget&amp;words=%SEARCH%" modified="2005-02-08T21:51:35+0100" visited="2005-04-26T00:28:52+0200" id="l28318" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:28+0200" hits="14" is_dead="0" favicon="http://thesaurus.reference.com/favicon.ico" validate="1" order="1000">
+      <title>Thesaurus.com</title>
+    </bookmark>
+    <bookmark href="http://www.alltheweb.com/search?cat=web&amp;cs=utf-8&amp;l=any&amp;q=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-04-07T03:10:15+0200" id="l28326" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:28+0200" hits="13" is_dead="0" favicon="http://www.alltheweb.com/favicon.ico" validate="1" order="1000">
+      <title>All the Web</title>
+    </bookmark>
+    <bookmark href="http://www.teoma.com/search.asp?t=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-04-28T20:02:46+0200" id="l28320" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:29+0200" hits="11" is_dead="0" favicon="" validate="1" order="1000">
+      <title>Teoma</title>
+    </bookmark>
+    <bookmark href="http://search.lycos.com/default.asp?lpv=1&amp;loc=searchhp&amp;tab=web&amp;query=%SEARCH%&amp;x=32&amp;y=7" modified="1999-11-30T00:00:00+0100" visited="2005-04-07T03:10:29+0200" id="l28312" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:30+0200" hits="9" is_dead="0" favicon="http://search.lycos.com/favicon.ico" validate="1" order="1000">
+      <title>Lycos Web Search</title>
+    </bookmark>
+    <bookmark href="http://www.askjeeves.com/main/askjeeves.asp?ask=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-05-20T10:29:42+0200" id="l28317" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:31+0200" hits="7" is_dead="0" favicon="" validate="1" order="1000">
+      <title>Ask Jeeves</title>
+    </bookmark>
+    <bookmark href="http://search.aol.com/dirsearch.adp?query=%SEARCH%" modified="2004-07-16T14:44:19+0200" visited="2005-03-29T09:34:49+0200" id="l28307" private="0" target="" added="2004-07-16T14:44:19+0200" tested="2005-09-24T20:12:31+0200" hits="5" is_dead="0" favicon="http://search.aol.com/favicon.ico" validate="1" order="1000">
+      <title>AOL Web Search</title>
+    </bookmark>
+    <bookmark href="http://www.findarticles.com/cf_0/PI/search.jhtml?magR=all+magazines&amp;key=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-03-29T09:34:49+0200" id="l28325" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:32+0200" hits="4" is_dead="0" favicon="http://www.findarticles.com/favicon.ico" validate="1" order="1000">
+      <title>LookSmart's FindArticles - publication search</title>
+    </bookmark>
+    <folder id="n4668" id_parent="n325" custom_order="" order="1" sort_mode="user" added="2004-06-07T19:14:04+0200" visited="2005-04-24T17:46:06+0200" modified="2004-07-14T09:51:22+0200">
+      <title>Google Services</title>
+      <bookmark href="http://www.google.com/addurl.html" modified="2004-06-21T21:57:59+0200" visited="2005-04-24T17:46:06+0200" id="l2166" private="0" target="" added="2004-06-21T21:57:59+0200" tested="2005-09-24T20:12:30+0200" hits="19" is_dead="0" favicon="http://www.google.com/favicon.ico" validate="1" order="1000">
+        <title>Add your URL to Google</title>
+      </bookmark>
+      <bookmark href="http://www.google.com/press/zeitgeist.html" modified="2004-06-18T19:19:26+0200" visited="2005-03-29T09:34:50+0200" id="l2180" private="0" target="" added="2004-06-18T19:19:26+0200" tested="2005-09-24T20:12:31+0200" hits="15" is_dead="0" favicon="http://www.google.com/favicon.ico" validate="1" order="1000">
+        <title>Google Press Center: Zeitgeist</title>
+      </bookmark>
+      <bookmark href="http://www.google.com/newsalerts" modified="2004-06-07T19:14:04+0200" visited="2005-03-29T09:34:50+0200" id="l12294" private="0" target="" added="2004-06-07T19:14:04+0200" tested="2005-09-24T20:12:32+0200" hits="13" is_dead="0" favicon="http://www.google.com/favicon.ico" validate="1" order="1000">
+        <title>Google News Alerts</title>
+      </bookmark>
+      <bookmark href="http://labs.google.com/" modified="2004-07-14T09:51:13+0200" visited="2005-03-29T09:34:50+0200" id="l2168" private="0" target="" added="2004-07-14T09:51:13+0200" tested="2005-09-24T20:12:32+0200" hits="11" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Google Labs</title>
+      </bookmark>
+      <bookmark href="http://services.google.com:8882/urlconsole/controller" modified="2004-07-14T09:51:22+0200" visited="2005-03-29T21:27:09+0200" id="l2169" private="0" target="" added="2004-07-14T09:51:22+0200" tested="2005-09-24T20:12:33+0200" hits="10" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Google Remove URL</title>
+      </bookmark>
+      <bookmark href="http://www.google.com/webmasters/1.html" modified="2004-06-18T17:16:03+0200" visited="2005-03-29T09:34:50+0200" id="l2167" private="0" target="" added="2004-06-18T17:16:03+0200" tested="2005-09-24T20:12:32+0200" hits="7" is_dead="0" favicon="http://www.google.com/favicon.ico" validate="1" order="1000">
+        <title>Google Information for Webmasters</title>
+      </bookmark>
+    </folder>
+    <folder id="n4675" id_parent="n325" custom_order="" order="1" sort_mode="user" added="1999-11-30T00:00:00+0100" visited="2005-04-07T03:30:01+0200" modified="2005-02-08T21:52:17+0100">
+      <title>Meta</title>
+      <bookmark href="http://search.dogpile.com/texis/search?q=%SEARCH%" modified="2005-02-08T21:52:17+0100" visited="2005-03-29T09:34:50+0200" id="l28308" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:35+0200" hits="9" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Dogpile - Web Search</title>
+      </bookmark>
+      <bookmark href="http://search.metacrawler.com/texis/search?brand=metacrawler&amp;q=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-04-07T03:30:01+0200" id="l28313" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:35+0200" hits="7" is_dead="0" favicon="" validate="1" order="1000">
+        <title>metacrawler: search the search engines</title>
+      </bookmark>
+      <bookmark href="http://search.excite.com/search.gw?search=%SEARCH%" modified="2004-07-16T14:48:51+0200" visited="2005-03-29T09:34:50+0200" id="l28309" private="0" target="" added="2004-07-16T14:48:51+0200" tested="2005-09-24T20:12:35+0200" hits="6" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Excite - Web Search</title>
+      </bookmark>
+      <bookmark href="http://www.onelook.com/?w=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-03-29T09:34:50+0200" id="l28323" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:35+0200" hits="5" is_dead="0" favicon="http://www.onelook.com/favicon.ico" validate="1" order="1000">
+        <title>OneLook Dictionary Search</title>
+      </bookmark>
+    </folder>
+    <folder id="n4676" id_parent="n325" custom_order="" order="1" sort_mode="user" added="1999-11-30T00:00:00+0100" visited="2005-03-29T09:34:50+0200" modified="1999-11-30T00:00:00+0100">
+      <title>News</title>
+      <bookmark href="http://search.wired.com/wnews/default.asp?query=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-03-29T09:34:50+0200" id="l28314" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:38+0200" hits="8" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Wired News</title>
+      </bookmark>
+      <bookmark href="http://slashdot.org/search.pl?query=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-03-29T09:34:50+0200" id="l28315" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:39+0200" hits="6" is_dead="0" favicon="http://slashdot.org/favicon.ico" validate="1" order="1000">
+        <title>Slashdot</title>
+      </bookmark>
+    </folder>
+    <folder id="n4669" id_parent="n325" custom_order="" order="1" sort_mode="user" added="2004-06-13T14:35:12+0200" visited="2005-08-26T14:43:23+0200" modified="2004-06-21T21:53:36+0200">
+      <title>Portals</title>
+      <desc>Sites that have more search possibilities or are searchable by browsing rather than by a keyword search or simply do not allow searching from outside.</desc>
+      <bookmark href="http://www.acronymdictionary.co.uk/" modified="2004-06-13T14:35:12+0200" visited="2005-08-26T14:43:23+0200" id="l1353" private="0" target="" added="2004-06-13T14:35:12+0200" tested="2005-09-24T20:12:36+0200" hits="17" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Acronym Dictionary</title>
+      </bookmark>
+      <bookmark href="http://www.usenet-abc.de/" modified="2004-06-21T21:53:36+0200" visited="2005-03-29T09:34:50+0200" id="l2172" private="0" target="" added="2004-06-21T21:53:36+0200" tested="2005-09-24T20:12:35+0200" hits="16" is_dead="0" favicon="http://www.usenet-abc.de/./favicon.ico" validate="1" order="1000">
+        <title>Acronyms &amp;amp; Emoticons</title>
+      </bookmark>
+      <bookmark href="http://www.purportal.com/" modified="2004-06-19T18:25:14+0200" visited="2005-03-29T09:34:50+0200" id="l23548" private="0" target="" added="2004-06-19T18:25:14+0200" tested="2005-09-24T20:12:38+0200" hits="15" is_dead="0" favicon="http://purportal.com/favicon.ico" validate="1" order="1000">
+        <title>purportal.com: the bunk stops here</title>
+        <desc>Research scams, hoaxes, fraud, and urban legends.</desc>
+      </bookmark>
+    </folder>
+    <folder id="n4674" id_parent="n325" custom_order="" order="1" sort_mode="user" added="1999-11-30T00:00:00+0100" visited="2005-03-29T09:34:51+0200" modified="2005-02-08T22:04:25+0100">
+      <title>Specialized</title>
+      <bookmark href="http://web.archive.org/web/*/http://%SEARCH%" modified="2005-02-08T22:04:25+0100" visited="2005-03-29T09:34:51+0200" id="l28316" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:40+0200" hits="8" is_dead="0" favicon="http://web.archive.org/favicon.ico" validate="1" order="1000">
+        <title>Wayback Machine</title>
+        <desc>Use server name without http:// as the search term.</desc>
+      </bookmark>
+      <bookmark href="http://search.hp.com/gwuseng/query.html?col=hpcom+ccen+ccenfor&amp;hpl=1&amp;hpn=Return+to+HP+Labs+Site&amp;hps=HP+Labs+Site&amp;la=en&amp;qt=%SEARCH%" modified="2005-02-08T22:03:52+0100" visited="2005-03-29T09:34:50+0200" id="l28310" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:40+0200" hits="7" is_dead="0" favicon="http://search.hp.com/favicon.ico" validate="1" order="1000">
+        <title>Search HP US</title>
+      </bookmark>
+      <bookmark href="http://www.priorartdatabase.com/search/?q=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-03-29T09:34:51+0200" id="l28321" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:41+0200" hits="6" is_dead="0" favicon="http://www.priorartdatabase.com/favicon.ico" validate="1" order="1000">
+        <title>PriorArt Database</title>
+        <desc>Published technical disclosures (prior art).</desc>
+      </bookmark>
+      <bookmark href="http://odysseus.ieee.org/ieeesearch/query.html?rq=0&amp;col=allieee&amp;qp=&amp;qt=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-03-29T09:34:51+0200" id="l28305" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:43+0200" hits="4" is_dead="0" favicon="http://odysseus.ieee.org/ieeesearch/favicon.ico" validate="1" order="1000">
+        <title>IEEE Web Search</title>
+      </bookmark>
+      <bookmark href="http://scienceworld.wolfram.com/search/?words=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-03-29T09:34:51+0200" id="l28306" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:42+0200" hits="4" is_dead="0" favicon="" validate="1" order="1000">
+        <title>Search Eric Weisstein's World of Science</title>
+      </bookmark>
+      <bookmark href="http://mathworld.wolfram.com/search/?words=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-03-29T09:34:51+0200" id="l28304" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:42+0200" hits="4" is_dead="0" favicon="http://mathworld.wolfram.com/favicon.ico" validate="1" order="1000">
+        <title>Search MathWorld</title>
+      </bookmark>
+      <bookmark href="http://whatis.techtarget.com/wsearchResults/1,290214,sid9,00.html?query=%SEARCH%" modified="1999-11-30T00:00:00+0100" visited="2005-03-29T09:34:51+0200" id="l28327" private="0" target="" added="1999-11-30T00:00:00+0100" tested="2005-09-24T20:12:44+0200" hits="3" is_dead="0" favicon="http://whatis.techtarget.com/favicon.ico" validate="1" order="1000">
+        <title>TechTarget What Is?</title>
+      </bookmark>
+    </folder>
+  </folder>
+</xbel>
