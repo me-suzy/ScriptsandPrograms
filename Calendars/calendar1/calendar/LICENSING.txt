@@ -1,0 +1,7 @@
+Note that a creative commons license (creativecommons.org) is applied to this software.
+as such, you are free to copy, use, adapt and redistribute this software
+for non-commercial purposes, as long as you will share alike. 
+If you plan to use this software for commercial purposes, please contact me so we can work
+out a suitable arrangement. 
+The more exact terms of this license are listed at http://creativecommons.org/licenses/by-nc-sa/2.0/
+
