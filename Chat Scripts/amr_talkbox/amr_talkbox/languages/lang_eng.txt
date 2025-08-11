@@ -1,0 +1,48 @@
+<?php
+
+//--->	This swear filter will help censor, not ever word have been placed in this area.
+//--->	If you feel that a word needs to be added, please email us at "info@amrgraphics.com"
+
+$cenword_1 = "ass";
+	$censored_1 = "a*s";
+$cenword_2 = "asshole";
+	$censored_2 = "a*****e";
+$cenword_3 = "biatch";
+	$censored_3 = "b****h";
+$cenword_4 = "bitch";
+	$censored_4 = "b***h";
+$cenword_5 = "cock";
+	$censored_5 = "c**k";
+$cenword_6 = "cunt";
+	$censored_6 = "c**t";
+$cenword_7 = "fuck";
+	$censored_7 = "f**k";
+$cenword_8 = "fucker";
+	$censored_8 = "f****r";
+$cenword_9 = "shit";
+	$censored_9 = "s**t";
+$cenword_10 = "slut";
+	$censored_10 = "s**t";
+	
+//--->  Definitions for the insert form
+
+$def_name = "name";
+$def_msg = "message";
+$allpost = "All Postings";
+$hlpcod = "Help Codes";
+
+//--->  Window Messages
+
+$clo_wdw = "Close Window";
+
+//--->  Help codes window
+
+$line_01 = "TalkBox has the ability to to display email, website links or even icons in your posts. Here is a list of the codes that can be used in this TalkBox.";
+$line_02 = "This code [mail]info@amrgraphics.com[/mail] will post a <a href=\"mailto:info@amrgraphics.com\">[ email ]</a> link.";
+$line_03 = "This code [url]http://www.amrgraphics.com[/url] will post a <a href=\"http://www.amrgraphics.com\" target=\"blank\">[ website ]</a> link.";
+$tabhead = "Image Code";
+$usthis = "Use this code";
+$line_04 = "Do You Want A TalkBox?";
+$line_05 = "If so, direct your mouse to this <a href=\"http://www.amrgraphics.com/php_talkbox/amr_talkbox.zip\">link</a> and you will begin downloading a beta version of this TalkBox. Please be advised that this";
+$line_06 = " is still under development and that the current version is";
+?>
