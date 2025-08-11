@@ -1,0 +1,153 @@
+INTRODUCTION
+============
+
+Thanks for using CaLogic Calendars.
+
+Please read all documentation in the docs folder.
+
+For quick installation instructions read quick-install.txt
+
+
+If you have any problems, feel free to contact me. I will help you
+with anything I can.
+
+Philip Boone
+philip@calogic.de
+or
+philip@boone.de
+
+Visit http://www.calogic.de/ for more information and an online Demo.
+
+Please make sure you have the latest version of CaLogic before installing.
+
+Get the latest version at http://www.calogic.de/
+
+
+REQUIREMENTS
+=============
+
+A web server with PHP 4.3.2 or higher installed
+A MySQL 3.23.47 or higher Database
+
+PHP Options needed:
+
+    Session support on
+    MySQL support on
+    Safe Mode off
+
+
+CaLogic WILL MOST LIKELY NOT work with PHP and/or MySQL versions lower than those listed.
+
+
+A Javascript enabled Browser (I have tested it with IE Explorer 5.5 and 6.0)
+* NOTE *. CaLogic will most likely not work with any browser except
+Microsoft Internet Explorer 5.5 and above.
+
+If you are unsure if your installation of PHP is configured with
+the above required options use PHPINFO to find out. How do you
+use PHPINFO you ask?
+
+Create a file, name it phpinfo.php and type only the following
+three lines in it:
+
+<?php
+phpinfo()
+?>
+
+save the file, upload it to your web, and enter the URL in your
+browser http://www.myweb/phpinfo.php for example You will get a nice
+page of information about the PHP installation on your server.
+If you don't get the list, you either don't have PHP on your server,
+or you didn't type the above three lines as-is, OR the php installation
+on your server has this function disabled (which is VERY uncommon)
+
+
+
+FIRST TIME INSTALLATION INSTRUCTIONS
+====================================
+
+ALWAYS START THE SETUP OR UPDATE IN A FRESH BROWSER!
+WHICH MEANS YOU SHOULD CLOSE ALL BROWSERS, OPEN A NEW ONE,
+THEN NAVIGATE TO THE SETUP OR UPDATE FILE.
+
+
+For instructions on updating a previous installation,
+read the updating.txt file.
+
+If you plan on using reminders, then you should read the reminders.txt file
+for information on setting up reminders.
+
+
+STEP 1:
+    Unpack the distributed zip file to your local computer.
+    Since you are reading this, I assume you have unpacked the distributed
+    zip file already. Just make sure you unpack the zip preserving the directory
+    structure.
+
+STEP 2:
+    Upload the CaLogic directory structure to your web.
+
+    Make the CaLogic admin folder writable (CHMOD 777).
+
+    * NOTE *
+    After the installation, read only rights are recommended for the entire
+    CaLogic folder structure!
+
+STEP 3:
+   Point your browser to setup.php, located in the CaLogic setup folder.
+   For example:
+   http://www.yourdomain.com/calogic/setup/setup.php
+
+   The first page is the database setup.
+   Fill out the form and click submit.
+
+   * NOTE *
+   If you are on a hosted web server, be sure to answer NO to the
+   Create Database question. Only answer YES to this question if you
+   are the administrator of the MySQL server, and you know what you
+   are doing.
+
+
+   At this stage the MySQL tables and database access files are created.
+
+   The second page is the application config page.
+
+   Select all desired options and click submit. (These options can easily be changed
+   at a later time.)
+
+   After a second or two, "Setup finished" will appear with a link to start CaLogic.
+
+
+    The Setup is now finished.
+
+    REMOVE THE CALOGIC SETUP FOLDER FROM YOUR WEB!!!
+
+
+
+Notes on the installation:
+
+   The admin user is automatically created by the setup. User: admin, password: admin
+
+   The first time any user logs on, he/she will have to create a calendar, unless
+   the "Standard Default Calendar" option is turned on.
+
+   The Admin user must also create a calendar upon first logon.
+
+   Go to "User Settings" from the functions menu to change the password and to fill out
+   the rest of your user information.
+
+   DO NOT re-run the setup.php program unless you are having problems.
+
+   To reconfigure the options, use the "CaLogic Config" link from the
+   Admin Section of the functions menu.
+   You must be logged on as admin to access this area.
+
+    If you plan on using reminders, then you should read the reminders.txt file
+    for information on setting up reminders.
+
+
+Read all the files in the docs folder.
+
+
+That's basically it! You should be able to start CaLogic now.
+
