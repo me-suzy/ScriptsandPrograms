@@ -1,0 +1,73 @@
+.calc {
+	background: #E7E8F9;
+	border: 1px solid #8688A8;
+	font: 83% arial,verdana,helvetica,lucida,sans-serif;
+	color: #000000;
+	border-collapse: collapse;
+}
+.calc_input {
+	font: 100% arial,verdana,helvetica,lucida,sans-serif;
+	color: #000000;
+}
+.calc_button {
+	font: 83% arial,verdana,helvetica,lucida,sans-serif;
+	color: #000000;
+}
+.sfont {
+	font-family: arial,verdana,helvetica,lucida,sans-serif;
+	font-size: 83%;
+	color: #666;
+}
+.err{
+	color: #CC0000;
+	font-family: arial,verdana,helvetica,lucida,sans-serif;
+	font-size: 83%;
+}
+TH {
+	border: 1px solid #8688A8;
+	background: #BEC1EE;
+	font-weight: bold;
+	padding: 3px;
+	color: #373845;
+}
+#tiplayer {
+	font-family: arial,verdana,helvetica,lucida,sans-serif;
+	font-size: 83%;
+	position: absolute;
+	width: 250px;
+	padding: 4px;
+	background: #FFFFE1;
+	border: 1px solid #000000;
+	z-index: 10;
+	visibility: hidden;
+}
+#powered_by, #powered_by a{
+	font: 11px arial,verdana,helvetica,lucida,sans-serif;
+	margin-top: 15px;
+	text-align: center;
+	color: #BBBBBB;
+}
+.fill01 {background-color: #FFFFFF}
+.fill02 {background-color: #E7E8F9}
+#calcH1{
+	font: bold 125% arial,verdana,helvetica,lucida,sans-serif;
+	color: #595B70;
+	text-align: center;
+}
+#calclist{font: 83% arial,verdana,helvetica,lucida,sans-serif}
+#calclist li{margin-bottom: 6px}
+a{color: #373EA8}
+a:visited{color: #733399}
+a:hover{color: #DA4B47}
+#pathway{
+	font: bold 83% arial,verdana,helvetica,lucida,sans-serif;
+	color: #7D7D7E;
+	text-align: center;
+}
+#pathway a{
+	font-weight: normal;
+	text-decoration: none;
+}
+#texttable{
+	font: 83% arial,verdana,helvetica,lucida,sans-serif;
+}
