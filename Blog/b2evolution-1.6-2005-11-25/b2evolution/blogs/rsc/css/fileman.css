@@ -1,0 +1,191 @@
+/**
+ * Filemanager Cascading Style Sheets definitions.
+ *
+ * Only alignments, overrides various classes for the filemanmain div
+ *
+ * b2evolution - {@link http://b2evolution.net/}
+ * Released under GNU GPL License - {@link http://b2evolution.net/about/license.html}
+ * @copyright (c)2003-2005 by Francois PLANQUE - {@link http://fplanque.net/}
+ *
+ * @package admin
+ */
+
+#filemanmain {
+	margin-bottom:1em;
+}
+
+#FilesForm div.panelinfo {
+	margin:1ex 0;
+}
+
+/**
+ * Files table {{{
+ */
+#filemanmain table.grouped {
+	width:100%;
+}
+#filemanmain table.grouped td.error {
+	padding:2ex;
+	color:red;
+}
+#filemanmain table.grouped td.icon,
+#filemanmain table.grouped td.checkbox{
+}
+#filemanmain table.grouped td.type {
+	white-space:nowrap;
+}
+#filemanmain table.grouped td.filename {
+	width:100%;
+	text-align: left;
+}
+#filemanmain table.grouped td.filename div.path {
+	clear:right;
+	float:right;
+}
+.filemeta /* meta data after filename */
+{
+	color: #999;
+	font-size: 84%;
+}
+#filemanmain table.grouped td.timestamp {
+	white-space: nowrap;
+}
+#filemanmain table.grouped td.timestamp span.time {
+	font-size:84%;
+}
+#filemanmain table.grouped td.size,
+#filemanmain table.grouped td.actions {
+	white-space: nowrap;
+}
+#filemanmain table.grouped td.size {
+	text-align: right;
+}
+#filemanmain table.grouped td.perms {
+	text-align: center;
+}
+#filemanmain table.grouped td.actions img {
+	margin:0 2px;
+}
+#filemanmain table.grouped tr.listfooter td {
+	/* Temporary colors, needs overriding */
+	background-color: #efede0;
+	border: 1px solid #9e9286;
+}
+
+/* }}} / Files table */
+
+.toolbaritem {
+	margin:.5ex 0 .5ex 1ex;
+	padding:.5ex;
+	float:right;
+	white-space:nowrap;
+	background-color:#efede0; /* Temp color, needs overriding */
+}
+
+.fm_filecounts {
+	font-size:84%;
+}
+
+div.fm_query {
+	padding-top: 2ex;
+	border:1px solid;
+}
+
+div.img_frame {
+	text-align:center;
+	border:1px solid red;
+}
+div.subline {
+	color:#777;
+	font-size:75%;
+}
+img.framed {
+	border:1px dashed #d91;
+	padding:10px;
+	margin:10px;
+}
+.linenr {
+	background-color:#ff0;
+	font-weight:bold;
+}
+div.fileheader,
+div.eof
+{	/* Use in RAW file preview */
+	background:#ccc;
+	padding:1ex;
+	margin: 0;
+}
+pre.rawcontent {
+	margin:0;
+	padding:0 1ex;
+	font-family: Courier New, sans-serif;
+}
+
+.filenameIcon {
+	float:right;
+	border:none;
+	padding:0;
+	margin:0;
+	background:transparent;
+}
+
+.filter {
+	color:#f00;
+}
+
+.tooltitle {
+	font-weight:bold;
+	padding-left:1ex;
+}
+ul.iconlegend {
+	list-style:none;
+	margin:1ex;
+	padding:0;
+	display: inline;
+}
+ul.iconlegend li {
+	display:inline;
+	margin: 1ex;
+	white-space:nowrap;
+	/* margin-bottom:.5ex; */
+}
+
+ul#uploadfileinputs {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+ul#uploadfileinputs li, /* Info block about a file to upload */
+p.uploadfileinputs {    /* Link to add a new info block */
+	background-color:#efede0; /* Temp color, needs overriding */
+	margin:1ex 0;
+	padding:1ex;
+}
+ul#uploadfileinputs li.invalid 
+{	/* Upload block displayed when upload has failed: */
+	border:1px solid #f00;
+}
+ul#uploadfileinputs label {
+	font-weight:bold;
+}
+
+div#FM_anchor {
+	padding:2ex 0;
+	text-align:center;
+}
+
+div.panelblock fieldset.files_to_upload {
+	float:left;
+	width:60%;
+	padding: 1ex;
+}
+div.panelblock fieldset.upload_into {
+	float: right;
+	width: 35%;
+}
+div.panelblock fieldset.upload_submit,
+div.panelblock fieldset.cmr_submit
+{
+	text-align:center;
+	border:none;
+}
