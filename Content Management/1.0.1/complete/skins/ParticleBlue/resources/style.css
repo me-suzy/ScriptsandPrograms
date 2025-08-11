@@ -1,0 +1,64 @@
+body{
+	margin: 0px;
+	background: #DDDDDD;
+}
+body, div, td{
+	font-family: arial, verdana, times;
+	font-size: small;
+}
+.container{
+	background: #FFFFFF;
+}
+.footer{
+	text-align: center;
+	padding: 5px 5px 0px 5px;
+	margin: 0px 0px 5px 0px;
+	border-top: #990000 3px solid;
+}
+h1, form{
+	margin: 0px;
+}
+h1 A:link, h1 A:visited, h1 A:active, h1 A:hover{
+	color: #000000;
+	text-decoration: none;
+}
+h2{
+	border-bottom: #AAAAAA 1px solid;
+	margin-bottom: 5px;
+}
+h3, h4{
+	margin-bottom: 5px;
+}
+.main{
+	padding: 5px;
+}
+.menu{
+	padding: 5px;
+	margin-bottom: 5px;
+	border-bottom: #990000 3px solid;
+	background: #DDDDDD;
+}
+.nopage, .nopage:link, .nopage:visited{
+	color: #CC0000;
+}
+.outlink{
+	background: url(external.png) center right no-repeat;
+    padding-right: 13px;
+}
+.submenu{
+	padding: 3px 5px 3px 5px;
+}
+.submenu A:link, .submenu A:visited, .submenu A:active{
+	display: inline;
+	color: #000000;
+	text-decoration: none;
+	border: #000000 1px solid;
+	padding: 3px 3px 3px 3px;
+	background: #F0F0F0;
+}
+.submenu A:hover{
+	color: #000000;
+	text-decoration: none;
+	background: #FFFFFF url(navbg.jpg);
+	background-repeat: repeat-x;
+}
