@@ -1,0 +1,112 @@
+.text {  
+     font-family: Verdana, Arial, Helvetica, sans-serif; 
+	 font-size: 9px; 
+	 font-style: normal; 
+	 color: #000000; 
+	 text-decoration: none
+}
+
+.SB_alert {
+	color : #006699;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : xx-small;
+	font-weight : bold;
+}
+
+.SB_button {
+	background : #006699;
+	border : 1px solid #000000;
+	color : #FFFFFF;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 9px;
+	font-weight : bold;
+}
+
+.SB_input {
+	background : #D1D7DC;
+	border : 1px solid #006699;
+	color : #000009;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+}
+
+.SB_formarea {
+	background-color : #EFEFEF;
+	border-bottom-color : #98AAB1;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	border-left-color : #98AAB1;
+	border-left-style : solid;
+	border-left-width : 1px;
+	border-right-color : #98AAB1;
+	border-right-style : solid;
+	border-right-width : 1px;
+	border-top-color : #98AAB1;
+	border-top-style : solid;
+	border-top-width : 1px;
+	color : #FFFFFF;
+	font-size : 10px;
+}
+
+.SB_shoutbox {
+	color : #000000;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : xx-small;
+	text-align : left;
+}
+
+a.SB_inlink:link {
+	color : #000000;
+	text-decoration : none;
+}
+
+a.SB_inlink:visited {
+	color : #FFFFFF;
+	text-decoration : none;
+}
+
+a.SB_inlink:active {
+	color : #000000;
+	text-decoration : none;
+}
+
+a.SB_inlink:hover {
+	color : #000000;
+	text-decoration : underline;
+}
+
+.SB_table0 {
+	background-color : #D1D7DC;
+	border-bottom-color : #006699;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	border-left-color : #006699;
+	border-left-style : solid;
+	border-left-width : 1px;
+	border-right-color : #006699;
+	border-right-style : solid;
+	border-right-width : 1px;
+	border-top-color : #006699;
+	border-top-style : solid;
+	border-top-width : 1px;
+	color : #FFFFFF;
+	font-size : xx-small;
+}
+
+.SB_table1 {
+	background-color : #D1D7DC;
+	border-bottom-color : #006699;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	border-left-color : #006699;
+	border-left-style : solid;
+	border-left-width : 1px;
+	border-right-color : #006699;
+	border-right-style : solid;
+	border-right-width : 1px;
+	border-top-color : #006699;
+	border-top-style : solid;
+	border-top-width : 1px;
+	color : #FFFFFF;
+	font-size : xx-small;
+}
