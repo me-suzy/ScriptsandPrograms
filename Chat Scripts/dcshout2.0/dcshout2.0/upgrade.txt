@@ -1,0 +1,23 @@
+<><><><><><><><><><><><><><><><><><><><><><><><><><>
+Upgrading to 2.0 form 1.9 and under
+<><><><><><><><><><><><><><><><><><><><><><><><><><>
+This will upgrade your Dc-shout to 2.0 it will upgrade any one under 2.0 to 2.0
+including 2.0 bata.
+
+Step 1
+Delete The whole lot of files form the older shoutbox because this saves space.
+Upload all the new files to your shoutbox folder.
+
+Step 2
+Edit config.php to your database setings
+
+Step 4
+Run install.php and click update *Warning this will reset yourt admin password 2.0 bata users*
+It will update the database files then delete install.php.
+
+Step 5
+You now have upgraded Dc-shout to 2.0 the admin username and password are
+username = admin
+password = test
+
+Step 6 done
