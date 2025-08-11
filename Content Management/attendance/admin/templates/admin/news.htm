@@ -1,0 +1,44 @@
+<!--S:ListGroup-->
+	<p style="text-align:left"><h3>Lastest News</p>
+	<table>
+		{DATA}
+	</table>
+<!--E:ListGroup-->
+
+<!--S:ListElement-->
+		<tr>
+			<td colspan="2">»<b>{NEWS_DATE}</b>&nbsp;<b><i>{NEWS_TITLE}</b></i></td>
+		</tr>
+		<tr>
+			<td width="20"></td>
+			<td>{NEWS_BODY}[...] <a href="index.php?sub=lastestnews&id={NEWS_ID}"><i><b>more</b></i></a></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="right"></td>
+		</tr>
+<!--E:ListElement-->
+
+<!--S:ListEmpty-->
+
+		<tr>
+			<td align="center">No news found</td>
+		</tr>
+<!--E:ListEmpty-->
+
+<!--S:Details-->
+	<div style="text-align:left">
+		<font size="4"><b>{NEWS_TITLE}</b></font><br>
+		{NEWS_DATE}
+	</div>
+
+	<table>
+		<tr>
+			<td style="text-align:justify">
+				<br>{NEWS_BODY}
+				<br>
+				<center><b>»&nbsp;<a href="index.php?sub=lastestnews">BACK</a>&nbsp;«
+			</td>
+		</tr>
+	</table>
+
+<!--E:Details-->
