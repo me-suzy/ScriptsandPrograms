@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Skin>
+<SKIN_BKGROUND>
+<BKGROUND name="Standard" value="bkground.swf" />
+<BKGROUND name="Drinking Girl " value="bkground01.swf" />
+<BKGROUND name="Blue Girl" value="bkground02.swf" />
+<BKGROUND name="Conference" value="bkground03.swf" />
+<BKGROUND name="Coffee Woman" value="bkground04.swf" />
+<BKGROUND name="Sweet Lovers" value="bkground05.swf" />
+<BKGROUND name="Party" value="bkground19.swf" />
+<BKGROUND name="Gift" value="bkground22.swf" />
+<BKGROUND name="Sweet Chat" value="bkground21.swf" />
+<BKGROUND name="Hearts" value="bkground23.swf" />
+<BKGROUND name="Love" value="bkground24.swf" />
+<BKGROUND name="Hug" value="bkground25.swf" />
+<BKGROUND name="U&amp;Me" value="bkground26.swf" />
+<BKGROUND name="Cupid" value="bkground27.swf" />
+<BKGROUND name="Heart Flower" value="bkground20.swf" />
+</SKIN_BKGROUND>
+<SKIN_LOGO value = "logo.swf" />
+<SKIN_RIGHT_BK value = "right_bk.swf" />
+<SKIN_BIG_BUTTON_ON value = "btn_on.swf" />
+<SKIN_BIG_BUTTON_OUT value = "btn_out.swf" />
+<SKIN_SMALL_BUTTON_ON value = "dot_on.swf" />
+<SKIN_SMALL_BUTTON_OUT value = "dot_out.swf" />
+<SKIN_USERNAME value = "username.swf" />
+<SKIN_PASSWORD value = "password.swf" />
+<SKIN_ROOM_ON value = "roomlist_on.swf" />
+<SKIN_ROOM_OUT value = "roomlist_out.swf" />
+<SKIN_CHATINPUT_BK value = "chatinputbk.swf" />
+<SKIN_POPUP value = "popup.swf" />
+<SKIN_CLOSE_ON value = "close_on.swf" />
+<SKIN_CLOSE_OUT value = "close_out.swf" />
+<SKIN_ARROW value = "arrow.swf" />
+<SKIN_SEND_BUTTON_NORMAL value = "sendbtn_out.swf" />
+<SKIN_SEND_BUTTON_OVER value = "sendbtn_on.swf" />
+<SKIN_ABOUT value = "about.swf" />
+<SKIN_LOADING_BK value = "loading_bk.swf" />
+<SKIN_PRIVATE_MSG_BK value = "private.swf" />
+<SKIN_PRIVATE_DISPLAYMENSSAGE_BK value = "private_bkg.swf" />
+<SKIN_PRIVATE_TITLE_BK value = "private_bar.swf" />
+<SKIN_ROOM_ICON_NOMAL value = "room_normal.swf" />
+<SKIN_ROOM_ICON_LOCK value = "room_lock.swf" />
+<SKIN_ROOM_OWNER value = "room_owner.swf" />
+<SKIN_ROOM_SUM value = "room_sum.swf" />
+<SKIN_MINI_ON value = "mini_on.swf" />
+<SKIN_MINI_OUT value = "mini_out.swf" />
+<SKIN_MAX_ON value = "max_on.swf" />
+<SKIN_MAX_OUT value = "max_out.swf" />
+<SKIN_OPTION value = "option.swf" />
+<SKIN_PRIVATE_NORMAL_BAR value = "private_bar_normal.swf" />
+<SKIN_PRIVATE_BLINK_BAR value = "private_bar_blink.swf" />
+<SKIN_HISTORY value = "history.swf" />
+<SKIN_SCROLL_ON value = "scroll_on.swf" />
+<SKIN_SCROLL_OUT value = "scroll_out.swf" />
+<SKIN_SCROLL_OFF_ON value = "scroll_off_on.swf" />
+<SKIN_SCROLL_OFF_OUT value = "scroll_off_out.swf" />
+<SKIN_CLEAR_ON value = "clear_on.swf" />
+<SKIN_CLEAR_OUT value = "clear_out.swf" />
+<SKIN_EXIT_ON value = "exit_on.swf" />
+<SKIN_EXIT_OUT value = "exit_out.swf" />
+<SKIN_HISTORY_ON value = "history_on.swf" />
+<SKIN_HISTORY_OUT value = "history_out.swf" />
+<SKIN_SOUNDON_ON value = "soundon_on.swf" />
+<SKIN_SOUNDON_OUT value = "soundon_out.swf" />
+<SKIN_SOUNDOFF_ON value = "soundoff_on.swf" />
+<SKIN_SOUNDOFF_OUT value = "soundoff_out.swf" />
+<SKIN_NICKNAME_BK_ON value = "nickname_bk_on.swf" />
+<SKIN_NICKNAME_BK_OUT value = "nickname_bk_out.swf" />
+<SKIN_BLUEBAR value = "blue_bar.swf" />
+<SKIN_SCROLLPANEBG value = "scrollpane_bg.swf" />
+<SKIN_INPUT_TEXTFIELD value = "inputGBClipTF.swf" />
+</Skin>
