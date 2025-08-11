@@ -1,0 +1,20 @@
+Changelog
+
+To do
+- Installation script.
+- Tidy up code.
+- Skin support
+
+1.0
+- Added the ability to change hour difference for the timestamp on the text message.
+- Added pop-up smiley window included auto insert to text field.
+- Deleted smiley.txt as it's now obsolete.
+- Changed the timestamp code to use mktime(), old method didn't work!
+- Tweaked the smiley window to close once you insert a smiley.
+- Changed the colours to a cleaner white.
+- Changed the message text styles to a css one so that you can modify the old messages.
+- Changed the main logo images to transparent gifs. Easier to change the bg colours.
+
+Beta
+- Added the ability to change the upload page refresh in the config file.
+- Added the smiley file. Now you can see the codes to the smilies. Will become obsolete when Smiley popup is created.
