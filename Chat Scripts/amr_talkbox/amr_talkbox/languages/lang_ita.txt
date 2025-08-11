@@ -1,0 +1,57 @@
+<?php
+//--->  File Lingua italiana by Bigh72 04/2005
+
+//--->	Zona di selezione elenco parole proibite o da censurare, non ci sono tutte ma se volete aggiungerne
+//--->	mandate una mail in inglese a "info@amrgraphics.com"
+
+$cenword_1 = "culo";
+	$censored_1 = "c**o";
+$cenword_2 = "buco del culo";
+	$censored_2 = "b**********o";
+$cenword_3 = "puttana";
+	$censored_3 = "p*****a";
+$cenword_4 = "troia";
+	$censored_4 = "t***a";
+$cenword_5 = "cazzo";
+	$censored_5 = "c**o";
+$cenword_6 = "succhiacazzi";
+	$censored_6 = "s********i";
+$cenword_7 = "inculato";
+	$censored_7 = "i********o";
+$cenword_8 = "vaffanculo";
+	$censored_8 = "v******o";
+$cenword_9 = "fucker";
+	$censored_9 = "f****r";
+$cenword_10 = "fuckface";
+	$censored_10 = "f******e";
+$cenword_11 = "merda";
+	$censored_11 = "m**e";
+$cenword_12 = "testa di cazzo";
+	$censored_12 = "t***********o";
+$cenword_13 = "fica";
+	$censored_13 = "f**a";
+	
+//--->   Definizioni nel form inserimento dati
+
+$def_name = "nome";
+$def_msg = "messaggio";
+$allpost = "Tutti i messaggi";
+$hlpcod = "Codici Extra";
+
+//--->   Vari Messaggi
+
+$clo_wdw = "Chiudi Finestra";
+
+//---->   Finestra Help Codes
+
+$line_01 = "Talkbox è in grado di inserire link a E-mail o siti web nei vostri post. Di seguito un elenco dei codici utilizzabili in Talkbox.";
+$line_02 = "Questo codice [mail]info@amrgraphics.com[/mail] crea un post con link <a href=\"mailto:info@amrgraphics.com\">[ email ]</a>.";
+$line_03 = "Questo codice [url]http://www.amrgraphics.com[/url] crea un post con link <a href=\"http://www.amrgraphics.com\" target=\"blank\">[ sito web ]</a>.";
+$tabhead = "Codici Immagine";
+$usthis = "Digitando";
+$line_04 = "Vuoi usare anche tu TalkBox?";
+$line_05 = "Allora vai a questo <a href=\"http://www.amrgraphics.com/php_talkbox/amr_talkbox.zip\">link</a> per scaricare l'ultima versione. Sappi che ";
+$line_06 = " è ancora in sviluppo e che la versione corrente è la.";
+
+
+?>
