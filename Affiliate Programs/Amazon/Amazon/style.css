@@ -1,0 +1,89 @@
+/*
+########################################################################
+
+Copyright (C) 2003 FORTUNE DESIGN
+Amazon feed Version 1.0
+sales@fortunedesign.co.uk
+http://www.fortunedesign.co.uk
+
+########################################################################
+*/
+Body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background-color: #FFFFFF;
+	
+}
+
+TD.AmazonTop {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight : bold;
+	background-color: #FFFFFF;
+}
+
+TD.AmazonHead {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight : bold;
+	background-color: #FFCC66;
+}
+TD.AmazonSearchBackground{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight : bold;
+	background-color: #990000;
+}
+TD.AmazonSearchBackground2{
+	background-color: #FFFFFF;
+}
+TD.AmazonCount {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+ font-weight : bold;
+}
+TD.AmazonTitle {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #00319C;
+ font-weight : bold;
+}
+
+TD.AmazonAuthor {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+TD.AmazonOurprice {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  font-weight : bold;
+}
+TD.AmazonOurpriceCost {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #9C0000;
+  font-weight : bold;
+}
+TD.AmazonNewused {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #00319C;
+  font-weight : bold;
+}
+TD.AmazonFrom {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+TD.AmazonNewusedCost {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #00319C;
+}
