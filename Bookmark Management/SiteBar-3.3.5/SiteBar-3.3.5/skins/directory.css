@@ -1,0 +1,82 @@
+/******************************************************************************
+ *  SiteBar 3 - The Bookmark Server for Personal and Team Use.                *
+ *  Copyright (C) 2004  Ondrej Brablc <http://brablc.com/mailto?o>            *
+ *                                                                            *
+ *  This program is free software; you can redistribute it and/or modify      *
+ *  it under the terms of the GNU General Public License as published by      *
+ *  the Free Software Foundation; either version 2 of the License, or         *
+ *  (at your option) any later version.                                       *
+ *                                                                            *
+ *  This program is distributed in the hope that it will be useful,           *
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of            *
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the             *
+ *  GNU General Public License for more details.                              *
+ *                                                                            *
+ *  You should have received a copy of the GNU General Public License         *
+ *  along with this program; if not, write to the Free Software               *
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA *
+ ******************************************************************************/
+
+@import url("common.css");
+
+body
+{
+    margin: 5px 5px;
+}
+
+div.title
+{
+    font-size: large;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+}
+
+div.footer
+{
+    font-size: x-small;
+    text-align: right;
+    margin-top: 10px;
+    border-top: 2px solid;
+    padding-top: 2px;
+}
+
+div.folder
+{
+    margin-left: 1px;
+    margin-bottom: 2px;
+}
+
+div.bookmark
+{
+    margin-top: 5px;
+    margin-left: 1px;
+}
+
+div.bookmark a
+{
+    font-size: larger;
+}
+
+div.bookmark a.dead
+{
+    text-decoration: line-through;
+}
+
+div.desc
+{
+    white-space: pre;
+    color: #444;
+}
+
+div.info
+{
+    color: gray;
+    font-size: xx-small;
+}
+
+.url
+{
+    color: green;
+}
