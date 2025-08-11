@@ -1,0 +1,358 @@
+/**********************************************************************************
+ *   HOW-TO_english.txt
+ *
+ *   copyright © 2004 Axel Achten / e-motionalis.net
+ *   contact: thefiddler@e-motionalis.net
+ *   this file is a part of the " e-moBLOG " weblog engine
+ *
+ *   This program is a free software. You can modify it as you wish, though
+ *   we would just appreciate if you could keep the copyright notice on the
+ *   pages (including the engine version and link)  even if you should feel
+ *   free to add your own copyright if you modified and enhanced the code.
+ *
+ *   Please note though that, this software being copyrighted means that the
+ *   whole code (or part of it) is.  You should thus not sell any version of
+ *   this program, neither any modified version of it using part of the fol-
+ *   lowing code. Moreover, please do not use it for commercial purposes.
+ *
+ **********************************************************************************/
+ 
+ 
+ Thanks for downloading this e-moBLOG version!
+
+
+
+
+ * // TABLE OF CONTENTS //*********************************************************/
+
+    1. Introduction
+    2. Features
+    3. Mobile Blogging feature (please read carefully)
+    4. Requirements
+    5. Installing
+    6. Additional notes
+    7. Release and version notes
+       a. Resolved issues
+       b. Known bugs
+       c. New features
+       d. Version history of resolved issues
+    8. Credits and Copyrights
+    9. Contact
+
+
+ 
+ * 1 // INTRODUCTION //************************************************************/
+ 
+ e-moBLOG is a weblog system basically written for people who searched for a
+ complete, powerful, still quite light weblog system.  Why people who want to have
+ their own, but easy weblog should be limited to a basic, too simple one?
+ 
+ This system has the necessary options, without having too many. And, of course,
+ you only need to set them once. Now, if you need an option which is not
+ implemented in this engine, just check the Contact section of this file below and
+ send us a mail with your ideas and comments!
+ 
+
+ 
+ * 2 // FEATURES //****************************************************************/ 
+ 
+    - complete and powerful, still quite light engine.
+    - fast and easy install procedure.
+    - allows fast and easy blogging.
+    - fully valid XHTML 1.0 Transitional pages.
+    - fully valid CSS 2.0 style sheet.
+    - you may choose to use comments or not.
+      (posted directly on page, sent to you by mail, or no comments at all)
+    - can be set up for multiple or single author(s).
+    - you may choose to replace common smileys by little emoticons images,
+      to simply leave them as is, or even to forbid most usual smileys.
+    - you are able to easily edit/delete old posts, and edit/delete comments.
+    - author(s) posts and user comments use most standard UBB code tags.
+    - images posted by the author(s) or posted in the user comments might be auto-
+      matically resized to fit the width of your blog (only .jpg and .png, other
+      image formats are converted and displayed as hyperlinks).
+    - mobile blogging capability, meaning you may post an article on your blog
+      from your cellphone or pocketPC (read below for instructions).
+    - each article you post has its own permanent link.
+    - any URL included in the author(s) posts or in the user comments will auto-
+      matically be formatted into hyperlinks.
+    - every link will automatically be stored into your database and will be
+      displayed on the "posted links archive" page.
+    - very long links are automatically snipped on display.
+    - the blog system offers a RSS news feed (fully RSS 2.0 compatible).
+    - the blog displays either the X last posts, or all posts from the current
+      month.
+    - a search engine allows people to search for a specific word in your articles.
+    - an image gallery feature now makes you able to post only images with a small
+      description and it also automatically records images you include in your
+      articles, if you want.
+    - displays the number of visitors actually reading your blog.
+	
+
+
+ * 3 // MOBILE BLOGGING FEATURE //*************************************************/
+
+ Mobile blogging makes you able to post an article to your blog from almost any
+ portable device, such as your mobile phone or PocketPC. Please read notes below
+ very carefully before enabling this feature!
+
+ Mobile blogging is quite easy. Here's how it works.
+
+ First, you have to set the options as required in the e-moBLOG admin panel config-
+ uration page, which are: a mail server address (i.e. mail.yourdomain.com), the mail
+ server port (i.e. 110), a mail server type (either POP3 and IMAP can be used), the
+ login for the mail address which will be used on this mail server, as well as the
+ corresponding password.
+
+ You also need to specify in the options the *full* ABSOLUTE path to your blog home
+ directory, including the last "/" character.
+ (i.e.:   /home/yourdomain/public_html/my_blog_home/   )
+
+ And you also need to change the permissions on the e-moBLOG "/attach" directory
+ to chmod 777. If you are not doing this, the blog engine will not be able to store
+ an attached image to a mobile blogging message sent to your blog.
+
+ The mail address that has to be checked by the blog system is defined by its login
+ and password, so it's pretty normal that you don't have to enter the e-mail address
+ itself anywhere in the configuration.
+
+ Once you have done this, you may set the mobile blogging option to "enabled". In
+ this case, the blog system will automatically check for new mails on the provided
+ mail account, process them and display them.
+
+ Please be careful though! The mail address you will be using for mobile blogging
+ should be used *exclusively* for that purpose, and for nothing else. Why? Because
+ when the e-moBLOG system will check this mail address (this is done automatically
+ if you set the mobile blogging option to "enabled") for new messages to add to the
+ blog articles, it will process them all and then *delete* them from the server. If
+ a mail is not intented to be posted as an article on the blog, it will be deleted
+ as well. So I say it again: the mail address you'll be using for mobile blogging
+ should *ONLY* be used for that purpose and for no other.
+
+ Also, please note that in order to be displayed, a message sent to the mobile
+ blogging mail address needs to meet a few requirements (if not, it will be
+ discarded and deleted).
+
+ First, the subject of the message you send MUST end by "@yourblogpassword" where
+ "yourblogpassword" is the admin password you chose when you installed e-moBLOG on
+ your hosting account. This is just to be sure you're the only one able to post an
+ article on your blog using mobile blogging feature.
+
+ Example of message subject:    this is my subject!@mypasswordhere
+
+ Then, I realized that most mobile phone operators were adding their own ads when,
+ for example, sending a MMS message to an e-mail address. My operator even adds a
+ whole HTML page with ads and commercial messages in this case. This is why when
+ you send a message to your mobile blogging e-mail address, you must include your
+ article between "£" signs (pound signs) and the blog system will only take care of
+ the message part included between those, all the rest (except the subject, of
+ course) will be discarded.
+
+ Example of message body:    £here goes my message body, and nowhere else!£
+
+ One last thing: if you enable this feature, the e-moBLOG system will have to esta-
+ blish a connection with your IMAP/POP3 e-mail address from time to time. This is
+ actually done if a visitor enters the main page of your blog and if it hasn't been
+ checked yet during the last 10 minutes. Please note that this could slow down your
+ blog a bit for a few seconds every time the system checks for new messages on the
+ mail server (depending on the speed of this server).
+
+ IMPORTANT NOTE: As you might see here, posting a plain text article from a mobile
+ device using the mobile blogging feature is quite easy. On the development side,
+ that feature is easy to implement as well. But posting an article with an attach-
+ ment is a much more complex feature to implement. It actually works fine, but is
+ a bit limited for now (until I find a way to implement it in a better way):
+
+ If you want to add an attachment to your message (which is not required but could
+ be funny - i.e. to send a picture you just took with your mobile phone integrated
+ camera, along with a small text) your message should only have *one* attachment,
+ and this attachment *must* be a jpeg (.jpg) image. No more than one attachment
+ will be processed, and *no other* file or image format will work.
+
+ Also, please note that when I ran some tests during development, I noticed that
+ some mobile phones and/or mobile phone operators and/or mail systems were encoding
+ the messages in such a way the e-moBLOG mobile blogging feature couldn't read them
+ correctly. In those cases, the text was correctly added and displayed to the blog,
+ but the attached image was either discarded or unproperly displayed. Sorry then if
+ this feature is not working perfectly with your device/operator/software, please
+ feel free to drop me a line explaining the error and let me know what you are using
+ (device, operator, software, ...). That would help me enhancing the system. Thanks.
+
+ If you carefully read this section, and if you understood every single word of it,
+ you're ready to use e-moBLOG's mobile blogging feature!
+
+
+
+ * 4 // REQUIREMENTS //************************************************************/
+ 
+ You need a web hosting account, which allow PHP parsing and you must have a
+ MySQL database.  The GD library is required too  (version 1.6 or older will
+ NOT work, you need a more recent version) if you want to enable the automatic
+ image resizing option.  PHP includes a GD library by default since version 4.3.
+ 
+ If the GD library is not installed on your web hosting account, I suggest
+ you ask your hosting company if they could install it. It's free and easy.
+ 
+ If it looks like your web hosting account has all of this and the e-moBLOG
+ engine still doesn't work, please send us a mail (see Contact section below).
+ 
+ 
+
+  * 5 // INSTALLING //*************************************************************/
+  
+  	a.  Edit the  /includes/db.php  file with a text editor and change the
+	    strings to fit your hosting account (you must edit the "your database
+	    username",  "your database password" and  "the name of your database"
+	    strings). Note: do not delete the quotes ("), leave them!
+		
+	    Note: the "localhost" string does NOT need to be edited, except if
+	    your database is on a separate server (if you don't uderstand this,
+	    that probably means you should not edit this string), or if the port
+            your MySQL server is using is different from the default one. In this
+            case, please read the db.php footnote for more informations.
+		
+	b.  Upload all the files and subdirectories on your web hosting account.
+	    Do  not  change the subdirectories or the file names,  or it probably
+	    won't work at all. We recommend uploading the files to a subdirectory
+	    of your account, rather than in the root.
+		
+	c.  Launch your favorite web browser, and go to the following address:
+	    http://www.yourdomain.com/blogdirectory/install.php
+		
+	    Note: replace "www.yourdomain.com" by your domain name or web hosting
+	    account URL, and replace "blogdirectory" by the name of the directory
+	    on your account where you uploaded the e-moBLOG engine files.
+		
+	d.  Follow the instructions provided by the install procedure. This will
+	    only take a few minutes.  Be careful to fill the configuration form
+	    correctly, especially the login and password.  Do NOT loose those, or
+	    you won't be able to use your webblog system and would need to do the
+	    whole install procedure again.
+		
+	e.  Connect to your web hosting account and delete the file install.php
+	    (do not forget to do this, or anyone accessing this file could reset
+	    your blog and change your login and password for the admin section!)
+
+        f.  If you are still connected to your web hosting account and if you plan
+            on using e-moBLOG's mobile blogging feature, change your e-moBLOG
+            "attach/" directory permissions to chmod 777, then disconnect from your
+            hosting account.
+		
+	g.  You're done! Congratulations, you'll now be able to post you first
+	    article. Enjoy. You may customize the look of the blog system by
+	    editing the /includes/style.css file with a text editor. A bit of CSS
+            syntax knowledge would be useful for that. Feel free though to change
+            colors, font sizes, etc.
+		
+	    You may also change the images as you want. The image files are in
+	    the /images/ subdirectory.
+		
+
+
+ * 6 // ADDITIONAL NOTES //********************************************************/
+ 
+    This e-moBLOG version is version 1.3
+
+    Version 1.1 was a pre-release version that was not meant to be public and was
+    used for tests only.
+	
+
+
+ * 7 // RELEASE & VERSION NOTES //*************************************************/
+
+    a.  Resolved issues - version 1.3
+
+        - fixed a bug with the server time offset.
+        - fixed a bug concerning the admin panel login system. The whole login
+          system has been rebuild using another approach. It now should be working
+          fine for most people.
+        - the [url=...][/url] and [img][/img] tags can now be overlapped without
+          any problem occuring, such as a posted image can now be a link as well.
+        - comments to be sent by mail were not sent correctly if the "single author"
+          option was enabled. This is fixed.
+
+    b.  known bugs - version 1.3
+	
+        - an image attached to a message sent for posting though the mobile
+          blogging feature could be discarded or unproperly displayed, depending on
+          your device/mobile phone operator/software. Please read instructions in
+          this file for more informations.
+
+    c.  new features - version 1.3
+
+        - a RSS feed (fully RSS 2.0 compatible).
+        - comments may now be moderated by the owner(s).
+        - added a comment in the db.php file to explain how to change the file
+          if your MySQL server requires a special port to be used.
+        - the blog now displays either the X last posts (and NOT the X last posts
+          *of the current month* anymore), or all posts from the current month.
+        - a search engine has been added.
+        - moblogging (mobile blogging) capability added.
+        - automatic image resize is now an option that can be enabled or not.
+        - it is now possible to align an image to the right or to the left of your
+          text. This is done by using the [img left] or [img right] opening tags
+          instead of the simple [img] opening tag. The closing tag is always [/img]
+          though.
+        - image gallery feature has been added. It automatically records every image
+          you include in your articles, deletes the images related to an article if
+          you delete this article, and you are also able to add (or edit) an image
+          directly in the gallery without posting any article. Images automatically
+          added while adding an article can only be deleted by deleting the
+          referring article.
+        - added a visitor counter, which displays the total number of visitors
+          currently reading your website.
+
+    d.  version history of resolved issues - version 1.2
+
+        - fixed a bug that caused the archives to be limited to the same number
+          of displayed posts than the main page.
+          (thanks to Gerhard Lazu - http://blog.gerhardlazu.com)
+        - fixed a layout bug that caused the blog pages to display incorrectly
+          when changing the table cells background color into the CSS file.
+        - fixed a small bug in the archives page hyperlinks.
+        - fixed the comments form width such as it displays correctly with Opera
+          browser, even when the blog maximum width is set to the minimum.
+        - fixed another small layout problem in the admin section.
+        - fixed the "top" internal link which now works with Opera and Mozilla
+          internet browsers.
+
+
+
+ * 8 // CREDITS & COPYRIGHTS //****************************************************/
+ 
+ The whole e-moBLOG system copyright © 2004 Axel Achten / e-motionalis.net
+ 
+ Note: That would be very kind if you could keep the copyright notice at the
+ bottom at the webblog system pages, though feel free to customize its look
+ to fit your own layout and colors. Understand it, I don't get any money for
+ all of this work, the only thing I ask of you is to keep the copyright
+ (including the link to my website) notice at the bottom of the page. Thank you!
+ 
+ Global thanks: Flo (www.the-flo.net), Brice (www.guilty.be), Julie :)
+ Translation thanks: k-n0w, IceWind, Vincenzo, Luca.
+
+ Thanks to Gerhard Lazu (http://blog.gerhardlazu.com) for his feedback, and
+ thanks to Cristian Ocampo (http://www.cacko.tk) for his ideas about the RSS
+ feed.
+
+ Thanks a lot to all the people who sent their suggestions or bug reports and
+ who tried/used/are still using this blog system. Thanks for your support!
+ 
+
+ 
+ * 9 // CONTACT //*****************************************************************/
+ 
+ If you have a question, a comment, a problem, an idea to share, please feel
+ free to send a mail. I'll try to answer as much mails as possible, but be
+ patient and allow us a few days.   Please also report any bugs you might
+ encounter.
+ 
+ Please visit the website for informations, updates, and new versions when you've
+ got have a minute or two. Thank you again for choosing e-moBLOG, we hope you'll
+ really enjoy it as much as possible!
+ 
+ E-mail contact: thefiddler@e-motionalis.net
+ Website: http://www.e-motionalis.net
+ 
+ 
+ **********************************************************************************/
