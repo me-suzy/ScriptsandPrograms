@@ -1,0 +1,57 @@
+<config upload="./upload/" path="./" url="./">
+	
+	<formspath>./forms/</formspath>
+	<default_location>index.php</default_location>
+
+	<forms>
+		<adminpath>./forms/admin/</adminpath>
+		<userpath>./forms/user/</userpath>
+		<admintemplate>./templates/form.htm</admintemplate>
+		<sitepath>./forms/</sitepath>
+		<sitetemplate>./admin/templates/form.htm</sitetemplate>
+	</forms>
+
+	<database type="mysql">
+		<server>localhost</server>
+		<login>root</login>
+		<password></password>
+		<default>attendance</default>
+	</database>
+
+	<modules>
+		<admin>
+			<module name="attendance">attendance</module>
+			<module name="myprofile">myprofile</module>
+			<module name="auth">auth</module>
+		</admin>
+
+		<site>
+			<module name="attendance">attendance</module>
+		</site>
+	</modules>
+
+	<vars>
+		<var name="header">Attendance</var>
+		<var name="title">Attendance Administration Area</var>
+	</vars>
+
+	<tables>
+		<table name="users">site_users</table>
+		<table name="vars">site_vars</table>
+		<table name="events">site_events</table>
+		<table name="mb_msg">site_mb_msg</table>
+		<table name="vars">site_vars</table>
+
+	</tables>
+ 
+	<templates path="./templates/">
+		<admin path="./templates/admin/">
+			<template name="menus">menus.htm</template>
+			<template name="layout">layout.htm</template>
+		</admin>
+
+		<site path="./templates/">
+			<template name="layout">layout.htm</template>
+		</site>
+	</templates>
+</config>
