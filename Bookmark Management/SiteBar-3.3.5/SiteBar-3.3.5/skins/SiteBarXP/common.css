@@ -1,0 +1,38 @@
+.cmnBaseFont
+{
+    font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+.cmnPageBackground
+{
+    background: #FFFFFF;
+}
+
+.cmnTitle
+{
+    color: #333;
+    background: #8899aa;
+}
+
+.cmnTitleColorInverse
+{
+    color: #8899aa;
+}
+
+.cmnSubTitle
+{
+    color: #333;
+    background: #fffffa;
+}
+
+.cmnSubTitleColorInverse
+{
+    color: #fffffa;
+}
+
+table th
+{
+    background: #8899aa;
+    color: #333;
+}
