@@ -1,0 +1,79 @@
+BODY.phpshout_body {
+	background-color:#EEEEEE; /* Background colour of frame */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	}
+
+TABLE.phpshout_table {
+	background-color:#EEEEEE; /* Background colour of table */
+	font-family: Arial, Helvetica, sans-serif;
+	color:#000000; /* Font colour in table */
+	width: 90%; /* Width of table inside iframe. Will expand when iframe width is changed*/
+	border-collapse:collapse;
+	border: 1px solid #D9D9D9;
+	font-size:11px;
+	}
+
+TD.phpshout_posts {
+	background-color: #EEEEEE;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D9D9D9;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D9D9D9;
+	padding: 3px;
+	}
+
+TD.phpshout_2nd_posts {
+	background-color: #E5E5E5;
+	padding: 3px;
+	}
+
+TD.phpshout_form {
+	padding:3px;
+	}
+
+INPUT.textfields {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	width: 130px; /* Expand the text fields accordly with the width of your shoutbox */
+	}
+
+INPUT.buttons {
+	background-color: #CCCCCC;
+	color: #000000;
+	border: 2px outset #CCCCCC;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	}
+
+P.error {
+	color: #FF0033;
+	font-weight: bold;
+	}
+
+A:LINK.phpshout_link { 
+	text-decoration: none; 
+	color: #000000; 
+	}
+A:VISITED.phpshout_link { 
+	text-decoration: none; 
+	color: #000000; 
+	}
+A:HOVER.phpshout_link { 
+	text-decoration: underline; 
+	color: #000000; 
+	}
+
+A:LINK img.smilies { 
+	border: 0px solid #000000; 
+	}
+A:VISITED img.smilies { 
+	border: 0px solid #000000; 
+	}
+A:HOVER img.smilies { 
+	border: 0px solid #000000; 
+	}
