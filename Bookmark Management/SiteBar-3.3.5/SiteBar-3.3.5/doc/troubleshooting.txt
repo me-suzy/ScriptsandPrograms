@@ -1,0 +1,48 @@
+SiteBar 3 Troubleshooting
+=========================
+
+[All file paths in this document are relative to the location of this file!]
+
+In  case  of  some  strange  behavior,  or  even   blank   screens   open   file
+../inc/errorhandler.inc.php and set following define to true:
+
+    define("SB_SHOW_PHP_ERRORS", true);
+
+For dumping information use method ErrorHandler::dump($variable),  in  order  to
+get some logging use ErrorHandler::log(), in this case define path  to  the  log
+again in file ../inc/errorhandler.inc.php:
+
+    define("SB_LOG_FILE_PATH", "sitebar.log");
+
+The user under which the web server is running must have  write  access  to  the
+directory where the log file should be stored !!!
+
+All classes with exception of Localizer are subclasses of ErrorHandler  so,  the
+static dump and log functions can be called via $this->dump() and  $this->log().
+All errors and warnings are written to the log file as well.
+
+HTTP communication and SQL operations can be logged by changing define in the
+mentioned file ../inc/errorhandler.inc.php:
+
+    define ("SB_LOG_HTTP", true);
+    define ("SB_LOG_SQL", true);
+
+FAQ
+---
+Q: What means error message 'Cannot connect to database!'
+A: This means that either your database server is down, or
+   you have entered wrong information when configuring database
+   connection. Verify your credentials using mysql command line 
+   or using web application like phpMyAdmin. By default only root user
+   exists in each mysql application. If you are using other username
+   you may need to create the user firts. See install.txt for some 
+   MySQL hints
+
+   In order to get more information switch on logging by defining path
+   to the log file (see above). In the log file you will find an error
+   message from your database driver. The information is intentionally
+   hidden to the log file, to prevent other users seeing details about
+   your database in case the connection fails from any reason.
+
+   In case the connection parameters are incorrect, simply delete file
+   ../inc/config.inc.php and click on [Check Settings] button.
