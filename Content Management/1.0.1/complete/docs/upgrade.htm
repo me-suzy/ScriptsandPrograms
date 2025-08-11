@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Particle Wiki Upgrading Guide</title>
+<link rel="stylesheet" type="text/css" href="docs.css" />
+</head>
+<body>
+<a name="top"></a>
+<table width="75%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" align="center" style="border: #666666 1px solid;"><tr><td>
+<table width="100%" cellpadding="5" cellspacing="0" border="5">
+<tr>
+	<td>
+		<p class="sub1">Upgrading<p>
+		<p>A guide to upgrading from a previous version.<!-- Read <strong>all that apply</strong>, eg, if you are upgrading from 1.0.0, read the notes on RC2, RC3, etc all the way up to the latest version so you don't miss anything. You do not however have to run all the upgrade scripts, this is done automatically when you run the first one. Just check the other sections for template updates, config changes, etc.--></p>
+		
+		<ul>
+			<li><a href="#1.0.0">From version 1.0.0</a></li>
+		</ul>
+		
+		<p><strong id="1.0.0">From version 1.0.0</strong><br />
+		Backup your files and data then grab the changed files and upload them over the existing files. Run install/upgrade/from_1.0.0.php and this will take care of the database changes. Delete the installation directory.</p>
+		<p>Now delete includes/version.php as it isn't needed anymore. Also you need to make the following changes (if you haven't customised any skins, <u>just upload the new files over the top</u>). Open overall_footer.tpl and find:</p>
+		<p><div class="code">1.0.0</div></p>
+		<p>Replace with:
+		<p><div class="code">{VERSION}</div></p>
+		<p>Save and close. Now open up overall_navigation.tpl and find:</p>
+		<p><div class="code">&lt;a href="admin.php"&gt;</div></p>
+		<p>Replace with:</p>
+		<p><div class="code">&lt;a href="admin.php?from={PAGE_FROM}"&gt;</div></p>
+		<p>Save and close. Open element_config.tpl and find:</p>
+		<p><div class="code">&lt;input type="text" id="{CONFIG_NAME}" name="{CONFIG_NAME}" value="{CONFIG_VALUE}" size="20" maxlength="255" /&gt;</div></p>
+		<p>Replace with:</p>
+		<p><div class="code">&lt;input type="text" id="{CONFIG_NAME}" name="{CONFIG_NAME}" value="{CONFIG_VALUE}" size="30" maxlength="255" /&gt;</div></p>
+		<p>Save and close. Open page_edit.tpl and find:</p>
+		<p><div class="code">&lt;form action="{WIKIPAGE}?edit={QUERY}" method="post"&gt;</div></p>
+		<p>Replace with:</p>
+		<p><div class="code">&lt;form action="{WIKIPAGE}?edit={QUERY}" method="post" id="editform" name="editform"&gt;</div></p>
+		<p>Add the follow code to the end of the file:</p>
+		<p><div class="code">&lt;script language="JavaScript" type="text/javascript"&gt;<br />
+&lt;!--<br />
+window.onload = document.editform.reason.focus();<br />
+--&gt;<br />
+&lt;/script&gt;</div></p>
+		<p>Save and close. Open page_admin.tpl and find:</p>
+		<p><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="admin.php?page={SIGN_LINK}"&gt;{SIGN_TEXT}&lt;/a&gt;<br />
+&lt;/div&gt;</div></p>
+		<p>Replace with:</p>
+		<p><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="admin.php?page={SIGN_LINK}"&gt;{SIGN_TEXT}&lt;/a&gt;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;{MENU_DELETEPAGE}<br />
+&lt;/div&gt;</div></p>
+		<p>Save and close. Obviously upload them ;).</p>
+	</td>
+</tr>
+</table>
+</td></tr></table>
+<center>&nbsp;<br />&copy; 2004-2005 <a href="http://www.particlesoft.net/">Particle Soft</a></center>
+</body>
+</html>
