@@ -1,0 +1,319 @@
+Instructions for automating CaLogic
+===================================
+
+CaLogic must be installed and operational for automation to work.
+
+You must also turn the "Use Automation" option on in the
+CaLogic Admin Config area. This option is turned off by default.
+
+Once automation is turned on you can automate the following tasks:
+    Creating and deleting a user
+    Creating and deleting a calendar
+    Automatically logging a user on
+
+To automate CaLogic, you have to call the automation functions from
+within a PHP program or script.
+
+For the automation function calls to work, you must include the CaLogic
+config.php file in your script before you use the functions.
+
+Each CaLogic Automation Function takes some parameters (explained below).
+
+Each CaLogic Automation Function will return an array with 3 keys.
+The keys are:
+    result
+    messagehtml
+    message
+
+result will be either true or false. When true, the function completed
+succesfully. When it is false, an error occured.
+
+messagehtml will have the result message in an HTML displayable format.
+
+message will have the same message, but suitable for text display.
+
+You call a function like this:
+
+$returnvar = calogic_automation_function($para1,$para2,$para3,.....);
+
+$returnvar will be the array with the 3 keys. So you check them like this:
+
+if ( $returnvar["result"] == false ) {
+    # display error message
+    print $returnvar["messagehtml"];
+    exit();
+}
+
+
+The 5 functions available are:
+==============================
+
+automation_create_user
+automation_delete_user
+automation_create_calendar
+automation_delete_calendar
+automation_user_logon
+
+
+Functions explained
+====================
+
+
+automation_create_user
+======================
+This funtion creates a new user, and can create a calendar for the user.
+
+Example:
+$returnvar = automation_create_user($calogickey,$uservalsnew,$createcalendar);
+
+    this function takes 3 parameters:
+    calogickey
+    uservalsnew
+    createcalendar
+
+    calogickey
+        must be set to the value of the calogic_uid field of the _setup table.
+        It is your responsibility to query the table to get the value.
+
+    uservalsnew
+        must be an array with the following keys:
+
+            username
+                a valid, unique user name that is not yet present in CaLogic
+
+            firstname
+                first name must not be blank
+
+            lastname
+                last name must not be blank
+
+            email
+                Email address must not be blank and must not yet exist in CaLogic
+                The email address syntax will also get checked
+
+            emailtype
+                Email type defaults to HTML if empty or invalid
+                valid values are HTML, TEXT. or SMS
+
+            password
+                password in plain text
+                when empty will default to the user name
+
+            forcenewpassword
+                Force user to create a new password upon next login
+                0 (zero) = no, 1 (one) = yes
+                will default to NO when empty or invalid
+
+            languagename
+                Language name must exist in CaLogic
+                Defaults to the standard language when empty
+
+    createcalendar
+        can be 0 (zero) or 1 (one)
+        defaults to 1
+        when set to 1, then a calendar will also be created for the new user.
+
+
+
+automation_delete_user
+======================
+This function will delete a user and everything associated with that user. I.e.
+calendars, events etc.
+
+Example:
+$returnvar = automation_delete_user($calogickey,$usernamedelete,$useriddelete);
+
+    this function takes 3 parameters:
+    calogickey
+    usernamedelete
+    useriddelete
+
+    calogickey
+        must be set to the value of the calogic_uid field of the _setup table.
+        It is your responsibility to query the table to get the value.
+
+    usernamedelete
+        the CaLogic User name to delete
+
+    useriddelete
+        the CaLogic user ID of the user to delete
+
+
+    Either the usernamedelete or useriddelete parameter must be set.
+
+
+
+automation_create_calendar
+==========================
+This function creates a new calendar for an existing CaLogic user.
+
+Example:
+$returnvar = automation_create_calendar($calogickey,$usernamenewcal,$calnamenewcal,$caltitelnewcal,$useridnewcal);
+
+    this function takes 5 parameters:
+    calogickey
+    usernamenewcal
+    calnamenewcal
+    caltitelnewcal
+    useridnewcal
+
+    calogickey
+        must be set to the value of the calogic_uid field of the _setup table.
+        It is your responsibility to query the table to get the value.
+
+    usernamenewcal
+        user name for which the calendar is to be created (user must exist)
+
+    calnamenewcal
+        Calendar name of new calendar, defaults to user name, must be unique for user
+
+    caltitelnewcal
+        Calendar title of new calendar, defaults to user name
+
+    useridnewcal
+        CaLogic User ID for which the calendar is to be created (ID must exist)
+        defaults to ID of the user name given
+
+
+    Either the usernamenewcal or useridnewcal parameter must be set.
+
+
+
+automation_delete_calendar
+==========================
+This function will delete an existing Calendar of an existing CaLogic user.
+It will also delete everything associated withe the calendar. I.e. events and
+reminders etc. The user that the calendar belongs to WILL NOT be deleted.
+
+Example:
+$returnvar = automation_delete_calendar($calogickey,$usernamecaldelete,$useridcaldelete,$calnamedelete,$caliddelete);
+
+    this function takes 5 parameters:
+    calogickey
+    usernamecaldelete
+    useridcaldelete
+    calnamedelete
+    caliddelete
+
+
+    usernamecaldelete
+        user name for which the calendar is to be deleted (user must exist)
+
+    useridcaldelete
+        CaLogic User ID for which the calendar is to be deleted (ID must exist)
+        defaults to ID of the user name given
+
+    calnamedelete
+        Calendar name of calendar to be deleted, defaults to calendar ID of user calendar name given
+
+    caliddelete
+        Calendar ID of calendar to delete, defaults to calendar ID of calendar name given.
+
+
+    Either the usernamecaldelete or useridcaldelete parameter must be set and,
+    either the calnamedelete or caliddelete parameter must be set.
+
+
+
+automation_user_logon
+=====================
+This function will log an existing CaLogic user on without the need for entering
+a password.
+
+
+Example:
+$returnvar = automation_user_logon($calogickey,$usernamelogon,$useridlogon);
+
+    this function takes 3 parameters:
+    calogickey
+    usernamelogon
+    useridlogon
+
+    usernamelogon
+        user name to log on (user must exist)
+
+    useridlogon
+        CaLogic User ID to log on (ID must exist)
+
+    Either the usernamelogon or useridlogon parameter must be set.
+
+
+
+Useage Examples
+===============
+
+
+Here is an example of automatic user log on:
+=============================================
+
+<?php
+
+# this is your php script
+
+# you must only include the CaLogic config.php file
+# replace "path to calogic" with the proper path.
+
+include("path to calogic/include/config.php");
+
+$calogickey = "enter the calogic key here, or better yet, get thru an SQL select";
+$usernamelogon = "Guest";
+
+$calogicautologon = automation_user_logon($calogickey,$usernamelogon);
+
+if($calogicautologon["result"] == false) {
+    print "There has been a logon error<br><br>
+    Error message:".$calogicautologon["messagehtml"];
+    exit();
+}
+
+# end of your script
+?>
+
+
+Here is an example of user creation with calendar creation.
+===========================================================
+
+<?php
+
+# this is your php script
+
+# you must only include the CaLogic config.php file
+# replace "path to calogic" with the proper path.
+
+include("path to calogic/include/config.php");
+
+$newuser["username"] = "pboone";
+$newuser["firstname"] = "Philip";
+$newuser["lastname"] = "Boone";
+$newuser["email"] = "philip@calogic.de";
+$newuser["emailtype"] = "";                 # can be blank, will default to standard mail format
+$newuser["password"] = "";                  # can be blank, will default to user name
+$newuser["forcenewpassword"] = "";          # set this to 1 to force user to create a new password upon next logon
+$newuser["languagename"] = "";              # can be blank, will default to standard language
+
+$calogickey = "enter the calogic key here, or better yet, get thru an SQL select";
+$make_calendar_too = 1;     # set to 0 to not create a calendar, defaults to 1
+
+$makenewuser = automation_create_user($calogickey,$newuser,$make_calendar_too);
+
+if($makenewuser["result"] == false) {
+    print "There has been a logon error<br><br>
+    Error message:".$makenewuser["messagehtml"];
+    exit();
+}
+
+# end of your script
+?>
+
+
+
+The php file that holds the functions is also quite well documented. The functions are
+located in ./classes/calogicautomation.php
+
+If you have any problems, please feel free to contact me.
+
+Philip Boone
+
+philip@calogic.de
+
+
