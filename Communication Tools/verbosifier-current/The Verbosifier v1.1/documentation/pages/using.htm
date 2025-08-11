@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>The Verbosifier v1.1 Readme</title>
+<meta http-equiv="content-type" content="text/html; charset=us-ascii" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<link rel="stylesheet" type="text/css" href="manual.css" media="screen" />
+</head>
+<body>
+<div id="head"><a name="top"></a>
+	<span id="headline">The Verbosifier v1.1</span>
+	<p class="nav">
+<a href="../readme.htm">Getting Started</a> | <a href="features.htm">New in v1.1</a> | <strong>Using The Verbosifier</strong> | <a href="configuring.htm">Configuring</a> | <a href="templating.htm">Templating</a>
+  </p>
+</div>
+<div id="body">
+<h1>Using The Verbosifier</h1>
+To use The Verbosifier in your website simply include verbose.php in your code. There are four ways to do this:
+<p>
+Most probably you will have your Shoutbox in an iframe (inline frame). Just create an iframe with the source pointing to verbose.php. For example:
+	<pre>
+	&lt;iframe src="verbosifier/verbose.php" frameborder="0" height="100%" width="100%">&lt;/iframe></pre>
+</p><p>
+You can also include it in a normal frameset:
+    <pre>
+	&lt;frameset cols = "*, 20%">
+	    &lt;frame src ="whatever.htm" />
+	    &lt;frame src ="verbosifier/verbose.php" />
+	&lt;/frameset></pre>
+
+The method I recommend is to simply use PHP's INCLUDE() function:
+	<pre>
+	&lt;?php include('verbosifier/verbose.php'); ?></pre>
+</p><p>
+You can use Server-Side Includes, but SSI is cumbersome and often requires you to rename your pages to .shtml, which isn't possible if you're running a site with dynamic scripts. The SSI to include verbose.php is:
+	<pre>
+	&lt;!--#include virtual="verbosifier/verbose.php" --></pre>
+</p><p class="totop">
+<a href="#top">Back to contents</a>
+</p>
+
+<div id="foot">
+	<p class="nav">
+<a href="../readme.htm">Getting Started</a> | <a href="features.htm">New in v1.1</a> | <strong>Using The Verbosifier</strong> | <a href="configuring.htm">Configuring</a> | <a href="templating.htm">Templating</a>
+  </p>
+Published by <a href="http://www.desiquintans.com/verbosifier">The Verbosifier</a>
+</div>
+</body>
+</html>
