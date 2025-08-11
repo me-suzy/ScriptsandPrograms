@@ -1,0 +1,88 @@
+body {
+	background:#666;
+}
+
+* {
+	font-family:arial, helvetica, sans-serif;
+}
+
+#shout {
+	width:192px;
+	height:auto;
+	border:1px solid #e6e6e6;
+	padding:5px;
+	background:#333;
+	color:#fff;
+	margin:0 auto 0 auto;
+}
+
+#shout_contents {
+	width:180px;
+	padding:5px;
+	height:250px;
+	border:1px dotted #e6e6e6;
+	overflow:auto;
+	font-size:9pt;
+	color:#fff;
+	background:#006;
+}
+
+#shout_contents p {
+	margin:0 0 5px 0;
+	padding:0 0 5px 0;
+	border-bottom:1px dotted #e6e6e6;
+	width:160px;
+}
+
+.date {
+	color:#a6c3ff;
+}
+
+.note {
+	clear:both;
+	color:#a6c3ff;
+	font-size:8pt;
+	padding:5px;
+	text-align:center;
+}
+
+#shout_form {
+	padding:5px;
+	width:180px;
+	border:1px solid #000;
+	border-top:0;
+}
+
+#shout_form form {
+	margin:0;
+	padding:0;
+}
+
+#shout_form form input {
+	width:110px;
+	height:15px;
+	margin:0;
+	padding:0;
+	font-size:8pt;
+	background:#000;
+	border:1px solid #999;
+	color:#fff;
+}
+
+#shout_form button {
+	width:60px;
+	height:18px;
+	font-size:8pt;
+	font-weight:bold;
+	text-align:center;
+	padding:0;
+	color:#fff;
+	background:#006;
+	border:0;
+}
+
+#shout_form button:hover {
+	background:#a6c3ff;
+	color:#006;
+}
+		
