@@ -1,0 +1,21 @@
+ASSOCIATE-O-MATIC LITE v2.x
+END USER LICENSE AGREEMENT
+
+This license agreement is a legal agreement between you and Associate-O-Matic. By using this product you agree to be bound by the terms of this agreement. This software is protected by national and international copyright laws. This software is licensed, not sold.
+
+GRANTED RIGHTS:
+This license grants you the right to install this software on an unlimited number computer systems.
+
+LIMITATIONS:
+You may not rent or lease this software, you may not transfer your rights under this license agreement.
+
+OWNERSHIP:
+Associate-O-Matic retains ownership of the software.
+
+LIABILITY:
+THIS PROGRAM REQUIRES AMAZON E-COMMERCE SERVICE (ECS). IF ECS IS EVER DISCONTINUED OR BECOMES UNAVAILABLE OR INACCESSIBLE FOR ANY REASON, THIS SOFTWARE WILL NO LONGER FUNCTION AND ASSOCIATE-O-MATIC WILL NOT BE HELD LIABLE. THIS PROGRAM IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. ASSOCIATE-O-MATIC TAKES NO RESPONSIBILITY FOR ANY DAMAGES SUFFERED AS A RESULT OF USING, MODIFYING THIS SOFTWARE. IN NO EVENT WILL ASSOCIATE-O-MATIC BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF OR INABILITY TO USE SOFTWARE, EVEN IF ASSOCIATE-O-MATIC HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+GENERAL:
+By installing this software you acknowledge that you have read this license agreement, understand it, and agree to be bound by its terms and conditions.
+
+Copyright (c) 2003-2006 Associate-O-Matic. All Rights Reserved.
