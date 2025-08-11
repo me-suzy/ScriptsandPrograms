@@ -1,0 +1,63 @@
+Fast Click SQL Lite v1.1.2
+--------------------------
+
+Changes:
+
+  - Version 1.1.2
+ ===========================================================
+  ! fixed: incorrect detailed statistics
+  ! fixed: incorrect stat at database section
+  ! fixed: bug with categories at show.php
+  ! fixed: incorrect stat for week
+  + added: code generator for counter on HTML
+
+  - Version 1.1.1
+ ===========================================================
+  !! fixed: incorrect statistics at Category general stat
+  ! fixed: incorrect statistics for common category
+  ! fixed: don't show field 'Total' at Category stat.
+  ! fixed IP addresses at last clicks
+
+  - Version 1.1.0
+ ===========================================================
+  !! changed database structure
+  ! fixed some bugs
+  * speed optimized
+  + improve setup
+
+  - Version 1.0.1
+ ===========================================================
+  ! small bug fix at show.php
+  ! fixed bugs for links adding (URL)
+  ! fixed catching errors
+  ! changed installation script
+  + added two time formats
+  * improve security 
+  * some internal improves
+
+  - Version 1.0.0
+ ===========================================================
+  ! small and big bugs fixed
+  + added checking forms for errors
+  + added days of week in detail statistic
+  + added web-based configuration
+  + added support for timezones
+  + added time and date formats
+  + added daylight time
+  * some visual improved
+  * changed initialization script
+  * changed error catching script
+  * improve setup.php
+
+  - Version 0.1b
+ ===========================================================
+  ! fixed link detail
+  ! some interface improved
+  ! fixed setup wizard
+  * fixed NOTICE error reporting
+  + added showing counter on page for links and categories
+  * show.php may use periods of statistics
+
+  - Version 0.1a
+ ===========================================================
+  ! first version
