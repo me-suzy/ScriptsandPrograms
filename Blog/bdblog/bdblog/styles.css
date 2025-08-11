@@ -1,0 +1,111 @@
+.LinkBox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+.LinkBox a {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.ListArea {
+	border: 1px dashed #999999;
+}
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.DateBrowserDayTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #666666;
+}
+.DateBrowserNormal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background-color: #AAAAAA;
+	border: 1px solid #000000;
+}
+.DateBrowserOccupied {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+}
+.DateBrowserOccupied a {
+	color: #000000;
+}
+.DateBrowserToday {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background-color: #AAAAAA;
+	border: 1px solid #FF0000;
+}
+.DateBrowser a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.DateBrowserTodayOccupied {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	border: 1px solid #FF0000;
+}
+.DateBrowserTodayOccupied a {
+	color: #000000;
+}
+.EntryHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #CCCCCC;
+}
+.EntryDate {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CCCCCC;
+}
+.EntryCategory {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CCCCCC;
+}
+.EntryBody {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.EntryLinks {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+.EntryLinks a {
+	color: #000000;
+	text-decoration: none;
+}
+.EntryLinks a:hover {
+	text-decoration: underline;
+}
+.ContentHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+.ContentNormal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
