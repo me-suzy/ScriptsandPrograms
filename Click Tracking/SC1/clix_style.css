@@ -1,0 +1,36 @@
+/* pink: #FAB2BE  */
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #0000FF;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p, li, td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+	line-height: 18px;
+	text-decoration: none;
+}
+input, textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+	background-color: #E6E4E4;
+	border: 1px;
+	border-color: #000000;
+	border-style: solid;
+	text-decoration: none;
+}
+body {
+	background-color: #C0C0C0;
+}
+td {
+  background-color: #ffffff;
+}
