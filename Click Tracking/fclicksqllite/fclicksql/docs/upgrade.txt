@@ -1,0 +1,19 @@
+
+ Fast Click SQL v1.1.2 (c)2005 by Dmitry Ignatyev aka Trainer
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ !!! Backup you old version of Fast Click SQL!!!
+
+ Upgrade from Fast Click SQL 1.1.x:
+  1. Unpack the Fast Click SQL archive, using directory names.
+  2. Unpload all files to the directory where located Fast Click SQL
+     Pro (replacing all exists files). Make sure that you are 
+     uploading in ASCII mode.
+  3. Set the permissions for files (read readme.txt)
+  4. That's All.
+_________________________________________________________
+Please feel free to contact me with any comments,
+suggestions, bug fixes, criticism, or just a
+pleasant message.
+
+E-Mail: ftrainsoft@mail.ru
+Web: http://www.ftrain.siteburg.com
