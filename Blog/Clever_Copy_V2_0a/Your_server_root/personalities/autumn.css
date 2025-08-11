@@ -1,0 +1,86 @@
+BODY
+    {
+    scrollbar-face-color:#DEE040;
+    scrollbar-arrow-color:#FFFFFF;
+    scrollbar-track-color:#BEC036;
+    scrollbar-shadow-color:#818214;
+    scrollbar-highlight-color:#DDDE60;
+    scrollbar-3dlight-color:#EDEE80;
+    scrollbar-darkshadow-Color:#424301;
+}
+
+        BODY, P, TD     {
+                font-family: verdana;
+                font-size: 8pt;
+                color:#572B13; text-transform: none; cursor: none
+                }
+        A:link, A:visited       {
+                color: #D76323;
+                text-decoration: none; text-transform: none; cursor: none
+                }
+        A:hover {
+                color: #F65700;
+                text-decoration: bold; text-transform: none; cursor: none; font-weight: bold}
+                                a:special { color:#FFFFFF; cursor:none; }
+        .spacer {
+                 border:1px #009C94 solid;
+                 font-size:8pt;
+                 background-color:#F4F2F2;
+                 }
+        td.border {
+                   border:1px #256125 solid;
+                   font-size:8pt;
+                   padding:1px;
+                   }
+
+        select {
+              background-color: #ADAE5A;
+              font-family: Verdana, Arial, Helvetica, sans-serif;
+              font-size: 10px;
+              color: #515127;
+               }
+
+       textarea {
+                 background-color: #ADAE5A;
+                 font-family: Verdana, Arial, Helvetica, sans-serif;
+                 font-size: 10px;
+                 color: #515127;
+                 }
+
+
+       input {
+              background-color: #ADAE5A;
+              font-family: Verdana, Arial, Helvetica, sans-serif;
+              font-size: 10px;
+              color: #515127;
+              }
+
+       .checkbox {
+                  background: #F4F2F2;
+                  color: #000000;
+                  }
+       .radio {
+               background :#F4F2F2;
+               color: #000000;
+               }
+
+       .texinput {
+                   font-size: 10px;
+                   background-color: #ADAE5A;
+                   border: 1px solid #666666;
+                   }
+
+       .text {
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 10px;
+                color: #014301;
+                width: 100px;
+                margin-right: 6px;
+                }
+
+       .buttons {
+                   font-size: 10px;
+                   background-color: #EAE8E8;
+                   color: #000000;
+                   margin-right: 6px;
+                   }
