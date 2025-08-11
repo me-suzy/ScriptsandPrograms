@@ -1,0 +1,72 @@
+body {
+        font-size : 8pt;
+        font-family : Verdana, Arial, sans-serif;
+}
+a       {font-family: Verdana, Arial, Helvetica, sans-serif;}
+a:hover {text-decoration : underline;}
+a.link {
+        text-decoration: none;
+        font-size: 12px;
+        color: #0000ff;
+}
+a.liter2 {
+        text-decoration: none;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #33399d;
+}
+a.opt  {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        font-size: 11px;
+        color: #000000;
+}
+.text {
+        font-size : 8pt;
+        font-family : Verdana, Arial, sans-serif;
+}
+.text2 {
+        font-size : 8pt;
+        font-family : Verdana, Arial, sans-serif;
+        font-weight: bold;
+}
+.title {
+        font-size : 11pt;
+        font-family : Verdana, Arial, Helvetica, sans-serif;
+}
+.liter {
+        font-family : Verdana, Arial, Helvetica, sans-serif;
+        font-size: 9pt;
+        font-weight: bold;
+        color: #33399d; 
+}
+.liter2 {
+        font-family : Verdana, Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+        font-weight: bold;
+        color: #33399d; 
+}
+SELECT {
+        font-size : 8pt;
+        font-family : Verdana,Arial,sans-serif;
+        background : #c5dce0;
+        color : #000000;
+}
+input {
+        font-size : 8pt;
+        font-family : Verdana,Arial,sans-serif;
+        background : #c5dce0;
+        color : #000000;
+}
+input.field {
+        border-style : groove;
+}
+input.button {
+        border-style : outset;
+        width : 160px;
+        cursor : hand;
+        white-space : normal;
+}
+p.form {
+        margin : 6pt 0 6pt 0;
+}
