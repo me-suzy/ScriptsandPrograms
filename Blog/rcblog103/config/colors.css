@@ -1,0 +1,17 @@
+body{ background-color:#bbccdd; color:#000000; }
+#frame{ border-color:#42464a; }
+#header{ border-color:#42464a; background-color:#848c93; color:#ffffff; }
+#content{ border-color:#42464a; background-color:#a1a8ae; }
+#nav{ border-color:#42464a; background-color:#bec2c6; }
+#footer{ border-color:#42464a; background-color:#a1a8ae; color:#000000; }
+div.post{ border-color:#42464a; background-color:#edf2f7; color:#000000; }
+div.post div.title{ border-color:#42464a; background-color:#848c93; color:#ffffff; }
+div.post div.navtitle{ border-color:#42464a; background-color:#848c93; color:#ffffff; }
+div.post div.comment{ border-color:#42464a; background-color:#edf2f7; color:#000000; }
+div.post div.code{ border-color:#848c93; background-color:#edf2f7; color:#000000; }
+div.post div.quote{ border-color:#848c93; background-color:#edf2f7; color:#000000; }
+hr{ background-color:#848c93; color:#848c93; }
+a:link{ color:#42464a; }
+a:visited{ color:#42464a; }
+a:hover{ color:#a6998c; }
+a:active{ color:#a6998c; }
