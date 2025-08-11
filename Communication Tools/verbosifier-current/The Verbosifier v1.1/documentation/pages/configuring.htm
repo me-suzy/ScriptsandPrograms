@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>The Verbosifier v1.1 Readme</title>
+<meta http-equiv="content-type" content="text/html; charset=us-ascii" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<link rel="stylesheet" type="text/css" href="manual.css" media="screen" />
+</head>
+<body>
+<div id="head"><a name="top"></a>
+	<span id="headline">The Verbosifier v1.1</span>
+	<p class="nav">
+<a href="../readme.htm">Getting Started</a> | <a href="features.htm">New in v1.1</a> | <a href="using.htm">Using The Verbosifier</a> | <strong>Configuring</strong> | <a href="templating.htm">Templating</a>
+  </p>
+</div>
+<div id="body">
+
+<h1>Settings in control.php</h1>
+        <h2>Number of shouts to display</h2>
+Set in SHOUT_QTY. The value must be a number not wrapped in quotes (10, not '10'). Default is 10.
+<p class="totop">
+<a href="#top">Back to contents</a>
+</p>
+
+        <h2>Format of date/time</h2>
+Set in SHOUT_DATE. <a href="../date.txt">../date.txt</a> lists the most commonly used date/time codes. The value must be a string wrapped in quotes. Default is 'Y-m-d'.
+<p class="totop">
+<a href="#top">Back to contents</a>
+</p>
+
+        <h2>Keeping old shouts or deleting as you go</h2>
+Set in SHOUTS_RETAINED. The value must be a string wrapped in quotes.
+<p>
+A value of 'yes' tells The Verbosifier to keep all old shouts in the database, even though they may not be displayed. This is good if you plan to change the number of shouts on display frequently.
+</p><p>
+A value of 'no' tells The Verbosifier to delete the oldest shout for every new one that brings the total number of shouts in the database table above the number of shouts to be displayed. For example, if a new post brings the total to 11 and I only want to display 10, the oldest shout will be deleted to bring the total down to 10. This is good if you don't plan to change the number of shouts on display very often. 
+</p><p class="totop">
+<a href="#top">Back to contents</a>
+</p>
+
+        <h2>Naming anonymous users</h2>
+Set in ANONYMOUS. This is the name given to users who do not put something in the Name field when they shout. The value must be a string wrapped in quotes. Default is 'Anonymous'.
+<p class="totop">
+<a href="#top">Back to contents</a>
+</p>
+
+<h1>Miscellaneous configuration</h1>
+        <h2>Form label language</h2>
+To change the language the form labels are displayed in, open up verbose.php. The form data is near the top of the page. Just escape any apostrophes/single quotes you add with a backslash (\').
+<p class="totop">
+<a href="#top">Back to contents</a>
+</p>
+
+		<h2>Spamguard</h2>
+Spamguard uses the power of regular expressions to protect your shoutbox from <em>spamments</em> with a minimum of fuss. To add a new entry to Spamguard, open 'admin/spamguard.php' in a plain-text editor like Notepad. The Verbosifier already comes with a well-compiled spamguard.txt file (98 entries), which should protect you from the vast majority of spamments.
+<p>
+Lines that begin and end with double hashes (## ... ##) are comments, and are ignored in the finished blacklist. It's alright to have spaces within comments. Each blacklist entry appears on its own line. There should be no spaces outside the comments.
+</p><p>
+A shout will be blocked if a blacklisted string appears within any URL supplied in the shout (e.g. the string 'porn' will block http://www.porn.com, http://porno.net, http://hot-pornos.cz, http://www.pornographic_art.com, http://porn-is-the-devil.org etc. As you can see, Spamguard can block insane numbers of spamments with a single string.
+</p><p>
+If the spelling of a string changes, it's also possible to block only the part that is common to all spellings. For example, <em>klingeltone</em> is apparently German/Austrian/Europe-Speak (I'm not sure which) for <em>ringtone</em>, but the spelling in some spamments is <em>klingelton</em> or even <em>klingelto</em>. Simply enter the string 'klingelto' to block all three of them.
+</p><p>
+If you feel a string is too common, then it is best to block the domain name instead. Simply leave out the <strong>www.</strong> and enter the <strong>___.com</strong> for maximum protection (entering <strong>www.___.com</strong> would not block http://___.com).
+</p><p>
+If The Verbosifier returns a PHP error when you try to add a new shout, check spamguard.txt for comment lines that aren't ended with double hashes.
+</p><p class="totop">
+<a href="#top">Back to contents</a>
+</p>
+
+<div id="foot">
+	<p class="nav">
+<a href="../readme.htm">Getting Started</a> | <a href="features.htm">New in v1.1</a> | <a href="using.htm">Using The Verbosifier</a> | <strong>Configuring</strong> | <a href="templating.htm">Templating</a>
+  </p>
+Published by <a href="http://www.desiquintans.com/verbosifier">The Verbosifier</a>
+</div>
+</body>
+</html>
