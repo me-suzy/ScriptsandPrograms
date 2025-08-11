@@ -1,0 +1,133 @@
+@import url("../sitebar.css");
+@import url("common.css");
+
+#logo
+{
+    height: 20px;
+    padding: 0;
+}
+
+#userCtxMenu
+{
+    width: 200px;
+}
+
+#toolbar
+{
+    width: 208px;
+    height: 22px;
+}
+
+#toolbar img
+{
+    height: 16px;
+    width: 16px;
+    border: 1px solid #7a8ca7;
+}
+
+#toolbar #fldSearch
+{
+    background: white;
+}
+
+div.menu
+{
+    background:#fff;
+}
+
+div.menu .on
+{
+    background: #7a8ca7;
+}
+
+div.menu .disabled
+{
+    color: #8d8d8d;
+}
+
+div.menu .separator
+{
+    border-top: #7a8ca7 solid 1px;
+}
+
+div.tree
+{
+    color: #444;
+}
+
+div.tree a
+{
+    color:black;
+}
+
+div.tree a:hover
+{
+    color:white;
+    background: #424f63;
+    text-decoration:none;
+
+}
+
+div.tree a:hover .selected
+{
+    color:white;
+    background: #7a8ca7;
+    text-decoration:none;
+
+}
+
+#tail
+{
+    width: 200px;
+}
+
+#stat
+{
+    width: 204px;
+}
+
+/*** Command Window ***/
+
+#errorHead
+{
+    background: black;
+    color: red;
+}
+
+#warnHead
+{
+    background: black;
+}
+
+body.cmdWin table td.check
+{
+    width: 20px;
+}
+
+/*** Integrator window ***/
+
+#tip
+{
+    margin-left: 220px;
+}
+
+#launcher
+{
+    border: 1px groove #807ad6;
+}
+
+#launcher h2
+{
+    color: #606060;
+}
+
+#launcher table th
+{
+    border: 1px solid #002d96;
+    background: #7a8ca7;
+}
+
+span.compatibleNo
+{
+    color: #606060;
+}
