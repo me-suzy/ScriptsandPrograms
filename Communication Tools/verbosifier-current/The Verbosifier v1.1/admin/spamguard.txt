@@ -1,0 +1,112 @@
+## Headers aren't needed, but help structure the list.             ##
+## Note that each comment line begins and ends with double-hashes. ##
+## Each blacklist entry is on its own line. There should be no     ##
+## spaces outside the hashed comments. I only alphabetised the     ##
+## entries for fun. You don't have to.                             ##
+
+## Adult sites ##
+-4u
+-oni
+adult
+amateur-site
+anal
+blowjob
+cum
+cunt
+erotica
+lesbian
+naked
+nude
+penis
+pimp
+piss
+porn
+rape
+sex
+sex-4you
+shemale
+tits
+vibrator
+xxx
+
+## 'Make/save money' sites ##
+betting
+bingo
+black-jack
+blackjack
+casino
+consolidation
+debt-help
+earnmoney
+gambling
+keno
+poker
+roulette
+vcrap
+vneighbour
+vnovel
+vthought
+
+## Strings that usually appear in a 'buy this' site's domain    ##
+.shop263.
+01
+24-hour-
+amazing-
+budget-
+buy-
+cheap-
+discounted-
+e-online
+e-virtual
+handy-
+inexpensive-
+online-
+only-
+order-
+search4-
+shop4-
+special-
+winning-
+
+## Items or 'services' for sale ##
+-rx
+celebrex
+edrugstore
+klingelto
+levitra
+lingerie
+logos
+meridia
+mms
+ortho-tricyclen
+pharmacy
+phentermine
+pills
+polyphon
+prescription
+propecia
+ringtone
+sms
+sonnerie
+viagra
+vioxx
+xenical
+
+## Specific domains ##
+best-free-galleries.com
+blogstudio.net
+bulgarien-service.com
+discoveryofusa.com
+dolboebi.zenno.info
+flower4us.com
+free-teens-galleries.com
+garrywa.com
+kewl-links.com
+mydatingagency.com
+se.cx
+siski.dns2go.biz
+theceleb.com
+virtual-madden.com
+wblogs.com
+whowilldietoday.blogspot.com
+young-gay-boy.net
