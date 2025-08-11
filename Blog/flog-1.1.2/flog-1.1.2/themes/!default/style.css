@@ -1,0 +1,209 @@
+/*
+Copyright (C) 2005 Noah Medling
+
+This program is licensed under the GNU General Public License, version 2,
+as published by the Free Software Foundation, June 1991. For details, see
+LICENSE.txt
+*/
+
+body{
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	height: 100%;
+}
+
+#root{
+	text-align: left;
+	margin: 0 auto;
+	max-width: 100%;
+	width: 37em;
+	padding: 0;
+}
+ul, ol{
+	padding-left: 2.5em;
+}
+#header{
+	margin: 0 0 1em 0;
+	padding: 1em;
+	border-bottom: 1px solid #000;
+}
+	#header h1{
+		margin: 0;
+		padding: 0;
+		font-size: 200%;
+		font-weight: normal;
+		font-variant: small-caps;
+	}
+	#header p{
+		margin: 0;
+		padding: 0;
+		font-variant: small-caps;
+	}
+#navigation{
+	float: left;
+	margin: 1em 0 1em 1em;
+	padding: 0;
+	width: 8em;
+	display: inline;
+}
+	#navigation ul{
+		list-style-type: none;
+		padding: 0;
+		margin: 0 0 1em 0;
+	}
+	#navigation li.separator{
+		padding-top: 1em;
+		font-variant: small-caps;
+	}
+	#navigation li.link, #navigation li.page{
+		padding-left: 1em;
+	}
+	#navigation li a{
+		color: #00f;
+		text-decoration: none;
+	}
+	#navigation li a:hover{
+		color: #00f;
+		text-decoration: underline;
+	}
+		
+#content{
+	margin: 0 1em 1em 10em;
+	padding: 0 0 0 0;
+}
+	#content h1{
+		font-size: 150%;
+		font-weight: normal;
+		font-variant: small-caps;
+		border-bottom: 1px solid #bcd;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+	}
+	#content p{
+		margin: 0.5em 0 1em 0;
+	}
+	#content form{
+		margin: 0;
+		padding: 0;
+	}
+
+
+#footer{
+	clear: both;
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+	border-top: 1px solid #000;
+}
+	#footer p{
+		margin: 0;
+		padding: 0;
+	}
+
+.post{
+	margin: 0 0 2em 0;
+}
+.post .post_title{
+	font-size: 150%;
+	font-variant: small-caps;
+	border-bottom: 1px solid #bcd;
+}
+.post .post_head{
+	font-size: 80%;
+	color: #567;
+}
+.post .post_body{
+}
+.post .post_foot{
+	text-align: right;
+	font-size: 80%;
+	color: #567;
+}
+
+.comment{
+	padding: 0.5em;
+	margin: 0.5em 0 1.5em 0;
+}
+.comment .comment_head{
+	font-size: 80%;
+	color: #567;
+	border-bottom: 1px solid #bcd;
+}
+.comment .comment_body{
+}
+.moderated{
+	background: #def;
+}
+.moderated .comment_head{
+	color: #345;
+}
+
+fieldset{
+	border: 1px solid #bcd;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+}
+legend{
+	color: #000;
+	font-variant: small-caps;
+}
+p.message{
+	border: 1px solid #bcd;
+	padding: 0.25em;
+	background: #eff;
+}
+p.error{
+	border: 1px solid #f98;
+	padding: 0.25em;
+	background: #fed;
+}
+div.archive_header{
+	border-bottom: 1px solid #bcd;
+	margin: 0;
+	padding: 0;
+}
+div.archive_description{
+	margin: 0 0 2em 0;
+	padding: 0;
+}
+ul.archive{
+	list-style-type: disc;
+	padding: 0 0 0 1.25em;
+	margin: 1.5em 0 0 0;
+}
+ul.archive ul{
+	list-style-type: circle;
+	padding: 0 0 0 1.25em;
+	margin-bottom: 1em;
+	margin: 0;
+}
+ul.archive div.viewbox{
+	padding-bottom: 0.125em;
+	border-bottom: 1px solid #bcd;
+}
+ul.archive a.viewlink{
+	float: right;
+}
+a:link, a:visited{
+	color: #00f;
+	text-decoration: none;
+}
+a:active, a:hover{
+	color: #00f;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+	font-variant: small-caps;
+}
+hr{
+	height: 1px;
+	padding:0;
+	color: #000;
+	background: #000;
+	padding: 0;
+	border: 0;
+}
