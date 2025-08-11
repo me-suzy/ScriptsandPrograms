@@ -1,0 +1,17 @@
+Upgrading From 1.3.X to 1.3.X (higher version)
+ This file will guide you through upgrading from X7 Chat version 1.3.X
+ to X7 Chat 1.3.6, If you have Version 1.2.0 DO NOT FOLLOW THESE
+ DIRECTIONS, see the file UPDATE-1.2.0.txt!
+ 
+ 1) Upload all the new files to the server and REPLACE the old ones 
+    with these new ones.  You DO NOT need to upload install.php, 
+    config.php and upgrade.php.  You may use your old config.php 
+    file, no modifications to it need to be made.
+
+ 2) If the /Logs directory does not have 777 permissions, CHMOD 777 it.
+
+ 3) That's it, there is no need to visit upgrade.php or install.php 
+    because only the source files not the database were changed in this
+    release.
+
+If you still are having trouble please visit our forum: http://forum.x7chat.com
