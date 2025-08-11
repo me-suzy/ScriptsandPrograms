@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SkinColor>
+<globalStyleFormat.arrow value = "0xFFFFFF" />
+<globalStyleFormat.shadow value = "0xAFC1CE" />
+<globalStyleFormat.highlight3D value = "0xffffff" />
+<globalStyleFormat.background value = "0xffffff" />
+<globalStyleFormat.face value = "0xCAD7E2" />
+<globalStyleFormat.textColor value = "0x011001" />
+<globalStyleFormat.scrollTrack value = "0xCAD7E2" />
+<globalStyleFormat.selection value = "0xAAB7C5" />
+<globalStyleFormat.selectionUnfocused value = "0xAAB7C5" />
+<globalStyleFormat.textSelected value = "0x333333" />
+<globalStyleFormat.textDisabled value = "0x666666" />
+<ROLL_DOWN_MENU_BKGROUND value = "0xC6D9EC" />
+<ROLL_DOWN_MENU_FACE value = "0x93B7DB" />
+<SKIN_ROOM_FONT_COLOR value = "0x333333" />
+<SKIN_TEXT_COLOR_LOAD value = "0xFFFFFF" />
+<SKIN_TEXT_COLOR_ALERT value = "0xFFFFFF" />
+<SKIN_TEXT_BOTTON_COLOR value = "0x346AA0" />
+<SKIN_TEXT_COLOR_STATIC value = "0x346AA0" />
+<SKIN_TEXT_COLOR_WELCOME value = "0x346AA0" />
+<SKIN_TEXT_COLOR_SAY value = "0x999999" />
+<SKIN_TEXT_COLOR_PRIVATE_SAY value = "0xFF3366" />
+<SKIN_TEXT_COLOR_DEFAULT_TALK value = "0x333333" />
+<SKIN_TEXT_COLOR_ROOM_NAME_ADMIN_NUMBER value = "0x000000" />
+<SKIN_TEXT_COLOR_ROOM_DESC value = "0x336699" />
+<MONITOR_COLOR_CONNECT value = "0xFF0000" />
+<MONITOR_COLOR_LOGIN value = "0x000066" />
+<MONITOR_COLOR_LOGOUT value = "0x000066" />
+<MONITOR_COLOR_ENTERROOM value = "0x0000FF" />
+<MONITOR_COLOR_QUITROOM value = "0x0000FF" />
+<MONITOR_COLOR_CHANGEROOM value = "0x0000FF" />
+<MONITOR_COLOR_KICKED value = "0x006600" />
+<MONITOR_COLOR_DISCONNECT value = "0x000099" />
+<MONITOR_COLOR_DEFAULT value = "0x993300" />
+<SKIN_PRIVATE_TITLE_COLOR value = "0xFFFFFF" />
+<SKIN_ADMIN_NAME_COLOR value = "0xFF0000" />
+<SKIN_OWNER_NAME_COLOR value = "0x336600" />
+<SKIN_SPEAKER_NAME_COLOR value = "0xff6600" />
+<SKIN_USERNAME_STATUS_COLOR value = "0x666666" />
+<SKIN_DEFAULT_BASIC_BK value = "0xF4F9FD" />
+<SKIN_DEFAULT_BASIC_BK_DOWN value = "0xC0DDF9" />
+<SKIN_USERLIST_TEXT value = "0x346AA0" />
+<SKIN_LOADING_BAR_BASIC_BK value = "0x6EB1EB" />
+<SKIN_CACHED_MESSAGE_COLOR value = "0x777777" />
+</SkinColor>
