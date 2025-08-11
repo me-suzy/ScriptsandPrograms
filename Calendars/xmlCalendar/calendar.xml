@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<calendar>
+	<Y2005>
+		<January>
+			<D1>New Year's Day</D1>
+		</January>
+		<February>
+			<D14>St. Valentine's Day</D14>
+			<D21>President's Day</D21>
+		</February>
+		<March>
+			<D17>St. Patrick's Day</D17>
+			<D27>Easter</D27>
+		</March>
+		<May>
+			<D8>Mother's Day</D8>
+			<D30>Memorial Day</D30>
+		</May>
+		<June>
+			<D19>Father's Day</D19>
+		</June>
+		<July>
+			<D4>Independence Day</D4>
+		</July>
+		<September>
+			<D5>Labor Day</D5>
+		</September>
+		<October>
+			<D10>Columbus Day</D10>
+			<D31>Halloween</D31>
+		</October>
+		<November>
+			<D11>Veterans Day</D11>
+			<D24>Thanksgiving Day</D24>
+		</November>
+		<December>
+			<D25>Christmas Day</D25>
+			<D31>New Year's Eve</D31>
+		</December>
+	</Y2005>
+	<Y2006>
+		<January>
+			<D1>New Year's Day</D1>
+		</January>
+		<February>
+			<D14>St. Valentine's Day</D14>
+			<D20>President's Day</D20>
+		</February>
+		<March>
+			<D17>St. Patrick's Day</D17>
+			<D31>Easter</D31>
+		</March>
+		<April>
+			<D16>Easter</D16>
+		</April>
+		<May>
+			<D14>Mother's Day</D14>
+			<D29>Memorial Day</D29>
+		</May>
+		<June>
+			<D18>Father's Day</D18>
+		</June>
+		<July>
+			<D4>Independence Day</D4>
+		</July>
+		<September>
+			<D4>Labor Day</D4>
+		</September>
+		<October>
+			<D9>Columbus Day</D9>
+			<D31>Halloween</D31>
+		</October>
+		<November>
+			<D11>Veterans Day</D11>
+			<D23>Thanksgiving Day</D23>
+		</November>
+		<December>
+			<D25>Christmas Day</D25>
+			<D31>New Year's Eve</D31>
+		</December>
+	</Y2006>
+</calendar>
