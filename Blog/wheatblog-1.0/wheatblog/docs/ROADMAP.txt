@@ -1,0 +1,34 @@
+File:  	  docs/ROADMAP.txt
+Purpose:  To map out features to be introduced in future releases
+License:	GPL
+
+// Features proposed for 1.0b
+1. PHP-based admin user authentication via sessions
+    (.htaccess-based authentication is still an option)
+2. Web-based user administration (for sessions-based authentication)
+3. New visual styles, selectable via settings.php
+3. Link management
+4. SQLite support
+5. Upgrade tools/code for .05b, .04b, and .03b users (i.e. db structure updates)
+
+// Features proposed for 1.1b
+1. PostgreSQL support
+2. Internationalization support
+3. Web-based settings editing (most settings stored in db)
+4. Improved archive views options
+
+// Features proposed for 1.2b
+1. Asset management (image gallery for adding images to posts)
+2. MS SQL Server support
+
+// TODO (not yet associated with a particular release)
+* Platform independent method of personalized settings.
+* ODBC support
+* consistent exception catching
+* integrated help system
+* integrated search engine
+* MetaWeblogAPI (MWA) support (http://www.xmlrpc.com/metaWeblogApi)
+* Determine max/min dates for archive selection.
+* Implement "these have been posted since the last time you logged in".
+	Need to keep track of date of last login.
+
